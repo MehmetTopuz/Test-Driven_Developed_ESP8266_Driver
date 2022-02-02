@@ -13,9 +13,18 @@ extern "C"
 {
 #endif
 
+#include <stdint.h>
+
+typedef struct
+{
+	uint32_t head;
+	uint32_t tail;
+	uint32_t size;
+	uint8_t* buffer;
+}RingBuffer;
 
 
-
+RingBuffer* ringBuffer_init(uint32_t size);
 
 #ifdef __cplusplus
 }

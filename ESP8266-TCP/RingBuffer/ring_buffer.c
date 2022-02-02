@@ -8,3 +8,13 @@
 
 #include "ring_buffer.h"
 
+
+
+RingBuffer* ringBuffer_init(uint32_t size)
+{
+	RingBuffer* rBuf;
+
+	rBuf->size = size;
+
+	return rBuf;
+}

@@ -1,0 +1,14 @@
+tests.cpp:13:1:TEST_GROUP_CppUTestGroupRingBuffer_Test_Group::TEST_GROUP_CppUTestGroupRingBuffer_Test_Group()	16	static
+tests.cpp:13:1:TEST_GROUP_CppUTestGroupRingBuffer_Test_Group::~TEST_GROUP_CppUTestGroupRingBuffer_Test_Group()	16	static
+tests.cpp:13:1:virtual TEST_GROUP_CppUTestGroupRingBuffer_Test_Group::~TEST_GROUP_CppUTestGroupRingBuffer_Test_Group()	16	static
+tests.cpp:19:1:TEST_RingBuffer_Test_Group_InitTest_Test::TEST_RingBuffer_Test_Group_InitTest_Test()	16	static
+tests.cpp:19:1:virtual Utest* TEST_RingBuffer_Test_Group_InitTest_TestShell::createTest()	24	static
+tests.cpp:19:1:TEST_RingBuffer_Test_Group_InitTest_TestShell::TEST_RingBuffer_Test_Group_InitTest_TestShell()	16	static
+tests.cpp:19:1:virtual void TEST_RingBuffer_Test_Group_InitTest_Test::testBody()	56	static
+tests.cpp:19:1:TEST_RingBuffer_Test_Group_InitTest_TestShell::~TEST_RingBuffer_Test_Group_InitTest_TestShell()	16	static
+tests.cpp:19:1:virtual TEST_RingBuffer_Test_Group_InitTest_TestShell::~TEST_RingBuffer_Test_Group_InitTest_TestShell()	16	static
+tests.cpp:19:1:TEST_RingBuffer_Test_Group_InitTest_Test::~TEST_RingBuffer_Test_Group_InitTest_Test()	16	static
+tests.cpp:19:1:virtual TEST_RingBuffer_Test_Group_InitTest_Test::~TEST_RingBuffer_Test_Group_InitTest_Test()	16	static
+tests.cpp:30:1:void __static_initialization_and_destruction_0(int, int)	24	static
+tests.cpp:30:1:cpp)	8	static
+tests.cpp:30:1:cpp)	8	static
