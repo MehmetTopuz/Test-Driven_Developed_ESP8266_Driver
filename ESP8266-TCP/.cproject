@@ -90,6 +90,8 @@
                                     <listOptionValue builtIn="false" value="../Drivers/CMSIS/Include"/>
                                     									
                                     <listOptionValue builtIn="false" value="&quot;C:\Users\topuz\STM32CubeIDE\workspace_1.6.0\ESP8266-TCP-IP\ESP8266-TCP\ESP8266_Driver&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;C:\Users\Topuz\STM32CubeIDE\workspace_1.6.0\ESP8266-TCP-IP\ESP8266-TCP\RingBuffer&quot;"/>
                                     								
                                 </option>
                                 								
@@ -174,6 +176,8 @@
                         <entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Drivers"/>
                         						
                         <entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="ESP8266_Driver"/>
+                        						
+                        <entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="RingBuffer"/>
                         					
                     </sourceEntries>
                     				
@@ -351,6 +355,8 @@
                         						
                         <entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="ESP8266_Driver"/>
                         						
+                        <entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="RingBuffer"/>
+                        						
                         <entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Tests"/>
                         					
                     </sourceEntries>
@@ -488,6 +494,8 @@
                                     <listOptionValue builtIn="false" value="../Drivers/CMSIS/Device/ST/STM32G4xx/Include"/>
                                     									
                                     <listOptionValue builtIn="false" value="../Drivers/CMSIS/Include"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;C:\Users\Topuz\STM32CubeIDE\workspace_1.6.0\ESP8266-TCP-IP\ESP8266-TCP\RingBuffer&quot;"/>
                                     								
                                 </option>
                                 								
@@ -630,6 +638,8 @@
                         <entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Drivers"/>
                         						
                         <entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="ESP8266_Driver"/>
+                        						
+                        <entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="RingBuffer"/>
                         						
                         <entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Tests"/>
                         					

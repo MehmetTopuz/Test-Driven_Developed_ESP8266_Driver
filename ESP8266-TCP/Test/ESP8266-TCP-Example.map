@@ -2561,6 +2561,21 @@ Discarded input sections
  .comment       0x0000000000000000       0x54 ESP8266_Driver/esp8266.o
  .ARM.attributes
                 0x0000000000000000       0x39 ESP8266_Driver/esp8266.o
+ .group         0x0000000000000000        0xc RingBuffer/ring_buffer.o
+ .text          0x0000000000000000        0x0 RingBuffer/ring_buffer.o
+ .data          0x0000000000000000        0x0 RingBuffer/ring_buffer.o
+ .bss           0x0000000000000000        0x0 RingBuffer/ring_buffer.o
+ .debug_info    0x0000000000000000       0x21 RingBuffer/ring_buffer.o
+ .debug_abbrev  0x0000000000000000       0x13 RingBuffer/ring_buffer.o
+ .debug_aranges
+                0x0000000000000000       0x18 RingBuffer/ring_buffer.o
+ .debug_macro   0x0000000000000000       0x1b RingBuffer/ring_buffer.o
+ .debug_macro   0x0000000000000000      0xaa8 RingBuffer/ring_buffer.o
+ .debug_line    0x0000000000000000       0x4d RingBuffer/ring_buffer.o
+ .debug_str     0x0000000000000000     0x2dde RingBuffer/ring_buffer.o
+ .comment       0x0000000000000000       0x54 RingBuffer/ring_buffer.o
+ .ARM.attributes
+                0x0000000000000000       0x39 RingBuffer/ring_buffer.o
  .group         0x0000000000000000        0xc Tests/main.o
  .group         0x0000000000000000        0xc Tests/main.o
  .group         0x0000000000000000        0xc Tests/main.o
@@ -5263,6 +5278,7 @@ LOAD Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.o
 LOAD Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.o
 LOAD Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.o
 LOAD ESP8266_Driver/esp8266.o
+LOAD RingBuffer/ring_buffer.o
 LOAD Tests/main.o
 LOAD Tests/tests.o
 LOAD C:\Users\topuz\STM32CubeIDE\workspace_1.6.0\ESP8266-TCP-IP\CppUTest_build\Debug\libCppUTest_build.a

@@ -22,5 +22,6 @@
 "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.o"
 "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.o"
 "ESP8266_Driver/esp8266.o"
+"RingBuffer/ring_buffer.o"
 "Tests/main.o"
 "Tests/tests.o"

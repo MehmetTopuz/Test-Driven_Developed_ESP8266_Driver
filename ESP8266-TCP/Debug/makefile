@@ -9,6 +9,7 @@ RM := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
+-include RingBuffer/subdir.mk
 -include ESP8266_Driver/subdir.mk
 -include Drivers/STM32G4xx_HAL_Driver/Src/subdir.mk
 -include Core/Startup/subdir.mk
@@ -77,8 +78,8 @@ all: main-build
 main-build: ESP8266-TCP-Example.elf secondary-outputs
 
 # Tool invocations
-ESP8266-TCP-Example.elf: $(OBJS) $(USER_OBJS) C:\Users\topuz\STM32CubeIDE\workspace_1.6.0\ESP8266-TCP-IP\ESP8266-TCP\STM32G474RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-g++ -o "ESP8266-TCP-Example.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\topuz\STM32CubeIDE\workspace_1.6.0\ESP8266-TCP-IP\ESP8266-TCP\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ESP8266-TCP-Example.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+ESP8266-TCP-Example.elf: $(OBJS) $(USER_OBJS) C:\Users\Topuz\STM32CubeIDE\workspace_1.6.0\ESP8266-TCP-IP\ESP8266-TCP\STM32G474RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-g++ -o "ESP8266-TCP-Example.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\Topuz\STM32CubeIDE\workspace_1.6.0\ESP8266-TCP-IP\ESP8266-TCP\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ESP8266-TCP-Example.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
