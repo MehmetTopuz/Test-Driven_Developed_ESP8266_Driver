@@ -8,7 +8,7 @@
 
 #include "ring_buffer.h"
 #include <stdlib.h>
-
+#include <string.h>
 
 RingBuffer* ringBuffer_init(uint32_t size)
 {
@@ -61,5 +61,28 @@ void ringBuffer_push(RingBuffer* ringBuffer, uint8_t data)
 	}
 }
 
+uint8_t ringBuffer_pop(RingBuffer* ringBuffer)
+{
+	uint8_t data;
 
+	if(ringBuffer->tail != (ringBuffer->size - 1))
+	{
+		data = ringBuffer->buffer[ringBuffer->tail];
+		ringBuffer->tail += 1;
+		return data;
+	}
+	else
+	{
+
+		data = ringBuffer->buffer[ringBuffer->tail];
+		ringBuffer->tail = 0;
+		return data;
+	}
+
+}
+
+void ringBuffer_flush(RingBuffer* ringBuffer)
+{
+	memset(ringBuffer->buffer,0x00,ringBuffer->size);
+}
 

@@ -27,6 +27,8 @@ typedef struct
 RingBuffer* ringBuffer_init(uint32_t size);
 void ringBuffer_deInit(RingBuffer* buffer);
 void ringBuffer_push(RingBuffer* ringBuffer, uint8_t data);
+uint8_t ringBuffer_pop(RingBuffer* ringBuffer);
+void ringBuffer_flush(RingBuffer* ringBuffer);
 
 #ifdef __cplusplus
 }

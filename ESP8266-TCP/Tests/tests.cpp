@@ -9,6 +9,7 @@
 #include "CppUTest/TestHarness.h"
 #include "esp8266.h"
 #include "ring_buffer.h"
+#include <stdio.h>
 
 TEST_GROUP(RingBuffer_Test_Group)
 {
@@ -59,4 +60,50 @@ TEST(RingBuffer_Test_Group, BufferOverflowTest)
 
 	ringBuffer_push(testBuf, 0xFF);			// This data must be the first element of buffer.
 	LONGS_EQUAL(0xFF,testBuf->buffer[0]);
+}
+
+TEST(RingBuffer_Test_Group, PopDataTests)
+{
+	ringBuffer_push(testBuf, 0xFF);
+	uint8_t data = ringBuffer_pop(testBuf); // 0xFF
+
+	LONGS_EQUAL(0xFF,data);
+
+}
+
+TEST(RingBuffer_Test_Group, PopBufferOverFlowTest)
+{
+	uint8_t data = 0;
+
+	ringBuffer_push(testBuf, 0xAA);
+
+	for(int i=testBuf->tail;i<(testBuf->tail == (testBuf->size - 1));i++)
+	{
+		data = ringBuffer_pop(testBuf);
+	}
+
+	data = ringBuffer_pop(testBuf);
+
+	LONGS_EQUAL(0xAA,data);
+}
+
+TEST(RingBuffer_Test_Group, BufferFlushTest)
+{
+
+	for(uint32_t i = 0;i < testBuf->size;i++)  // fill the buffer
+	{
+		ringBuffer_push(testBuf,(uint8_t)i);
+	}
+	LONGS_EQUAL(49,testBuf->buffer[testBuf->size - 1]);
+
+	ringBuffer_flush(testBuf);  // clear the buffer
+
+	LONGS_EQUAL(0,testBuf->buffer[testBuf->size - 1]);
+	LONGS_EQUAL(0,testBuf->buffer[testBuf->size/2]);    // check random value  (buffer[25]);
+
+//	for(uint32_t i = 0;i < testBuf->size;i++)  // check all elements of the buffer
+//	{
+//		LONGS_EQUAL(0,testBuf->buffer[i]);
+//	}
+
 }
