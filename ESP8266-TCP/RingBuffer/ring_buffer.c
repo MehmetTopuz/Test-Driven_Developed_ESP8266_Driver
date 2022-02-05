@@ -88,12 +88,23 @@ void ringBuffer_flush(RingBuffer* ringBuffer)
 
 void ringBuffer_pushArray(RingBuffer* ringBuffer, uint8_t* data)
 {
-	 for(int i = 0; i<sizeof(data);i++)
+	 for(int i = 0; i<strlen((char*)data);i++)
 		 ringBuffer_push(ringBuffer, data[i]);
 }
 
 uint32_t ringBuffer_lookFor(RingBuffer* ringBuffer, uint8_t* data)
 {
-	return 0;
+	char* str = strstr((char*)ringBuffer->buffer,(char*)data);
+
+	if(str != NULL)
+		return 1;
+	else
+		return 0;
+
+}
+
+uint32_t ringBuffer_capacity(RingBuffer* ringBuffer)
+{
+	return ringBuffer->size;
 }
 

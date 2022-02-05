@@ -35,6 +35,14 @@ tests.cpp:118:1:TEST_RingBuffer_Test_Group_LookForTest_Test::TEST_RingBuffer_Tes
 tests.cpp:118:1:virtual Utest* TEST_RingBuffer_Test_Group_LookForTest_TestShell::createTest()	24	static
 tests.cpp:118:1:TEST_RingBuffer_Test_Group_LookForTest_TestShell::TEST_RingBuffer_Test_Group_LookForTest_TestShell()	16	static
 tests.cpp:118:1:virtual void TEST_RingBuffer_Test_Group_LookForTest_Test::testBody()	64	static
+tests.cpp:126:1:TEST_RingBuffer_Test_Group_CapacityTest_Test::TEST_RingBuffer_Test_Group_CapacityTest_Test()	16	static
+tests.cpp:126:1:virtual Utest* TEST_RingBuffer_Test_Group_CapacityTest_TestShell::createTest()	24	static
+tests.cpp:126:1:TEST_RingBuffer_Test_Group_CapacityTest_TestShell::TEST_RingBuffer_Test_Group_CapacityTest_TestShell()	16	static
+tests.cpp:126:1:virtual void TEST_RingBuffer_Test_Group_CapacityTest_Test::testBody()	48	static
+tests.cpp:126:1:TEST_RingBuffer_Test_Group_CapacityTest_TestShell::~TEST_RingBuffer_Test_Group_CapacityTest_TestShell()	16	static
+tests.cpp:126:1:virtual TEST_RingBuffer_Test_Group_CapacityTest_TestShell::~TEST_RingBuffer_Test_Group_CapacityTest_TestShell()	16	static
+tests.cpp:126:1:TEST_RingBuffer_Test_Group_CapacityTest_Test::~TEST_RingBuffer_Test_Group_CapacityTest_Test()	16	static
+tests.cpp:126:1:virtual TEST_RingBuffer_Test_Group_CapacityTest_Test::~TEST_RingBuffer_Test_Group_CapacityTest_Test()	16	static
 tests.cpp:118:1:TEST_RingBuffer_Test_Group_LookForTest_TestShell::~TEST_RingBuffer_Test_Group_LookForTest_TestShell()	16	static
 tests.cpp:118:1:virtual TEST_RingBuffer_Test_Group_LookForTest_TestShell::~TEST_RingBuffer_Test_Group_LookForTest_TestShell()	16	static
 tests.cpp:118:1:TEST_RingBuffer_Test_Group_LookForTest_Test::~TEST_RingBuffer_Test_Group_LookForTest_Test()	16	static
@@ -67,6 +75,6 @@ tests.cpp:34:1:TEST_RingBuffer_Test_Group_InitTest_TestShell::~TEST_RingBuffer_T
 tests.cpp:34:1:virtual TEST_RingBuffer_Test_Group_InitTest_TestShell::~TEST_RingBuffer_Test_Group_InitTest_TestShell()	16	static
 tests.cpp:34:1:TEST_RingBuffer_Test_Group_InitTest_Test::~TEST_RingBuffer_Test_Group_InitTest_Test()	16	static
 tests.cpp:34:1:virtual TEST_RingBuffer_Test_Group_InitTest_Test::~TEST_RingBuffer_Test_Group_InitTest_Test()	16	static
-tests.cpp:123:1:void __static_initialization_and_destruction_0(int, int)	24	static
-tests.cpp:123:1:cpp)	8	static
-tests.cpp:123:1:cpp)	8	static
+tests.cpp:131:1:void __static_initialization_and_destruction_0(int, int)	24	static
+tests.cpp:131:1:cpp)	8	static
+tests.cpp:131:1:cpp)	8	static

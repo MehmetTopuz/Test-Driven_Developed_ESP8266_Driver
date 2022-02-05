@@ -31,6 +31,7 @@ void ringBuffer_pushArray(RingBuffer* ringBuffer, uint8_t* data);
 uint8_t ringBuffer_pop(RingBuffer* ringBuffer);
 void ringBuffer_flush(RingBuffer* ringBuffer);
 uint32_t ringBuffer_lookFor(RingBuffer* ringBuffer, uint8_t* data);
+uint32_t ringBuffer_capacity(RingBuffer* ringBuffer);
 
 #ifdef __cplusplus
 }

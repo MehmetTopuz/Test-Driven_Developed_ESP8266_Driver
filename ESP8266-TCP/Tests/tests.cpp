@@ -119,7 +119,19 @@ TEST(RingBuffer_Test_Group, LookForTest)
 {
 	ringBuffer_pushArray(testBuf, (uint8_t*)"Hello World");
 
+	STRCMP_EQUAL("Hello World",(char*)testBuf->buffer);
 	CHECK_EQUAL(1,ringBuffer_lookFor(testBuf, (uint8_t*)"World"));
 }
+
+TEST(RingBuffer_Test_Group, CapacityTest)
+{
+
+	LONGS_EQUAL(50,ringBuffer_capacity(testBuf));
+
+}
+
+
+
+
 
 
