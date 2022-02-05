@@ -1,4 +1,4 @@
-main.cpp:77:5:int main()	8	static
+main.cpp:77:5:int main()	16	static
 main.cpp:126:6:void SystemClock_Config()	168	static
 main.cpp:181:13:void MX_LPUART1_UART_Init()	8	static
 main.cpp:228:13:void MX_USART1_UART_Init()	8	static

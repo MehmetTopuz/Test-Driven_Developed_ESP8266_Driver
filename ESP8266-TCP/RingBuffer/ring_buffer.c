@@ -86,3 +86,14 @@ void ringBuffer_flush(RingBuffer* ringBuffer)
 	memset(ringBuffer->buffer,0x00,ringBuffer->size);
 }
 
+void ringBuffer_pushArray(RingBuffer* ringBuffer, uint8_t* data)
+{
+	 for(int i = 0; i<sizeof(data);i++)
+		 ringBuffer_push(ringBuffer, data[i]);
+}
+
+uint32_t ringBuffer_lookFor(RingBuffer* ringBuffer, uint8_t* data)
+{
+	return 0;
+}
+

@@ -106,8 +106,8 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  const char * av_override[] = { };
-  CommandLineTestRunner::RunAllTests(0, av_override);
+  const char * av_override[] = { "exe","-v" };      // verbose mode
+  CommandLineTestRunner::RunAllTests(2, av_override);
   while (1)
   {
 	  HAL_GPIO_TogglePin(LD2_GPIO_Port, LD2_Pin);

@@ -27,6 +27,22 @@ tests.cpp:90:1:TEST_RingBuffer_Test_Group_BufferFlushTest_Test::TEST_RingBuffer_
 tests.cpp:90:1:virtual Utest* TEST_RingBuffer_Test_Group_BufferFlushTest_TestShell::createTest()	24	static
 tests.cpp:90:1:TEST_RingBuffer_Test_Group_BufferFlushTest_TestShell::TEST_RingBuffer_Test_Group_BufferFlushTest_TestShell()	16	static
 tests.cpp:90:1:virtual void TEST_RingBuffer_Test_Group_BufferFlushTest_Test::testBody()	56	static
+tests.cpp:111:1:TEST_RingBuffer_Test_Group_PushArrayTest_Test::TEST_RingBuffer_Test_Group_PushArrayTest_Test()	16	static
+tests.cpp:111:1:virtual Utest* TEST_RingBuffer_Test_Group_PushArrayTest_TestShell::createTest()	24	static
+tests.cpp:111:1:TEST_RingBuffer_Test_Group_PushArrayTest_TestShell::TEST_RingBuffer_Test_Group_PushArrayTest_TestShell()	16	static
+tests.cpp:111:1:virtual void TEST_RingBuffer_Test_Group_PushArrayTest_Test::testBody()	48	static
+tests.cpp:118:1:TEST_RingBuffer_Test_Group_LookForTest_Test::TEST_RingBuffer_Test_Group_LookForTest_Test()	16	static
+tests.cpp:118:1:virtual Utest* TEST_RingBuffer_Test_Group_LookForTest_TestShell::createTest()	24	static
+tests.cpp:118:1:TEST_RingBuffer_Test_Group_LookForTest_TestShell::TEST_RingBuffer_Test_Group_LookForTest_TestShell()	16	static
+tests.cpp:118:1:virtual void TEST_RingBuffer_Test_Group_LookForTest_Test::testBody()	64	static
+tests.cpp:118:1:TEST_RingBuffer_Test_Group_LookForTest_TestShell::~TEST_RingBuffer_Test_Group_LookForTest_TestShell()	16	static
+tests.cpp:118:1:virtual TEST_RingBuffer_Test_Group_LookForTest_TestShell::~TEST_RingBuffer_Test_Group_LookForTest_TestShell()	16	static
+tests.cpp:118:1:TEST_RingBuffer_Test_Group_LookForTest_Test::~TEST_RingBuffer_Test_Group_LookForTest_Test()	16	static
+tests.cpp:118:1:virtual TEST_RingBuffer_Test_Group_LookForTest_Test::~TEST_RingBuffer_Test_Group_LookForTest_Test()	16	static
+tests.cpp:111:1:TEST_RingBuffer_Test_Group_PushArrayTest_TestShell::~TEST_RingBuffer_Test_Group_PushArrayTest_TestShell()	16	static
+tests.cpp:111:1:virtual TEST_RingBuffer_Test_Group_PushArrayTest_TestShell::~TEST_RingBuffer_Test_Group_PushArrayTest_TestShell()	16	static
+tests.cpp:111:1:TEST_RingBuffer_Test_Group_PushArrayTest_Test::~TEST_RingBuffer_Test_Group_PushArrayTest_Test()	16	static
+tests.cpp:111:1:virtual TEST_RingBuffer_Test_Group_PushArrayTest_Test::~TEST_RingBuffer_Test_Group_PushArrayTest_Test()	16	static
 tests.cpp:90:1:TEST_RingBuffer_Test_Group_BufferFlushTest_TestShell::~TEST_RingBuffer_Test_Group_BufferFlushTest_TestShell()	16	static
 tests.cpp:90:1:virtual TEST_RingBuffer_Test_Group_BufferFlushTest_TestShell::~TEST_RingBuffer_Test_Group_BufferFlushTest_TestShell()	16	static
 tests.cpp:90:1:TEST_RingBuffer_Test_Group_BufferFlushTest_Test::~TEST_RingBuffer_Test_Group_BufferFlushTest_Test()	16	static
@@ -51,6 +67,6 @@ tests.cpp:34:1:TEST_RingBuffer_Test_Group_InitTest_TestShell::~TEST_RingBuffer_T
 tests.cpp:34:1:virtual TEST_RingBuffer_Test_Group_InitTest_TestShell::~TEST_RingBuffer_Test_Group_InitTest_TestShell()	16	static
 tests.cpp:34:1:TEST_RingBuffer_Test_Group_InitTest_Test::~TEST_RingBuffer_Test_Group_InitTest_Test()	16	static
 tests.cpp:34:1:virtual TEST_RingBuffer_Test_Group_InitTest_Test::~TEST_RingBuffer_Test_Group_InitTest_Test()	16	static
-tests.cpp:109:1:void __static_initialization_and_destruction_0(int, int)	24	static
-tests.cpp:109:1:cpp)	8	static
-tests.cpp:109:1:cpp)	8	static
+tests.cpp:123:1:void __static_initialization_and_destruction_0(int, int)	24	static
+tests.cpp:123:1:cpp)	8	static
+tests.cpp:123:1:cpp)	8	static

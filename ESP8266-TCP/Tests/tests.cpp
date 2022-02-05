@@ -107,3 +107,19 @@ TEST(RingBuffer_Test_Group, BufferFlushTest)
 //	}
 
 }
+
+TEST(RingBuffer_Test_Group, PushArrayTest)
+{
+	ringBuffer_pushArray(testBuf, (uint8_t*)"Test");
+
+	STRCMP_EQUAL("Test",(char*)testBuf->buffer);
+}
+
+TEST(RingBuffer_Test_Group, LookForTest)
+{
+	ringBuffer_pushArray(testBuf, (uint8_t*)"Hello World");
+
+	CHECK_EQUAL(1,ringBuffer_lookFor(testBuf, (uint8_t*)"World"));
+}
+
+
