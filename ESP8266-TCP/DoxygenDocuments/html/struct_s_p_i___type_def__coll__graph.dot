@@ -1,0 +1,7 @@
+digraph "SPI_TypeDef"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{SPI_TypeDef\n|+ __IO uint32_t CR1\l+ __IO uint32_t CR2\l+ __IO uint32_t SR\l+ __IO uint32_t DR\l+ __IO uint32_t CRCPR\l+ __IO uint32_t RXCRCR\l+ __IO uint32_t TXCRCR\l+ __IO uint32_t I2SCFGR\l+ __IO uint32_t I2SPR\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Serial Peripheral Interface."];
+}

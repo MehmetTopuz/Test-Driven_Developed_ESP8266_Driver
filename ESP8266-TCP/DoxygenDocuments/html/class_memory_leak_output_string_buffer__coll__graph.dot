@@ -1,0 +1,7 @@
+digraph "MemoryLeakOutputStringBuffer"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{MemoryLeakOutputStringBuffer\n||+  MemoryLeakOutputStringBuffer()\l+ void clear()\l+ void startMemoryLeakReporting()\l+ void stopMemoryLeakReporting()\l+ void reportMemoryLeak\l(MemoryLeakDetectorNode\l *leak)\l+ void reportDeallocateNon\lAllocatedMemoryFailure\l(const char *freeFile,\l size_t freeLine, TestMemoryAllocator\l *freeAllocator, MemoryLeakFailure\l *reporter)\l+ void reportMemoryCorruption\lFailure(MemoryLeakDetectorNode\l *node, const char *freeFile,\l size_t freeLineNumber, TestMemoryAllocator\l *freeAllocator, MemoryLeakFailure *reporter)\l+ void reportAllocationDeallocation\lMismatchFailure(MemoryLeakDetectorNode\l *node, const char *freeFile, size\l_t freeLineNumber, TestMemoryAllocator\l *freeAllocator, MemoryLeakFailure *reporter)\l+ char * toString()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

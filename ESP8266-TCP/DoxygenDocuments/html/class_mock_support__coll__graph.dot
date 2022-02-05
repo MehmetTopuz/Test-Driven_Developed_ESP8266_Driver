@@ -1,0 +1,7 @@
+digraph "MockSupport"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{MockSupport\n|+ virtual void(*)() return\lFunctionPointerValueOrDefault\l+ virtual void(*)() function\lPointerReturnValue\l|+  MockSupport(const\l SimpleString &mockName=\"\")\l+ virtual ~MockSupport()\l+ virtual void strictOrder()\l+ virtual MockExpectedCall\l & expectOneCall(const\l SimpleString &functionName)\l+ virtual void expectNoCall\l(const SimpleString &functionName)\l+ virtual MockExpectedCall\l & expectNCalls(unsigned\l int amount, const SimpleString\l &functionName)\l+ virtual MockActualCall\l & actualCall(const SimpleString\l &functionName)\l+ virtual bool hasReturnValue()\l+ virtual MockNamedValue\l returnValue()\l+ virtual bool boolReturnValue()\land 50 more...\l# MockSupport * clone\l(const SimpleString\l &mockName)\l# virtual MockCheckedActual\lCall * createActualCall()\l# virtual void failTest\l(MockFailure &failure)\l# void countCheck()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

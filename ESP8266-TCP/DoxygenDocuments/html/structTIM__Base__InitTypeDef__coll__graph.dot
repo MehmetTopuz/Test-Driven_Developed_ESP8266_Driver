@@ -1,0 +1,7 @@
+digraph "TIM_Base_InitTypeDef"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{TIM_Base_InitTypeDef\n|+ uint32_t Prescaler\l+ uint32_t CounterMode\l+ uint32_t Period\l+ uint32_t ClockDivision\l+ uint32_t RepetitionCounter\l+ uint32_t AutoReloadPreload\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="TIM Time base Configuration Structure definition."];
+}

@@ -1,0 +1,7 @@
+digraph "EXTI_TypeDef"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{EXTI_TypeDef\n|+ __IO uint32_t IMR1\l+ __IO uint32_t EMR1\l+ __IO uint32_t RTSR1\l+ __IO uint32_t FTSR1\l+ __IO uint32_t SWIER1\l+ __IO uint32_t PR1\l+ uint32_t RESERVED1\l+ uint32_t RESERVED2\l+ __IO uint32_t IMR2\l+ __IO uint32_t EMR2\l+ __IO uint32_t RTSR2\l+ __IO uint32_t FTSR2\l+ __IO uint32_t SWIER2\l+ __IO uint32_t PR2\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="External Interrupt/Event Controller."];
+}

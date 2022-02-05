@@ -1,0 +1,50 @@
+digraph "main"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="main",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="The application entry point."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="HAL_Init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__HAL__Exported__Functions__Group1.html#gaecac54d350c3730e6831eb404e557dc4",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="MX_GPIO_Init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8c.html#ae89fdd15729ad41a66911190fcbab23a",tooltip="GPIO Initialization Function."];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="HAL_GPIO_Init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__GPIO__Exported__Functions__Group1.html#ga41bda93b6dd639e4905fdb1454eff98e",tooltip=" "];
+  Node3 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="HAL_GPIO_WritePin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__GPIO__Exported__Functions__Group2.html#gaf4b97bdf533a02f51ef696d43b6da5c4",tooltip=" "];
+  Node3 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="HAL_NVIC_EnableIRQ",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__CORTEX__Exported__Functions__Group1.html#gaaad4492c1b25e006d69948a15790352a",tooltip=" "];
+  Node3 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="HAL_NVIC_SetPriority",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__CORTEX__Exported__Functions__Group1.html#ga8581a82025a4780efd00876a66e3e91b",tooltip=" "];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="MX_LPUART1_UART_Init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8c.html#a21ad298121ac0d079b93bf2c49d0fa92",tooltip="LPUART1 Initialization Function."];
+  Node8 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="Error_Handler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8c.html#a1730ffe1e560465665eb47d9264826f9",tooltip="This function is executed in case of error occurrence."];
+  Node8 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="HAL_UART_Init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__UART__Exported__Functions__Group1.html#gabe47045024787099b0bfa82bbe7b0b6a",tooltip=" "];
+  Node8 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="HAL_UARTEx_DisableFifoMode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__UARTEx__Exported__Functions__Group3.html#ga5f321105c87423e7156dbab60826b37a",tooltip=" "];
+  Node8 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="HAL_UARTEx_SetRxFifoThreshold",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__UARTEx__Exported__Functions__Group3.html#ga7aa1f7a62351e140b6bc74a26ce14e5e",tooltip=" "];
+  Node8 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="HAL_UARTEx_SetTxFifoThreshold",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__UARTEx__Exported__Functions__Group3.html#gae2e0da62ac7e71641ee696f6b6a3de11",tooltip=" "];
+  Node1 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="MX_USART1_UART_Init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8c.html#a62f4b77e20bccafe98a183771749c20c",tooltip="USART1 Initialization Function."];
+  Node14 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node15 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="SystemClock_Config",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8c.html#a70af21c671abfcc773614a9a4f63d920",tooltip="System Clock Configuration."];
+  Node15 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 -> Node16 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="HAL_PWREx_ControlVoltage\lScaling",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__PWREx__Exported__Functions__Group1.html#ga1a1e616641c2dc696681ace585d9afb5",tooltip=" "];
+  Node15 -> Node17 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="HAL_RCC_ClockConfig",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__RCC__Exported__Functions__Group1.html#gad0a4b5c7459219fafc15f3f867563ef3",tooltip=" "];
+  Node15 -> Node18 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="HAL_RCC_OscConfig",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__RCC__Exported__Functions__Group1.html#ga9c504088722e03830df6caad932ad06b",tooltip=" "];
+  Node15 -> Node19 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node19 [label="HAL_RCCEx_PeriphCLKConfig",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__RCCEx__Exported__Functions__Group1.html#ga0c0f61a1e2f47cc81bc43d83ba3e0d95",tooltip=" "];
+}

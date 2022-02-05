@@ -1,0 +1,27 @@
+digraph "FLASH"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=box];
+  rankdir=LR;
+  Node1 [label="FLASH",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="FLASH HAL module driver."];
+  Node4 [label="FLASH Exported Constants",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___f_l_a_s_h___exported___constants.html",tooltip=" "];
+  Node10 [label="FLASH_Exported_Functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___f_l_a_s_h___exported___functions.html",tooltip=" "];
+  Node5 [label="FLASH Exported Macros",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___f_l_a_s_h___exported___macros.html",tooltip="macros to control FLASH features"];
+  Node3 [label="FLASH Exported Types",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___f_l_a_s_h___exported___types.html",tooltip=" "];
+  Node7 [label="FLASH Exported Variables",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___f_l_a_s_h___exported___variables.html",tooltip=" "];
+  Node6 [label="FLASH Interrupts Macros",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___f_l_a_s_h___interrupt.html",tooltip="macros to handle FLASH interrupts"];
+  Node8 [label="FLASH Private Constants",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___f_l_a_s_h___private___constants.html",tooltip=" "];
+  Node11 [label="FLASH_Private_Functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___f_l_a_s_h___private___functions.html",tooltip=" "];
+  Node9 [label="FLASH Private Macros",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___f_l_a_s_h___private___macros.html",tooltip=" "];
+  Node2 [label="STM32G4xx_HAL_Driver",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___s_t_m32_g4xx___h_a_l___driver.html",tooltip=" "];
+  Node2->Node1 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node5 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node6 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node7 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node8 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node9 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node10 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node11 [shape=plaintext, dir="back", style="solid"];
+}

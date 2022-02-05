@@ -1,0 +1,7 @@
+digraph "MemoryAccountant"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{MemoryAccountant\n||+  MemoryAccountant()\l+  ~MemoryAccountant()\l+ void useCacheSizes\l(size_t sizes[], size\l_t length)\l+ void clear()\l+ void alloc(size_t size)\l+ void dealloc(size_t\l size)\l+ size_t totalAllocationsOf\lSize(size_t size) const\l+ size_t totalDeallocations\lOfSize(size_t size) const\l+ size_t maximumAllocation\lAtATimeOfSize(size_t size)\l const\l+ size_t totalAllocations\l() const\l+ size_t totalDeallocations\l() const\l+ SimpleString report\l() const\l+ void setAllocator(TestMemory\lAllocator *allocator)\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

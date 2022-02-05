@@ -1,0 +1,11 @@
+digraph "Tests/include/Platforms/c2000"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  compound=true
+  subgraph clusterdir_5e4c99d08089db9065e8861e80be9e64 {
+    graph [ bgcolor="#edf0f7", pencolor="grey50", style="filled,dashed,", label="Platforms", fontname="Helvetica", fontsize="10", URL="dir_5e4c99d08089db9065e8861e80be9e64.html"]
+  dir_66623190cc37e1c79670375cb181ccb6 [shape=box, label="c2000", style="filled,bold,", fillcolor="#edf0f7", color="grey25", URL="dir_66623190cc37e1c79670375cb181ccb6.html"];
+  }
+}

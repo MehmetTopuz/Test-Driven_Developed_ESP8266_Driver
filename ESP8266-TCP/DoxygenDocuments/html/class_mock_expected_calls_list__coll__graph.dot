@@ -1,0 +1,7 @@
+digraph "MockExpectedCallsList"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{MockExpectedCallsList\n||+  MockExpectedCallsList()\l+ virtual ~MockExpectedCalls\lList()\l+ virtual void deleteAllExpectations\lAndClearList()\l+ virtual unsigned int\l size() const\l+ virtual unsigned int\l amountOfActualCallsFulfilled\lFor(const SimpleString &name) const\l+ virtual unsigned int\l amountOfUnfulfilledExpectations\l() const\l+ virtual bool hasUnfulfilled\lExpectations() const\l+ virtual bool hasFinalized\lMatchingExpectations() const\l+ virtual bool hasUnmatching\lExpectationsBecauseOfMissingParameters\l() const\l+ virtual bool hasExpectation\lWithName(const SimpleString\l &name) const\land 24 more...\l# virtual void pruneEmptyNode\lFromList()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

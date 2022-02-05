@@ -1,0 +1,7 @@
+digraph "HAL_DMA_MuxSyncConfigTypeDef"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{HAL_DMA_MuxSyncConfigTypeDef\n|+ uint32_t SyncSignalID\l+ uint32_t SyncPolarity\l+ FunctionalState SyncEnable\l+ FunctionalState EventEnable\l+ uint32_t RequestNumber\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="HAL DMA Synchro definition."];
+}

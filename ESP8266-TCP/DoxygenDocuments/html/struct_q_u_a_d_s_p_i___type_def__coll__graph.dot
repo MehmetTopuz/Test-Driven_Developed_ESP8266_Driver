@@ -1,0 +1,7 @@
+digraph "QUADSPI_TypeDef"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{QUADSPI_TypeDef\n|+ __IO uint32_t CR\l+ __IO uint32_t DCR\l+ __IO uint32_t SR\l+ __IO uint32_t FCR\l+ __IO uint32_t DLR\l+ __IO uint32_t CCR\l+ __IO uint32_t AR\l+ __IO uint32_t ABR\l+ __IO uint32_t DR\l+ __IO uint32_t PSMKR\l+ __IO uint32_t PSMAR\l+ __IO uint32_t PIR\l+ __IO uint32_t LPTR\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="QUAD Serial Peripheral Interface."];
+}

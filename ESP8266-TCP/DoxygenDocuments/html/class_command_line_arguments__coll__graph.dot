@@ -1,0 +1,7 @@
+digraph "CommandLineArguments"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{CommandLineArguments\n||+  CommandLineArguments\l(int ac, const char *const *av)\l+ virtual ~CommandLineArguments()\l+ bool parse(TestPlugin\l *plugin)\l+ bool needHelp() const\l+ bool isVerbose() const\l+ bool isVeryVerbose\l() const\l+ bool isColor() const\l+ bool isListingTestGroupNames\l() const\l+ bool isListingTestGroupAnd\lCaseNames() const\l+ bool isListingTestLocations\l() const\land 15 more...\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

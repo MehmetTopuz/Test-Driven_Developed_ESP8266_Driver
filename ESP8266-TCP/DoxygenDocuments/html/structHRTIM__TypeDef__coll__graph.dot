@@ -1,0 +1,13 @@
+digraph "HRTIM_TypeDef"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{HRTIM_TypeDef\n||}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +sMasterRegs" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{HRTIM_Master_TypeDef\n|+ __IO uint32_t MCR\l+ __IO uint32_t MISR\l+ __IO uint32_t MICR\l+ __IO uint32_t MDIER\l+ __IO uint32_t MCNTR\l+ __IO uint32_t MPER\l+ __IO uint32_t MREP\l+ __IO uint32_t MCMP1R\l+ uint32_t RESERVED0\l+ __IO uint32_t MCMP2R\l+ __IO uint32_t MCMP3R\l+ __IO uint32_t MCMP4R\l+ uint32_t RESERVED1\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structHRTIM__Master__TypeDef.html",tooltip=" "];
+  Node3 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +sTimerxRegs" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{HRTIM_Timerx_TypeDef\n|+ __IO uint32_t TIMxCR\l+ __IO uint32_t TIMxISR\l+ __IO uint32_t TIMxICR\l+ __IO uint32_t TIMxDIER\l+ __IO uint32_t CNTxR\l+ __IO uint32_t PERxR\l+ __IO uint32_t REPxR\l+ __IO uint32_t CMP1xR\l+ __IO uint32_t CMP1CxR\l+ __IO uint32_t CMP2xR\land 20 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structHRTIM__Timerx__TypeDef.html",tooltip=" "];
+  Node4 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +sCommonRegs" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node4 [label="{HRTIM_Common_TypeDef\n|+ __IO uint32_t CR1\l+ __IO uint32_t CR2\l+ __IO uint32_t ISR\l+ __IO uint32_t ICR\l+ __IO uint32_t IER\l+ __IO uint32_t OENR\l+ __IO uint32_t ODISR\l+ __IO uint32_t ODSR\l+ __IO uint32_t BMCR\l+ __IO uint32_t BMTRGR\land 26 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structHRTIM__Common__TypeDef.html",tooltip=" "];
+}

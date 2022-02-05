@@ -1,0 +1,7 @@
+digraph "MockFailureReporter"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{MockFailureReporter\n|# bool crashOnFailure_\l|+  MockFailureReporter()\l+ virtual ~MockFailureReporter()\l+ virtual void failTest\l(const MockFailure &failure)\l+ virtual UtestShell\l * getTestToFail()\l+ virtual void crashOnFailure\l(bool shouldCrash)\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

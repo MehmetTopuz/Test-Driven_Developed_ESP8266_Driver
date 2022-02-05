@@ -1,0 +1,15 @@
+digraph "Debug/Drivers/STM32G4xx_HAL_Driver"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  compound=true
+  subgraph clusterdir_825c031ab2a396f0caa2e2876b01ae22 {
+    graph [ bgcolor="#edf0f7", pencolor="grey50", style="filled,dashed,", label="Drivers", fontname="Helvetica", fontsize="10", URL="dir_825c031ab2a396f0caa2e2876b01ae22.html"]
+  subgraph clusterdir_fe356afb9947b6282fea020cada89234 {
+    graph [ bgcolor="#edf0f7", pencolor="grey25", style="filled,bold,", label="", fontname="Helvetica", fontsize="10", URL="dir_fe356afb9947b6282fea020cada89234.html"]
+    dir_fe356afb9947b6282fea020cada89234 [shape=plaintext, label="STM32G4xx_HAL_Driver"];
+  dir_811c2b2df73488677134a5a20ffe3a2b [shape=box, label="Src", style="filled,", fillcolor="#a2b4d6", color="grey25", URL="dir_811c2b2df73488677134a5a20ffe3a2b.html"];
+  }
+  }
+}

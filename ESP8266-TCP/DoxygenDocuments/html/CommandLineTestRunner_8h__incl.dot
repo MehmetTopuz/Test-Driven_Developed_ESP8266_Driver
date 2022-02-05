@@ -1,0 +1,48 @@
+digraph "Tests/include/CppUTest/CommandLineTestRunner.h"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="Tests/include/CppUTest\l/CommandLineTestRunner.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="TestHarness.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$TestHarness_8h.html",tooltip=" "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="CppUTestConfig.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$CppUTestConfig_8h.html",tooltip=" "];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="CppUTestGeneratedConfig.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$CppUTestGeneratedConfig_8h.html",tooltip=" "];
+  Node3 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="StandardCLibrary.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$StandardCLibrary_8h.html",tooltip=" "];
+  Node5 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Utest.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Utest_8h.html",tooltip=" "];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="SimpleString.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$SimpleString_8h.html",tooltip=" "];
+  Node7 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="UtestMacros.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$UtestMacros_8h.html",tooltip=" "];
+  Node2 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="TestResult.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$TestResult_8h.html",tooltip=" "];
+  Node2 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="TestFailure.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$TestFailure_8h.html",tooltip=" "];
+  Node10 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="TestPlugin.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$TestPlugin_8h.html",tooltip=" "];
+  Node2 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="MemoryLeakWarningPlugin.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$MemoryLeakWarningPlugin_8h.html",tooltip=" "];
+  Node12 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="MemoryLeakDetectorNewMacros.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$MemoryLeakDetectorNewMacros_8h.html",tooltip=" "];
+  Node13 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="TestOutput.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$TestOutput_8h.html",tooltip=" "];
+  Node14 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node15 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="CommandLineArguments.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$CommandLineArguments_8h.html",tooltip=" "];
+  Node15 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 -> Node16 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="TestFilter.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$TestFilter_8h.html",tooltip=" "];
+  Node16 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node16 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

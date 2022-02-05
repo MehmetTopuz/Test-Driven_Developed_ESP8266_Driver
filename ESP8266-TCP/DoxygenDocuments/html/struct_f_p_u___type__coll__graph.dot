@@ -1,0 +1,7 @@
+digraph "FPU_Type"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{FPU_Type\n|+ uint32_t RESERVED0\l+ __IOM uint32_t FPCCR\l+ __IOM uint32_t FPCAR\l+ __IOM uint32_t FPDSCR\l+ __IM uint32_t MVFR0\l+ __IM uint32_t MVFR1\l+ __IM uint32_t MVFR2\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Structure type to access the Floating Point Unit (FPU)."];
+}

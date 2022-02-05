@@ -1,0 +1,7 @@
+digraph "SMockValue_c"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{SMockValue_c\n|+ MockValueType_c type\l+ int boolValue\l+ int intValue\l+ unsigned int unsignedInt\lValue\l+ long int longIntValue\l+ unsigned long int unsigned\lLongIntValue\l+ char longLongPlaceholder\l+ double doubleValue\l+ const char * stringValue\l+ void * pointerValue\land 6 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

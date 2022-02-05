@@ -1,0 +1,14 @@
+digraph "TestResult::isFailure"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="TestResult::isFailure",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="TestResult::getFailureCount",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_test_result.html#a120a8dc6c00cd6dc3edfe2692d1d4b9c",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="TestResult::getIgnoredCount",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_test_result.html#a7b90f18ecebdcf9801d344b7362cc07d",tooltip=" "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="TestResult::getRunCount",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_test_result.html#af250f8d74c6ed7866510a9bc11bf7580",tooltip=" "];
+}

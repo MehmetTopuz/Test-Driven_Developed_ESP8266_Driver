@@ -1,0 +1,7 @@
+digraph "HRTIM_Timerx_TypeDef"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{HRTIM_Timerx_TypeDef\n|+ __IO uint32_t TIMxCR\l+ __IO uint32_t TIMxISR\l+ __IO uint32_t TIMxICR\l+ __IO uint32_t TIMxDIER\l+ __IO uint32_t CNTxR\l+ __IO uint32_t PERxR\l+ __IO uint32_t REPxR\l+ __IO uint32_t CMP1xR\l+ __IO uint32_t CMP1CxR\l+ __IO uint32_t CMP2xR\land 20 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

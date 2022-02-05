@@ -1,0 +1,16 @@
+digraph "Debug/Core"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  compound=true
+  subgraph clusterdir_faa8bedbcbaa373d57b77d9219afda20 {
+    graph [ bgcolor="#edf0f7", pencolor="grey25", style="filled,dashed,", label="Debug", fontname="Helvetica", fontsize="10", URL="dir_faa8bedbcbaa373d57b77d9219afda20.html"]
+  subgraph clusterdir_23c2652425d83ad6c27be201e5d4bc42 {
+    graph [ bgcolor="#edf0f7", pencolor="grey25", style="filled,bold,", label="", fontname="Helvetica", fontsize="10", URL="dir_23c2652425d83ad6c27be201e5d4bc42.html"]
+    dir_23c2652425d83ad6c27be201e5d4bc42 [shape=plaintext, label="Core"];
+  dir_5ccc3da809161e26d2f0f2a9619d99db [shape=box, label="Src", style="filled,", fillcolor="#a2b4d6", color="grey25", URL="dir_5ccc3da809161e26d2f0f2a9619d99db.html"];
+  dir_83d0c992437d1b46fe0e50a98b6965e2 [shape=box, label="Startup", style="filled,", fillcolor="#a2b4d6", color="grey25", URL="dir_83d0c992437d1b46fe0e50a98b6965e2.html"];
+  }
+  }
+}

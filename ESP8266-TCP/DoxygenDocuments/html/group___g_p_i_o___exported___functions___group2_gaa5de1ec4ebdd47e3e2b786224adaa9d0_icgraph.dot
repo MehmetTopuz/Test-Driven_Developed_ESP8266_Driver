@@ -1,0 +1,10 @@
+digraph "HAL_GPIO_EXTI_IRQHandler"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="HAL_GPIO_EXTI_IRQHandler",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="EXTI15_10_IRQHandler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$stm32g4xx__it_8c.html#a738473a5b43f6c92b80ce1d3d6f77ed9",tooltip="This function handles EXTI line[15:10] interrupts."];
+}

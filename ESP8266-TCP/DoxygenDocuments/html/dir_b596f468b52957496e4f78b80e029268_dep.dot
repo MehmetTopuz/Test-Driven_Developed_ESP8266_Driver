@@ -1,0 +1,17 @@
+digraph "Core/Src"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  compound=true
+  subgraph clusterdir_c6310732a22f63c0c2fc5595561e68f1 {
+    graph [ bgcolor="#edf0f7", pencolor="grey25", style="filled,dashed,", label="Core", fontname="Helvetica", fontsize="10", URL="dir_c6310732a22f63c0c2fc5595561e68f1.html"]
+  dir_e2489e887f17afa3cbc07a4ec152cdd2 [shape=box, label="Inc", style="filled,", fillcolor="#a2b4d6", color="grey25", URL="dir_e2489e887f17afa3cbc07a4ec152cdd2.html"];
+  dir_b596f468b52957496e4f78b80e029268 [shape=box, label="Src", style="filled,bold,", fillcolor="#edf0f7", color="grey25", URL="dir_b596f468b52957496e4f78b80e029268.html"];
+  }
+  dir_33c78a012c8d08979f57a54a07694c46 [shape=box, label="Tests", style="", fillcolor="#edf0f7", color="red", URL="dir_33c78a012c8d08979f57a54a07694c46.html"];
+  dir_60925fc218da8ca7908795bf5f624060 [shape=box, label="Drivers", style="", fillcolor="#edf0f7", color="red", URL="dir_60925fc218da8ca7908795bf5f624060.html"];
+  dir_b596f468b52957496e4f78b80e029268->dir_33c78a012c8d08979f57a54a07694c46 [headlabel="1", labeldistance=1.5 headhref="dir_000025_000040.html"];
+  dir_b596f468b52957496e4f78b80e029268->dir_60925fc218da8ca7908795bf5f624060 [headlabel="2", labeldistance=1.5 headhref="dir_000025_000010.html"];
+  dir_b596f468b52957496e4f78b80e029268->dir_e2489e887f17afa3cbc07a4ec152cdd2 [headlabel="4", labeldistance=1.5 headhref="dir_000025_000015.html"];
+}

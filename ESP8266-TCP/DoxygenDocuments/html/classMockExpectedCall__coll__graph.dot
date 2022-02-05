@@ -1,0 +1,7 @@
+digraph "MockExpectedCall"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{MockExpectedCall\n||+  MockExpectedCall()\l+ virtual ~MockExpectedCall()\l+ virtual MockExpectedCall\l & withName(const SimpleString\l &name)=0\l+ virtual MockExpectedCall\l & withCallOrder(unsigned int)=0\l+ virtual MockExpectedCall\l & withCallOrder(unsigned\l int, unsigned int)=0\l+ MockExpectedCall &\l withParameter(const\l SimpleString &name,\l bool value)\l+ MockExpectedCall &\l withParameter(const\l SimpleString &name,\l int value)\l+ MockExpectedCall &\l withParameter(const\l SimpleString &name,\l unsigned int value)\l+ MockExpectedCall &\l withParameter(const\l SimpleString &name,\l long int value)\l+ MockExpectedCall &\l withParameter(const\l SimpleString &name,\l unsigned long int value)\land 41 more...\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

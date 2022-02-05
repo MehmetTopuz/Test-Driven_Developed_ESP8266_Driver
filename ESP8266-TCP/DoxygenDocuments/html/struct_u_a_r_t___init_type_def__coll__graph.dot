@@ -1,0 +1,7 @@
+digraph "UART_InitTypeDef"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{UART_InitTypeDef\n|+ uint32_t BaudRate\l+ uint32_t WordLength\l+ uint32_t StopBits\l+ uint32_t Parity\l+ uint32_t Mode\l+ uint32_t HwFlowCtl\l+ uint32_t OverSampling\l+ uint32_t OneBitSampling\l+ uint32_t ClockPrescaler\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="UART Init Structure definition."];
+}

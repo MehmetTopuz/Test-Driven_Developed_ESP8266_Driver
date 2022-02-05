@@ -1,0 +1,7 @@
+digraph "SimpleStringBuffer"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{SimpleStringBuffer\n||+  SimpleStringBuffer()\l+ void clear()\l+ void add(const char\l *format,...) _check\l_format_(printf\l+ void void addMemoryDump\l(const void *memory, size\l_t memorySize)\l+ char * toString()\l+ void setWriteLimit\l(size_t write_limit)\l+ void resetWriteLimit()\l+ bool reachedItsCapacity()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

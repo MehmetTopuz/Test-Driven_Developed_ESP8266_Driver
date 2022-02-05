@@ -37,11 +37,11 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING, OCTETS
  16 .debug_macro  0002c740  00000000  00000000  00089208  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_line   0002157d  00000000  00000000  000b5948  2**0
+ 17 .debug_line   0002157e  00000000  00000000  000b5948  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_str    00101d25  00000000  00000000  000d6ec5  2**0
+ 18 .debug_str    00101d25  00000000  00000000  000d6ec6  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .comment      00000053  00000000  00000000  001d8bea  2**0
+ 19 .comment      00000053  00000000  00000000  001d8beb  2**0
                   CONTENTS, READONLY
  20 .debug_frame  0000de4c  00000000  00000000  001d8c40  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
@@ -9013,10 +9013,10 @@ static void UARTEx_SetNbDataToProcess(UART_HandleTypeDef *huart)
  8003904:	08017f60 	.word	0x08017f60
 
 08003908 <ringBuffer_init>:
-#include "ring_buffer.h"
-#include <stdlib.h>
-#include <string.h>
-
+ * @brief 	Initialize the ring buffer. Ring buffer is allocated after this function.
+ * @param 	size parameter specifies the size of ring buffer.
+ * @retval	Pointer of the ring buffer structure.
+ */
 RingBuffer* ringBuffer_init(uint32_t size)
 {
  8003908:	b580      	push	{r7, lr}
@@ -9083,7 +9083,10 @@ RingBuffer* ringBuffer_init(uint32_t size)
  800395a:	bd80      	pop	{r7, pc}
 
 0800395c <ringBuffer_deInit>:
-
+ * @brief 	Deinitialize the ring buffer.
+ * @param 	Ring buffer typedef structure.
+ * @retval	None.
+ */
 void ringBuffer_deInit(RingBuffer* buffer)
 {
  800395c:	b580      	push	{r7, lr}
@@ -9118,7 +9121,10 @@ void ringBuffer_deInit(RingBuffer* buffer)
  8003988:	bd80      	pop	{r7, pc}
 
 0800398a <ringBuffer_push>:
-
+ * @param 	Ring buffer typedef structure.
+ * @param 	unsigned 8-bit integer data to be pushed into the buffer.
+ * @retval	None.
+ */
 void ringBuffer_push(RingBuffer* ringBuffer, uint8_t data)
 {
  800398a:	b480      	push	{r7}
@@ -9177,7 +9183,10 @@ void ringBuffer_push(RingBuffer* ringBuffer, uint8_t data)
  80039dc:	4770      	bx	lr
 
 080039de <ringBuffer_pop>:
-
+ * @brief 	Read data from the buffer.
+ * @param 	Ring buffer typedef structure.
+ * @retval	unsigned 8-bit integer data to be read from the buffer.
+ */
 uint8_t ringBuffer_pop(RingBuffer* ringBuffer)
 {
  80039de:	b480      	push	{r7}
@@ -9240,7 +9249,10 @@ uint8_t ringBuffer_pop(RingBuffer* ringBuffer)
  8003a30:	4770      	bx	lr
 
 08003a32 <ringBuffer_flush>:
-
+ * @brief 	Clear the ring buffer.
+ * @param 	Ring buffer typedef structure.
+ * @retval	None.
+ */
 void ringBuffer_flush(RingBuffer* ringBuffer)
 {
  8003a32:	b580      	push	{r7, lr}
@@ -9262,7 +9274,10 @@ void ringBuffer_flush(RingBuffer* ringBuffer)
  8003a50:	bd80      	pop	{r7, pc}
 
 08003a52 <ringBuffer_pushArray>:
-
+ * @param 	Ring buffer typedef structure.
+ * @param	unsigned 8-bit data array to be written into the buffer.
+ * @retval	None.
+ */
 void ringBuffer_pushArray(RingBuffer* ringBuffer, uint8_t* data)
 {
  8003a52:	b580      	push	{r7, lr}
@@ -9300,7 +9315,10 @@ void ringBuffer_pushArray(RingBuffer* ringBuffer, uint8_t* data)
  8003a8e:	bd80      	pop	{r7, pc}
 
 08003a90 <ringBuffer_lookFor>:
-
+ * @param	Unsigned 8-bit data array to be searched in the buffer.
+ * @retval	1: data array is available in the buffer.
+ * 			0: data array is not available in the buffer.
+ */
 uint32_t ringBuffer_lookFor(RingBuffer* ringBuffer, uint8_t* data)
 {
  8003a90:	b580      	push	{r7, lr}
@@ -9334,7 +9352,10 @@ uint32_t ringBuffer_lookFor(RingBuffer* ringBuffer, uint8_t* data)
  8003aba:	bd80      	pop	{r7, pc}
 
 08003abc <ringBuffer_capacity>:
-
+ * @brief 	Check the size of the ring buffer.
+ * @param 	Ring buffer typedef structure.
+ * @retval	Ring buffer size.
+ */
 uint32_t ringBuffer_capacity(RingBuffer* ringBuffer)
 {
  8003abc:	b480      	push	{r7}

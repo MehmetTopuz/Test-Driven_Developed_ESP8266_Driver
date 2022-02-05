@@ -1,0 +1,7 @@
+digraph "xPSR_Type"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{xPSR_Type\n|+ uint32_t ISR\l+ uint32_t _reserved0\l+ uint32_t GE\l+ uint32_t _reserved1\l+ uint32_t T\l+ uint32_t IT\l+ uint32_t Q\l+ uint32_t V\l+ uint32_t C\l+ uint32_t Z\land 18 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Union type to access the Special-Purpose Program Status Registers (xPSR)."];
+}

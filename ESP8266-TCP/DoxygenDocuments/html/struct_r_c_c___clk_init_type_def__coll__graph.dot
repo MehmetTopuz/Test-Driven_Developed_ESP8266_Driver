@@ -1,0 +1,7 @@
+digraph "RCC_ClkInitTypeDef"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{RCC_ClkInitTypeDef\n|+ uint32_t ClockType\l+ uint32_t SYSCLKSource\l+ uint32_t AHBCLKDivider\l+ uint32_t APB1CLKDivider\l+ uint32_t APB2CLKDivider\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="RCC System, AHB and APB busses clock configuration structure definition."];
+}

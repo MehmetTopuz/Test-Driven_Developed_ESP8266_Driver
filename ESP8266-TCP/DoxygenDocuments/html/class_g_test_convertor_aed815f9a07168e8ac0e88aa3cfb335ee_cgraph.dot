@@ -1,0 +1,14 @@
+digraph "GTestConvertor::addAllTestsFromTestCaseToTestRegistry"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="GTestConvertor::addAllTests\lFromTestCaseToTestRegistry",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="GTestConvertor::addNewTest\lCaseForTestInfo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_g_test_convertor.html#af2b5a79286b924da7dd0d91934d4ce40",tooltip=" "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="TestRegistry::addTest",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_test_registry.html#a43ace9fbbe00b39114f37edce5be2555",tooltip=" "];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="TestRegistry::getCurrent\lRegistry",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_test_registry.html#a5b69fbeeec366b8934948d51de791ac6",tooltip=" "];
+}

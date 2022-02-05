@@ -1,0 +1,7 @@
+digraph "GTestConvertor"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{GTestConvertor\n||+  GTestConvertor(bool\l shouldSimulateFailureAtCreation\lToAllocateThreadLocalData=true)\l+ virtual ~GTestConvertor()\l+ virtual void addAllGTest\lToTestRegistry()\l# virtual void simulateGTest\lFailureToPreAllocateAllTheThread\lLocalData()\l# virtual void addNewTestCase\lForTestInfo(::testing::TestInfo\l *testinfo)\l# virtual void addAllTests\lFromTestCaseToTestRegistry\l(::testing::TestCase *testcase)\l# virtual void createDummy\lInSequenceToAndFailureReporter\lAvoidMemoryLeakInGMock()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

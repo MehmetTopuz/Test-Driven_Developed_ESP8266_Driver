@@ -1,0 +1,7 @@
+digraph "CRC_TypeDef"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{CRC_TypeDef\n|+ __IO uint32_t DR\l+ __IO uint32_t IDR\l+ __IO uint32_t CR\l+ uint32_t RESERVED0\l+ __IO uint32_t INIT\l+ __IO uint32_t POL\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="CRC calculation unit."];
+}

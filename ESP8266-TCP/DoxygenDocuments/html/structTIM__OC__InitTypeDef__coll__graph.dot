@@ -1,0 +1,7 @@
+digraph "TIM_OC_InitTypeDef"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{TIM_OC_InitTypeDef\n|+ uint32_t OCMode\l+ uint32_t Pulse\l+ uint32_t OCPolarity\l+ uint32_t OCNPolarity\l+ uint32_t OCFastMode\l+ uint32_t OCIdleState\l+ uint32_t OCNIdleState\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="TIM Output Compare Configuration Structure definition."];
+}

@@ -1,0 +1,7 @@
+digraph "SCnSCB_Type"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{SCnSCB_Type\n|+ uint32_t RESERVED0\l+ __IM uint32_t ICTR\l+ __IOM uint32_t ACTLR\l+ __IOM uint32_t CPPWR\l+ uint32_t RESERVED1\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Structure type to access the System Control and ID Register not in the SCB."];
+}

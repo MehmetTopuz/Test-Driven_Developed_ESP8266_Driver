@@ -1,0 +1,7 @@
+digraph "TPI_Type"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{TPI_Type\n|+ __IM uint32_t SSPSR\l+ __IOM uint32_t CSPSR\l+ uint32_t RESERVED0\l+ __IOM uint32_t ACPR\l+ uint32_t RESERVED1\l+ __IOM uint32_t SPPR\l+ uint32_t RESERVED2\l+ __IM uint32_t FFSR\l+ __IOM uint32_t FFCR\l+ __IM uint32_t FSCR\land 21 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Structure type to access the Trace Port Interface Register (TPI)."];
+}

@@ -1,0 +1,29 @@
+digraph "__UART_HandleTypeDef"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{__UART_HandleTypeDef\n|+ uint8_t * pTxBuffPtr\l+ uint16_t TxXferSize\l+ __IO uint16_t TxXferCount\l+ uint8_t * pRxBuffPtr\l+ uint16_t RxXferSize\l+ __IO uint16_t RxXferCount\l+ uint16_t Mask\l+ uint32_t FifoMode\l+ uint16_t NbRxDataToProcess\l+ uint16_t NbTxDataToProcess\land 7 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="UART handle Structure definition."];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +Instance" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{USART_TypeDef\n|+ __IO uint32_t CR1\l+ __IO uint32_t CR2\l+ __IO uint32_t CR3\l+ __IO uint32_t BRR\l+ __IO uint32_t GTPR\l+ __IO uint32_t RTOR\l+ __IO uint32_t RQR\l+ __IO uint32_t ISR\l+ __IO uint32_t ICR\l+ __IO uint32_t RDR\l+ __IO uint32_t TDR\l+ __IO uint32_t PRESC\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_u_s_a_r_t___type_def.html",tooltip="Universal Synchronous Asynchronous Receiver Transmitter."];
+  Node3 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +Init" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{UART_InitTypeDef\n|+ uint32_t BaudRate\l+ uint32_t WordLength\l+ uint32_t StopBits\l+ uint32_t Parity\l+ uint32_t Mode\l+ uint32_t HwFlowCtl\l+ uint32_t OverSampling\l+ uint32_t OneBitSampling\l+ uint32_t ClockPrescaler\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_u_a_r_t___init_type_def.html",tooltip="UART Init Structure definition."];
+  Node4 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +AdvancedInit" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node4 [label="{UART_AdvFeatureInitTypeDef\n|+ uint32_t AdvFeatureInit\l+ uint32_t TxPinLevelInvert\l+ uint32_t RxPinLevelInvert\l+ uint32_t DataInvert\l+ uint32_t Swap\l+ uint32_t OverrunDisable\l+ uint32_t DMADisableonRxError\l+ uint32_t AutoBaudRateEnable\l+ uint32_t AutoBaudRateMode\l+ uint32_t MSBFirst\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_u_a_r_t___adv_feature_init_type_def.html",tooltip="UART Advanced Features initialization structure definition."];
+  Node5 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +hdmarx\n+hdmatx" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node5 [label="{__DMA_HandleTypeDef\n|+ HAL_LockTypeDef Lock\l+ __IO HAL_DMA_StateTypeDef\l State\l+ void * Parent\l+ void(* XferCpltCallback\l+ void(* XferHalfCpltCallback\l+ void(* XferErrorCallback\l+ void(* XferAbortCallback\l+ __IO uint32_t ErrorCode\l+ uint32_t ChannelIndex\l+ uint32_t DMAmuxChannelStatusMask\l+ uint32_t DMAmuxRequestGen\lStatusMask\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_____d_m_a___handle_type_def.html",tooltip="DMA handle Structure definition."];
+  Node6 -> Node5 [color="grey25",fontsize="10",style="solid",label=" +Instance" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node6 [label="{DMA_Channel_TypeDef\n|+ __IO uint32_t CCR\l+ __IO uint32_t CNDTR\l+ __IO uint32_t CPAR\l+ __IO uint32_t CMAR\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_d_m_a___channel___type_def.html",tooltip="DMA Controller."];
+  Node7 -> Node5 [color="grey25",fontsize="10",style="solid",label=" +Init" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node7 [label="{DMA_InitTypeDef\n|+ uint32_t Request\l+ uint32_t Direction\l+ uint32_t PeriphInc\l+ uint32_t MemInc\l+ uint32_t PeriphDataAlignment\l+ uint32_t MemDataAlignment\l+ uint32_t Mode\l+ uint32_t Priority\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_d_m_a___init_type_def.html",tooltip="DMA Configuration Structure definition."];
+  Node8 -> Node5 [color="grey25",fontsize="10",style="solid",label=" +DmaBaseAddress" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node8 [label="{DMA_TypeDef\n|+ __IO uint32_t ISR\l+ __IO uint32_t IFCR\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_d_m_a___type_def.html",tooltip=" "];
+  Node9 -> Node5 [color="grey25",fontsize="10",style="solid",label=" +DMAmuxChannel" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node9 [label="{DMAMUX_Channel_TypeDef\n|+ __IO uint32_t CCR\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_d_m_a_m_u_x___channel___type_def.html",tooltip="DMA Multiplexer."];
+  Node10 -> Node5 [color="grey25",fontsize="10",style="solid",label=" +DMAmuxChannelStatus" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node10 [label="{DMAMUX_ChannelStatus\l_TypeDef\n|+ __IO uint32_t CSR\l+ __IO uint32_t CFR\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_d_m_a_m_u_x___channel_status___type_def.html",tooltip=" "];
+  Node11 -> Node5 [color="grey25",fontsize="10",style="solid",label=" +DMAmuxRequestGen" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node11 [label="{DMAMUX_RequestGen_TypeDef\n|+ __IO uint32_t RGCR\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_d_m_a_m_u_x___request_gen___type_def.html",tooltip=" "];
+  Node12 -> Node5 [color="grey25",fontsize="10",style="solid",label=" +DMAmuxRequestGenStatus" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node12 [label="{DMAMUX_RequestGenStatus\l_TypeDef\n|+ __IO uint32_t RGSR\l+ __IO uint32_t RGCFR\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_d_m_a_m_u_x___request_gen_status___type_def.html",tooltip=" "];
+}

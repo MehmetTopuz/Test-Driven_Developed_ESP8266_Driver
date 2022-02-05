@@ -1,0 +1,10 @@
+digraph "__NVIC_SystemReset"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="__NVIC_SystemReset",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="System Reset."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="__DSB",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_m_s_i_s___core___instruction_interface.html#ga7fe277f5385d23b9c44b2cbda1577ce9",tooltip="Data Synchronization Barrier."];
+}

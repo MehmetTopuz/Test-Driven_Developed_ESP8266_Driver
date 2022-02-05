@@ -1,8 +1,8 @@
-ring_buffer.c:13:13:ringBuffer_init	24	static
-ring_buffer.c:38:6:ringBuffer_deInit	16	static
-ring_buffer.c:50:6:ringBuffer_push	16	static
-ring_buffer.c:64:9:ringBuffer_pop	24	static
-ring_buffer.c:84:6:ringBuffer_flush	16	static
-ring_buffer.c:89:6:ringBuffer_pushArray	24	static
-ring_buffer.c:95:10:ringBuffer_lookFor	24	static
-ring_buffer.c:106:10:ringBuffer_capacity	16	static
+ring_buffer.c:24:13:ringBuffer_init	24	static
+ring_buffer.c:54:6:ringBuffer_deInit	16	static
+ring_buffer.c:72:6:ringBuffer_push	16	static
+ring_buffer.c:91:9:ringBuffer_pop	24	static
+ring_buffer.c:116:6:ringBuffer_flush	16	static
+ring_buffer.c:127:6:ringBuffer_pushArray	24	static
+ring_buffer.c:140:10:ringBuffer_lookFor	24	static
+ring_buffer.c:156:10:ringBuffer_capacity	16	static

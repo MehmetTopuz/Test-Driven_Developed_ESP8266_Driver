@@ -1,0 +1,7 @@
+digraph "FLASH_ProcessTypeDef"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{FLASH_ProcessTypeDef\n|+ HAL_LockTypeDef Lock\l+ __IO uint32_t ErrorCode\l+ __IO FLASH_ProcedureType\lDef ProcedureOnGoing\l+ __IO uint32_t Address\l+ __IO uint32_t Bank\l+ __IO uint32_t Page\l+ __IO uint32_t NbPagesToErase\l+ __IO FLASH_CacheTypeDef\l CacheToReactivate\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="FLASH handle Structure definition."];
+}

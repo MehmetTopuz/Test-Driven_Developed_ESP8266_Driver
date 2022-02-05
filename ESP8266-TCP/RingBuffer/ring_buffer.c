@@ -1,15 +1,26 @@
-/*
- * ring_buffer.c
+/**
+ * @file 	ring_buffer.c
+ * @author  Mehmet Topuz
+ * @brief   Source file of Ring Buffer module.
  *
+ *  <a href="https://mehmettopuz.net/">mehmettopuz.net</a>
  *  Created on: Feb 2, 2022
- *      Author: Topuz
+ *
  */
 
+/* Includes ------------------------------------------------------------------*/
 
 #include "ring_buffer.h"
 #include <stdlib.h>
 #include <string.h>
 
+/* Functions ------------------------------------------------------------------*/
+
+/**
+ * @brief 	Initialize the ring buffer. Ring buffer is allocated after this function.
+ * @param 	size parameter specifies the size of ring buffer.
+ * @retval	Pointer of the ring buffer structure.
+ */
 RingBuffer* ringBuffer_init(uint32_t size)
 {
 	RingBuffer* rBuf;
@@ -35,6 +46,11 @@ RingBuffer* ringBuffer_init(uint32_t size)
 	return rBuf;
 }
 
+/**
+ * @brief 	Deinitialize the ring buffer.
+ * @param 	Ring buffer typedef structure.
+ * @retval	None.
+ */
 void ringBuffer_deInit(RingBuffer* buffer)
 {
 	if(buffer != NULL)
@@ -47,6 +63,12 @@ void ringBuffer_deInit(RingBuffer* buffer)
 	}
 }
 
+/**
+ * @brief 	Write data into the buffer.
+ * @param 	Ring buffer typedef structure.
+ * @param 	unsigned 8-bit integer data to be pushed into the buffer.
+ * @retval	None.
+ */
 void ringBuffer_push(RingBuffer* ringBuffer, uint8_t data)
 {
 	if(ringBuffer->head != (ringBuffer->size - 1))
@@ -61,6 +83,11 @@ void ringBuffer_push(RingBuffer* ringBuffer, uint8_t data)
 	}
 }
 
+/**
+ * @brief 	Read data from the buffer.
+ * @param 	Ring buffer typedef structure.
+ * @retval	unsigned 8-bit integer data to be read from the buffer.
+ */
 uint8_t ringBuffer_pop(RingBuffer* ringBuffer)
 {
 	uint8_t data;
@@ -81,17 +108,35 @@ uint8_t ringBuffer_pop(RingBuffer* ringBuffer)
 
 }
 
+/**
+ * @brief 	Clear the ring buffer.
+ * @param 	Ring buffer typedef structure.
+ * @retval	None.
+ */
 void ringBuffer_flush(RingBuffer* ringBuffer)
 {
 	memset(ringBuffer->buffer,0x00,ringBuffer->size);
 }
 
+/**
+ * @brief 	Add an array into ring buffer.
+ * @param 	Ring buffer typedef structure.
+ * @param	unsigned 8-bit data array to be written into the buffer.
+ * @retval	None.
+ */
 void ringBuffer_pushArray(RingBuffer* ringBuffer, uint8_t* data)
 {
 	 for(int i = 0; i<strlen((char*)data);i++)
 		 ringBuffer_push(ringBuffer, data[i]);
 }
 
+/**
+ * @brief 	Search a specific data array in the ring buffer .
+ * @param 	Ring buffer typedef structure.
+ * @param	Unsigned 8-bit data array to be searched in the buffer.
+ * @retval	1: data array is available in the buffer.
+ * 			0: data array is not available in the buffer.
+ */
 uint32_t ringBuffer_lookFor(RingBuffer* ringBuffer, uint8_t* data)
 {
 	char* str = strstr((char*)ringBuffer->buffer,(char*)data);
@@ -103,6 +148,11 @@ uint32_t ringBuffer_lookFor(RingBuffer* ringBuffer, uint8_t* data)
 
 }
 
+/**
+ * @brief 	Check the size of the ring buffer.
+ * @param 	Ring buffer typedef structure.
+ * @retval	Ring buffer size.
+ */
 uint32_t ringBuffer_capacity(RingBuffer* ringBuffer)
 {
 	return ringBuffer->size;

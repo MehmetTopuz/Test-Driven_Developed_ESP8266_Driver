@@ -1,0 +1,7 @@
+digraph "MemoryReportFormatter"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{MemoryReportFormatter\n||+ virtual ~MemoryReportFormatter()\l+ virtual void report\l_testgroup_start(TestResult\l *result, UtestShell &test)=0\l+ virtual void report\l_testgroup_end(TestResult\l *result, UtestShell &test)=0\l+ virtual void report\l_test_start(TestResult\l *result, UtestShell &test)=0\l+ virtual void report\l_test_end(TestResult\l *result, UtestShell\l &test)=0\l+ virtual void report\l_alloc_memory(TestResult\l *result, TestMemoryAllocator\l *allocator, size_t size, char\l *memory, const char *file, size\l_t line)=0\l+ virtual void report\l_free_memory(TestResult\l *result, TestMemoryAllocator\l *allocator, char *memory,\l const char *file, size_t line)=0\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

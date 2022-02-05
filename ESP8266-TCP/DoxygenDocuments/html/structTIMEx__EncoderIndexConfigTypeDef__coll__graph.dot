@@ -1,0 +1,7 @@
+digraph "TIMEx_EncoderIndexConfigTypeDef"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{TIMEx_EncoderIndexConfig\lTypeDef\n|+ uint32_t Polarity\l+ uint32_t Prescaler\l+ uint32_t Filter\l+ FunctionalState FirstIndex\lEnable\l+ uint32_t Position\l+ uint32_t Direction\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="TIM Encoder index configuration."];
+}

@@ -1,0 +1,7 @@
+digraph "SimpleStringInternalCache"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{SimpleStringInternalCache\n||+  SimpleStringInternalCache()\l+  ~SimpleStringInternalCache()\l+ void setAllocator(TestMemory\lAllocator *allocator)\l+ char * alloc(size_t\l size)\l+ void dealloc(char *memory,\l size_t size)\l+ bool hasFreeBlocksOfSize\l(size_t size)\l+ void clearCache()\l+ void clearAllIncludingCurrently\lUsedMemory()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

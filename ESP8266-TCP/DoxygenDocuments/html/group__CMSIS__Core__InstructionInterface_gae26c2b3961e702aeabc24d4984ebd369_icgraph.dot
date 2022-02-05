@@ -1,0 +1,36 @@
+digraph "__ISB"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="__ISB",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Instruction Synchronization Barrier."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="__NVIC_DisableIRQ",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__CMSIS__Core__NVICFunctions.html#gae016e4c1986312044ee768806537d52f",tooltip="Disable Interrupt."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="ARM_MPU_Enable",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mpu__armv7_8h.html#a5a3f40314553baccdeea551f86d9a997",tooltip="Enable the MPU."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="SCB_CleanDCache",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__CMSIS__Core__CacheFunctions.html#gaf5585be5547cc60585d702a6129f4c17",tooltip="Clean D-Cache."];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="SCB_CleanDCache_by_Addr",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__CMSIS__Core__CacheFunctions.html#gab86b0b49bac2b14b21cc1590009efac5",tooltip="D-Cache Clean by address."];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="SCB_CleanInvalidateDCache",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__CMSIS__Core__CacheFunctions.html#ga5b22ca58709fadc326da83197a2f28bb",tooltip="Clean & Invalidate D-Cache."];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="SCB_CleanInvalidateDCache\l_by_Addr",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__CMSIS__Core__CacheFunctions.html#ga853737b61ec075250d5991748fdd0e83",tooltip="D-Cache Clean and Invalidate by address."];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="SCB_DisableDCache",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__CMSIS__Core__CacheFunctions.html#gafe64b44d1a61483a947e44a77a9d3287",tooltip="Disable D-Cache."];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="SCB_DisableICache",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__CMSIS__Core__CacheFunctions.html#ga56baa06298799dea5f207d4c12d9d4a6",tooltip="Disable I-Cache."];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="SCB_EnableDCache",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__CMSIS__Core__CacheFunctions.html#ga3861db932100ccb53f994e2cc68ed79c",tooltip="Enable D-Cache."];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="SCB_EnableICache",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__CMSIS__Core__CacheFunctions.html#ga980ffe52af778f2535ccc52f25f9a7de",tooltip="Enable I-Cache."];
+  Node1 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="SCB_InvalidateDCache",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__CMSIS__Core__CacheFunctions.html#ga99fe43c224644881935de135ceaa2dd9",tooltip="Invalidate D-Cache."];
+  Node1 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="SCB_InvalidateDCache\l_by_Addr",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__CMSIS__Core__CacheFunctions.html#ga9945b206324ddbcd32818f1a4e49df83",tooltip="D-Cache Invalidate by address."];
+  Node1 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="SCB_InvalidateICache",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__CMSIS__Core__CacheFunctions.html#ga62419cb7e6773e3d9236f14e458c1b05",tooltip="Invalidate I-Cache."];
+  Node1 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="SCB_InvalidateICache\l_by_Addr",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__CMSIS__Core__CacheFunctions.html#gaf6bed290ff6916337b0ce6c09131f699",tooltip="I-Cache Invalidate by address."];
+}

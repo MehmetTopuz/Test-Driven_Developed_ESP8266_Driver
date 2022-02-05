@@ -1,0 +1,10 @@
+digraph "ARM_MPU_ClrRegion"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="ARM_MPU_ClrRegion",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Clear and disable the given MPU region."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="ARM_MPU_ClrRegionEx",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mpu__armv8_8h.html#a01fa1151c9ec0ba5de76f908c0999316",tooltip="Clear and disable the given MPU region of the given MPU."];
+}

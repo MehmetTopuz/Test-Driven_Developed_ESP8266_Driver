@@ -1,0 +1,15 @@
+digraph "TestTerminator"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{TestTerminator\n||+ virtual void exitCurrent\lTest() const =0\l+ virtual ~TestTerminator()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node2 [label="{GMockTestTerminator\n||+  GMockTestTerminator\l(const ::testing::TestPartResult\l &result)\l+ virtual void exitCurrent\lTest() const\l+ virtual ~GMockTestTerminator()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_g_mock_test_terminator.html",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node3 [label="{NormalTestTerminator\n||+ virtual void exitCurrent\lTest() const _override\l+ virtual ~NormalTestTerminator\l() _destructor_override\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_normal_test_terminator.html",tooltip=" "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node4 [label="{CrashingTestTerminator\n||+ virtual void exitCurrent\lTest() const _override\l+ virtual ~CrashingTestTerminator\l() _destructor_override\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_crashing_test_terminator.html",tooltip=" "];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node5 [label="{TestTerminatorWithoutExceptions\n||+ virtual void exitCurrent\lTest() const _override\l+ virtual ~TestTerminatorWithout\lExceptions() _destructor\l_override\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_test_terminator_without_exceptions.html",tooltip=" "];
+}

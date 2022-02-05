@@ -1,0 +1,7 @@
+digraph "RCC_PeriphCLKInitTypeDef"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{RCC_PeriphCLKInitTypeDef\n|+ uint32_t PeriphClockSelection\l+ uint32_t Usart1ClockSelection\l+ uint32_t Usart2ClockSelection\l+ uint32_t Usart3ClockSelection\l+ uint32_t Lpuart1ClockSelection\l+ uint32_t I2c1ClockSelection\l+ uint32_t I2c2ClockSelection\l+ uint32_t I2c3ClockSelection\l+ uint32_t Lptim1ClockSelection\l+ uint32_t Sai1ClockSelection\l+ uint32_t I2sClockSelection\l+ uint32_t RngClockSelection\l+ uint32_t Adc12ClockSelection\l+ uint32_t RTCClockSelection\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="RCC extended clocks structure definition."];
+}

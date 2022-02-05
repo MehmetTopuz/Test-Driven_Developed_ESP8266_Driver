@@ -1,0 +1,7 @@
+digraph "GTestFlagsThatAllocateMemory"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{GTestFlagsThatAllocateMemory\n|- GTEST_STRING GTestFlagcolor\l- GTEST_STRING GTestFlagfilter\l- GTEST_STRING GTestFlagoutput\l- GTEST_STRING GTestFlagdeath\l_test_style\l- GTEST_STRING GTestFlaginternal\l_run_death_test\l- GTEST_STRING GTestFlagstream\l_result_to\l|+ void storeValuesOfGTestFLags()\l+ void resetValuesOfGTestFlags()\l+ void setGTestFLagValuesTo\lNULLToAvoidMemoryLeaks()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

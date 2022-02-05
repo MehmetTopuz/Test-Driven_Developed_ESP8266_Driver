@@ -1,0 +1,7 @@
+digraph "GPIO_TypeDef"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{GPIO_TypeDef\n|+ __IO uint32_t MODER\l+ __IO uint32_t OTYPER\l+ __IO uint32_t OSPEEDR\l+ __IO uint32_t PUPDR\l+ __IO uint32_t IDR\l+ __IO uint32_t ODR\l+ __IO uint32_t BSRR\l+ __IO uint32_t LCKR\l+ __IO uint32_t AFR\l+ __IO uint32_t BRR\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="General Purpose I/O."];
+}

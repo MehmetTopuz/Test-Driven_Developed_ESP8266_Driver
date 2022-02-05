@@ -1,0 +1,7 @@
+digraph "DMA_InitTypeDef"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{DMA_InitTypeDef\n|+ uint32_t Request\l+ uint32_t Direction\l+ uint32_t PeriphInc\l+ uint32_t MemInc\l+ uint32_t PeriphDataAlignment\l+ uint32_t MemDataAlignment\l+ uint32_t Mode\l+ uint32_t Priority\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="DMA Configuration Structure definition."];
+}

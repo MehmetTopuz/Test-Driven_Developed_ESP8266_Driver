@@ -1,0 +1,10 @@
+digraph "HAL_UART_IRQHandler"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="HAL_UART_IRQHandler",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="USART1_IRQHandler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$stm32g4xx__it_8c.html#a7139cd4baabbbcbab0c1fe6d7d4ae1cc",tooltip="This function handles USART1 global interrupt / USART1 wake-up interrupt through EXTI line 25."];
+}

@@ -1,0 +1,5 @@
+var group__FLASH__OB__USER__CCMSRAM__RST =
+[
+    [ "OB_CCMSRAM_RST_ERASE", "group__FLASH__OB__USER__CCMSRAM__RST.html#ga75682d97651b1c03e808d6e3d387d88d", null ],
+    [ "OB_CCMSRAM_RST_NOT_ERASE", "group__FLASH__OB__USER__CCMSRAM__RST.html#gaf9651210524feb5f6d0a646f22c3983c", null ]
+];

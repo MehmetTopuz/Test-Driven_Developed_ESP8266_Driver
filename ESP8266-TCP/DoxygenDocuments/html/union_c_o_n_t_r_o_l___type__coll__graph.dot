@@ -1,0 +1,7 @@
+digraph "CONTROL_Type"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{CONTROL_Type\n|+ uint32_t nPRIV\l+ uint32_t SPSEL\l+ uint32_t FPCA\l+ uint32_t SFPA\l+ uint32_t _reserved1\l+ struct CONTROL_Type\l::@3 b\l+ uint32_t w\l+ struct CONTROL_Type\l::@8 b\l+ struct CONTROL_Type\l::@12 b\l+ uint32_t _reserved0\land 11 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Union type to access the Control Registers (CONTROL)."];
+}

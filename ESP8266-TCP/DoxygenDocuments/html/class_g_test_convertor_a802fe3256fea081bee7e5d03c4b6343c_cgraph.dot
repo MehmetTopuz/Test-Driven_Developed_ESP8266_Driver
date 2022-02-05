@@ -1,0 +1,14 @@
+digraph "addAllTestsFromTestCaseToTestRegistry"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="addAllTestsFromTestCaseTo\lTestRegistry",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="addNewTestCaseForTestInfo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_g_test_convertor.html#a5907d646cd90f9acf3037f7774e5b45f",tooltip=" "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="TestRegistry::addTest",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_test_registry.html#a80ee02f86c17d7c7e4d9bd2791457228",tooltip=" "];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="TestRegistry::getCurrent\lRegistry",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_test_registry.html#a46ed5db8de3e738478bffaeb8d0a80f6",tooltip=" "];
+}

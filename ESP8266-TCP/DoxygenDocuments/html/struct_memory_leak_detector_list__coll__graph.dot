@@ -1,0 +1,7 @@
+digraph "MemoryLeakDetectorList"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{MemoryLeakDetectorList\n||+  MemoryLeakDetectorList()\l+ void addNewNode(MemoryLeak\lDetectorNode *node)\l+ MemoryLeakDetectorNode\l * retrieveNode(char *memory)\l+ MemoryLeakDetectorNode\l * removeNode(char *memory)\l+ MemoryLeakDetectorNode\l * getFirstLeak(MemLeakPeriod\l period)\l+ MemoryLeakDetectorNode\l * getFirstLeakForAllocation\lStage(unsigned char allocation_stage)\l+ MemoryLeakDetectorNode\l * getNextLeak(MemoryLeakDetector\lNode *node, MemLeakPeriod period)\l+ MemoryLeakDetectorNode\l * getNextLeakForAllocationStage\l(MemoryLeakDetectorNode *node,\l unsigned char allocation_stage)\l+ MemoryLeakDetectorNode\l * getLeakFrom(MemoryLeakDetector\lNode *node, MemLeakPeriod period)\l+ MemoryLeakDetectorNode\l * getLeakForAllocationStage\lFrom(MemoryLeakDetectorNode\l *node, unsigned char allocation_stage)\l+ size_t getTotalLeaks\l(MemLeakPeriod period)\l+ void clearAllAccounting\l(MemLeakPeriod period)\l+ bool isInPeriod(MemoryLeak\lDetectorNode *node, MemLeakPeriod\l period)\l+ bool isInAllocationStage\l(MemoryLeakDetectorNode\l *node, unsigned char allocation_stage)\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

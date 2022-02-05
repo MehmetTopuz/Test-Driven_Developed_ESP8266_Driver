@@ -1,0 +1,11 @@
+digraph "GTestUTest"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{GTestUTest\n|- ::testing::Test * test_\l- ::testing::TestInfo\l * testinfo_\l|+  GTestUTest(::testing\l::TestInfo *testinfo,\l GTestFlagsThatAllocateMemory\l *flags)\l+ void testBody()\l+ void setup()\l+ void teardown()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node2 [label="{Utest\n||+  Utest()\l+ virtual ~Utest()\l+ virtual void run()\l+ virtual void setup()\l+ virtual void teardown()\l+ virtual void testBody()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classUtest.html",tooltip=" "];
+  Node3 -> Node1 [color="grey25",fontsize="10",style="solid",label=" -flags_" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{GTestFlagsThatAllocateMemory\n|- GTEST_STRING GTestFlagcolor\l- GTEST_STRING GTestFlagfilter\l- GTEST_STRING GTestFlagoutput\l- GTEST_STRING GTestFlagdeath\l_test_style\l- GTEST_STRING GTestFlaginternal\l_run_death_test\l- GTEST_STRING GTestFlagstream\l_result_to\l|+ void storeValuesOfGTestFLags()\l+ void resetValuesOfGTestFlags()\l+ void setGTestFLagValuesTo\lNULLToAvoidMemoryLeaks()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classGTestFlagsThatAllocateMemory.html",tooltip=" "];
+}

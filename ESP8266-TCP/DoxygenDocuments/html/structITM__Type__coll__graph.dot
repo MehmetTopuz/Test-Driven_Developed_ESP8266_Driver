@@ -1,0 +1,7 @@
+digraph "ITM_Type"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{ITM_Type\n|+ __OM uint8_t u8\l+ __OM uint16_t u16\l+ __OM uint32_t u32\l+ __OM union ITM_Type\l::@4 PORT\l+ uint32_t RESERVED0\l+ __IOM uint32_t TER\l+ uint32_t RESERVED1\l+ __IOM uint32_t TPR\l+ uint32_t RESERVED2\l+ __IOM uint32_t TCR\land 29 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Structure type to access the Instrumentation Trace Macrocell Register (ITM)."];
+}

@@ -1,0 +1,7 @@
+digraph "FLASH_OBProgramInitTypeDef"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{FLASH_OBProgramInitTypeDef\n|+ uint32_t OptionType\l+ uint32_t WRPArea\l+ uint32_t WRPStartOffset\l+ uint32_t WRPEndOffset\l+ uint32_t RDPLevel\l+ uint32_t USERType\l+ uint32_t USERConfig\l+ uint32_t PCROPConfig\l+ uint32_t PCROPStartAddr\l+ uint32_t PCROPEndAddr\l+ uint32_t BootEntryPoint\l+ uint32_t SecBank\l+ uint32_t SecSize\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="FLASH Option Bytes Program structure definition."];
+}

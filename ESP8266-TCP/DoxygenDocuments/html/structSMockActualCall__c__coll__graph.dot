@@ -1,0 +1,14 @@
+digraph "SMockActualCall_c"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{SMockActualCall_c\n|+ MockActualCall_c *\l(* withUnsignedIntParameters\l+ MockActualCall_c *\l(* withUnsignedLongIntParameters\l+ MockActualCall_c *\l(* withUnsignedLongLongInt\lParameters\l+ MockActualCall_c *\l(* withStringParameters\l+ MockActualCall_c *\l(* withPointerParameters\l+ MockActualCall_c *\l(* withParameterOfType\l+ int(* hasReturnValue\l+ int(* boolReturnValue\l+ int(* returnBoolValueOrDefault\l+ int(* intReturnValue\land 17 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +withBoolParameters\n+withConstPointerParameters\n+withDoubleParameters\n+withFunctionPointerParameters\n+withIntParameters\n+withLongIntParameters\n+withLongLongIntParameters\n+withMemoryBufferParameter\n+withOutputParameter\n+withOutputParameterOfType\n..." ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +returnValue" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{SMockValue_c\n|+ MockValueType_c type\l+ int boolValue\l+ int intValue\l+ unsigned int unsignedInt\lValue\l+ long int longIntValue\l+ unsigned long int unsigned\lLongIntValue\l+ char longLongPlaceholder\l+ double doubleValue\l+ const char * stringValue\l+ void * pointerValue\land 6 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structSMockValue__c.html",tooltip=" "];
+  Node3 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +longLongIntReturnValue\n+returnLongLongIntValueOrDefault" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{cpputest_longlong\n|+ char dummy\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structcpputest__longlong.html",tooltip=" "];
+  Node4 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +returnUnsignedLongLongInt\lValueOrDefault\n+unsignedLongLongIntReturn\lValue" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node4 [label="{cpputest_ulonglong\n|+ char dummy\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structcpputest__ulonglong.html",tooltip=" "];
+}

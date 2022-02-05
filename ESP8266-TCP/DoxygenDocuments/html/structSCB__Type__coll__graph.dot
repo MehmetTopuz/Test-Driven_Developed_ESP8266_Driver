@@ -1,0 +1,7 @@
+digraph "SCB_Type"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{SCB_Type\n|+ __IM uint32_t CPUID\l+ __IOM uint32_t ICSR\l+ __IOM uint32_t VTOR\l+ __IOM uint32_t AIRCR\l+ __IOM uint32_t SCR\l+ __IOM uint32_t CCR\l+ __IOM uint8_t SHPR\l+ __IOM uint32_t SHCSR\l+ __IOM uint32_t CFSR\l+ __IOM uint32_t HFSR\land 53 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Structure type to access the System Control Block (SCB)."];
+}

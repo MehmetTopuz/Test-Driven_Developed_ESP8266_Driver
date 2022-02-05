@@ -1,0 +1,7 @@
+digraph "TIM_BreakDeadTimeConfigTypeDef"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{TIM_BreakDeadTimeConfigTypeDef\n|+ uint32_t OffStateRunMode\l+ uint32_t OffStateIDLEMode\l+ uint32_t LockLevel\l+ uint32_t DeadTime\l+ uint32_t BreakState\l+ uint32_t BreakPolarity\l+ uint32_t BreakFilter\l+ uint32_t BreakAFMode\l+ uint32_t Break2State\l+ uint32_t Break2Polarity\l+ uint32_t Break2Filter\l+ uint32_t Break2AFMode\l+ uint32_t AutomaticOutput\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="TIM Break input(s) and Dead time configuration Structure definition."];
+}

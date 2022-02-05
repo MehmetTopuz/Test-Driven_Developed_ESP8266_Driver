@@ -1,0 +1,7 @@
+digraph "FLASH_EraseInitTypeDef"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{FLASH_EraseInitTypeDef\n|+ uint32_t TypeErase\l+ uint32_t Banks\l+ uint32_t Page\l+ uint32_t NbPages\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="FLASH Erase structure definition."];
+}

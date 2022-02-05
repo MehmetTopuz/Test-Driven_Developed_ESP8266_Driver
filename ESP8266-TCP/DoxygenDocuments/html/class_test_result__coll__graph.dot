@@ -1,0 +1,7 @@
+digraph "TestResult"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{TestResult\n||+  TestResult(TestOutput &)\l+ virtual ~TestResult()\l+ virtual void testsStarted()\l+ virtual void testsEnded()\l+ virtual void currentGroup\lStarted(UtestShell *test)\l+ virtual void currentGroup\lEnded(UtestShell *test)\l+ virtual void currentTest\lStarted(UtestShell *test)\l+ virtual void currentTest\lEnded(UtestShell *test)\l+ virtual void countTest()\l+ virtual void countRun()\land 17 more...\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

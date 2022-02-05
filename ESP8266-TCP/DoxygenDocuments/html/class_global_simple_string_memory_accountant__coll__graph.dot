@@ -1,0 +1,7 @@
+digraph "GlobalSimpleStringMemoryAccountant"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{GlobalSimpleStringMemory\lAccountant\n||+  GlobalSimpleStringMemory\lAccountant()\l+  ~GlobalSimpleStringMemory\lAccountant()\l+ void useCacheSizes\l(size_t cacheSizes[]\l, size_t length)\l+ void start()\l+ void stop()\l+ SimpleString report()\l+ AccountingTestMemoryAllocator\l * getAllocator()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

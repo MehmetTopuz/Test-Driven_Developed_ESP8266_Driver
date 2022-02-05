@@ -1,0 +1,7 @@
+digraph "SysTick_Type"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{SysTick_Type\n|+ __IOM uint32_t CTRL\l+ __IOM uint32_t LOAD\l+ __IOM uint32_t VAL\l+ __IM uint32_t CALIB\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Structure type to access the System Timer (SysTick)."];
+}

@@ -1,0 +1,7 @@
+digraph "DAC_TypeDef"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{DAC_TypeDef\n|+ __IO uint32_t CR\l+ __IO uint32_t SWTRIGR\l+ __IO uint32_t DHR12R1\l+ __IO uint32_t DHR12L1\l+ __IO uint32_t DHR8R1\l+ __IO uint32_t DHR12R2\l+ __IO uint32_t DHR12L2\l+ __IO uint32_t DHR8R2\l+ __IO uint32_t DHR12RD\l+ __IO uint32_t DHR12LD\land 14 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Digital to Analog Converter."];
+}

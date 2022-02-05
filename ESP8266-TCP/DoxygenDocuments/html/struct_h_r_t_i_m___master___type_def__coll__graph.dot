@@ -1,0 +1,7 @@
+digraph "HRTIM_Master_TypeDef"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{HRTIM_Master_TypeDef\n|+ __IO uint32_t MCR\l+ __IO uint32_t MISR\l+ __IO uint32_t MICR\l+ __IO uint32_t MDIER\l+ __IO uint32_t MCNTR\l+ __IO uint32_t MPER\l+ __IO uint32_t MREP\l+ __IO uint32_t MCMP1R\l+ uint32_t RESERVED0\l+ __IO uint32_t MCMP2R\l+ __IO uint32_t MCMP3R\l+ __IO uint32_t MCMP4R\l+ uint32_t RESERVED1\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

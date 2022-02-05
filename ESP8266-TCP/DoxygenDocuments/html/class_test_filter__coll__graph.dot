@@ -1,0 +1,7 @@
+digraph "TestFilter"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{TestFilter\n||+  TestFilter()\l+  TestFilter(const char\l *filter)\l+  TestFilter(const Simple\lString &filter)\l+ TestFilter * add(TestFilter\l *filter)\l+ TestFilter * getNext\l() const\l+ bool match(const SimpleString\l &name) const\l+ void strictMatching()\l+ void invertMatching()\l+ bool operator==(const\l TestFilter &filter) const\l+ bool operator!=(const\l TestFilter &filter) const\l+ SimpleString asString\l() const\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

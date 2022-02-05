@@ -1,0 +1,7 @@
+digraph "UCPD_TypeDef"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{UCPD_TypeDef\n|+ __IO uint32_t CFG1\l+ __IO uint32_t CFG2\l+ __IO uint32_t RESERVED0\l+ __IO uint32_t CR\l+ __IO uint32_t IMR\l+ __IO uint32_t SR\l+ __IO uint32_t ICR\l+ __IO uint32_t TX_ORDSET\l+ __IO uint32_t TX_PAYSZ\l+ __IO uint32_t TXDR\l+ __IO uint32_t RX_ORDSET\l+ __IO uint32_t RX_PAYSZ\l+ __IO uint32_t RXDR\l+ __IO uint32_t RX_ORDEXT1\l+ __IO uint32_t RX_ORDEXT2\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="UCPD."];
+}

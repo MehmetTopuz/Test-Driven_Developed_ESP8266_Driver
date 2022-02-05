@@ -1,0 +1,7 @@
+digraph "TestTestingFixture"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{TestTestingFixture\n||+  TestTestingFixture()\l+ virtual ~TestTestingFixture()\l+ void flushOutputAndReset\lResult()\l+ void addTest(UtestShell\l *test)\l+ void installPlugin\l(TestPlugin *plugin)\l+ void setTestFunction\l(void(*testFunction)())\l+ void setTestFunction\l(ExecFunction *testFunction)\l+ void setSetup(void\l(*setupFunction)())\l+ void setTeardown(void\l(*teardownFunction)())\l+ void setOutputVerbose()\land 14 more...\l+ static void lineExecuted\lAfterCheck()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

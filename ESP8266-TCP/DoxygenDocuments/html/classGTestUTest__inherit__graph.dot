@@ -1,0 +1,9 @@
+digraph "GTestUTest"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{GTestUTest\n|- ::testing::Test * test_\l- ::testing::TestInfo\l * testinfo_\l- GTestFlagsThatAllocateMemory\l * flags_\l|+  GTestUTest(::testing\l::TestInfo *testinfo,\l GTestFlagsThatAllocateMemory\l *flags)\l+ void testBody()\l+ void setup()\l+ void teardown()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node2 [label="{Utest\n||+  Utest()\l+ virtual ~Utest()\l+ virtual void run()\l+ virtual void setup()\l+ virtual void teardown()\l+ virtual void testBody()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classUtest.html",tooltip=" "];
+}

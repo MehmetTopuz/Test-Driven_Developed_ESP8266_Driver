@@ -1,0 +1,28 @@
+var classTestFailure =
+[
+    [ "TestFailure", "classTestFailure.html#a92d0d420acb1e2740e48f61a59fcc18f", null ],
+    [ "TestFailure", "classTestFailure.html#a8379a8e5d38d28e5d9a9e397232500ad", null ],
+    [ "TestFailure", "classTestFailure.html#a03d79ba69a50e597231c58fd3ecf676a", null ],
+    [ "TestFailure", "classTestFailure.html#a6f18c5a16d8c783dcdc7db229776ee85", null ],
+    [ "~TestFailure", "classTestFailure.html#a000c058419a8177d64d1019c6c2f624d", null ],
+    [ "createButWasString", "classTestFailure.html#a0fd50cd9fbb9a4df3a353e20c87f6567", null ],
+    [ "createDifferenceAtPosString", "classTestFailure.html#add53013abef65e3ef3f1e2b93df90bb2", null ],
+    [ "createUserText", "classTestFailure.html#a245e5075b757b09bf31413b7ea02216d", null ],
+    [ "getFailureLineNumber", "classTestFailure.html#aa988f1a4cb70d848a480d73ef1fac58e", null ],
+    [ "getFileName", "classTestFailure.html#a37e120da718fba37e2f55d72ca0f8295", null ],
+    [ "getMessage", "classTestFailure.html#a93a6284ac436bc021dc56309b30679b3", null ],
+    [ "getTestFileName", "classTestFailure.html#a189913eea1fa66000b57e883497d9728", null ],
+    [ "getTestLineNumber", "classTestFailure.html#a8f3fe53dbe6c100d9581ce3731d92948", null ],
+    [ "getTestName", "classTestFailure.html#a3fb8a7e6735a42b9d82630353170dd17", null ],
+    [ "getTestNameOnly", "classTestFailure.html#af633a4764d4fc740146e719fb42f8055", null ],
+    [ "isInHelperFunction", "classTestFailure.html#a38f7a924f52e840fd037d67c43927563", null ],
+    [ "isOutsideTestFile", "classTestFailure.html#abc1c5946ea2a5e79880f01774a3f99f7", null ],
+    [ "operator=", "classTestFailure.html#a83677f1157b70b5b6d9f1c31d1e03500", null ],
+    [ "fileName_", "classTestFailure.html#a75d98ffbaaecfe40f710697a43ae4eeb", null ],
+    [ "lineNumber_", "classTestFailure.html#ae7ddcc4f8d752c49e11f15c6edbb02cb", null ],
+    [ "message_", "classTestFailure.html#aa89b0390dcccecda30ec5e2ee345249e", null ],
+    [ "testFileName_", "classTestFailure.html#ae59d53c2d37faf95a173c3efd6f7b687", null ],
+    [ "testLineNumber_", "classTestFailure.html#af811946f71018a613b14f38f0a082d41", null ],
+    [ "testName_", "classTestFailure.html#a6e422edc76c3fa2a032abf2beeafb355", null ],
+    [ "testNameOnly_", "classTestFailure.html#afb4bf888398416ec65b43ef2e926767a", null ]
+];

@@ -1,0 +1,7 @@
+digraph "TIM_TypeDef"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{TIM_TypeDef\n|+ __IO uint32_t CR1\l+ __IO uint32_t CR2\l+ __IO uint32_t SMCR\l+ __IO uint32_t DIER\l+ __IO uint32_t SR\l+ __IO uint32_t EGR\l+ __IO uint32_t CCMR1\l+ __IO uint32_t CCMR2\l+ __IO uint32_t CCER\l+ __IO uint32_t CNT\land 20 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="TIM."];
+}

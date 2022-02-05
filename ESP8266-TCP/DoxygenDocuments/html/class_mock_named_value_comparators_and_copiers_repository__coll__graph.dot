@@ -1,0 +1,7 @@
+digraph "MockNamedValueComparatorsAndCopiersRepository"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{MockNamedValueComparators\lAndCopiersRepository\n||+  MockNamedValueComparators\lAndCopiersRepository()\l+ virtual ~MockNamedValueComparators\lAndCopiersRepository()\l+ virtual void installComparator\l(const SimpleString &name,\l MockNamedValueComparator &comparator)\l+ virtual void installCopier\l(const SimpleString &name,\l MockNamedValueCopier &copier)\l+ virtual void installComparators\lAndCopiers(const MockNamedValueComparators\lAndCopiersRepository &repository)\l+ virtual MockNamedValueComparator\l * getComparatorForType(const\l SimpleString &name)\l+ virtual MockNamedValueCopier\l * getCopierForType(const\l SimpleString &name)\l+ void clear()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

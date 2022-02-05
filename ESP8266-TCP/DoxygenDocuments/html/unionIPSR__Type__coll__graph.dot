@@ -1,0 +1,7 @@
+digraph "IPSR_Type"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{IPSR_Type\n|+ uint32_t ISR\l+ uint32_t _reserved0\l+ struct IPSR_Type::@1 b\l+ uint32_t w\l+ struct IPSR_Type::@6 b\l+ struct IPSR_Type::@10 b\l+ struct IPSR_Type::@15 b\l+ struct IPSR_Type::@19 b\l+ struct IPSR_Type::@23 b\l+ struct IPSR_Type::@27 b\land 7 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Union type to access the Interrupt Program Status Register (IPSR)."];
+}

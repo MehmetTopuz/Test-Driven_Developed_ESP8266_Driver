@@ -1,0 +1,9 @@
+digraph "MemoryLeakDetectorNode"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{MemoryLeakDetectorNode\n|+ size_t size_\l+ unsigned number_\l+ char * memory_\l+ const char * file_\l+ size_t line_\l+ MemLeakPeriod period_\l+ unsigned char allocation\l_stage_\l|+  MemoryLeakDetectorNode()\l+ void init(char *memory,\l unsigned number, size\l_t size, TestMemoryAllocator\l *allocator, MemLeakPeriod\l period, unsigned char allocation\l_stage, const char *file, size_t line)\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +allocator_" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{TestMemoryAllocator\n|# const char * name_\l# const char * alloc\l_name_\l# const char * free_name_\l# bool hasBeenDestroyed_\l|+  TestMemoryAllocator\l(const char *name_str\l=\"generic\", const char\l *alloc_name_str=\"alloc\",\l const char *free_name_str\l=\"free\")\l+ virtual ~TestMemoryAllocator()\l+ bool hasBeenDestroyed()\l+ virtual char * alloc\l_memory(size_t size,\l const char *file, size\l_t line)\l+ virtual void free_memory\l(char *memory, size_t size,\l const char *file, size_t line)\l+ virtual const char\l * name() const\l+ virtual const char\l * alloc_name() const\l+ virtual const char\l * free_name() const\l+ virtual bool isOfEqualType\l(TestMemoryAllocator *allocator)\l+ virtual char * allocMemory\lLeakNode(size_t size)\l+ virtual void freeMemoryLeak\lNode(char *memory)\l+ virtual TestMemoryAllocator\l * actualAllocator()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_test_memory_allocator.html",tooltip=" "];
+}

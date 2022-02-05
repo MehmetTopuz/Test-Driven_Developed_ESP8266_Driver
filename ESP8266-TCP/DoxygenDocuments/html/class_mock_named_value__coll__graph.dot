@@ -1,0 +1,7 @@
+digraph "MockNamedValue"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{MockNamedValue\n|+ virtual void(*)() getFunction\lPointerValue\l+ bool boolValue_\l+ int intValue_\l+ unsigned int unsignedInt\lValue_\l+ long int longIntValue_\l+ unsigned long int unsigned\lLongIntValue_\l+ char longLongPlaceholder_\l+ double value\l+ double tolerance\l+ struct MockNamedValue\l::@70::@71 doubleValue_\land 8 more...\l+ static const double\l defaultDoubleTolerance\l|+  MockNamedValue(const\l SimpleString &name)\l+ virtual ~MockNamedValue()\l+ virtual void setValue\l(bool value)\l+ virtual void setValue\l(int value)\l+ virtual void setValue\l(unsigned int value)\l+ virtual void setValue\l(long int value)\l+ virtual void setValue\l(unsigned long int value)\l+ virtual void setValue\l(cpputest_longlong value)\l+ virtual void setValue\l(cpputest_ulonglong value)\l+ virtual void setValue\l(double value)\land 33 more...\l+ static void setDefaultComparators\lAndCopiersRepository(MockNamedValue\lComparatorsAndCopiersRepository\l *repository)\l+ static MockNamedValueComparators\lAndCopiersRepository * getDefaultComparators\lAndCopiersRepository()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}
