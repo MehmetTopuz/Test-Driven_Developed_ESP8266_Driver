@@ -1,5 +1,9 @@
 var NAVTREEINDEX126 =
 {
+"group__TIM__Trigger__Selection.html#gabfe43c9fd555ce5e726c5a879b965ecc":[2,85,14,1,49,3],
+"group__TIM__Trigger__Selection.html#gac97a5396aa30a45df480ccd8562ae470":[2,85,14,1,49,4],
+"group__TIM__Trigger__Selection.html#gad0fea6ddb2a6c782a12cb7db0ce17df8":[2,85,14,1,49,7],
+"group__TIM__Trigger__Selection.html#gad90fbca297153ca9c0112a67ea2c6cb3":[2,85,14,1,49,2],
 "group__TIM__Trigger__Selection.html#gaece08e02e056613a882aa7ff0a6ccc2d":[2,85,14,1,49,0],
 "group__TIM__Update__Interrupt__Flag__Remap.html":[2,85,14,1,7],
 "group__TIM__Update__Interrupt__Flag__Remap.html#gaac447513149e2f28e7cd66f1810cfa0b":[2,85,14,1,7,1],
@@ -245,9 +249,5 @@ var NAVTREEINDEX126 =
 "group__UART__IT__CLEAR__Flags.html#ga1143cc2878693b1d5d56bf757e2b1bcb":[2,85,16,1,39,10],
 "group__UART__IT__CLEAR__Flags.html#ga2040edf7a1daa2e9f352364e285ef5c3":[2,85,16,1,39,2],
 "group__UART__IT__CLEAR__Flags.html#ga2735a415d2c7930fdf2818943fd7ddd2":[2,85,16,1,39,8],
-"group__UART__IT__CLEAR__Flags.html#ga3bc97b70293f9a7bf8cc21a74094afad":[2,85,16,1,39,6],
-"group__UART__IT__CLEAR__Flags.html#ga5081c579f9956a7712248430f3fe129b":[2,85,16,1,39,11],
-"group__UART__IT__CLEAR__Flags.html#ga5815698abf54d69b752bd2c43c2d6ad3":[2,85,16,1,39,0],
-"group__UART__IT__CLEAR__Flags.html#ga75ee9be0ac2236931ef3d9514e7dedf4":[2,85,16,1,39,3],
-"group__UART__IT__CLEAR__Flags.html#ga9c2aef8048dd09ea5e72d69c63026f02":[2,85,16,1,39,7]
+"group__UART__IT__CLEAR__Flags.html#ga3bc97b70293f9a7bf8cc21a74094afad":[2,85,16,1,39,6]
 };

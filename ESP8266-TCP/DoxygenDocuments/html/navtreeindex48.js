@@ -1,7 +1,11 @@
 var NAVTREEINDEX48 =
 {
-"group__CMSIS__core__bitfield.html#ga286e3b913dbd236c7f48ea70c8821f4e":[2,1,0,0,0,0,0,0,0,0,0,0,0,23],
-"group__CMSIS__core__bitfield.html#ga286e3b913dbd236c7f48ea70c8821f4e":[2,1,0,0,0,0,0,0,0,0,0,0,0,17],
+"group__CMSIS__core__bitfield.html#ga286e3b913dbd236c7f48ea70c8821f4e":[2,1,0,0,0,0,0,0,0,0,0,0,0,21],
+"group__CMSIS__core__bitfield.html#ga286e3b913dbd236c7f48ea70c8821f4e":[2,1,0,0,0,0,0,0,0,0,0,0,0,22],
+"group__CMSIS__core__bitfield.html#ga286e3b913dbd236c7f48ea70c8821f4e":[2,1,0,0,0,0,0,0,0,0,0,0,0,28],
+"group__CMSIS__core__bitfield.html#ga286e3b913dbd236c7f48ea70c8821f4e":[2,1,0,0,0,0,0,0,0,0,0,0,0,24],
+"group__CMSIS__core__bitfield.html#ga286e3b913dbd236c7f48ea70c8821f4e":[2,1,0,0,0,0,0,0,0,0,0,0,0,25],
+"group__CMSIS__core__bitfield.html#ga286e3b913dbd236c7f48ea70c8821f4e":[2,1,0,0,0,0,0,0,0,0,0,0,0,26],
 "group__CMSIS__core__register.html":[2,1],
 "group__CMSIS__glob__defs.html":[2,0],
 "group__CORTEX.html":[2,85,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX48 =
 "group__DMA__flag__definitions.html#gafb3f8a8c7048d344865c47e72a598074":[2,85,5,1,10,15],
 "group__DMA__interrupt__enable__definitions.html":[2,85,5,1,9],
 "group__DMA__interrupt__enable__definitions.html#ga06e83dd277e0d3e5635cf8ce8dfd6e16":[2,85,5,1,9,1],
-"group__DMA__interrupt__enable__definitions.html#gadf11c572b9797e04a14b105fdc2e5f66":[2,85,5,1,9,0],
-"group__DMA__interrupt__enable__definitions.html#gaf9d92649d2a0146f663ff253d8f3b59e":[2,85,5,1,9,2],
-"group__DMA__mode.html":[2,85,5,1,7],
-"group__DMA__mode.html#ga04941acfbbdefc53e1e08133cffa3b8a":[2,85,5,1,7,1],
-"group__DMA__mode.html#ga4c4f425cba13edffb3c831c036c91e01":[2,85,5,1,7,0]
+"group__DMA__interrupt__enable__definitions.html#gadf11c572b9797e04a14b105fdc2e5f66":[2,85,5,1,9,0]
 };

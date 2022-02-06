@@ -1,5 +1,9 @@
 var NAVTREEINDEX116 =
 {
+"group__Peripheral__Registers__Bits__Definition.html#gafdf32817edf52bdc36e8c340703c265a":[2,84,0,5,0,6233],
+"group__Peripheral__Registers__Bits__Definition.html#gafdf5d8ec0f09ff2510cc9eb2cfc69d27":[2,84,0,5,0,4993],
+"group__Peripheral__Registers__Bits__Definition.html#gafdfb79fbb8e0020837f662dda4b4af9c":[2,84,0,5,0,7741],
+"group__Peripheral__Registers__Bits__Definition.html#gafe0185d4d6584504ec660da233f17ba6":[2,84,0,5,0,493],
 "group__Peripheral__Registers__Bits__Definition.html#gafe02daf2126d428bd2a86d9388b41d3e":[2,84,0,5,0,49],
 "group__Peripheral__Registers__Bits__Definition.html#gafe10e66938644ee8054a2426ff23efea":[2,84,0,5,0,9876],
 "group__Peripheral__Registers__Bits__Definition.html#gafe18c3f6e5e950c20ea277b69a4c421f":[2,84,0,5,0,5729],
@@ -245,9 +249,5 @@ var NAVTREEINDEX116 =
 "group__Peripheral__interrupt__number__definition.html#gga7e1129cd8a196f4284d41db3e82ad5c8a017836a26cf6fb68132aa3fc7a6bbcf4":[2,84,0,1,0,109],
 "group__Peripheral__interrupt__number__definition.html#gga7e1129cd8a196f4284d41db3e82ad5c8a030a2341985f970499c841f57effb5ee":[2,84,0,1,0,107],
 "group__Peripheral__interrupt__number__definition.html#gga7e1129cd8a196f4284d41db3e82ad5c8a03c2b634ac34db4d43de6f33e35c6ee7":[2,84,0,1,0,73],
-"group__Peripheral__interrupt__number__definition.html#gga7e1129cd8a196f4284d41db3e82ad5c8a03c3cc89984928816d81793fc7bce4a2":[2,84,0,1,0,7],
-"group__Peripheral__interrupt__number__definition.html#gga7e1129cd8a196f4284d41db3e82ad5c8a07435da3141d3ef7dcd1f8e8ab37c07d":[2,84,0,1,0,97],
-"group__Peripheral__interrupt__number__definition.html#gga7e1129cd8a196f4284d41db3e82ad5c8a082cb3f7839069a0715fd76c7eacbbc9":[2,84,0,1,0,17],
-"group__Peripheral__interrupt__number__definition.html#gga7e1129cd8a196f4284d41db3e82ad5c8a0d761f0d0a93b5aa3dc821480dc3f6c0":[2,84,0,1,0,68],
-"group__Peripheral__interrupt__number__definition.html#gga7e1129cd8a196f4284d41db3e82ad5c8a12f4da1d5067b86e3133a6cf9d060817":[2,84,0,1,0,78]
+"group__Peripheral__interrupt__number__definition.html#gga7e1129cd8a196f4284d41db3e82ad5c8a03c3cc89984928816d81793fc7bce4a2":[2,84,0,1,0,7]
 };

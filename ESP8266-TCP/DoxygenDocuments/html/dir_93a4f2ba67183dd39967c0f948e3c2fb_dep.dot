@@ -1,0 +1,22 @@
+digraph "C:/Users/Topuz/STM32CubeIDE/workspace_1.6.0/ESP8266-TCP-IP/ESP8266-TCP/Tests"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  compound=true
+  subgraph clusterdir_d6aca0299a5d43c1e78297d4936c59f3 {
+    graph [ bgcolor="#edf0f7", pencolor="grey50", style="filled,dashed,", label="ESP8266-TCP", fontname="Helvetica", fontsize="10", URL="dir_d6aca0299a5d43c1e78297d4936c59f3.html"]
+  dir_1eb737c880dadefad37ee8f8d52625dd [shape=box, label="Core", style="filled,", fillcolor="#a2b4d6", color="red", URL="dir_1eb737c880dadefad37ee8f8d52625dd.html"];
+  dir_76289216892c11fc746b92eb19e7d766 [shape=box, label="RingBuffer", style="filled,", fillcolor="#a2b4d6", color="grey25", URL="dir_76289216892c11fc746b92eb19e7d766.html"];
+  dir_98f227cb0ffcb3c08632274f7c31a478 [shape=box, label="ESP8266_Driver", style="filled,", fillcolor="#a2b4d6", color="grey25", URL="dir_98f227cb0ffcb3c08632274f7c31a478.html"];
+  subgraph clusterdir_93a4f2ba67183dd39967c0f948e3c2fb {
+    graph [ bgcolor="#edf0f7", pencolor="grey25", style="filled,bold,", label="", fontname="Helvetica", fontsize="10", URL="dir_93a4f2ba67183dd39967c0f948e3c2fb.html"]
+    dir_93a4f2ba67183dd39967c0f948e3c2fb [shape=plaintext, label="Tests"];
+  dir_7b8aefc9d3dc9177678cd7f533878e02 [shape=box, label="include", style="filled,", fillcolor="#a2b4d6", color="grey25", URL="dir_7b8aefc9d3dc9177678cd7f533878e02.html"];
+  }
+  }
+  dir_93a4f2ba67183dd39967c0f948e3c2fb->dir_1eb737c880dadefad37ee8f8d52625dd [headlabel="1", labeldistance=1.5 headhref="dir_000043_000002.html"];
+  dir_93a4f2ba67183dd39967c0f948e3c2fb->dir_76289216892c11fc746b92eb19e7d766 [headlabel="1", labeldistance=1.5 headhref="dir_000043_000025.html"];
+  dir_93a4f2ba67183dd39967c0f948e3c2fb->dir_7b8aefc9d3dc9177678cd7f533878e02 [headlabel="17", labeldistance=1.5 headhref="dir_000043_000021.html"];
+  dir_93a4f2ba67183dd39967c0f948e3c2fb->dir_98f227cb0ffcb3c08632274f7c31a478 [headlabel="1", labeldistance=1.5 headhref="dir_000043_000015.html"];
+}

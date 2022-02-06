@@ -1,0 +1,13 @@
+digraph "C:/Users/Topuz/STM32CubeIDE/workspace_1.6.0/ESP8266-TCP-IP/ESP8266-TCP/Drivers/CMSIS/Include"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  compound=true
+  subgraph clusterdir_56d5a2eeed384ae49fc665b47fa21385 {
+    graph [ bgcolor="#edf0f7", pencolor="grey50", style="filled,dashed,", label="CMSIS", fontname="Helvetica", fontsize="10", URL="dir_56d5a2eeed384ae49fc665b47fa21385.html"]
+  dir_6ec1c020c42f5190e871099157064ee9 [shape=box, label="Include", style="filled,bold,", fillcolor="#edf0f7", color="grey25", URL="dir_6ec1c020c42f5190e871099157064ee9.html"];
+  }
+  dir_93a4f2ba67183dd39967c0f948e3c2fb [shape=box, label="Tests", style="dashed,", fillcolor="#edf0f7", color="red", URL="dir_93a4f2ba67183dd39967c0f948e3c2fb.html"];
+  dir_6ec1c020c42f5190e871099157064ee9->dir_93a4f2ba67183dd39967c0f948e3c2fb [headlabel="16", labeldistance=1.5 headhref="dir_000020_000043.html"];
+}

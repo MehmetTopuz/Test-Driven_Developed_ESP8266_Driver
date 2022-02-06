@@ -1,5 +1,9 @@
 var NAVTREEINDEX122 =
 {
+"group__RCC__Private__Macros.html#ga378b8fcc2e64326f6f98b30cb3fc22d9":[2,85,12,4,13],
+"group__RCC__Private__Macros.html#ga3c9bb7f31e4cd8436a41ae33c8908226":[2,85,12,4,2],
+"group__RCC__Private__Macros.html#ga4e8a1f3a151c3011e915df4da312dd73":[2,85,12,4,14],
+"group__RCC__Private__Macros.html#ga5368a0b11fbade7ce74f2903dd39b46a":[2,85,12,4,9],
 "group__RCC__Private__Macros.html#ga5639cc7f37f0cb7ce1e5d0f3918a48ba":[2,85,12,4,0],
 "group__RCC__Private__Macros.html#ga68584e3b585c1c1770d504a030d0dd34":[2,85,12,4,12],
 "group__RCC__Private__Macros.html#ga6c766af016cdc1d63f1ed64c5082737c":[2,85,12,4,6],
@@ -245,9 +249,5 @@ var NAVTREEINDEX122 =
 "group__TIMEx__Exported__Macros.html":[2,85,15,2],
 "group__TIMEx__Exported__Macros.html#ga363488c0614ff2a86a0eb75287bcfa0b":[2,85,15,2,3],
 "group__TIMEx__Exported__Macros.html#ga387fd2a264748c993642c9e819d7680c":[2,85,15,2,4],
-"group__TIMEx__Exported__Macros.html#ga82ac43175c1c810736565f73b82c8f81":[2,85,15,2,2],
-"group__TIMEx__Exported__Macros.html#ga9e90ab95ebb90c1a474513a2746e8f35":[2,85,15,2,6],
-"group__TIMEx__Exported__Macros.html#gaae4a0aa35725e4f8837987452730f4b6":[2,85,15,2,0],
-"group__TIMEx__Exported__Macros.html#gadc665862694b5df8289bc64e393a3e96":[2,85,15,2,1],
-"group__TIMEx__Exported__Macros.html#gaf98bdecd200a44292a5860e718f00e0d":[2,85,15,2,5]
+"group__TIMEx__Exported__Macros.html#ga82ac43175c1c810736565f73b82c8f81":[2,85,15,2,2]
 };

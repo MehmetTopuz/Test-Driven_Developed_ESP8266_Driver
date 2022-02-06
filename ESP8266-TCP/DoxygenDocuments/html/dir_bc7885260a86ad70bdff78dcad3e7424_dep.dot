@@ -1,0 +1,11 @@
+digraph "C:/Users/Topuz/STM32CubeIDE/workspace_1.6.0/ESP8266-TCP-IP/ESP8266-TCP/Debug/Drivers/STM32G4xx_HAL_Driver/Src"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  compound=true
+  subgraph clusterdir_6c3913a83a04db28c954ce55e00a898c {
+    graph [ bgcolor="#edf0f7", pencolor="grey50", style="filled,dashed,", label="STM32G4xx_HAL_Driver", fontname="Helvetica", fontsize="10", URL="dir_6c3913a83a04db28c954ce55e00a898c.html"]
+  dir_bc7885260a86ad70bdff78dcad3e7424 [shape=box, label="Src", style="filled,bold,", fillcolor="#edf0f7", color="grey25", URL="dir_bc7885260a86ad70bdff78dcad3e7424.html"];
+  }
+}

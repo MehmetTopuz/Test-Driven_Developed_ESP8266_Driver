@@ -1,0 +1,13 @@
+digraph "C:/Users/Topuz/STM32CubeIDE/workspace_1.6.0/ESP8266-TCP-IP/ESP8266-TCP/Core/Inc"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  compound=true
+  subgraph clusterdir_1eb737c880dadefad37ee8f8d52625dd {
+    graph [ bgcolor="#edf0f7", pencolor="grey50", style="filled,dashed,", label="Core", fontname="Helvetica", fontsize="10", URL="dir_1eb737c880dadefad37ee8f8d52625dd.html"]
+  dir_6ffde346f6165cc1e63f5551de2ddc6b [shape=box, label="Inc", style="filled,bold,", fillcolor="#edf0f7", color="grey25", URL="dir_6ffde346f6165cc1e63f5551de2ddc6b.html"];
+  }
+  dir_e5981f6b789dd380d6bf43224d7e4f8c [shape=box, label="Drivers", style="dashed,", fillcolor="#edf0f7", color="red", URL="dir_e5981f6b789dd380d6bf43224d7e4f8c.html"];
+  dir_6ffde346f6165cc1e63f5551de2ddc6b->dir_e5981f6b789dd380d6bf43224d7e4f8c [headlabel="9", labeldistance=1.5 headhref="dir_000017_000010.html"];
+}

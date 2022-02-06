@@ -1,0 +1,16 @@
+digraph "C:/Users/Topuz/STM32CubeIDE/workspace_1.6.0/ESP8266-TCP-IP/ESP8266-TCP/Debug/Core"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  compound=true
+  subgraph clusterdir_534f6d8ddec6a8cb04c59d1b33e6bbd6 {
+    graph [ bgcolor="#edf0f7", pencolor="grey50", style="filled,dashed,", label="Debug", fontname="Helvetica", fontsize="10", URL="dir_534f6d8ddec6a8cb04c59d1b33e6bbd6.html"]
+  subgraph clusterdir_80383fef282f7fe9e5372316289a498e {
+    graph [ bgcolor="#edf0f7", pencolor="grey25", style="filled,bold,", label="", fontname="Helvetica", fontsize="10", URL="dir_80383fef282f7fe9e5372316289a498e.html"]
+    dir_80383fef282f7fe9e5372316289a498e [shape=plaintext, label="Core"];
+  dir_6d4a70d883414b2f8a06468d8da36fda [shape=box, label="Src", style="filled,", fillcolor="#a2b4d6", color="grey25", URL="dir_6d4a70d883414b2f8a06468d8da36fda.html"];
+  dir_beb0041af29774d9c526394bb2fa347e [shape=box, label="Startup", style="filled,", fillcolor="#a2b4d6", color="grey25", URL="dir_beb0041af29774d9c526394bb2fa347e.html"];
+  }
+  }
+}

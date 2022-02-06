@@ -9015,7 +9015,7 @@ static void UARTEx_SetNbDataToProcess(UART_HandleTypeDef *huart)
 08003908 <ringBuffer_init>:
  * @brief 	Initialize the ring buffer. Ring buffer is allocated after this function.
  * @param 	size parameter specifies the size of ring buffer.
- * @retval	Pointer of the ring buffer structure.
+ * @retval	RingBuffer typedef structure.
  */
 RingBuffer* ringBuffer_init(uint32_t size)
 {
@@ -9083,8 +9083,8 @@ RingBuffer* ringBuffer_init(uint32_t size)
  800395a:	bd80      	pop	{r7, pc}
 
 0800395c <ringBuffer_deInit>:
- * @brief 	Deinitialize the ring buffer.
- * @param 	Ring buffer typedef structure.
+ * @brief 	De-initialize the ring buffer.
+ * @param 	RingBuffer typedef structure.
  * @retval	None.
  */
 void ringBuffer_deInit(RingBuffer* buffer)
@@ -9121,8 +9121,8 @@ void ringBuffer_deInit(RingBuffer* buffer)
  8003988:	bd80      	pop	{r7, pc}
 
 0800398a <ringBuffer_push>:
- * @param 	Ring buffer typedef structure.
- * @param 	unsigned 8-bit integer data to be pushed into the buffer.
+ * @param 	RingBuffer typedef structure.
+ * @param 	data is an unsigned 8-bit integer variable to be pushed into the buffer.
  * @retval	None.
  */
 void ringBuffer_push(RingBuffer* ringBuffer, uint8_t data)
@@ -9184,7 +9184,7 @@ void ringBuffer_push(RingBuffer* ringBuffer, uint8_t data)
 
 080039de <ringBuffer_pop>:
  * @brief 	Read data from the buffer.
- * @param 	Ring buffer typedef structure.
+ * @param 	RingBuffer typedef structure.
  * @retval	unsigned 8-bit integer data to be read from the buffer.
  */
 uint8_t ringBuffer_pop(RingBuffer* ringBuffer)
@@ -9250,7 +9250,7 @@ uint8_t ringBuffer_pop(RingBuffer* ringBuffer)
 
 08003a32 <ringBuffer_flush>:
  * @brief 	Clear the ring buffer.
- * @param 	Ring buffer typedef structure.
+ * @param 	RingBuffer typedef structure.
  * @retval	None.
  */
 void ringBuffer_flush(RingBuffer* ringBuffer)
@@ -9274,8 +9274,8 @@ void ringBuffer_flush(RingBuffer* ringBuffer)
  8003a50:	bd80      	pop	{r7, pc}
 
 08003a52 <ringBuffer_pushArray>:
- * @param 	Ring buffer typedef structure.
- * @param	unsigned 8-bit data array to be written into the buffer.
+ * @param 	RingBuffer typedef structure.
+ * @param	data is an unsigned 8-bit data array to be written into the buffer.
  * @retval	None.
  */
 void ringBuffer_pushArray(RingBuffer* ringBuffer, uint8_t* data)
@@ -9315,9 +9315,9 @@ void ringBuffer_pushArray(RingBuffer* ringBuffer, uint8_t* data)
  8003a8e:	bd80      	pop	{r7, pc}
 
 08003a90 <ringBuffer_lookFor>:
- * @param	Unsigned 8-bit data array to be searched in the buffer.
- * @retval	1: data array is available in the buffer.
- * 			0: data array is not available in the buffer.
+ * @param	data is an unsigned 8-bit array to be searched in the buffer.
+ * @retval	1: data is available in the buffer.
+ * 			0: data is not available in the buffer.
  */
 uint32_t ringBuffer_lookFor(RingBuffer* ringBuffer, uint8_t* data)
 {
@@ -9353,8 +9353,8 @@ uint32_t ringBuffer_lookFor(RingBuffer* ringBuffer, uint8_t* data)
 
 08003abc <ringBuffer_capacity>:
  * @brief 	Check the size of the ring buffer.
- * @param 	Ring buffer typedef structure.
- * @retval	Ring buffer size.
+ * @param 	RingBuffer typedef structure.
+ * @retval	Size of ring buffer.
  */
 uint32_t ringBuffer_capacity(RingBuffer* ringBuffer)
 {

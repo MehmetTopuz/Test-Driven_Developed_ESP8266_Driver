@@ -1,5 +1,9 @@
 var NAVTREEINDEX124 =
 {
+"group__TIM__DMA__Base__address.html#ga74f6dd79db47fef4f9f8cb71f43454c5":[2,85,14,1,1,26],
+"group__TIM__DMA__Base__address.html#ga767eab033d485d32de80b46f70be3341":[2,85,14,1,1,3],
+"group__TIM__DMA__Base__address.html#ga8cf977b2548574072f45cfd7eca6b5c5":[2,85,14,1,1,13],
+"group__TIM__DMA__Base__address.html#ga94f3dcf13674f397fee0ef816ad973cf":[2,85,14,1,1,6],
 "group__TIM__DMA__Base__address.html#ga97bbe74e5ae8680c020a6b0f760d8909":[2,85,14,1,1,15],
 "group__TIM__DMA__Base__address.html#gac26cff34f1d207798b946c01a40f5d89":[2,85,14,1,1,23],
 "group__TIM__DMA__Base__address.html#gac7a1dc358937809c88370309e1ba27a4":[2,85,14,1,1,1],
@@ -245,9 +249,5 @@ var NAVTREEINDEX124 =
 "group__TIM__Exported__Types.html#ggae0994cf5970e56ca4903e9151f40010ca4545554d7fa04d17e78d69d17cb7e4b3":[2,85,14,0,14,1],
 "group__TIM__Flag__definition.html":[2,85,14,1,26],
 "group__TIM__Flag__definition.html#ga01aedbe0676064a4d47dee474ddb863d":[2,85,14,1,26,0],
-"group__TIM__Flag__definition.html#ga052c380f922219659810e4fceb574a7c":[2,85,14,1,26,6],
-"group__TIM__Flag__definition.html#ga38dfb7d1ed00af77d70bc3be28500108":[2,85,14,1,26,3],
-"group__TIM__Flag__definition.html#ga4df0c71d3e695c214d49802942e04590":[2,85,14,1,26,5],
-"group__TIM__Flag__definition.html#ga6ec646997baea79b25d49e2b793c03d0":[2,85,14,1,26,11],
-"group__TIM__Flag__definition.html#ga6ef08e4744f273144a422bf9c0e22208":[2,85,14,1,26,14]
+"group__TIM__Flag__definition.html#ga052c380f922219659810e4fceb574a7c":[2,85,14,1,26,6]
 };

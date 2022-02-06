@@ -1,0 +1,15 @@
+digraph "C:/Users/Topuz/STM32CubeIDE/workspace_1.6.0/ESP8266-TCP-IP/ESP8266-TCP/Drivers/CMSIS/Device/ST/STM32G4xx/Include"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  compound=true
+  subgraph clusterdir_212af06cfec819185c89de76cdaf7247 {
+    graph [ bgcolor="#edf0f7", pencolor="grey50", style="filled,dashed,", label="STM32G4xx", fontname="Helvetica", fontsize="10", URL="dir_212af06cfec819185c89de76cdaf7247.html"]
+  dir_114d65273a97b9449a7df9720bf1695e [shape=box, label="Include", style="filled,bold,", fillcolor="#edf0f7", color="grey25", URL="dir_114d65273a97b9449a7df9720bf1695e.html"];
+  }
+  dir_6ec1c020c42f5190e871099157064ee9 [shape=box, label="Include", style="", fillcolor="#edf0f7", color="grey50", URL="dir_6ec1c020c42f5190e871099157064ee9.html"];
+  dir_93a4f2ba67183dd39967c0f948e3c2fb [shape=box, label="Tests", style="dashed,", fillcolor="#edf0f7", color="red", URL="dir_93a4f2ba67183dd39967c0f948e3c2fb.html"];
+  dir_114d65273a97b9449a7df9720bf1695e->dir_6ec1c020c42f5190e871099157064ee9 [headlabel="1", labeldistance=1.5 headhref="dir_000019_000020.html"];
+  dir_114d65273a97b9449a7df9720bf1695e->dir_93a4f2ba67183dd39967c0f948e3c2fb [headlabel="1", labeldistance=1.5 headhref="dir_000019_000043.html"];
+}

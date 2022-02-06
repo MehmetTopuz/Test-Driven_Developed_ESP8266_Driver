@@ -1,0 +1,11 @@
+digraph "C:/Users/Topuz/STM32CubeIDE/workspace_1.6.0/ESP8266-TCP-IP/ESP8266-TCP/ESP8266_Driver"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  compound=true
+  subgraph clusterdir_d6aca0299a5d43c1e78297d4936c59f3 {
+    graph [ bgcolor="#edf0f7", pencolor="grey50", style="filled,dashed,", label="ESP8266-TCP", fontname="Helvetica", fontsize="10", URL="dir_d6aca0299a5d43c1e78297d4936c59f3.html"]
+  dir_98f227cb0ffcb3c08632274f7c31a478 [shape=box, label="ESP8266_Driver", style="filled,bold,", fillcolor="#edf0f7", color="grey25", URL="dir_98f227cb0ffcb3c08632274f7c31a478.html"];
+  }
+}

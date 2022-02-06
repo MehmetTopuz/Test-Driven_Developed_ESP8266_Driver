@@ -1,0 +1,21 @@
+digraph "C:/Users/Topuz/STM32CubeIDE/workspace_1.6.0/ESP8266-TCP-IP/ESP8266-TCP/Drivers"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  compound=true
+  subgraph clusterdir_d6aca0299a5d43c1e78297d4936c59f3 {
+    graph [ bgcolor="#edf0f7", pencolor="grey50", style="filled,dashed,", label="ESP8266-TCP", fontname="Helvetica", fontsize="10", URL="dir_d6aca0299a5d43c1e78297d4936c59f3.html"]
+  dir_1eb737c880dadefad37ee8f8d52625dd [shape=box, label="Core", style="filled,", fillcolor="#a2b4d6", color="red", URL="dir_1eb737c880dadefad37ee8f8d52625dd.html"];
+  dir_93a4f2ba67183dd39967c0f948e3c2fb [shape=box, label="Tests", style="filled,", fillcolor="#a2b4d6", color="red", URL="dir_93a4f2ba67183dd39967c0f948e3c2fb.html"];
+  subgraph clusterdir_e5981f6b789dd380d6bf43224d7e4f8c {
+    graph [ bgcolor="#edf0f7", pencolor="grey25", style="filled,bold,", label="", fontname="Helvetica", fontsize="10", URL="dir_e5981f6b789dd380d6bf43224d7e4f8c.html"]
+    dir_e5981f6b789dd380d6bf43224d7e4f8c [shape=plaintext, label="Drivers"];
+  dir_56d5a2eeed384ae49fc665b47fa21385 [shape=box, label="CMSIS", style="filled,", fillcolor="#a2b4d6", color="grey25", URL="dir_56d5a2eeed384ae49fc665b47fa21385.html"];
+  dir_ad37fc4c4fd3712f036424b5b2d5d70e [shape=box, label="STM32G4xx_HAL_Driver", style="filled,", fillcolor="#a2b4d6", color="grey25", URL="dir_ad37fc4c4fd3712f036424b5b2d5d70e.html"];
+  }
+  }
+  dir_56d5a2eeed384ae49fc665b47fa21385->dir_93a4f2ba67183dd39967c0f948e3c2fb [headlabel="17", labeldistance=1.5 headhref="dir_000001_000043.html"];
+  dir_ad37fc4c4fd3712f036424b5b2d5d70e->dir_1eb737c880dadefad37ee8f8d52625dd [headlabel="1", labeldistance=1.5 headhref="dir_000039_000002.html"];
+  dir_ad37fc4c4fd3712f036424b5b2d5d70e->dir_56d5a2eeed384ae49fc665b47fa21385 [headlabel="1", labeldistance=1.5 headhref="dir_000039_000001.html"];
+}

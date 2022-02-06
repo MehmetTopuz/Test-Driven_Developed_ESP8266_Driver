@@ -1,5 +1,9 @@
 var NAVTREEINDEX52 =
 {
+"group__GPIOEx__Alternate__function__selection.html#gae410e066daf2d5a7ec7f59f7b32d6ca7":[2,85,3,0,0,22],
+"group__GPIOEx__Alternate__function__selection.html#gae634fa0570cb4bc20217130da41737e1":[2,85,3,0,0,86],
+"group__GPIOEx__Alternate__function__selection.html#gae7b4f8a4620d9351b86eb56e30da3f64":[2,85,3,0,0,21],
+"group__GPIOEx__Alternate__function__selection.html#gae804f671f31033b81e9ffb0a7277f86b":[2,85,3,0,0,39],
 "group__GPIOEx__Alternate__function__selection.html#gaea624d501cf9bbc28e01bcba9270b895":[2,85,3,0,0,45],
 "group__GPIOEx__Alternate__function__selection.html#gaeabee59356af85150aa69f514e5f4ccc":[2,85,3,0,0,41],
 "group__GPIOEx__Alternate__function__selection.html#gaf090cae245bfae075661c330c470c3f4":[2,85,3,0,0,51],
@@ -245,9 +249,5 @@ var NAVTREEINDEX52 =
 "group__HAL__Aliased__Macros.html#gabec43ae4c792da49cd660bba7bf21133":[2,52,8],
 "group__HAL__Aliased__Macros.html#gabf8f11b57435bd1462f9a2137653c787":[2,52,3],
 "group__HAL__Aliased__Macros.html#gac1dfd2bab2879b5106f1dc496e3c356c":[2,52,13],
-"group__HAL__Aliased__Macros.html#gacc4f47478d9502c7f9326378ddf68967":[2,52,11],
-"group__HAL__Aliased__Macros.html#gace8e26327633559ff2a31f3abfb0b43b":[2,52,7],
-"group__HAL__CAN__Aliased__Defines.html":[2,35],
-"group__HAL__CAN__Aliased__Defines.html#ga01cd38ecda448043ba6a7870ab62fc2b":[2,35,6],
-"group__HAL__CAN__Aliased__Defines.html#ga0c57058d6d14b2baa24a4895975b1371":[2,35,2]
+"group__HAL__Aliased__Macros.html#gacc4f47478d9502c7f9326378ddf68967":[2,52,11]
 };

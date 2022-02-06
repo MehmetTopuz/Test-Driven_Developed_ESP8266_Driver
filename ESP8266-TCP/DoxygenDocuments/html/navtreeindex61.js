@@ -1,5 +1,9 @@
 var NAVTREEINDEX61 =
 {
+"group__PWREx__Private__Macros.html#ga5b2a8b140093af19e61dc7bef31cd2f9":[2,85,11,3,4],
+"group__PWREx__Private__Macros.html#ga6d03ede8c3b6a365694f254f790fbe72":[2,85,11,3,3],
+"group__PWREx__Private__Macros.html#ga7547d3dc786e6c6837163ba243df5938":[2,85,11,3,5],
+"group__PWREx__Private__Macros.html#gac6fcc59d6ff95b8feda1b228517f9c3f":[2,85,11,3,7],
 "group__PWREx__Regulator__Voltage__Scale.html":[2,85,11,1,4],
 "group__PWREx__Regulator__Voltage__Scale.html#ga3b5ca5ab9c19938a14d273825bcf840e":[2,85,11,1,4,0],
 "group__PWREx__Regulator__Voltage__Scale.html#gaa0d38e304a0adfdbb58a61c96bdb95e9":[2,85,11,1,4,1],
@@ -245,9 +249,5 @@ var NAVTREEINDEX61 =
 "group__Peripheral__Registers__Bits__Definition.html#ga0290cbfb68f0a8dde8394c84ebf24670":[2,84,0,5,0,9245],
 "group__Peripheral__Registers__Bits__Definition.html#ga0298ad2d1299a53b0ffa3f1f446ef076":[2,84,0,5,0,13701],
 "group__Peripheral__Registers__Bits__Definition.html#ga029f138d898ab4da91ee2122672926f3":[2,84,0,5,0,7077],
-"group__Peripheral__Registers__Bits__Definition.html#ga02aeb0f5747375daee2488ee818535de":[2,84,0,5,0,8665],
-"group__Peripheral__Registers__Bits__Definition.html#ga02af1bee3602af5feeb3bef1bede411d":[2,84,0,5,0,13202],
-"group__Peripheral__Registers__Bits__Definition.html#ga02bb03ef04fa7864026e0ca50d835c8a":[2,84,0,5,0,8562],
-"group__Peripheral__Registers__Bits__Definition.html#ga02c3931dfef9b112e4ea9417d6f5d2aa":[2,84,0,5,0,2180],
-"group__Peripheral__Registers__Bits__Definition.html#ga02c48c21d983bab6115b056239d84217":[2,84,0,5,0,4208]
+"group__Peripheral__Registers__Bits__Definition.html#ga02aeb0f5747375daee2488ee818535de":[2,84,0,5,0,8665]
 };

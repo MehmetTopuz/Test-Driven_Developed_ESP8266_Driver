@@ -1,5 +1,9 @@
 var NAVTREEINDEX82 =
 {
+"group__Peripheral__Registers__Bits__Definition.html#ga5eea9cb1b84a6e1a728c992de5a83f8e":[2,84,0,5,0,5833],
+"group__Peripheral__Registers__Bits__Definition.html#ga5efa1dc79a92b77579d2fd7fe2612c1b":[2,84,0,5,0,4557],
+"group__Peripheral__Registers__Bits__Definition.html#ga5effadce798e53ab37c5aea9300b3b23":[2,84,0,5,0,9954],
+"group__Peripheral__Registers__Bits__Definition.html#ga5f00361a6de57ec3eff8d29281d16d2d":[2,84,0,5,0,8801],
 "group__Peripheral__Registers__Bits__Definition.html#ga5f03a99ac417aa3ec5576d5cfe8e5be6":[2,84,0,5,0,6761],
 "group__Peripheral__Registers__Bits__Definition.html#ga5f091d176bb9ee12e322f2754b885337":[2,84,0,5,0,5728],
 "group__Peripheral__Registers__Bits__Definition.html#ga5f0963c6406d566620c1416d3574be95":[2,84,0,5,0,2999],
@@ -245,9 +249,5 @@ var NAVTREEINDEX82 =
 "group__Peripheral__Registers__Bits__Definition.html#ga63c4a1f82d40ccb887a8d62b9e277ae8":[2,84,0,5,0,1617],
 "group__Peripheral__Registers__Bits__Definition.html#ga63cf8d8b42975cad19b9a975a4e86b54":[2,84,0,5,0,3937],
 "group__Peripheral__Registers__Bits__Definition.html#ga63d1aeb331c459803aa9d4e036946d7a":[2,84,0,5,0,8134],
-"group__Peripheral__Registers__Bits__Definition.html#ga63d409c5a5d01f1646b672fd5ea18140":[2,84,0,5,0,13706],
-"group__Peripheral__Registers__Bits__Definition.html#ga63e8364a0c7340a1864b64183b8a47e3":[2,84,0,5,0,6538],
-"group__Peripheral__Registers__Bits__Definition.html#ga63f2ba426a708b67c23976659bae1cf4":[2,84,0,5,0,542],
-"group__Peripheral__Registers__Bits__Definition.html#ga63f3e5646d07373a18e2fd4d25a30f50":[2,84,0,5,0,11795],
-"group__Peripheral__Registers__Bits__Definition.html#ga63fa320df04dd6aaa354e6b126d438c6":[2,84,0,5,0,10590]
+"group__Peripheral__Registers__Bits__Definition.html#ga63d409c5a5d01f1646b672fd5ea18140":[2,84,0,5,0,13706]
 };

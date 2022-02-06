@@ -1,0 +1,20 @@
+digraph "C:/Users/Topuz/STM32CubeIDE/workspace_1.6.0/ESP8266-TCP-IP/ESP8266-TCP/Drivers/CMSIS"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  compound=true
+  subgraph clusterdir_e5981f6b789dd380d6bf43224d7e4f8c {
+    graph [ bgcolor="#edf0f7", pencolor="grey50", style="filled,dashed,", label="Drivers", fontname="Helvetica", fontsize="10", URL="dir_e5981f6b789dd380d6bf43224d7e4f8c.html"]
+  subgraph clusterdir_56d5a2eeed384ae49fc665b47fa21385 {
+    graph [ bgcolor="#edf0f7", pencolor="grey25", style="filled,bold,", label="", fontname="Helvetica", fontsize="10", URL="dir_56d5a2eeed384ae49fc665b47fa21385.html"]
+    dir_56d5a2eeed384ae49fc665b47fa21385 [shape=plaintext, label="CMSIS"];
+  dir_b74d53a37ffbde26cae143a92be7a343 [shape=box, label="Device", style="filled,", fillcolor="#a2b4d6", color="grey25", URL="dir_b74d53a37ffbde26cae143a92be7a343.html"];
+  dir_6ec1c020c42f5190e871099157064ee9 [shape=box, label="Include", style="filled,", fillcolor="#a2b4d6", color="grey25", URL="dir_6ec1c020c42f5190e871099157064ee9.html"];
+  }
+  }
+  dir_93a4f2ba67183dd39967c0f948e3c2fb [shape=box, label="Tests", style="dashed,", fillcolor="#edf0f7", color="red", URL="dir_93a4f2ba67183dd39967c0f948e3c2fb.html"];
+  dir_b74d53a37ffbde26cae143a92be7a343->dir_6ec1c020c42f5190e871099157064ee9 [headlabel="1", labeldistance=1.5 headhref="dir_000008_000020.html"];
+  dir_b74d53a37ffbde26cae143a92be7a343->dir_93a4f2ba67183dd39967c0f948e3c2fb [headlabel="1", labeldistance=1.5 headhref="dir_000008_000043.html"];
+  dir_6ec1c020c42f5190e871099157064ee9->dir_93a4f2ba67183dd39967c0f948e3c2fb [headlabel="16", labeldistance=1.5 headhref="dir_000020_000043.html"];
+}

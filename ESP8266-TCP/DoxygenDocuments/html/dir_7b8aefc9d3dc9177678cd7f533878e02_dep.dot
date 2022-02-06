@@ -1,0 +1,18 @@
+digraph "C:/Users/Topuz/STM32CubeIDE/workspace_1.6.0/ESP8266-TCP-IP/ESP8266-TCP/Tests/include"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  compound=true
+  subgraph clusterdir_93a4f2ba67183dd39967c0f948e3c2fb {
+    graph [ bgcolor="#edf0f7", pencolor="grey50", style="filled,dashed,", label="Tests", fontname="Helvetica", fontsize="10", URL="dir_93a4f2ba67183dd39967c0f948e3c2fb.html"]
+  subgraph clusterdir_7b8aefc9d3dc9177678cd7f533878e02 {
+    graph [ bgcolor="#edf0f7", pencolor="grey25", style="filled,bold,", label="", fontname="Helvetica", fontsize="10", URL="dir_7b8aefc9d3dc9177678cd7f533878e02.html"]
+    dir_7b8aefc9d3dc9177678cd7f533878e02 [shape=plaintext, label="include"];
+  dir_c1f31ddf6f7aa76400e7a77a0cb8973b [shape=box, label="CppUTest", style="filled,", fillcolor="#a2b4d6", color="grey25", URL="dir_c1f31ddf6f7aa76400e7a77a0cb8973b.html"];
+  dir_5ba0887b3e0a73e87ab53249065dbb51 [shape=box, label="CppUTestExt", style="filled,", fillcolor="#a2b4d6", color="grey25", URL="dir_5ba0887b3e0a73e87ab53249065dbb51.html"];
+  dir_36c30222e2ad3a518c3bae13cb4ecdda [shape=box, label="Platforms", style="filled,", fillcolor="#a2b4d6", color="grey25", URL="dir_36c30222e2ad3a518c3bae13cb4ecdda.html"];
+  }
+  }
+  dir_5ba0887b3e0a73e87ab53249065dbb51->dir_c1f31ddf6f7aa76400e7a77a0cb8973b [headlabel="15", labeldistance=1.5 headhref="dir_000006_000005.html"];
+}

@@ -1,0 +1,15 @@
+digraph "C:/Users/Topuz/STM32CubeIDE/workspace_1.6.0"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  compound=true
+  subgraph clusterdir_bc84256498dc5614be2bf6f96d0ea448 {
+    graph [ bgcolor="#edf0f7", pencolor="grey25", style="filled,dashed,", label="STM32CubeIDE", fontname="Helvetica", fontsize="10", URL="dir_bc84256498dc5614be2bf6f96d0ea448.html"]
+  subgraph clusterdir_d68f96515942b0cbb122a2ff87c20a0f {
+    graph [ bgcolor="#edf0f7", pencolor="grey25", style="filled,bold,", label="", fontname="Helvetica", fontsize="10", URL="dir_d68f96515942b0cbb122a2ff87c20a0f.html"]
+    dir_d68f96515942b0cbb122a2ff87c20a0f [shape=plaintext, label="workspace_1.6.0"];
+  dir_6413aba084afffb78dfe253537bd0154 [shape=box, label="ESP8266-TCP-IP", style="filled,", fillcolor="#a2b4d6", color="grey25", URL="dir_6413aba084afffb78dfe253537bd0154.html"];
+  }
+  }
+}
