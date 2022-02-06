@@ -108,6 +108,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   const char * av_override[] = { "exe","-v" };      // verbose mode
   CommandLineTestRunner::RunAllTests(2, av_override);
+
   while (1)
   {
 	  HAL_GPIO_TogglePin(LD2_GPIO_Port, LD2_Pin);

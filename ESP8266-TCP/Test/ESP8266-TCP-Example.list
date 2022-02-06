@@ -27,27 +27,27 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   ALLOC
  11 .ARM.attributes 00000030  00000000  00000000  00030334  2**0
                   CONTENTS, READONLY
- 12 .debug_info   0004a3f5  00000000  00000000  00030364  2**0
+ 12 .debug_info   0004a413  00000000  00000000  00030364  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 13 .debug_abbrev 00009229  00000000  00000000  0007a759  2**0
+ 13 .debug_abbrev 00009229  00000000  00000000  0007a777  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 14 .debug_aranges 00002d18  00000000  00000000  00083988  2**3
+ 14 .debug_aranges 00002d18  00000000  00000000  000839a0  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 15 .debug_ranges 00002b68  00000000  00000000  000866a0  2**3
+ 15 .debug_ranges 00002b68  00000000  00000000  000866b8  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 16 .debug_macro  0002c740  00000000  00000000  00089208  2**0
+ 16 .debug_macro  0002c798  00000000  00000000  00089220  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_line   0002157e  00000000  00000000  000b5948  2**0
+ 17 .debug_line   00021696  00000000  00000000  000b59b8  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_str    00101d25  00000000  00000000  000d6ec6  2**0
+ 18 .debug_str    00101dfc  00000000  00000000  000d704e  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .comment      00000053  00000000  00000000  001d8beb  2**0
+ 19 .comment      00000053  00000000  00000000  001d8e4a  2**0
                   CONTENTS, READONLY
- 20 .debug_frame  0000de4c  00000000  00000000  001d8c40  2**2
+ 20 .debug_frame  0000de4c  00000000  00000000  001d8ea0  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 21 .stab         00000024  00000000  00000000  001e6a8c  2**2
+ 21 .stab         00000024  00000000  00000000  001e6cec  2**2
                   CONTENTS, READONLY, DEBUGGING
- 22 .stabstr      0000004e  00000000  00000000  001e6ab0  2**0
+ 22 .stabstr      0000004e  00000000  00000000  001e6d10  2**0
                   CONTENTS, READONLY, DEBUGGING
 
 Disassembly of section .text:
@@ -9422,6 +9422,7 @@ int main(void)
  8003afc:	4619      	mov	r1, r3
  8003afe:	2002      	movs	r0, #2
  8003b00:	f001 fb1c 	bl	800513c <_ZN21CommandLineTestRunner11RunAllTestsEiPKPKc>
+
   while (1)
   {
 	  HAL_GPIO_TogglePin(LD2_GPIO_Port, LD2_Pin);
@@ -10130,7 +10131,7 @@ TEST(RingBuffer_Test_Group, InitTest)
  8003f42:	b083      	sub	sp, #12
  8003f44:	af00      	add	r7, sp, #0
  8003f46:	6078      	str	r0, [r7, #4]
- 8003f48:	2222      	movs	r2, #34	; 0x22
+ 8003f48:	2223      	movs	r2, #35	; 0x23
  8003f4a:	4906      	ldr	r1, [pc, #24]	; (8003f64 <_ZN45TEST_RingBuffer_Test_Group_InitTest_TestShell10createTestEv+0x24>)
  8003f4c:	2008      	movs	r0, #8
  8003f4e:	f002 fdc3 	bl	8006ad8 <_ZnwjPKci>
@@ -10182,7 +10183,7 @@ TEST(RingBuffer_Test_Group, InitTest)
  8003fa8:	f00a ff52 	bl	800ee50 <_ZN10UtestShell24getCurrentTestTerminatorEv>
  8003fac:	4603      	mov	r3, r0
  8003fae:	9302      	str	r3, [sp, #8]
- 8003fb0:	2325      	movs	r3, #37	; 0x25
+ 8003fb0:	2326      	movs	r3, #38	; 0x26
  8003fb2:	9301      	str	r3, [sp, #4]
  8003fb4:	4b2a      	ldr	r3, [pc, #168]	; (8004060 <_ZN40TEST_RingBuffer_Test_Group_InitTest_Test8testBodyEv+0xd4>)
  8003fb6:	9300      	str	r3, [sp, #0]
@@ -10208,7 +10209,7 @@ TEST(RingBuffer_Test_Group, InitTest)
  8003fde:	f00a ff37 	bl	800ee50 <_ZN10UtestShell24getCurrentTestTerminatorEv>
  8003fe2:	4603      	mov	r3, r0
  8003fe4:	9303      	str	r3, [sp, #12]
- 8003fe6:	2326      	movs	r3, #38	; 0x26
+ 8003fe6:	2327      	movs	r3, #39	; 0x27
  8003fe8:	9302      	str	r3, [sp, #8]
  8003fea:	4b1d      	ldr	r3, [pc, #116]	; (8004060 <_ZN40TEST_RingBuffer_Test_Group_InitTest_Test8testBodyEv+0xd4>)
  8003fec:	9301      	str	r3, [sp, #4]
@@ -10232,7 +10233,7 @@ TEST(RingBuffer_Test_Group, InitTest)
  8004010:	f00a ff1e 	bl	800ee50 <_ZN10UtestShell24getCurrentTestTerminatorEv>
  8004014:	4603      	mov	r3, r0
  8004016:	9302      	str	r3, [sp, #8]
- 8004018:	2327      	movs	r3, #39	; 0x27
+ 8004018:	2328      	movs	r3, #40	; 0x28
  800401a:	9301      	str	r3, [sp, #4]
  800401c:	4b10      	ldr	r3, [pc, #64]	; (8004060 <_ZN40TEST_RingBuffer_Test_Group_InitTest_Test8testBodyEv+0xd4>)
  800401e:	9300      	str	r3, [sp, #0]
@@ -10254,7 +10255,7 @@ TEST(RingBuffer_Test_Group, InitTest)
  800403e:	f00a ff07 	bl	800ee50 <_ZN10UtestShell24getCurrentTestTerminatorEv>
  8004042:	4603      	mov	r3, r0
  8004044:	9302      	str	r3, [sp, #8]
- 8004046:	2328      	movs	r3, #40	; 0x28
+ 8004046:	2329      	movs	r3, #41	; 0x29
  8004048:	9301      	str	r3, [sp, #4]
  800404a:	4b05      	ldr	r3, [pc, #20]	; (8004060 <_ZN40TEST_RingBuffer_Test_Group_InitTest_Test8testBodyEv+0xd4>)
  800404c:	9300      	str	r3, [sp, #0]
@@ -10307,7 +10308,7 @@ TEST(RingBuffer_Test_Group, PushDataTests)
  80040aa:	b083      	sub	sp, #12
  80040ac:	af00      	add	r7, sp, #0
  80040ae:	6078      	str	r0, [r7, #4]
- 80040b0:	222c      	movs	r2, #44	; 0x2c
+ 80040b0:	222d      	movs	r2, #45	; 0x2d
  80040b2:	4906      	ldr	r1, [pc, #24]	; (80040cc <_ZN50TEST_RingBuffer_Test_Group_PushDataTests_TestShell10createTestEv+0x24>)
  80040b4:	2008      	movs	r0, #8
  80040b6:	f002 fd0f 	bl	8006ad8 <_ZnwjPKci>
@@ -10365,7 +10366,7 @@ TEST(RingBuffer_Test_Group, PushDataTests)
  800411e:	f00a fe97 	bl	800ee50 <_ZN10UtestShell24getCurrentTestTerminatorEv>
  8004122:	4603      	mov	r3, r0
  8004124:	9302      	str	r3, [sp, #8]
- 8004126:	232f      	movs	r3, #47	; 0x2f
+ 8004126:	2330      	movs	r3, #48	; 0x30
  8004128:	9301      	str	r3, [sp, #4]
  800412a:	4b15      	ldr	r3, [pc, #84]	; (8004180 <_ZN45TEST_RingBuffer_Test_Group_PushDataTests_Test8testBodyEv+0x8c>)
  800412c:	9300      	str	r3, [sp, #0]
@@ -10396,7 +10397,7 @@ TEST(RingBuffer_Test_Group, PushDataTests)
  800415c:	f00a fe78 	bl	800ee50 <_ZN10UtestShell24getCurrentTestTerminatorEv>
  8004160:	4603      	mov	r3, r0
  8004162:	9302      	str	r3, [sp, #8]
- 8004164:	2332      	movs	r3, #50	; 0x32
+ 8004164:	2333      	movs	r3, #51	; 0x33
  8004166:	9301      	str	r3, [sp, #4]
  8004168:	4b05      	ldr	r3, [pc, #20]	; (8004180 <_ZN45TEST_RingBuffer_Test_Group_PushDataTests_Test8testBodyEv+0x8c>)
  800416a:	9300      	str	r3, [sp, #0]
@@ -10447,7 +10448,7 @@ TEST(RingBuffer_Test_Group, BufferOverflowTest)
  80041be:	b083      	sub	sp, #12
  80041c0:	af00      	add	r7, sp, #0
  80041c2:	6078      	str	r0, [r7, #4]
- 80041c4:	2236      	movs	r2, #54	; 0x36
+ 80041c4:	2237      	movs	r2, #55	; 0x37
  80041c6:	4906      	ldr	r1, [pc, #24]	; (80041e0 <_ZN55TEST_RingBuffer_Test_Group_BufferOverflowTest_TestShell10createTestEv+0x24>)
  80041c8:	2008      	movs	r0, #8
  80041ca:	f002 fc85 	bl	8006ad8 <_ZnwjPKci>
@@ -10542,7 +10543,7 @@ TEST(RingBuffer_Test_Group, BufferOverflowTest)
  8004272:	f00a fded 	bl	800ee50 <_ZN10UtestShell24getCurrentTestTerminatorEv>
  8004276:	4603      	mov	r3, r0
  8004278:	9302      	str	r3, [sp, #8]
- 800427a:	233e      	movs	r3, #62	; 0x3e
+ 800427a:	233f      	movs	r3, #63	; 0x3f
  800427c:	9301      	str	r3, [sp, #4]
  800427e:	4b05      	ldr	r3, [pc, #20]	; (8004294 <_ZN50TEST_RingBuffer_Test_Group_BufferOverflowTest_Test8testBodyEv+0x8c>)
  8004280:	9300      	str	r3, [sp, #0]
@@ -10590,7 +10591,7 @@ TEST(RingBuffer_Test_Group, PopDataTests)
  80042ce:	b083      	sub	sp, #12
  80042d0:	af00      	add	r7, sp, #0
  80042d2:	6078      	str	r0, [r7, #4]
- 80042d4:	2241      	movs	r2, #65	; 0x41
+ 80042d4:	2242      	movs	r2, #66	; 0x42
  80042d6:	4906      	ldr	r1, [pc, #24]	; (80042f0 <_ZN49TEST_RingBuffer_Test_Group_PopDataTests_TestShell10createTestEv+0x24>)
  80042d8:	2008      	movs	r0, #8
  80042da:	f002 fbfd 	bl	8006ad8 <_ZnwjPKci>
@@ -10652,7 +10653,7 @@ TEST(RingBuffer_Test_Group, PopDataTests)
  8004348:	f00a fd82 	bl	800ee50 <_ZN10UtestShell24getCurrentTestTerminatorEv>
  800434c:	4603      	mov	r3, r0
  800434e:	9302      	str	r3, [sp, #8]
- 8004350:	2346      	movs	r3, #70	; 0x46
+ 8004350:	2347      	movs	r3, #71	; 0x47
  8004352:	9301      	str	r3, [sp, #4]
  8004354:	4b05      	ldr	r3, [pc, #20]	; (800436c <_ZN44TEST_RingBuffer_Test_Group_PopDataTests_Test8testBodyEv+0x54>)
  8004356:	9300      	str	r3, [sp, #0]
@@ -10702,7 +10703,7 @@ TEST(RingBuffer_Test_Group, PopBufferOverFlowTest)
  80043a6:	b083      	sub	sp, #12
  80043a8:	af00      	add	r7, sp, #0
  80043aa:	6078      	str	r0, [r7, #4]
- 80043ac:	224a      	movs	r2, #74	; 0x4a
+ 80043ac:	224b      	movs	r2, #75	; 0x4b
  80043ae:	4906      	ldr	r1, [pc, #24]	; (80043c8 <_ZN58TEST_RingBuffer_Test_Group_PopBufferOverFlowTest_TestShell10createTestEv+0x24>)
  80043b0:	2008      	movs	r0, #8
  80043b2:	f002 fb91 	bl	8006ad8 <_ZnwjPKci>
@@ -10805,7 +10806,7 @@ TEST(RingBuffer_Test_Group, PopBufferOverFlowTest)
  8004462:	f00a fcf5 	bl	800ee50 <_ZN10UtestShell24getCurrentTestTerminatorEv>
  8004466:	4603      	mov	r3, r0
  8004468:	9302      	str	r3, [sp, #8]
- 800446a:	2357      	movs	r3, #87	; 0x57
+ 800446a:	2358      	movs	r3, #88	; 0x58
  800446c:	9301      	str	r3, [sp, #4]
  800446e:	4b05      	ldr	r3, [pc, #20]	; (8004484 <_ZN53TEST_RingBuffer_Test_Group_PopBufferOverFlowTest_Test8testBodyEv+0x94>)
  8004470:	9300      	str	r3, [sp, #0]
@@ -10853,7 +10854,7 @@ TEST(RingBuffer_Test_Group, BufferFlushTest)
  80044be:	b083      	sub	sp, #12
  80044c0:	af00      	add	r7, sp, #0
  80044c2:	6078      	str	r0, [r7, #4]
- 80044c4:	225a      	movs	r2, #90	; 0x5a
+ 80044c4:	225b      	movs	r2, #91	; 0x5b
  80044c6:	4906      	ldr	r1, [pc, #24]	; (80044e0 <_ZN52TEST_RingBuffer_Test_Group_BufferFlushTest_TestShell10createTestEv+0x24>)
  80044c8:	2008      	movs	r0, #8
  80044ca:	f002 fb05 	bl	8006ad8 <_ZnwjPKci>
@@ -10935,7 +10936,7 @@ TEST(RingBuffer_Test_Group, BufferFlushTest)
  8004558:	f00a fc7a 	bl	800ee50 <_ZN10UtestShell24getCurrentTestTerminatorEv>
  800455c:	4603      	mov	r3, r0
  800455e:	9302      	str	r3, [sp, #8]
- 8004560:	2361      	movs	r3, #97	; 0x61
+ 8004560:	2362      	movs	r3, #98	; 0x62
  8004562:	9301      	str	r3, [sp, #4]
  8004564:	4b24      	ldr	r3, [pc, #144]	; (80045f8 <_ZN47TEST_RingBuffer_Test_Group_BufferFlushTest_Test8testBodyEv+0xf0>)
  8004566:	9300      	str	r3, [sp, #0]
@@ -10970,7 +10971,7 @@ TEST(RingBuffer_Test_Group, BufferFlushTest)
  800459c:	f00a fc58 	bl	800ee50 <_ZN10UtestShell24getCurrentTestTerminatorEv>
  80045a0:	4603      	mov	r3, r0
  80045a2:	9302      	str	r3, [sp, #8]
- 80045a4:	2365      	movs	r3, #101	; 0x65
+ 80045a4:	2366      	movs	r3, #102	; 0x66
  80045a6:	9301      	str	r3, [sp, #4]
  80045a8:	4b13      	ldr	r3, [pc, #76]	; (80045f8 <_ZN47TEST_RingBuffer_Test_Group_BufferFlushTest_Test8testBodyEv+0xf0>)
  80045aa:	9300      	str	r3, [sp, #0]
@@ -10998,7 +10999,7 @@ TEST(RingBuffer_Test_Group, BufferFlushTest)
  80045d6:	f00a fc3b 	bl	800ee50 <_ZN10UtestShell24getCurrentTestTerminatorEv>
  80045da:	4603      	mov	r3, r0
  80045dc:	9302      	str	r3, [sp, #8]
- 80045de:	2366      	movs	r3, #102	; 0x66
+ 80045de:	2367      	movs	r3, #103	; 0x67
  80045e0:	9301      	str	r3, [sp, #4]
  80045e2:	4b05      	ldr	r3, [pc, #20]	; (80045f8 <_ZN47TEST_RingBuffer_Test_Group_BufferFlushTest_Test8testBodyEv+0xf0>)
  80045e4:	9300      	str	r3, [sp, #0]
@@ -11053,7 +11054,7 @@ TEST(RingBuffer_Test_Group, PushArrayTest)
  800463a:	b083      	sub	sp, #12
  800463c:	af00      	add	r7, sp, #0
  800463e:	6078      	str	r0, [r7, #4]
- 8004640:	226f      	movs	r2, #111	; 0x6f
+ 8004640:	2270      	movs	r2, #112	; 0x70
  8004642:	4906      	ldr	r1, [pc, #24]	; (800465c <_ZN50TEST_RingBuffer_Test_Group_PushArrayTest_TestShell10createTestEv+0x24>)
  8004644:	2008      	movs	r0, #8
  8004646:	f002 fa47 	bl	8006ad8 <_ZnwjPKci>
@@ -11110,7 +11111,7 @@ TEST(RingBuffer_Test_Group, PushArrayTest)
  80046aa:	f00a fbd1 	bl	800ee50 <_ZN10UtestShell24getCurrentTestTerminatorEv>
  80046ae:	4603      	mov	r3, r0
  80046b0:	9302      	str	r3, [sp, #8]
- 80046b2:	2373      	movs	r3, #115	; 0x73
+ 80046b2:	2374      	movs	r3, #116	; 0x74
  80046b4:	9301      	str	r3, [sp, #4]
  80046b6:	4b06      	ldr	r3, [pc, #24]	; (80046d0 <_ZN45TEST_RingBuffer_Test_Group_PushArrayTest_Test8testBodyEv+0x4c>)
  80046b8:	9300      	str	r3, [sp, #0]
@@ -11158,7 +11159,7 @@ TEST(RingBuffer_Test_Group, LookForTest)
  8004706:	b083      	sub	sp, #12
  8004708:	af00      	add	r7, sp, #0
  800470a:	6078      	str	r0, [r7, #4]
- 800470c:	2276      	movs	r2, #118	; 0x76
+ 800470c:	2277      	movs	r2, #119	; 0x77
  800470e:	4906      	ldr	r1, [pc, #24]	; (8004728 <_ZN48TEST_RingBuffer_Test_Group_LookForTest_TestShell10createTestEv+0x24>)
  8004710:	2008      	movs	r0, #8
  8004712:	f002 f9e1 	bl	8006ad8 <_ZnwjPKci>
@@ -11215,7 +11216,7 @@ TEST(RingBuffer_Test_Group, LookForTest)
  8004778:	f00a fb6a 	bl	800ee50 <_ZN10UtestShell24getCurrentTestTerminatorEv>
  800477c:	4603      	mov	r3, r0
  800477e:	9302      	str	r3, [sp, #8]
- 8004780:	237a      	movs	r3, #122	; 0x7a
+ 8004780:	237b      	movs	r3, #123	; 0x7b
  8004782:	9301      	str	r3, [sp, #4]
  8004784:	4b45      	ldr	r3, [pc, #276]	; (800489c <_ZN43TEST_RingBuffer_Test_Group_LookForTest_Test8testBodyEv+0x14c>)
  8004786:	9300      	str	r3, [sp, #0]
@@ -11261,7 +11262,7 @@ TEST(RingBuffer_Test_Group, LookForTest)
  80047dc:	6803      	ldr	r3, [r0, #0]
  80047de:	3370      	adds	r3, #112	; 0x70
  80047e0:	681c      	ldr	r4, [r3, #0]
- 80047e2:	237b      	movs	r3, #123	; 0x7b
+ 80047e2:	237c      	movs	r3, #124	; 0x7c
  80047e4:	4a2d      	ldr	r2, [pc, #180]	; (800489c <_ZN43TEST_RingBuffer_Test_Group_LookForTest_Test8testBodyEv+0x14c>)
  80047e6:	492f      	ldr	r1, [pc, #188]	; (80048a4 <_ZN43TEST_RingBuffer_Test_Group_LookForTest_Test8testBodyEv+0x154>)
  80047e8:	47a0      	blx	r4
@@ -11295,7 +11296,7 @@ TEST(RingBuffer_Test_Group, LookForTest)
  8004834:	f00a fb0c 	bl	800ee50 <_ZN10UtestShell24getCurrentTestTerminatorEv>
  8004838:	4603      	mov	r3, r0
  800483a:	9303      	str	r3, [sp, #12]
- 800483c:	237b      	movs	r3, #123	; 0x7b
+ 800483c:	237c      	movs	r3, #124	; 0x7c
  800483e:	9302      	str	r3, [sp, #8]
  8004840:	4b16      	ldr	r3, [pc, #88]	; (800489c <_ZN43TEST_RingBuffer_Test_Group_LookForTest_Test8testBodyEv+0x14c>)
  8004842:	9301      	str	r3, [sp, #4]
@@ -11323,7 +11324,7 @@ TEST(RingBuffer_Test_Group, LookForTest)
  8004874:	f00a faec 	bl	800ee50 <_ZN10UtestShell24getCurrentTestTerminatorEv>
  8004878:	4603      	mov	r3, r0
  800487a:	9302      	str	r3, [sp, #8]
- 800487c:	237b      	movs	r3, #123	; 0x7b
+ 800487c:	237c      	movs	r3, #124	; 0x7c
  800487e:	9301      	str	r3, [sp, #4]
  8004880:	4b06      	ldr	r3, [pc, #24]	; (800489c <_ZN43TEST_RingBuffer_Test_Group_LookForTest_Test8testBodyEv+0x14c>)
  8004882:	9300      	str	r3, [sp, #0]
@@ -11373,7 +11374,7 @@ TEST(RingBuffer_Test_Group, CapacityTest)
  80048da:	b083      	sub	sp, #12
  80048dc:	af00      	add	r7, sp, #0
  80048de:	6078      	str	r0, [r7, #4]
- 80048e0:	227e      	movs	r2, #126	; 0x7e
+ 80048e0:	227f      	movs	r2, #127	; 0x7f
  80048e2:	4906      	ldr	r1, [pc, #24]	; (80048fc <_ZN49TEST_RingBuffer_Test_Group_CapacityTest_TestShell10createTestEv+0x24>)
  80048e4:	2008      	movs	r0, #8
  80048e6:	f002 f8f7 	bl	8006ad8 <_ZnwjPKci>
@@ -11427,7 +11428,7 @@ TEST(RingBuffer_Test_Group, CapacityTest)
  8004946:	f00a fa83 	bl	800ee50 <_ZN10UtestShell24getCurrentTestTerminatorEv>
  800494a:	4603      	mov	r3, r0
  800494c:	9302      	str	r3, [sp, #8]
- 800494e:	2381      	movs	r3, #129	; 0x81
+ 800494e:	2382      	movs	r3, #130	; 0x82
  8004950:	9301      	str	r3, [sp, #4]
  8004952:	4b05      	ldr	r3, [pc, #20]	; (8004968 <_ZN44TEST_RingBuffer_Test_Group_CapacityTest_Test8testBodyEv+0x44>)
  8004954:	9300      	str	r3, [sp, #0]
@@ -12067,7 +12068,12 @@ TEST(RingBuffer_Test_Group, InitTest)
  8004e36:	bd80      	pop	{r7, pc}
 
 08004e38 <_Z41__static_initialization_and_destruction_0ii>:
-}
+	void teardown()
+	{
+
+
+	}
+};
  8004e38:	b580      	push	{r7, lr}
  8004e3a:	b084      	sub	sp, #16
  8004e3c:	af02      	add	r7, sp, #8
@@ -12083,7 +12089,7 @@ TEST(RingBuffer_Test_Group, InitTest)
 TEST(RingBuffer_Test_Group, InitTest)
  8004e52:	485b      	ldr	r0, [pc, #364]	; (8004fc0 <_Z41__static_initialization_and_destruction_0ii+0x188>)
  8004e54:	f7ff f888 	bl	8003f68 <_ZN45TEST_RingBuffer_Test_Group_InitTest_TestShellC1Ev>
- 8004e58:	2322      	movs	r3, #34	; 0x22
+ 8004e58:	2323      	movs	r3, #35	; 0x23
  8004e5a:	9301      	str	r3, [sp, #4]
  8004e5c:	4b59      	ldr	r3, [pc, #356]	; (8004fc4 <_Z41__static_initialization_and_destruction_0ii+0x18c>)
  8004e5e:	9300      	str	r3, [sp, #0]
@@ -12095,7 +12101,7 @@ TEST(RingBuffer_Test_Group, InitTest)
 TEST(RingBuffer_Test_Group, PushDataTests)
  8004e6c:	4859      	ldr	r0, [pc, #356]	; (8004fd4 <_Z41__static_initialization_and_destruction_0ii+0x19c>)
  8004e6e:	f7ff f92f 	bl	80040d0 <_ZN50TEST_RingBuffer_Test_Group_PushDataTests_TestShellC1Ev>
- 8004e72:	232c      	movs	r3, #44	; 0x2c
+ 8004e72:	232d      	movs	r3, #45	; 0x2d
  8004e74:	9301      	str	r3, [sp, #4]
  8004e76:	4b53      	ldr	r3, [pc, #332]	; (8004fc4 <_Z41__static_initialization_and_destruction_0ii+0x18c>)
  8004e78:	9300      	str	r3, [sp, #0]
@@ -12107,7 +12113,7 @@ TEST(RingBuffer_Test_Group, PushDataTests)
 TEST(RingBuffer_Test_Group, BufferOverflowTest)
  8004e86:	4856      	ldr	r0, [pc, #344]	; (8004fe0 <_Z41__static_initialization_and_destruction_0ii+0x1a8>)
  8004e88:	f7ff f9ac 	bl	80041e4 <_ZN55TEST_RingBuffer_Test_Group_BufferOverflowTest_TestShellC1Ev>
- 8004e8c:	2336      	movs	r3, #54	; 0x36
+ 8004e8c:	2337      	movs	r3, #55	; 0x37
  8004e8e:	9301      	str	r3, [sp, #4]
  8004e90:	4b4c      	ldr	r3, [pc, #304]	; (8004fc4 <_Z41__static_initialization_and_destruction_0ii+0x18c>)
  8004e92:	9300      	str	r3, [sp, #0]
@@ -12119,7 +12125,7 @@ TEST(RingBuffer_Test_Group, BufferOverflowTest)
 TEST(RingBuffer_Test_Group, PopDataTests)
  8004ea0:	4852      	ldr	r0, [pc, #328]	; (8004fec <_Z41__static_initialization_and_destruction_0ii+0x1b4>)
  8004ea2:	f7ff fa27 	bl	80042f4 <_ZN49TEST_RingBuffer_Test_Group_PopDataTests_TestShellC1Ev>
- 8004ea6:	2341      	movs	r3, #65	; 0x41
+ 8004ea6:	2342      	movs	r3, #66	; 0x42
  8004ea8:	9301      	str	r3, [sp, #4]
  8004eaa:	4b46      	ldr	r3, [pc, #280]	; (8004fc4 <_Z41__static_initialization_and_destruction_0ii+0x18c>)
  8004eac:	9300      	str	r3, [sp, #0]
@@ -12131,7 +12137,7 @@ TEST(RingBuffer_Test_Group, PopDataTests)
 TEST(RingBuffer_Test_Group, PopBufferOverFlowTest)
  8004eba:	484f      	ldr	r0, [pc, #316]	; (8004ff8 <_Z41__static_initialization_and_destruction_0ii+0x1c0>)
  8004ebc:	f7ff fa86 	bl	80043cc <_ZN58TEST_RingBuffer_Test_Group_PopBufferOverFlowTest_TestShellC1Ev>
- 8004ec0:	234a      	movs	r3, #74	; 0x4a
+ 8004ec0:	234b      	movs	r3, #75	; 0x4b
  8004ec2:	9301      	str	r3, [sp, #4]
  8004ec4:	4b3f      	ldr	r3, [pc, #252]	; (8004fc4 <_Z41__static_initialization_and_destruction_0ii+0x18c>)
  8004ec6:	9300      	str	r3, [sp, #0]
@@ -12143,7 +12149,7 @@ TEST(RingBuffer_Test_Group, PopBufferOverFlowTest)
 TEST(RingBuffer_Test_Group, BufferFlushTest)
  8004ed4:	484b      	ldr	r0, [pc, #300]	; (8005004 <_Z41__static_initialization_and_destruction_0ii+0x1cc>)
  8004ed6:	f7ff fb05 	bl	80044e4 <_ZN52TEST_RingBuffer_Test_Group_BufferFlushTest_TestShellC1Ev>
- 8004eda:	235a      	movs	r3, #90	; 0x5a
+ 8004eda:	235b      	movs	r3, #91	; 0x5b
  8004edc:	9301      	str	r3, [sp, #4]
  8004ede:	4b39      	ldr	r3, [pc, #228]	; (8004fc4 <_Z41__static_initialization_and_destruction_0ii+0x18c>)
  8004ee0:	9300      	str	r3, [sp, #0]
@@ -12155,7 +12161,7 @@ TEST(RingBuffer_Test_Group, BufferFlushTest)
 TEST(RingBuffer_Test_Group, PushArrayTest)
  8004eee:	4848      	ldr	r0, [pc, #288]	; (8005010 <_Z41__static_initialization_and_destruction_0ii+0x1d8>)
  8004ef0:	f7ff fbb6 	bl	8004660 <_ZN50TEST_RingBuffer_Test_Group_PushArrayTest_TestShellC1Ev>
- 8004ef4:	236f      	movs	r3, #111	; 0x6f
+ 8004ef4:	2370      	movs	r3, #112	; 0x70
  8004ef6:	9301      	str	r3, [sp, #4]
  8004ef8:	4b32      	ldr	r3, [pc, #200]	; (8004fc4 <_Z41__static_initialization_and_destruction_0ii+0x18c>)
  8004efa:	9300      	str	r3, [sp, #0]
@@ -12167,7 +12173,7 @@ TEST(RingBuffer_Test_Group, PushArrayTest)
 TEST(RingBuffer_Test_Group, LookForTest)
  8004f08:	4844      	ldr	r0, [pc, #272]	; (800501c <_Z41__static_initialization_and_destruction_0ii+0x1e4>)
  8004f0a:	f7ff fc0f 	bl	800472c <_ZN48TEST_RingBuffer_Test_Group_LookForTest_TestShellC1Ev>
- 8004f0e:	2376      	movs	r3, #118	; 0x76
+ 8004f0e:	2377      	movs	r3, #119	; 0x77
  8004f10:	9301      	str	r3, [sp, #4]
  8004f12:	4b2c      	ldr	r3, [pc, #176]	; (8004fc4 <_Z41__static_initialization_and_destruction_0ii+0x18c>)
  8004f14:	9300      	str	r3, [sp, #0]
@@ -12179,7 +12185,7 @@ TEST(RingBuffer_Test_Group, LookForTest)
 TEST(RingBuffer_Test_Group, CapacityTest)
  8004f22:	4841      	ldr	r0, [pc, #260]	; (8005028 <_Z41__static_initialization_and_destruction_0ii+0x1f0>)
  8004f24:	f7ff fcec 	bl	8004900 <_ZN49TEST_RingBuffer_Test_Group_CapacityTest_TestShellC1Ev>
- 8004f28:	237e      	movs	r3, #126	; 0x7e
+ 8004f28:	237f      	movs	r3, #127	; 0x7f
  8004f2a:	9301      	str	r3, [sp, #4]
  8004f2c:	4b25      	ldr	r3, [pc, #148]	; (8004fc4 <_Z41__static_initialization_and_destruction_0ii+0x18c>)
  8004f2e:	9300      	str	r3, [sp, #0]
@@ -12239,7 +12245,7 @@ TEST(RingBuffer_Test_Group, InitTest)
  8004fae:	f00a fa01 	bl	800f3b4 <_ZN13TestInstallerD1Ev>
  8004fb2:	4803      	ldr	r0, [pc, #12]	; (8004fc0 <_Z41__static_initialization_and_destruction_0ii+0x188>)
  8004fb4:	f7ff fefc 	bl	8004db0 <_ZN45TEST_RingBuffer_Test_Group_InitTest_TestShellD1Ev>
-}
+};
  8004fb8:	bf00      	nop
  8004fba:	3708      	adds	r7, #8
  8004fbc:	46bd      	mov	sp, r7

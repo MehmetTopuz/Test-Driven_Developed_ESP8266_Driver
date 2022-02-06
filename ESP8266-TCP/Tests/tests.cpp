@@ -7,6 +7,7 @@
 
 
 #include "CppUTest/TestHarness.h"
+#include "CppUTestExt/MockSupport.h"
 #include "esp8266.h"
 #include "ring_buffer.h"
 #include <stdio.h>
@@ -130,7 +131,22 @@ TEST(RingBuffer_Test_Group, CapacityTest)
 
 }
 
+TEST_GROUP(EspDriver_Test_Group)
+{
 
+
+	void setup()
+	{
+
+
+	}
+
+	void teardown()
+	{
+
+
+	}
+};
 
 
 
