@@ -39,6 +39,24 @@ tests.cpp:127:1:TEST_RingBuffer_Test_Group_CapacityTest_Test::TEST_RingBuffer_Te
 tests.cpp:127:1:virtual Utest* TEST_RingBuffer_Test_Group_CapacityTest_TestShell::createTest()	24	static
 tests.cpp:127:1:TEST_RingBuffer_Test_Group_CapacityTest_TestShell::TEST_RingBuffer_Test_Group_CapacityTest_TestShell()	16	static
 tests.cpp:127:1:virtual void TEST_RingBuffer_Test_Group_CapacityTest_Test::testBody()	48	static
+tests.cpp:134:6:void UART_Transmit_Fake(uint8_t*)	16	static
+tests.cpp:138:9:uint8_t UART_Receive_Fake()	4	static
+tests.cpp:143:6:void UART_ISR_Fake()	4	static
+tests.cpp:148:6:void UART_TX_IT_Enable_Fake()	4	static
+tests.cpp:153:10:uint32_t getTick_Fake()	4	static
+tests.cpp:165:7:virtual void TEST_GROUP_CppUTestGroupEspDriver_Test_Group::setup()	16	static
+tests.cpp:171:7:virtual void TEST_GROUP_CppUTestGroupEspDriver_Test_Group::teardown()	16	static
+tests.cpp:160:1:TEST_GROUP_CppUTestGroupEspDriver_Test_Group::TEST_GROUP_CppUTestGroupEspDriver_Test_Group()	16	static
+tests.cpp:160:1:TEST_GROUP_CppUTestGroupEspDriver_Test_Group::~TEST_GROUP_CppUTestGroupEspDriver_Test_Group()	16	static
+tests.cpp:160:1:virtual TEST_GROUP_CppUTestGroupEspDriver_Test_Group::~TEST_GROUP_CppUTestGroupEspDriver_Test_Group()	16	static
+tests.cpp:180:1:TEST_EspDriver_Test_Group_Esp_Init_Test_Test::TEST_EspDriver_Test_Group_Esp_Init_Test_Test()	16	static
+tests.cpp:180:1:virtual Utest* TEST_EspDriver_Test_Group_Esp_Init_Test_TestShell::createTest()	24	static
+tests.cpp:180:1:TEST_EspDriver_Test_Group_Esp_Init_Test_TestShell::TEST_EspDriver_Test_Group_Esp_Init_Test_TestShell()	16	static
+tests.cpp:180:1:virtual void TEST_EspDriver_Test_Group_Esp_Init_Test_Test::testBody()	48	static
+tests.cpp:180:1:TEST_EspDriver_Test_Group_Esp_Init_Test_TestShell::~TEST_EspDriver_Test_Group_Esp_Init_Test_TestShell()	16	static
+tests.cpp:180:1:virtual TEST_EspDriver_Test_Group_Esp_Init_Test_TestShell::~TEST_EspDriver_Test_Group_Esp_Init_Test_TestShell()	16	static
+tests.cpp:180:1:TEST_EspDriver_Test_Group_Esp_Init_Test_Test::~TEST_EspDriver_Test_Group_Esp_Init_Test_Test()	16	static
+tests.cpp:180:1:virtual TEST_EspDriver_Test_Group_Esp_Init_Test_Test::~TEST_EspDriver_Test_Group_Esp_Init_Test_Test()	16	static
 tests.cpp:127:1:TEST_RingBuffer_Test_Group_CapacityTest_TestShell::~TEST_RingBuffer_Test_Group_CapacityTest_TestShell()	16	static
 tests.cpp:127:1:virtual TEST_RingBuffer_Test_Group_CapacityTest_TestShell::~TEST_RingBuffer_Test_Group_CapacityTest_TestShell()	16	static
 tests.cpp:127:1:TEST_RingBuffer_Test_Group_CapacityTest_Test::~TEST_RingBuffer_Test_Group_CapacityTest_Test()	16	static
@@ -75,6 +93,6 @@ tests.cpp:35:1:TEST_RingBuffer_Test_Group_InitTest_TestShell::~TEST_RingBuffer_T
 tests.cpp:35:1:virtual TEST_RingBuffer_Test_Group_InitTest_TestShell::~TEST_RingBuffer_Test_Group_InitTest_TestShell()	16	static
 tests.cpp:35:1:TEST_RingBuffer_Test_Group_InitTest_Test::~TEST_RingBuffer_Test_Group_InitTest_Test()	16	static
 tests.cpp:35:1:virtual TEST_RingBuffer_Test_Group_InitTest_Test::~TEST_RingBuffer_Test_Group_InitTest_Test()	16	static
-tests.cpp:149:2:void __static_initialization_and_destruction_0(int, int)	24	static
-tests.cpp:149:2:cpp)	8	static
-tests.cpp:149:2:cpp)	8	static
+tests.cpp:198:1:void __static_initialization_and_destruction_0(int, int)	24	static
+tests.cpp:198:1:cpp)	8	static
+tests.cpp:198:1:cpp)	8	static
