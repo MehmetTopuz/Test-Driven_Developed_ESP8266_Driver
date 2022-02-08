@@ -142,13 +142,8 @@ void UART_Transmit_Fake(uint8_t* data)
 uint8_t UART_Receive_Fake(void)
 {
 
-	return 1;
+	return mock().actualCall("UART_Receive_Fake").returnIntValue();
 }
-void UART_ISR_Fake(void)
-{
-
-}
-
 
 uint32_t getTick_Fake(void)
 {
@@ -166,8 +161,8 @@ TEST_GROUP(EspDriver_Test_Group)
 	{
 		ESP_Init(UART_Transmit_Fake,
 				  UART_Receive_Fake,
-				  UART_ISR_Fake,
-				  getTick_Fake);
+				  getTick_Fake,
+				  100);
 
 	}
 
@@ -186,13 +181,13 @@ TEST(EspDriver_Test_Group, Esp_Init_Test)
 	transmit = UART_Transmit_Fake; // or you can pass UART_Transmit_Fake as a parameter to the function instead of transmit.
 	int result = ESP_Init(transmit,
 						  UART_Receive_Fake,
-						  UART_ISR_Fake,
-						  getTick_Fake);
+						  getTick_Fake,
+						  100);
 
 //	int result = ESP_Init(UART_Transmit_Fake,
 //						  UART_Receive_Fake,
-//						  UART_ISR_Fake,
-//						  getTick_Fake);
+//						  getTick_Fake,
+//	  	  	  	  	  	  100);
 
 	LONGS_EQUAL(1,result);
 
@@ -205,6 +200,23 @@ TEST(EspDriver_Test_Group, Send_AT_Command_Test)
 	//STRCMP_EQUAL("Test",TxString);
 	mock().expectOneCall("UART_Transmit_Fake").withParameter("data", (uint8_t *)"AT\r\n");
 	Send_AT_Command((char*)"AT\r\n");
+	mock().checkExpectations();
+
+}
+
+TEST(EspDriver_Test_Group, UART_Receive_Handler_Test)
+{
+
+	mock().expectOneCall("UART_Receive_Fake").andReturnValue((uint8_t)'O');
+	ESP_UART_ReceiveHandler();
+	mock().expectOneCall("UART_Receive_Fake").andReturnValue((uint8_t)'K');
+	ESP_UART_ReceiveHandler();
+	mock().expectOneCall("UART_Receive_Fake").andReturnValue((uint8_t)'\r');
+	ESP_UART_ReceiveHandler();
+	mock().expectOneCall("UART_Receive_Fake").andReturnValue((uint8_t)'\n');
+	ESP_UART_ReceiveHandler();
+
+	STRCMP_EQUAL("OK\r\n",(char*)rx_buffer->buffer);	// check the rx ring buffer.
 	mock().checkExpectations();
 
 }

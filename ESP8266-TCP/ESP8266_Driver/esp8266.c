@@ -13,20 +13,23 @@
 
 static Esp_Init_Typedef ESP8266;
 
+
+
 int ESP_Init(void 		(*UART_Transmit)(uint8_t*),
 			 uint8_t 	(*UART_Receive)(void),
-			 void 		(*UART_ISR)(void),
-			 uint32_t 	(*getTick)(void))
+			 uint32_t 	(*getTick)(void),
+			 uint32_t	UART_Buffer_Size)
 {
 	if(UART_Transmit != NULL		&&
 	   UART_Receive	!= NULL			&&
-	   UART_ISR	!= NULL				&&
 	   getTick != NULL)
 	{
-		ESP8266.UART_ISR 			= UART_ISR;
 		ESP8266.UART_Receive 		= UART_Receive;
 		ESP8266.UART_Transmit 		= UART_Transmit;
 		ESP8266.getTick 			= getTick;
+
+		rx_buffer = ringBuffer_init(UART_Buffer_Size);
+
 		return 1;
 	}
 	else
@@ -41,3 +44,12 @@ void Send_AT_Command(char *cmd)
 
 	ESP8266.UART_Transmit((uint8_t*)cmd);
 }
+
+void ESP_UART_ReceiveHandler(void)
+{
+	uint8_t rx_data=0;
+
+	rx_data = ESP8266.UART_Receive();
+	ringBuffer_push(rx_buffer, rx_data);
+}
+

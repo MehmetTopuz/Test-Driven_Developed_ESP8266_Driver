@@ -22,12 +22,12 @@ extern "C"
 
 #include "ring_buffer.h"
 
+RingBuffer* rx_buffer;
 
 typedef struct
 {
     void		(*UART_Transmit)(uint8_t*);
     uint8_t		(*UART_Receive)(void);
-    void		(*UART_ISR)(void);
     uint32_t	(*getTick)(void);
 
 }Esp_Init_Typedef;
@@ -36,12 +36,12 @@ typedef struct
 
 int ESP_Init(void (*UART_Transmit)(uint8_t*),
 			 uint8_t (*UART_Receive)(void),
-			 void (*UART_ISR)(void),
-			 uint32_t (*getTick)(void));
+			 uint32_t (*getTick)(void),
+			 uint32_t UART_Buffer_Size);
 
 void Send_AT_Command(char *cmd);
 
-
+void ESP_UART_ReceiveHandler(void);
 
 #ifdef __cplusplus
 }
