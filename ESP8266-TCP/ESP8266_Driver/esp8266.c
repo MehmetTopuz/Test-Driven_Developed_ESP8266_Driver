@@ -13,21 +13,18 @@
 
 static Esp_Init_Typedef ESP8266;
 
-int ESP_Init(void (*UART_Transmit)(uint8_t*),
-			 uint8_t (*UART_Receive)(void),
-			 void (*UART_ISR)(void),
-			 void (*UART_TX_IT_Enable)(void),
-			 uint32_t (*getTick)(void))
+int ESP_Init(void 		(*UART_Transmit)(uint8_t*),
+			 uint8_t 	(*UART_Receive)(void),
+			 void 		(*UART_ISR)(void),
+			 uint32_t 	(*getTick)(void))
 {
 	if(UART_Transmit != NULL		&&
 	   UART_Receive	!= NULL			&&
 	   UART_ISR	!= NULL				&&
-	   UART_TX_IT_Enable != NULL	&&
 	   getTick != NULL)
 	{
 		ESP8266.UART_ISR 			= UART_ISR;
 		ESP8266.UART_Receive 		= UART_Receive;
-		ESP8266.UART_TX_IT_Enable 	= UART_TX_IT_Enable;
 		ESP8266.UART_Transmit 		= UART_Transmit;
 		ESP8266.getTick 			= getTick;
 		return 1;
@@ -36,4 +33,11 @@ int ESP_Init(void (*UART_Transmit)(uint8_t*),
 	{
 		return -1;
 	}
+}
+
+
+void Send_AT_Command(char *cmd)
+{
+
+	ESP8266.UART_Transmit((uint8_t*)cmd);
 }

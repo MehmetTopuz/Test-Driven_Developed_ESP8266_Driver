@@ -28,7 +28,6 @@ typedef struct
     void		(*UART_Transmit)(uint8_t*);
     uint8_t		(*UART_Receive)(void);
     void		(*UART_ISR)(void);
-    void		(*UART_TX_IT_Enable)(void);
     uint32_t	(*getTick)(void);
 
 }Esp_Init_Typedef;
@@ -38,8 +37,10 @@ typedef struct
 int ESP_Init(void (*UART_Transmit)(uint8_t*),
 			 uint8_t (*UART_Receive)(void),
 			 void (*UART_ISR)(void),
-			 void (*UART_TX_IT_Enable)(void),
 			 uint32_t (*getTick)(void));
+
+void Send_AT_Command(char *cmd);
+
 
 
 #ifdef __cplusplus

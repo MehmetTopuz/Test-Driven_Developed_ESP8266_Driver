@@ -11,6 +11,7 @@
 #include "esp8266.h"
 #include "ring_buffer.h"
 #include <stdio.h>
+#include <string.h>
 
 TEST_GROUP(RingBuffer_Test_Group)
 {
@@ -131,9 +132,12 @@ TEST(RingBuffer_Test_Group, CapacityTest)
 
 }
 
+//char TxString[50];
+
 void UART_Transmit_Fake(uint8_t* data)
 {
-
+	mock().actualCall("UART_Transmit_Fake").withParameter("data", data);
+	//memcpy(TxString,data,sizeof(data));
 }
 uint8_t UART_Receive_Fake(void)
 {
@@ -145,10 +149,6 @@ void UART_ISR_Fake(void)
 
 }
 
-void UART_TX_IT_Enable_Fake(void)
-{
-
-}
 
 uint32_t getTick_Fake(void)
 {
@@ -164,14 +164,17 @@ TEST_GROUP(EspDriver_Test_Group)
 
 	void setup()
 	{
-
+		ESP_Init(UART_Transmit_Fake,
+				  UART_Receive_Fake,
+				  UART_ISR_Fake,
+				  getTick_Fake);
 
 	}
 
 	void teardown()
 	{
 
-
+		mock().clear();
 	}
 
 
@@ -180,21 +183,28 @@ TEST_GROUP(EspDriver_Test_Group)
 TEST(EspDriver_Test_Group, Esp_Init_Test)
 {
 
-	transmit = UART_Transmit_Fake; // or you can pass as parameter UART_Transmit_Fake to the function instead of transmit.
+	transmit = UART_Transmit_Fake; // or you can pass UART_Transmit_Fake as a parameter to the function instead of transmit.
 	int result = ESP_Init(transmit,
 						  UART_Receive_Fake,
 						  UART_ISR_Fake,
-						  UART_TX_IT_Enable_Fake,
 						  getTick_Fake);
 
 //	int result = ESP_Init(UART_Transmit_Fake,
 //						  UART_Receive_Fake,
 //						  UART_ISR_Fake,
-//						  UART_TX_IT_Enable_Fake,
 //						  getTick_Fake);
 
 	LONGS_EQUAL(1,result);
 
 }
 
+TEST(EspDriver_Test_Group, Send_AT_Command_Test)
+{
+	mock().expectOneCall("UART_Transmit_Fake").withParameter("data", (uint8_t *)"Test");
+	Send_AT_Command((char*)"Test");
+	//STRCMP_EQUAL("Test",TxString);
+	mock().expectOneCall("UART_Transmit_Fake").withParameter("data", (uint8_t *)"AT\r\n");
+	Send_AT_Command((char*)"AT\r\n");
+	mock().checkExpectations();
 
+}
