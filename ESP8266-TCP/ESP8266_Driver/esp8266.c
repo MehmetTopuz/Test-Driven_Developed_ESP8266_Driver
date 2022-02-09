@@ -78,3 +78,11 @@ Status Wait_Response(char * response, uint32_t timeout)
 
 }
 
+Status Connect_Wifi(char* ssid, char* password)
+{
+
+	return CONNECTION_ERROR;
+}
+
+
+
