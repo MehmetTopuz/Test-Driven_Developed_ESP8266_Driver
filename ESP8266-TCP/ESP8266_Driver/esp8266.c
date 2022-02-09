@@ -58,3 +58,23 @@ uint32_t Read_Response(char * response)
 {
 	return ringBuffer_lookFor(rx_buffer, (uint8_t*)response);
 }
+
+Status Wait_Response(char * response, uint32_t timeout)
+{
+	uint32_t timestamp = ESP8266.getTick();
+
+	uint32_t result = 0;
+
+	while(!result)
+	{
+		if(ESP8266.getTick() - timestamp >= timeout)
+		{
+			return TIMEOUT_ERROR;
+		}
+		 result = ringBuffer_lookFor(rx_buffer, (uint8_t*)response);
+	}
+
+		return FOUND;
+
+}
+

@@ -145,9 +145,15 @@ uint8_t UART_Receive_Fake(void)
 	return mock().actualCall("UART_Receive_Fake").returnIntValue();
 }
 
+uint32_t time=0;
+
 uint32_t getTick_Fake(void)
 {
-	return 1;
+	if(time == 0xFFFFFFFF)
+		time = 0;
+	else
+		time += 1;
+	return time;
 }
 
 void (*transmit)(uint8_t*);
@@ -236,3 +242,27 @@ TEST(EspDriver_Test_Group, Read_Response_Test)
 	LONGS_EQUAL(1,result);
 	mock().checkExpectations();
 }
+
+TEST(EspDriver_Test_Group, Wait_Response_Test)
+{
+
+	Status result = Wait_Response((char*)"OK", 1000);
+
+	LONGS_EQUAL(TIMEOUT_ERROR,result);
+
+	char response[10] = "OK\r\n";
+
+	for(int i=0;i<(int)strlen(response);i++)
+	{
+		mock().expectOneCall("UART_Receive_Fake").andReturnValue((uint8_t)response[i]);
+		ESP_UART_ReceiveHandler();
+	}
+
+	result = Wait_Response((char*)"OK", 1000);
+	LONGS_EQUAL(FOUND,result);
+	mock().checkExpectations();
+
+}
+
+
+

@@ -32,6 +32,15 @@ typedef struct
 
 }Esp_Init_Typedef;
 
+typedef enum
+{
+	FOUND = 0,
+	NOT_FOUND,
+	TIMEOUT_ERROR,
+	CONNECTION_OK,
+	CONNECTION_ERROR,
+}Status;
+
 /* Function Prototypes --------------------------------------------------------*/
 
 int ESP_Init(void (*UART_Transmit)(uint8_t*),
@@ -44,6 +53,8 @@ void Send_AT_Command(char *cmd);
 void ESP_UART_ReceiveHandler(void);
 
 uint32_t Read_Response(char * response);
+
+Status Wait_Response(char * response, uint32_t timeout);
 
 #ifdef __cplusplus
 }

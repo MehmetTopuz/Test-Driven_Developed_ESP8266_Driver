@@ -43,44 +43,52 @@ tests.cpp:128:1:TEST_RingBuffer_Test_Group_CapacityTest_TestShell::TEST_RingBuff
 tests.cpp:128:1:virtual void TEST_RingBuffer_Test_Group_CapacityTest_Test::testBody()	48	static
 tests.cpp:137:6:void UART_Transmit_Fake(uint8_t*)	48	static
 tests.cpp:142:9:uint8_t UART_Receive_Fake()	32	static
-tests.cpp:148:10:uint32_t getTick_Fake()	4	static
-tests.cpp:160:7:virtual void TEST_GROUP_CppUTestGroupEspDriver_Test_Group::setup()	16	static
-tests.cpp:169:7:virtual void TEST_GROUP_CppUTestGroupEspDriver_Test_Group::teardown()	24	static
-tests.cpp:155:1:TEST_GROUP_CppUTestGroupEspDriver_Test_Group::TEST_GROUP_CppUTestGroupEspDriver_Test_Group()	16	static
-tests.cpp:155:1:TEST_GROUP_CppUTestGroupEspDriver_Test_Group::~TEST_GROUP_CppUTestGroupEspDriver_Test_Group()	16	static
-tests.cpp:155:1:virtual TEST_GROUP_CppUTestGroupEspDriver_Test_Group::~TEST_GROUP_CppUTestGroupEspDriver_Test_Group()	16	static
-tests.cpp:178:1:TEST_EspDriver_Test_Group_Esp_Init_Test_Test::TEST_EspDriver_Test_Group_Esp_Init_Test_Test()	16	static
-tests.cpp:178:1:virtual Utest* TEST_EspDriver_Test_Group_Esp_Init_Test_TestShell::createTest()	24	static
-tests.cpp:178:1:TEST_EspDriver_Test_Group_Esp_Init_Test_TestShell::TEST_EspDriver_Test_Group_Esp_Init_Test_TestShell()	16	static
-tests.cpp:178:1:virtual void TEST_EspDriver_Test_Group_Esp_Init_Test_Test::testBody()	48	static
-tests.cpp:196:1:TEST_EspDriver_Test_Group_Send_AT_Command_Test_Test::TEST_EspDriver_Test_Group_Send_AT_Command_Test_Test()	16	static
-tests.cpp:196:1:virtual Utest* TEST_EspDriver_Test_Group_Send_AT_Command_Test_TestShell::createTest()	24	static
-tests.cpp:196:1:TEST_EspDriver_Test_Group_Send_AT_Command_Test_TestShell::TEST_EspDriver_Test_Group_Send_AT_Command_Test_TestShell()	16	static
-tests.cpp:196:1:virtual void TEST_EspDriver_Test_Group_Send_AT_Command_Test_Test::testBody()	80	static
-tests.cpp:207:1:TEST_EspDriver_Test_Group_UART_Receive_Handler_Test_Test::TEST_EspDriver_Test_Group_UART_Receive_Handler_Test_Test()	16	static
-tests.cpp:207:1:virtual Utest* TEST_EspDriver_Test_Group_UART_Receive_Handler_Test_TestShell::createTest()	24	static
-tests.cpp:207:1:TEST_EspDriver_Test_Group_UART_Receive_Handler_Test_TestShell::TEST_EspDriver_Test_Group_UART_Receive_Handler_Test_TestShell()	16	static
-tests.cpp:207:1:virtual void TEST_EspDriver_Test_Group_UART_Receive_Handler_Test_Test::testBody()	120	static
-tests.cpp:224:1:TEST_EspDriver_Test_Group_Read_Response_Test_Test::TEST_EspDriver_Test_Group_Read_Response_Test_Test()	16	static
-tests.cpp:224:1:virtual Utest* TEST_EspDriver_Test_Group_Read_Response_Test_TestShell::createTest()	24	static
-tests.cpp:224:1:TEST_EspDriver_Test_Group_Read_Response_Test_TestShell::TEST_EspDriver_Test_Group_Read_Response_Test_TestShell()	16	static
-tests.cpp:224:1:virtual void TEST_EspDriver_Test_Group_Read_Response_Test_Test::testBody()	96	static
-tests.cpp:224:1:TEST_EspDriver_Test_Group_Read_Response_Test_TestShell::~TEST_EspDriver_Test_Group_Read_Response_Test_TestShell()	16	static
-tests.cpp:224:1:virtual TEST_EspDriver_Test_Group_Read_Response_Test_TestShell::~TEST_EspDriver_Test_Group_Read_Response_Test_TestShell()	16	static
-tests.cpp:224:1:TEST_EspDriver_Test_Group_Read_Response_Test_Test::~TEST_EspDriver_Test_Group_Read_Response_Test_Test()	16	static
-tests.cpp:224:1:virtual TEST_EspDriver_Test_Group_Read_Response_Test_Test::~TEST_EspDriver_Test_Group_Read_Response_Test_Test()	16	static
-tests.cpp:207:1:TEST_EspDriver_Test_Group_UART_Receive_Handler_Test_TestShell::~TEST_EspDriver_Test_Group_UART_Receive_Handler_Test_TestShell()	16	static
-tests.cpp:207:1:virtual TEST_EspDriver_Test_Group_UART_Receive_Handler_Test_TestShell::~TEST_EspDriver_Test_Group_UART_Receive_Handler_Test_TestShell()	16	static
-tests.cpp:207:1:TEST_EspDriver_Test_Group_UART_Receive_Handler_Test_Test::~TEST_EspDriver_Test_Group_UART_Receive_Handler_Test_Test()	16	static
-tests.cpp:207:1:virtual TEST_EspDriver_Test_Group_UART_Receive_Handler_Test_Test::~TEST_EspDriver_Test_Group_UART_Receive_Handler_Test_Test()	16	static
-tests.cpp:196:1:TEST_EspDriver_Test_Group_Send_AT_Command_Test_TestShell::~TEST_EspDriver_Test_Group_Send_AT_Command_Test_TestShell()	16	static
-tests.cpp:196:1:virtual TEST_EspDriver_Test_Group_Send_AT_Command_Test_TestShell::~TEST_EspDriver_Test_Group_Send_AT_Command_Test_TestShell()	16	static
-tests.cpp:196:1:TEST_EspDriver_Test_Group_Send_AT_Command_Test_Test::~TEST_EspDriver_Test_Group_Send_AT_Command_Test_Test()	16	static
-tests.cpp:196:1:virtual TEST_EspDriver_Test_Group_Send_AT_Command_Test_Test::~TEST_EspDriver_Test_Group_Send_AT_Command_Test_Test()	16	static
-tests.cpp:178:1:TEST_EspDriver_Test_Group_Esp_Init_Test_TestShell::~TEST_EspDriver_Test_Group_Esp_Init_Test_TestShell()	16	static
-tests.cpp:178:1:virtual TEST_EspDriver_Test_Group_Esp_Init_Test_TestShell::~TEST_EspDriver_Test_Group_Esp_Init_Test_TestShell()	16	static
-tests.cpp:178:1:TEST_EspDriver_Test_Group_Esp_Init_Test_Test::~TEST_EspDriver_Test_Group_Esp_Init_Test_Test()	16	static
-tests.cpp:178:1:virtual TEST_EspDriver_Test_Group_Esp_Init_Test_Test::~TEST_EspDriver_Test_Group_Esp_Init_Test_Test()	16	static
+tests.cpp:150:10:uint32_t getTick_Fake()	4	static
+tests.cpp:166:7:virtual void TEST_GROUP_CppUTestGroupEspDriver_Test_Group::setup()	16	static
+tests.cpp:175:7:virtual void TEST_GROUP_CppUTestGroupEspDriver_Test_Group::teardown()	24	static
+tests.cpp:161:1:TEST_GROUP_CppUTestGroupEspDriver_Test_Group::TEST_GROUP_CppUTestGroupEspDriver_Test_Group()	16	static
+tests.cpp:161:1:TEST_GROUP_CppUTestGroupEspDriver_Test_Group::~TEST_GROUP_CppUTestGroupEspDriver_Test_Group()	16	static
+tests.cpp:161:1:virtual TEST_GROUP_CppUTestGroupEspDriver_Test_Group::~TEST_GROUP_CppUTestGroupEspDriver_Test_Group()	16	static
+tests.cpp:184:1:TEST_EspDriver_Test_Group_Esp_Init_Test_Test::TEST_EspDriver_Test_Group_Esp_Init_Test_Test()	16	static
+tests.cpp:184:1:virtual Utest* TEST_EspDriver_Test_Group_Esp_Init_Test_TestShell::createTest()	24	static
+tests.cpp:184:1:TEST_EspDriver_Test_Group_Esp_Init_Test_TestShell::TEST_EspDriver_Test_Group_Esp_Init_Test_TestShell()	16	static
+tests.cpp:184:1:virtual void TEST_EspDriver_Test_Group_Esp_Init_Test_Test::testBody()	48	static
+tests.cpp:202:1:TEST_EspDriver_Test_Group_Send_AT_Command_Test_Test::TEST_EspDriver_Test_Group_Send_AT_Command_Test_Test()	16	static
+tests.cpp:202:1:virtual Utest* TEST_EspDriver_Test_Group_Send_AT_Command_Test_TestShell::createTest()	24	static
+tests.cpp:202:1:TEST_EspDriver_Test_Group_Send_AT_Command_Test_TestShell::TEST_EspDriver_Test_Group_Send_AT_Command_Test_TestShell()	16	static
+tests.cpp:202:1:virtual void TEST_EspDriver_Test_Group_Send_AT_Command_Test_Test::testBody()	80	static
+tests.cpp:213:1:TEST_EspDriver_Test_Group_UART_Receive_Handler_Test_Test::TEST_EspDriver_Test_Group_UART_Receive_Handler_Test_Test()	16	static
+tests.cpp:213:1:virtual Utest* TEST_EspDriver_Test_Group_UART_Receive_Handler_Test_TestShell::createTest()	24	static
+tests.cpp:213:1:TEST_EspDriver_Test_Group_UART_Receive_Handler_Test_TestShell::TEST_EspDriver_Test_Group_UART_Receive_Handler_Test_TestShell()	16	static
+tests.cpp:213:1:virtual void TEST_EspDriver_Test_Group_UART_Receive_Handler_Test_Test::testBody()	120	static
+tests.cpp:230:1:TEST_EspDriver_Test_Group_Read_Response_Test_Test::TEST_EspDriver_Test_Group_Read_Response_Test_Test()	16	static
+tests.cpp:230:1:virtual Utest* TEST_EspDriver_Test_Group_Read_Response_Test_TestShell::createTest()	24	static
+tests.cpp:230:1:TEST_EspDriver_Test_Group_Read_Response_Test_TestShell::TEST_EspDriver_Test_Group_Read_Response_Test_TestShell()	16	static
+tests.cpp:230:1:virtual void TEST_EspDriver_Test_Group_Read_Response_Test_Test::testBody()	96	static
+tests.cpp:246:1:TEST_EspDriver_Test_Group_Wait_Response_Test_Test::TEST_EspDriver_Test_Group_Wait_Response_Test_Test()	16	static
+tests.cpp:246:1:virtual Utest* TEST_EspDriver_Test_Group_Wait_Response_Test_TestShell::createTest()	24	static
+tests.cpp:246:1:TEST_EspDriver_Test_Group_Wait_Response_Test_TestShell::TEST_EspDriver_Test_Group_Wait_Response_Test_TestShell()	16	static
+tests.cpp:246:1:virtual void TEST_EspDriver_Test_Group_Wait_Response_Test_Test::testBody()	96	static
+tests.cpp:246:1:TEST_EspDriver_Test_Group_Wait_Response_Test_TestShell::~TEST_EspDriver_Test_Group_Wait_Response_Test_TestShell()	16	static
+tests.cpp:246:1:virtual TEST_EspDriver_Test_Group_Wait_Response_Test_TestShell::~TEST_EspDriver_Test_Group_Wait_Response_Test_TestShell()	16	static
+tests.cpp:246:1:TEST_EspDriver_Test_Group_Wait_Response_Test_Test::~TEST_EspDriver_Test_Group_Wait_Response_Test_Test()	16	static
+tests.cpp:246:1:virtual TEST_EspDriver_Test_Group_Wait_Response_Test_Test::~TEST_EspDriver_Test_Group_Wait_Response_Test_Test()	16	static
+tests.cpp:230:1:TEST_EspDriver_Test_Group_Read_Response_Test_TestShell::~TEST_EspDriver_Test_Group_Read_Response_Test_TestShell()	16	static
+tests.cpp:230:1:virtual TEST_EspDriver_Test_Group_Read_Response_Test_TestShell::~TEST_EspDriver_Test_Group_Read_Response_Test_TestShell()	16	static
+tests.cpp:230:1:TEST_EspDriver_Test_Group_Read_Response_Test_Test::~TEST_EspDriver_Test_Group_Read_Response_Test_Test()	16	static
+tests.cpp:230:1:virtual TEST_EspDriver_Test_Group_Read_Response_Test_Test::~TEST_EspDriver_Test_Group_Read_Response_Test_Test()	16	static
+tests.cpp:213:1:TEST_EspDriver_Test_Group_UART_Receive_Handler_Test_TestShell::~TEST_EspDriver_Test_Group_UART_Receive_Handler_Test_TestShell()	16	static
+tests.cpp:213:1:virtual TEST_EspDriver_Test_Group_UART_Receive_Handler_Test_TestShell::~TEST_EspDriver_Test_Group_UART_Receive_Handler_Test_TestShell()	16	static
+tests.cpp:213:1:TEST_EspDriver_Test_Group_UART_Receive_Handler_Test_Test::~TEST_EspDriver_Test_Group_UART_Receive_Handler_Test_Test()	16	static
+tests.cpp:213:1:virtual TEST_EspDriver_Test_Group_UART_Receive_Handler_Test_Test::~TEST_EspDriver_Test_Group_UART_Receive_Handler_Test_Test()	16	static
+tests.cpp:202:1:TEST_EspDriver_Test_Group_Send_AT_Command_Test_TestShell::~TEST_EspDriver_Test_Group_Send_AT_Command_Test_TestShell()	16	static
+tests.cpp:202:1:virtual TEST_EspDriver_Test_Group_Send_AT_Command_Test_TestShell::~TEST_EspDriver_Test_Group_Send_AT_Command_Test_TestShell()	16	static
+tests.cpp:202:1:TEST_EspDriver_Test_Group_Send_AT_Command_Test_Test::~TEST_EspDriver_Test_Group_Send_AT_Command_Test_Test()	16	static
+tests.cpp:202:1:virtual TEST_EspDriver_Test_Group_Send_AT_Command_Test_Test::~TEST_EspDriver_Test_Group_Send_AT_Command_Test_Test()	16	static
+tests.cpp:184:1:TEST_EspDriver_Test_Group_Esp_Init_Test_TestShell::~TEST_EspDriver_Test_Group_Esp_Init_Test_TestShell()	16	static
+tests.cpp:184:1:virtual TEST_EspDriver_Test_Group_Esp_Init_Test_TestShell::~TEST_EspDriver_Test_Group_Esp_Init_Test_TestShell()	16	static
+tests.cpp:184:1:TEST_EspDriver_Test_Group_Esp_Init_Test_Test::~TEST_EspDriver_Test_Group_Esp_Init_Test_Test()	16	static
+tests.cpp:184:1:virtual TEST_EspDriver_Test_Group_Esp_Init_Test_Test::~TEST_EspDriver_Test_Group_Esp_Init_Test_Test()	16	static
 tests.cpp:128:1:TEST_RingBuffer_Test_Group_CapacityTest_TestShell::~TEST_RingBuffer_Test_Group_CapacityTest_TestShell()	16	static
 tests.cpp:128:1:virtual TEST_RingBuffer_Test_Group_CapacityTest_TestShell::~TEST_RingBuffer_Test_Group_CapacityTest_TestShell()	16	static
 tests.cpp:128:1:TEST_RingBuffer_Test_Group_CapacityTest_Test::~TEST_RingBuffer_Test_Group_CapacityTest_Test()	16	static
@@ -117,6 +125,6 @@ tests.cpp:36:1:TEST_RingBuffer_Test_Group_InitTest_TestShell::~TEST_RingBuffer_T
 tests.cpp:36:1:virtual TEST_RingBuffer_Test_Group_InitTest_TestShell::~TEST_RingBuffer_Test_Group_InitTest_TestShell()	16	static
 tests.cpp:36:1:TEST_RingBuffer_Test_Group_InitTest_Test::~TEST_RingBuffer_Test_Group_InitTest_Test()	16	static
 tests.cpp:36:1:virtual TEST_RingBuffer_Test_Group_InitTest_Test::~TEST_RingBuffer_Test_Group_InitTest_Test()	16	static
-tests.cpp:238:1:void __static_initialization_and_destruction_0(int, int)	24	static
-tests.cpp:238:1:cpp)	8	static
-tests.cpp:238:1:cpp)	8	static
+tests.cpp:265:1:void __static_initialization_and_destruction_0(int, int)	24	static
+tests.cpp:265:1:cpp)	8	static
+tests.cpp:265:1:cpp)	8	static
