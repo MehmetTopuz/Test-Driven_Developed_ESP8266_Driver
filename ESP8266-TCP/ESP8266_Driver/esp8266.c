@@ -53,3 +53,8 @@ void ESP_UART_ReceiveHandler(void)
 	ringBuffer_push(rx_buffer, rx_data);
 }
 
+
+uint32_t Read_Response(char * response)
+{
+	return ringBuffer_lookFor(rx_buffer, (uint8_t*)response);
+}

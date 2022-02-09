@@ -220,3 +220,19 @@ TEST(EspDriver_Test_Group, UART_Receive_Handler_Test)
 	mock().checkExpectations();
 
 }
+
+TEST(EspDriver_Test_Group, Read_Response_Test)
+{
+	char response[10] = "OK\r\n";
+
+	for(int i=0;i<(int)strlen(response);i++)
+	{
+		mock().expectOneCall("UART_Receive_Fake").andReturnValue((uint8_t)response[i]);
+		ESP_UART_ReceiveHandler();
+	}
+
+	uint32_t result = Read_Response((char*)"OK");
+
+	LONGS_EQUAL(1,result);
+	mock().checkExpectations();
+}

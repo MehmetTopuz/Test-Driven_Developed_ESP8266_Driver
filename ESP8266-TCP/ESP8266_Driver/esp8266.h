@@ -43,6 +43,8 @@ void Send_AT_Command(char *cmd);
 
 void ESP_UART_ReceiveHandler(void);
 
+uint32_t Read_Response(char * response);
+
 #ifdef __cplusplus
 }
 #endif
