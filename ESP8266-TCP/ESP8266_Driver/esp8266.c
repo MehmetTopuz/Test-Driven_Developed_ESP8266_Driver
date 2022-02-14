@@ -59,29 +59,40 @@ uint32_t Read_Response(char * response)
 	return ringBuffer_lookFor(rx_buffer, (uint8_t*)response);
 }
 
-Status Wait_Response(char * response, uint32_t timeout)
+
+Status Wait_Response(char* response, uint32_t timeout)
 {
-	uint32_t timestamp = ESP8266.getTick();
 
-	uint32_t result = 0;
+	static uint32_t time = 0;
+	static uint8_t firstCall = 0;
 
-	while(!result)
+	if(!firstCall)
 	{
-		if(ESP8266.getTick() - timestamp >= timeout)
-		{
-			return TIMEOUT_ERROR;
-		}
-		 result = ringBuffer_lookFor(rx_buffer, (uint8_t*)response);
+		time = ESP8266.getTick();
+		firstCall = 1;
 	}
 
+	if(ringBuffer_lookFor(rx_buffer, (uint8_t*)response))
+	{
+		firstCall = 0;
 		return FOUND;
+	}
+	else if(ESP8266.getTick() - time >= timeout)
+	{
+		firstCall = 0;
+		return TIMEOUT_ERROR;
+	}
+	else
+	{
+		return IDLE;
+	}
 
 }
 
 Status Connect_Wifi(char* ssid, char* password)
 {
 
-	return CONNECTION_ERROR;
+	return FOUND;
 }
 
 

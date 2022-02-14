@@ -39,6 +39,7 @@ typedef enum
 	TIMEOUT_ERROR,
 	CONNECTION_OK,
 	CONNECTION_ERROR,
+	IDLE,
 }Status;
 
 /* Function Prototypes --------------------------------------------------------*/
