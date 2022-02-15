@@ -22,6 +22,19 @@ extern "C"
 
 #include "ring_buffer.h"
 
+
+#define STRINGFY(name)				#name
+#define MACRO_TO_STRING(macro)		STRINGFY(macro)
+
+#define AT_CWMODE_STATION			"AT+CWMODE=1\r\n"
+#define	AT_CWQAP					"AT+CWQAP\r\n"
+#define AT_CWJAP					"AT+CWJAP="
+
+#define AT_RESPONSE_OK				"OK"
+#define AT_RESPONSE_ERROR			"ERROR"
+
+
+
 RingBuffer* rx_buffer;
 
 typedef struct

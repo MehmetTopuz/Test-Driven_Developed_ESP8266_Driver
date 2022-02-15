@@ -10,6 +10,7 @@
 
 #include "esp8266.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 static Esp_Init_Typedef ESP8266;
 
@@ -91,6 +92,119 @@ Status Wait_Response(char* response, uint32_t timeout)
 
 Status Connect_Wifi(char* ssid, char* password)
 {
+	static Status response_state = IDLE;
+
+	static uint8_t commandCount = 0,firstCall = 1;
+
+	switch(commandCount)
+	{
+	case 0:
+		if(firstCall)
+		{
+			Send_AT_Command(AT_CWMODE_STATION);  // sending AT+CWMODE=1
+			firstCall = 0;
+		}
+		response_state = Wait_Response(AT_RESPONSE_OK, 1000);
+
+		if(response_state == IDLE)
+		{
+			return IDLE;
+		}
+		else if(response_state == FOUND)
+		{
+			commandCount += 1;
+			ringBuffer_flush(rx_buffer);
+			firstCall = 1;
+		}
+		else if(response_state == TIMEOUT_ERROR)
+		{
+			firstCall = 1;
+			return TIMEOUT_ERROR;
+		}
+		else
+		{
+			firstCall = 1;
+			return CONNECTION_ERROR;
+		}
+
+
+		break;
+	case 1:
+		if(firstCall)
+		{
+			Send_AT_Command(AT_CWQAP);  // sending AT+CWQAP
+			firstCall = 0;
+		}
+		response_state = Wait_Response(AT_RESPONSE_OK, 1000);
+
+		if(response_state == IDLE)
+		{
+			return IDLE;
+		}
+		else if(response_state == FOUND)
+		{
+			commandCount += 1;
+			ringBuffer_flush(rx_buffer);
+			firstCall = 1;
+		}
+		else if(response_state == TIMEOUT_ERROR)
+		{
+			firstCall = 1;
+			return TIMEOUT_ERROR;
+		}
+		else
+		{
+			firstCall = 1;
+			return CONNECTION_ERROR;
+		}
+
+		break;
+
+	case 2:
+	{
+		if(firstCall)
+		{
+			char tx_buffer[100];
+
+			sprintf(tx_buffer,"%s\"%s\",\"%s\"\r\n",AT_CWJAP,ssid,password); 		// AT+CWJAP="<SSID>","<password>"
+
+			Send_AT_Command(tx_buffer);  // sending AT+CWJAP="<SSID>","<password>"
+			firstCall = 0;
+		}
+		response_state = Wait_Response(AT_RESPONSE_OK, 1000);
+
+		if(response_state == IDLE)
+		{
+
+			return IDLE;
+		}
+		else if(response_state == FOUND)
+		{
+			commandCount += 0;
+			ringBuffer_flush(rx_buffer);
+			firstCall = 1;
+			return CONNECTION_OK;
+		}
+		else if(response_state == TIMEOUT_ERROR)
+		{
+			firstCall = 1;
+			return TIMEOUT_ERROR;
+		}
+		else
+		{
+			firstCall = 1;
+			return CONNECTION_ERROR;
+		}
+
+		break;
+	}
+
+	default: return CONNECTION_ERROR;
+	}
+
+
+
+
 
 	return FOUND;
 }

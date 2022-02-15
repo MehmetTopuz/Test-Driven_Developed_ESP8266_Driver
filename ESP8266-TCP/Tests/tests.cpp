@@ -242,27 +242,6 @@ TEST(EspDriver_Test_Group, Read_Response_Test)
 	LONGS_EQUAL(1,result);
 	mock().checkExpectations();
 }
-//
-//TEST(EspDriver_Test_Group, Wait_Response_Test)
-//{
-//
-//	Status result = Wait_Response((char*)"OK", 1000);
-//
-//	LONGS_EQUAL(TIMEOUT_ERROR,result);
-//
-//	char response[10] = "OK\r\n";
-//
-//	for(int i=0;i<(int)strlen(response);i++)
-//	{
-//		mock().expectOneCall("UART_Receive_Fake").andReturnValue((uint8_t)response[i]);
-//		ESP_UART_ReceiveHandler();
-//	}
-//
-//	result = Wait_Response((char*)"OK", 1000);
-//	LONGS_EQUAL(FOUND,result);
-//	mock().checkExpectations();
-//
-//}
 
 
 TEST(EspDriver_Test_Group, Wait_Response_Timeout_Test)
@@ -322,17 +301,24 @@ TEST(EspDriver_Test_Group, Connect_Wifi_Timeout_Test)
 
 TEST(EspDriver_Test_Group, Connect_Wifi_Error_Test)
 {
-	char response_arr[4][50] =
-	{ "OK\r\n",									// station mode response
-	  "ERROR\r\n",								// check wifi connection response
-	  "OK\r\n",									// check disconnect response
-	  "ERROR\r\n"								// connect wifi command response
+	char response_arr[3][50] =
+	{ "OK\r\n",									// station mode response (AT+CWMODE=1)
+	  "OK\r\n",									// check disconnect response (AT+CWQAP)
+	  "ERROR\r\n"								// connect wifi command response (AT+CWJAP="SSID","password")
 	};
 
+	char fake_tx_buffer[3][50] =
+	{
+		MACRO_TO_STRING(AT_CWMODE_STATION),
+		MACRO_TO_STRING(AT_CWQAP),
+		"AT+CWJAP=\"SSID\",\"1234\"\r\n"
+	};
 	Status response;
 	int i = 0;
 	while(1)
 	{
+		mock().expectOneCall("UART_Transmit_Fake").withParameter("data", (uint8_t *)fake_tx_buffer[i]);
+
 		response = Connect_Wifi((char*)"SSID", (char*)"1234");
 		if(response != IDLE)
 		{
@@ -343,7 +329,10 @@ TEST(EspDriver_Test_Group, Connect_Wifi_Error_Test)
 			mock().expectOneCall("UART_Receive_Fake").andReturnValue((uint8_t)response_arr[i][j]);
 			ESP_UART_ReceiveHandler();
 		}
+		i++;
 	}
+
+	mock().checkExpectations();
 
 	LONGS_EQUAL(CONNECTION_ERROR,response);
 
@@ -354,14 +343,23 @@ TEST(EspDriver_Test_Group, Connect_Wifi_Test)
 	char response_arr[4][50] =
 	{ "OK\r\n",									// station mode response
 	  "ERROR\r\n",								// check wifi connection response
-	  "OK\r\n",									// check disconnect response
 	  "OK\r\n"								// connect wifi command response
 	};
+
+	char fake_tx_buffer[3][50] =
+	{
+		MACRO_TO_STRING(AT_CWMODE_STATION),
+		MACRO_TO_STRING(AT_CWQAP),
+		"AT+CWJAP=\"SSID\",\"1234\"\r\n"
+	};
+
 
 	Status response;
 	int i = 0;
 	while(1)
 	{
+		mock().expectOneCall("UART_Transmit_Fake").withParameter("data", (uint8_t *)fake_tx_buffer[i]);
+
 		response = Connect_Wifi((char*)"SSID", (char*)"1234");
 		if(response != IDLE)
 		{
@@ -372,7 +370,9 @@ TEST(EspDriver_Test_Group, Connect_Wifi_Test)
 			mock().expectOneCall("UART_Receive_Fake").andReturnValue((uint8_t)response_arr[i][j]);
 			ESP_UART_ReceiveHandler();
 		}
+		i++;
 	}
+	mock().checkExpectations();
 
 	LONGS_EQUAL(CONNECTION_OK,response);
 
