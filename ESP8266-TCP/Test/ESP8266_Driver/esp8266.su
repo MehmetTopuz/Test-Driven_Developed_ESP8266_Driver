@@ -3,4 +3,4 @@ esp8266.c:43:6:Send_AT_Command	16	static
 esp8266.c:49:6:ESP_UART_ReceiveHandler	16	static
 esp8266.c:58:10:Read_Response	16	static
 esp8266.c:64:8:Wait_Response	16	static
-esp8266.c:93:8:Connect_Wifi	128	static
+esp8266.c:93:8:Connect_Wifi	16	static
