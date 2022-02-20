@@ -23,15 +23,12 @@ extern "C"
 #include "ring_buffer.h"
 
 
-#define STRINGFY(name)				#name
-#define MACRO_TO_STRING(macro)		STRINGFY(macro)
+#define AT_CWMODE_STATION			"AT+CWMODE=1\r\n"
+#define	AT_CWQAP					"AT+CWQAP\r\n"
+#define AT_CWJAP					"AT+CWJAP="
 
-#define AT_CWMODE_STATION			(char *)"AT+CWMODE=1\r\n"
-#define	AT_CWQAP					(char *)"AT+CWQAP\r\n"
-#define AT_CWJAP					(char *)"AT+CWJAP="
-
-#define AT_RESPONSE_OK				(char *)"OK"
-#define AT_RESPONSE_ERROR			(char *)"ERROR"
+#define AT_RESPONSE_OK				"OK"
+#define AT_RESPONSE_ERROR			"ERROR"
 
 
 

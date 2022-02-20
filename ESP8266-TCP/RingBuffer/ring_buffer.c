@@ -116,6 +116,7 @@ uint8_t ringBuffer_pop(RingBuffer* ringBuffer)
 void ringBuffer_flush(RingBuffer* ringBuffer)
 {
 	memset(ringBuffer->buffer,0x00,ringBuffer->size);
+	ringBuffer->head = ringBuffer->tail = 0;
 }
 
 /**
