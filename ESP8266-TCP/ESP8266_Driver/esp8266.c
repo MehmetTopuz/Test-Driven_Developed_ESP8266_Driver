@@ -251,5 +251,34 @@ Status Connect_Wifi(char* ssid, char* password)
 	return IDLE;
 }
 
+Status Disconnect_Wifi(void)
+{
+	static Status response_state = IDLE;
+	static uint8_t firstCall = 1;
 
+	if(firstCall)
+	{
+		Send_AT_Command(AT_CWQAP);  // sending AT+CWQAP
+		firstCall = 0;
+	}
+
+	response_state = Wait_Response(AT_RESPONSE_OK, 1000);
+
+	if(Read_Response(AT_RESPONSE_ERROR))
+	{
+		firstCall = 1;
+		ringBuffer_flush(rx_buffer);
+		return CONNECTION_ERROR;
+	}
+	if(response_state == IDLE)
+		return IDLE;
+	else
+	{
+		firstCall = 1;
+		ringBuffer_flush(rx_buffer);
+		return response_state;
+	}
+	return response_state;
+
+}
 

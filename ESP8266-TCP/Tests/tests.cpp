@@ -393,3 +393,45 @@ TEST(EspDriver_Test_Group, Connect_Wifi_Test)
 
 }
 
+TEST(EspDriver_Test_Group, Disconnect_Wifi_Timeout_Test)
+{
+	Status response;
+
+	mock().expectOneCall("UART_Transmit_Fake").withStringParameter("data", AT_CWQAP);
+
+	while(1)
+	{
+		response = Disconnect_Wifi();
+
+		if(response != IDLE)
+			break;
+
+	}
+
+	LONGS_EQUAL(TIMEOUT_ERROR,response);
+}
+
+TEST(EspDriver_Test_Group, Disconnect_Wifi_Test)
+{
+	Status response;
+
+	mock().expectOneCall("UART_Transmit_Fake").withStringParameter("data", AT_CWQAP);
+
+	while(1)
+	{
+		response = Disconnect_Wifi();
+
+		if(response != IDLE)
+			break;
+
+		for(int j=0;j<(int)strlen(AT_RESPONSE_OK);j++)
+		{
+			mock().expectOneCall("UART_Receive_Fake").andReturnValue((int)AT_RESPONSE_OK[j]);
+			ESP_UART_ReceiveHandler();
+		}
+
+	}
+
+	LONGS_EQUAL(FOUND,response);
+}
+

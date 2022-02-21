@@ -69,6 +69,8 @@ Status Wait_Response(char * response, uint32_t timeout);
 
 Status Connect_Wifi(char* ssid, char* password);
 
+Status Disconnect_Wifi(void);
+
 #ifdef __cplusplus
 }
 #endif
