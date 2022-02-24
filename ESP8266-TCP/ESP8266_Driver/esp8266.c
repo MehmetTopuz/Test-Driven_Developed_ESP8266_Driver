@@ -282,3 +282,66 @@ Status Disconnect_Wifi(void)
 
 }
 
+Status Command_Process(char **commandArray,uint8_t numberOfCommands)
+{
+	static uint8_t commandFlag  = 1, currentCommand = 0;
+	Status response;
+
+	if(!numberOfCommands || currentCommand >= numberOfCommands)
+	{
+		ringBuffer_flush(rx_buffer);
+		return CONNECTION_ERROR;
+	}
+	else
+	{
+		if(commandFlag)
+		{
+			Send_AT_Command(commandArray[currentCommand]);
+			commandFlag = 0;
+		}
+//		else
+//		{
+			response = Wait_Response("OK", 5000);
+
+			if(Read_Response("ERROR"))
+			{
+				commandFlag = 1;
+				currentCommand = 0;
+				ringBuffer_flush(rx_buffer);
+				return CONNECTION_ERROR;
+			}
+			else if(response == IDLE)
+			{
+				return response;
+			}
+			else if(response == FOUND)
+			{
+				if(currentCommand == (numberOfCommands-1))
+				{
+					commandFlag = 1;
+					currentCommand = 0;
+					ringBuffer_flush(rx_buffer);
+					return CONNECTION_OK;
+				}
+				else
+				{
+					commandFlag = 1;
+					currentCommand += 1;
+					ringBuffer_flush(rx_buffer);
+					return response;
+				}
+
+			}
+			else
+			{
+				commandFlag = 1;
+				currentCommand = 0;
+				return response;
+			}
+//		}
+	}
+
+
+}
+
+

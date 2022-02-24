@@ -91,6 +91,14 @@ tests.cpp:414:1:TEST_EspDriver_Test_Group_Disconnect_Wifi_Test_Test::TEST_EspDri
 tests.cpp:414:1:virtual Utest* TEST_EspDriver_Test_Group_Disconnect_Wifi_Test_TestShell::createTest()	24	static
 tests.cpp:414:1:TEST_EspDriver_Test_Group_Disconnect_Wifi_Test_TestShell::TEST_EspDriver_Test_Group_Disconnect_Wifi_Test_TestShell()	16	static
 tests.cpp:414:1:virtual void TEST_EspDriver_Test_Group_Disconnect_Wifi_Test_Test::testBody()	96	static
+tests.cpp:437:1:TEST_EspDriver_Test_Group_Command_Process_Test_Test::TEST_EspDriver_Test_Group_Command_Process_Test_Test()	16	static
+tests.cpp:437:1:virtual Utest* TEST_EspDriver_Test_Group_Command_Process_Test_TestShell::createTest()	24	static
+tests.cpp:437:1:TEST_EspDriver_Test_Group_Command_Process_Test_TestShell::TEST_EspDriver_Test_Group_Command_Process_Test_TestShell()	16	static
+tests.cpp:437:1:virtual void TEST_EspDriver_Test_Group_Command_Process_Test_Test::testBody()	272	static
+tests.cpp:437:1:TEST_EspDriver_Test_Group_Command_Process_Test_TestShell::~TEST_EspDriver_Test_Group_Command_Process_Test_TestShell()	16	static
+tests.cpp:437:1:virtual TEST_EspDriver_Test_Group_Command_Process_Test_TestShell::~TEST_EspDriver_Test_Group_Command_Process_Test_TestShell()	16	static
+tests.cpp:437:1:TEST_EspDriver_Test_Group_Command_Process_Test_Test::~TEST_EspDriver_Test_Group_Command_Process_Test_Test()	16	static
+tests.cpp:437:1:virtual TEST_EspDriver_Test_Group_Command_Process_Test_Test::~TEST_EspDriver_Test_Group_Command_Process_Test_Test()	16	static
 tests.cpp:414:1:TEST_EspDriver_Test_Group_Disconnect_Wifi_Test_TestShell::~TEST_EspDriver_Test_Group_Disconnect_Wifi_Test_TestShell()	16	static
 tests.cpp:414:1:virtual TEST_EspDriver_Test_Group_Disconnect_Wifi_Test_TestShell::~TEST_EspDriver_Test_Group_Disconnect_Wifi_Test_TestShell()	16	static
 tests.cpp:414:1:TEST_EspDriver_Test_Group_Disconnect_Wifi_Test_Test::~TEST_EspDriver_Test_Group_Disconnect_Wifi_Test_Test()	16	static
@@ -171,6 +179,6 @@ tests.cpp:36:1:TEST_RingBuffer_Test_Group_InitTest_TestShell::~TEST_RingBuffer_T
 tests.cpp:36:1:virtual TEST_RingBuffer_Test_Group_InitTest_TestShell::~TEST_RingBuffer_Test_Group_InitTest_TestShell()	16	static
 tests.cpp:36:1:TEST_RingBuffer_Test_Group_InitTest_Test::~TEST_RingBuffer_Test_Group_InitTest_Test()	16	static
 tests.cpp:36:1:virtual TEST_RingBuffer_Test_Group_InitTest_Test::~TEST_RingBuffer_Test_Group_InitTest_Test()	16	static
-tests.cpp:436:1:void __static_initialization_and_destruction_0(int, int)	24	static
-tests.cpp:436:1:cpp)	8	static
-tests.cpp:436:1:cpp)	8	static
+tests.cpp:480:1:void __static_initialization_and_destruction_0(int, int)	24	static
+tests.cpp:480:1:cpp)	8	static
+tests.cpp:480:1:cpp)	8	static

@@ -71,6 +71,8 @@ Status Connect_Wifi(char* ssid, char* password);
 
 Status Disconnect_Wifi(void);
 
+Status Command_Process(char** commandArray,uint8_t numberOfCommands);
+
 #ifdef __cplusplus
 }
 #endif

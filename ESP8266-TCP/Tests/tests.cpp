@@ -434,4 +434,48 @@ TEST(EspDriver_Test_Group, Disconnect_Wifi_Test)
 
 	LONGS_EQUAL(FOUND,response);
 }
+TEST(EspDriver_Test_Group, Command_Process_Test)
+{
+	char response_arr[3][50] =
+	{ "OK\r\n",									// station mode response
+	  "OK\r\n",								// check wifi connection response
+	  "OK\r\n"								// connect wifi command response
+	};
+
+	char *fake_command_buffer[3] =
+	{
+		(char*)"AT+CWMODE=1\r\n",
+		(char*)"AT+CWQAP\r\n",
+		(char*)"AT+CWJAP=\"SSID\",\"1234\"\r\n"
+	};
+
+	for(int i=0;i<3;i++)
+	{
+		mock().expectOneCall("UART_Transmit_Fake").withStringParameter("data", fake_command_buffer[i]);
+	}
+	Status response;
+	int i = 0;
+	while(1)
+	{
+		response = Command_Process(fake_command_buffer, 3);
+		if(response == CONNECTION_ERROR || response == CONNECTION_OK || response == TIMEOUT_ERROR)
+		{
+			break;
+		}
+
+		if(i<3)
+		{
+			for(int j=0;j<(int)strlen(response_arr[i]);j++)
+			{
+				mock().expectOneCall("UART_Receive_Fake").andReturnValue((int)response_arr[i][j]);
+				ESP_UART_ReceiveHandler();
+			}
+			i++;
+		}
+
+	}
+	LONGS_EQUAL(CONNECTION_OK,response);
+
+
+}
 
