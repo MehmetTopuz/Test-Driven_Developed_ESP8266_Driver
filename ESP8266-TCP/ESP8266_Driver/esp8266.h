@@ -47,8 +47,8 @@ typedef enum
 	FOUND = 0,
 	NOT_FOUND,
 	TIMEOUT_ERROR,
-	CONNECTION_OK,
-	CONNECTION_ERROR,
+	OK,
+	ERROR,
 	IDLE,
 }Status;
 

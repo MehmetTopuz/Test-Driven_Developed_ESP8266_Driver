@@ -329,7 +329,7 @@ TEST(EspDriver_Test_Group, Connect_Wifi_Error_Test)
 	while(1)
 	{
 		response = Connect_Wifi((char*)"SSID", (char*)"1234");
-		if(response == CONNECTION_ERROR || response == CONNECTION_OK || response == TIMEOUT_ERROR)
+		if(response == ERROR || response == OK || response == TIMEOUT_ERROR)
 		{
 			break;
 		}
@@ -345,7 +345,7 @@ TEST(EspDriver_Test_Group, Connect_Wifi_Error_Test)
 		}
 
 	}
-	LONGS_EQUAL(CONNECTION_ERROR,response);
+	LONGS_EQUAL(ERROR,response);
 
 }
 
@@ -373,7 +373,7 @@ TEST(EspDriver_Test_Group, Connect_Wifi_Test)
 	while(1)
 	{
 		response = Connect_Wifi((char*)"SSID", (char*)"1234");
-		if(response == CONNECTION_ERROR || response == CONNECTION_OK || response == TIMEOUT_ERROR)
+		if(response == ERROR || response == OK || response == TIMEOUT_ERROR)
 		{
 			break;
 		}
@@ -389,7 +389,7 @@ TEST(EspDriver_Test_Group, Connect_Wifi_Test)
 		}
 
 	}
-	LONGS_EQUAL(CONNECTION_OK,response);
+	LONGS_EQUAL(OK,response);
 
 }
 
@@ -432,7 +432,7 @@ TEST(EspDriver_Test_Group, Disconnect_Wifi_Test)
 
 	}
 
-	LONGS_EQUAL(FOUND,response);
+	LONGS_EQUAL(OK,response);
 }
 TEST(EspDriver_Test_Group, Command_Process_Test)
 {
@@ -458,7 +458,7 @@ TEST(EspDriver_Test_Group, Command_Process_Test)
 	while(1)
 	{
 		response = Command_Process(fake_command_buffer, 3);
-		if(response == CONNECTION_ERROR || response == CONNECTION_OK || response == TIMEOUT_ERROR)
+		if(response == ERROR || response == OK || response == TIMEOUT_ERROR)
 		{
 			break;
 		}
@@ -474,8 +474,7 @@ TEST(EspDriver_Test_Group, Command_Process_Test)
 		}
 
 	}
-	LONGS_EQUAL(CONNECTION_OK,response);
-
+	LONGS_EQUAL(OK,response);
 
 }
 

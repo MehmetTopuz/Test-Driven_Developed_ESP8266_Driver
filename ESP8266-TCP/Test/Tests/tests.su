@@ -179,6 +179,6 @@ tests.cpp:36:1:TEST_RingBuffer_Test_Group_InitTest_TestShell::~TEST_RingBuffer_T
 tests.cpp:36:1:virtual TEST_RingBuffer_Test_Group_InitTest_TestShell::~TEST_RingBuffer_Test_Group_InitTest_TestShell()	16	static
 tests.cpp:36:1:TEST_RingBuffer_Test_Group_InitTest_Test::~TEST_RingBuffer_Test_Group_InitTest_Test()	16	static
 tests.cpp:36:1:virtual TEST_RingBuffer_Test_Group_InitTest_Test::~TEST_RingBuffer_Test_Group_InitTest_Test()	16	static
-tests.cpp:480:1:void __static_initialization_and_destruction_0(int, int)	24	static
-tests.cpp:480:1:cpp)	8	static
-tests.cpp:480:1:cpp)	8	static
+tests.cpp:479:1:void __static_initialization_and_destruction_0(int, int)	24	static
+tests.cpp:479:1:cpp)	8	static
+tests.cpp:479:1:cpp)	8	static

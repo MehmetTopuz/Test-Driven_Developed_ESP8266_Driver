@@ -3,6 +3,6 @@ esp8266.c:43:6:Send_AT_Command	16	static
 esp8266.c:49:6:ESP_UART_ReceiveHandler	16	static
 esp8266.c:58:10:Read_Response	16	static
 esp8266.c:64:8:Wait_Response	16	static
-esp8266.c:95:8:Connect_Wifi	128	static
-esp8266.c:254:8:Disconnect_Wifi	8	static
-esp8266.c:285:8:Command_Process	24	static
+esp8266.c:95:8:Connect_Wifi	96	static
+esp8266.c:117:8:Disconnect_Wifi	16	static
+esp8266.c:129:8:Command_Process	24	static

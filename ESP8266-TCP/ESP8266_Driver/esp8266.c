@@ -94,190 +94,34 @@ Status Wait_Response(char* response, uint32_t timeout)
 
 Status Connect_Wifi(char* ssid, char* password)
 {
-	static Status response_state = IDLE;
-
-	static uint8_t commandCount = 0,firstCall = 1;
-
-
-	switch(commandCount)
+	char *command_buffer[3] =
 	{
-	case 0:
-		if(firstCall)
-		{
-			Send_AT_Command(AT_CWMODE_STATION);  // sending AT+CWMODE=1
-			firstCall = 0;
-		}
-		response_state = Wait_Response(AT_RESPONSE_OK, 1000);
+		AT_CWMODE_STATION,
+		AT_CWQAP,
+		""
+	};
 
-		if(Read_Response(AT_RESPONSE_ERROR))		// if there is an ERROR message in the buffer return CONNECTION_ERROR
-		{
-			firstCall = 1;
-			commandCount = 0;
-			ringBuffer_flush(rx_buffer);
-			return CONNECTION_ERROR;
-		}
-		if(response_state == IDLE)
-		{
-			return IDLE;
-		}
-		else if(response_state == FOUND)
-		{
-			commandCount += 1;
-			ringBuffer_flush(rx_buffer);
-			firstCall = 1;
-			return FOUND;
-		}
-		else if(response_state == TIMEOUT_ERROR)
-		{
-			firstCall = 1;
-			ringBuffer_flush(rx_buffer);
-			commandCount = 0;
-			return TIMEOUT_ERROR;
-		}
-		else
-		{
-			firstCall = 1;
-			commandCount = 0;
-			ringBuffer_flush(rx_buffer);
-			return CONNECTION_ERROR;
-		}
-		if(Read_Response(AT_RESPONSE_ERROR))
-		{
-			firstCall = 1;
-			commandCount = 0;
-			ringBuffer_flush(rx_buffer);
-			return CONNECTION_ERROR;
-		}
+	Status response_state = IDLE;
 
+	char wifi_buffer[50];
 
-		break;
-	case 1:
-		if(firstCall)
-		{
-			Send_AT_Command(AT_CWQAP);  // sending AT+CWQAP
-			firstCall = 0;
-		}
-		response_state = Wait_Response(AT_RESPONSE_OK, 1000);
-		if(Read_Response(AT_RESPONSE_ERROR))
-		{
-			firstCall = 1;
-			commandCount = 0;
-			ringBuffer_flush(rx_buffer);
-			return CONNECTION_ERROR;
-		}
-		if(response_state == IDLE)
-		{
-			return IDLE;
-		}
-		else if(response_state == FOUND)
-		{
-			commandCount += 1;
-			ringBuffer_flush(rx_buffer);
-			firstCall = 1;
-			return FOUND;
-		}
-		else if(response_state == TIMEOUT_ERROR)
-		{
-			firstCall = 1;
-			commandCount = 0;
-			ringBuffer_flush(rx_buffer);
-			return TIMEOUT_ERROR;
-		}
-		else
-		{
-			firstCall = 1;
-			commandCount = 0;
-			ringBuffer_flush(rx_buffer);
-			return CONNECTION_ERROR;
-		}
+	sprintf(wifi_buffer,"%s\"%s\",\"%s\"\r\n",AT_CWJAP,ssid,password); 		// AT+CWJAP="<SSID>","<password>"
 
+	command_buffer[2] = wifi_buffer;
 
-		break;
+	response_state = Command_Process(command_buffer, 3);
 
-	case 2:
-	{
-		if(firstCall)
-		{
-			char tx_buffer[100];
-
-			sprintf(tx_buffer,"%s\"%s\",\"%s\"\r\n",AT_CWJAP,ssid,password); 		// AT+CWJAP="<SSID>","<password>"
-
-			Send_AT_Command(tx_buffer);  // sending AT+CWJAP="<SSID>","<password>"
-			firstCall = 0;
-		}
-		response_state = Wait_Response(AT_RESPONSE_OK, 1000);
-		if(Read_Response(AT_RESPONSE_ERROR))
-		{
-			firstCall = 1;
-			commandCount = 0;
-			ringBuffer_flush(rx_buffer);
-			return CONNECTION_ERROR;
-		}
-		if(response_state == IDLE)
-		{
-
-			return IDLE;
-		}
-		else if(response_state == FOUND)
-		{
-			commandCount = 0;
-			ringBuffer_flush(rx_buffer);
-			firstCall = 1;
-			return CONNECTION_OK;
-		}
-		else if(response_state == TIMEOUT_ERROR)
-		{
-			firstCall = 1;
-			commandCount = 0;
-			ringBuffer_flush(rx_buffer);
-			return TIMEOUT_ERROR;
-		}
-		else
-		{
-			firstCall = 1;
-			commandCount = 0;
-			ringBuffer_flush(rx_buffer);
-			return CONNECTION_ERROR;
-		}
-
-
-
-
-		break;
-	}
-
-	default: return CONNECTION_ERROR;
-	}
-	return IDLE;
+	return response_state;
 }
 
 Status Disconnect_Wifi(void)
 {
-	static Status response_state = IDLE;
-	static uint8_t firstCall = 1;
+	char *command_buffer[1] = { AT_CWQAP };
 
-	if(firstCall)
-	{
-		Send_AT_Command(AT_CWQAP);  // sending AT+CWQAP
-		firstCall = 0;
-	}
+	Status response_state = IDLE;
 
-	response_state = Wait_Response(AT_RESPONSE_OK, 1000);
+	response_state = Command_Process(command_buffer, 1);
 
-	if(Read_Response(AT_RESPONSE_ERROR))
-	{
-		firstCall = 1;
-		ringBuffer_flush(rx_buffer);
-		return CONNECTION_ERROR;
-	}
-	if(response_state == IDLE)
-		return IDLE;
-	else
-	{
-		firstCall = 1;
-		ringBuffer_flush(rx_buffer);
-		return response_state;
-	}
 	return response_state;
 
 }
@@ -290,7 +134,7 @@ Status Command_Process(char **commandArray,uint8_t numberOfCommands)
 	if(!numberOfCommands || currentCommand >= numberOfCommands)
 	{
 		ringBuffer_flush(rx_buffer);
-		return CONNECTION_ERROR;
+		return ERROR;
 	}
 	else
 	{
@@ -308,7 +152,7 @@ Status Command_Process(char **commandArray,uint8_t numberOfCommands)
 				commandFlag = 1;
 				currentCommand = 0;
 				ringBuffer_flush(rx_buffer);
-				return CONNECTION_ERROR;
+				return ERROR;
 			}
 			else if(response == IDLE)
 			{
@@ -321,7 +165,7 @@ Status Command_Process(char **commandArray,uint8_t numberOfCommands)
 					commandFlag = 1;
 					currentCommand = 0;
 					ringBuffer_flush(rx_buffer);
-					return CONNECTION_OK;
+					return OK;
 				}
 				else
 				{
