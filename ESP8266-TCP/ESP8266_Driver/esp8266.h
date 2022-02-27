@@ -27,9 +27,16 @@ extern "C"
 #define	AT_CWQAP					"AT+CWQAP\r\n"
 #define AT_CWJAP					"AT+CWJAP="
 
+#define AT_CIPCLOSE					"AT+CIPCLOSE\r\n"
+#define AT_CIPMUX_SINGLE			"AT+CIPMUX=0\r\n"
+#define AT_CIPSTART_TCP				"AT+CIPSTART=\"TCP\","
+#define AT_CIPSEND					"AT+CIPSEND="
+
+
 #define AT_RESPONSE_OK				"OK"
 #define AT_RESPONSE_ERROR			"ERROR"
-
+#define AT_RESPONSE_SEND_OK			"SEND OK"
+#define AT_RESPONSE_GREATER_THAN	">"
 
 
 RingBuffer* rx_buffer;
@@ -47,8 +54,8 @@ typedef enum
 	FOUND = 0,
 	NOT_FOUND,
 	TIMEOUT_ERROR,
-	OK,
-	ERROR,
+	STATUS_OK,
+	STATUS_ERROR,
 	IDLE,
 }Status;
 
@@ -71,7 +78,13 @@ Status Connect_Wifi(char* ssid, char* password);
 
 Status Disconnect_Wifi(void);
 
-Status Command_Process(char** commandArray,uint8_t numberOfCommands);
+Status Command_Process(char **commandArray, char **responseArray, uint8_t numberOfCommands);
+
+Status Connect_TCP_Server(char* ip, char* port);
+
+Status Disconnect_TCP_Server(void);
+
+Status Send_TCP_Message(char* message);
 
 #ifdef __cplusplus
 }

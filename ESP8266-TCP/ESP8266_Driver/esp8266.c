@@ -100,7 +100,12 @@ Status Connect_Wifi(char* ssid, char* password)
 		AT_CWQAP,
 		""
 	};
-
+	char *response_buffer[3] =
+	{
+		AT_RESPONSE_OK,
+		AT_RESPONSE_OK,
+		AT_RESPONSE_OK
+	};
 	Status response_state = IDLE;
 
 	char wifi_buffer[50];
@@ -109,7 +114,7 @@ Status Connect_Wifi(char* ssid, char* password)
 
 	command_buffer[2] = wifi_buffer;
 
-	response_state = Command_Process(command_buffer, 3);
+	response_state = Command_Process(command_buffer, response_buffer, 3);
 
 	return response_state;
 }
@@ -117,16 +122,17 @@ Status Connect_Wifi(char* ssid, char* password)
 Status Disconnect_Wifi(void)
 {
 	char *command_buffer[1] = { AT_CWQAP };
+	char *response_buffer[1] = { AT_RESPONSE_OK };
 
 	Status response_state = IDLE;
 
-	response_state = Command_Process(command_buffer, 1);
+	response_state = Command_Process(command_buffer, response_buffer, 1);
 
 	return response_state;
 
 }
 
-Status Command_Process(char **commandArray,uint8_t numberOfCommands)
+Status Command_Process(char **commandArray, char **responseArray, uint8_t numberOfCommands)
 {
 	static uint8_t commandFlag  = 1, currentCommand = 0;
 	Status response;
@@ -134,7 +140,7 @@ Status Command_Process(char **commandArray,uint8_t numberOfCommands)
 	if(!numberOfCommands || currentCommand >= numberOfCommands)
 	{
 		ringBuffer_flush(rx_buffer);
-		return ERROR;
+		return STATUS_ERROR;
 	}
 	else
 	{
@@ -145,14 +151,14 @@ Status Command_Process(char **commandArray,uint8_t numberOfCommands)
 		}
 //		else
 //		{
-			response = Wait_Response("OK", 5000);
+			response = Wait_Response(responseArray[currentCommand], 5000);
 
 			if(Read_Response("ERROR"))
 			{
 				commandFlag = 1;
 				currentCommand = 0;
 				ringBuffer_flush(rx_buffer);
-				return ERROR;
+				return STATUS_ERROR;
 			}
 			else if(response == IDLE)
 			{
@@ -165,7 +171,7 @@ Status Command_Process(char **commandArray,uint8_t numberOfCommands)
 					commandFlag = 1;
 					currentCommand = 0;
 					ringBuffer_flush(rx_buffer);
-					return OK;
+					return STATUS_OK;
 				}
 				else
 				{
@@ -188,4 +194,73 @@ Status Command_Process(char **commandArray,uint8_t numberOfCommands)
 
 }
 
+Status Connect_TCP_Server(char* ip, char* port)
+{
+	Status response_state = IDLE;
+
+	char *command_buffer[3] =
+	{
+		AT_CIPCLOSE,
+		AT_CIPMUX_SINGLE,
+		""
+	};
+
+	char *response_buffer[3] =
+	{
+		AT_RESPONSE_OK,
+		AT_RESPONSE_OK,
+		AT_RESPONSE_OK
+	};
+
+	char wifi_buffer[100];
+
+	sprintf(wifi_buffer,"%s\"%s\",%s\r\n",AT_CIPSTART_TCP,ip,port);
+
+	command_buffer[2] = wifi_buffer;
+
+	response_state = Command_Process(command_buffer, response_buffer, 3);
+
+	return response_state;
+}
+
+Status Disconnect_TCP_Server(void)
+{
+	Status response_state = IDLE;
+
+	char *command_buffer[1] = { AT_CIPCLOSE };
+	char *response_buffer[1] = { AT_RESPONSE_OK };
+
+	response_state = Command_Process(command_buffer, response_buffer, 1);
+
+	return response_state;
+
+}
+
+Status Send_TCP_Message(char* message)
+{
+	Status response_state = STATUS_ERROR;
+
+	uint32_t length=0;
+
+	length = strlen(message);
+
+	char cipSendBuffer[50];
+
+	sprintf(cipSendBuffer,"%s%d\r\n",AT_CIPSEND,length);
+
+	char *command_buffer[2];
+
+	command_buffer[0] = cipSendBuffer;
+	command_buffer[1] = message;
+
+	char *response_buffer[2] =
+	{
+			AT_RESPONSE_GREATER_THAN,
+			AT_RESPONSE_SEND_OK
+	};
+
+	response_state = Command_Process(command_buffer, response_buffer, 2);
+	return response_state;
+
+}
 
