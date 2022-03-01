@@ -88,6 +88,8 @@ Status Send_TCP_Message(char* message);
 
 Status Read_TCP_Message(char* receivedMessage);
 
+Status Wait_TCP_Message(char* receivedMessage, uint32_t timeout);
+
 #ifdef __cplusplus
 }
 #endif

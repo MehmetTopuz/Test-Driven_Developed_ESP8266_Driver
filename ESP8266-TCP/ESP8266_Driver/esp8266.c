@@ -293,16 +293,46 @@ Status Read_TCP_Message(char* receivedMessage)
 		{
 			receivedMessage[i] = *(substring+6+index+i);
 		}
-
+		ringBuffer_flush(rx_buffer);
 		return STATUS_OK;
 
 
 	}
 	else
+	{
+		ringBuffer_flush(rx_buffer);
 		return STATUS_ERROR;
+	}
+
 
 	return response_state;
 }
 
+Status Wait_TCP_Message(char* receivedMessage, uint32_t timeout)
+{
+	static uint8_t firstCall = 1;
+	static uint32_t time = 0;
 
+	if(firstCall)
+	{
+		time = ESP8266.getTick();
+		firstCall = 0;
+	}
+
+	if(Read_TCP_Message(receivedMessage) == STATUS_OK)
+	{
+		time = 0;
+		firstCall = 1;
+		return STATUS_OK;
+	}
+	else if(ESP8266.getTick()-time >= timeout)
+	{
+		time = 0;
+		firstCall = 1;
+		return TIMEOUT_ERROR;
+	}
+	else
+		return IDLE;
+
+}
 

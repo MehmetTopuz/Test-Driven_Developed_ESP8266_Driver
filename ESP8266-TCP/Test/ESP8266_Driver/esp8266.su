@@ -10,3 +10,4 @@ esp8266.c:198:8:Connect_TCP_Server	152	static
 esp8266.c:227:8:Disconnect_TCP_Server	24	static
 esp8266.c:240:8:Send_TCP_Message	96	static
 esp8266.c:268:8:Read_TCP_Message	48	static
+esp8266.c:311:8:Wait_TCP_Message	16	static

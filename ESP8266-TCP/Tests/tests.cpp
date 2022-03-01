@@ -678,8 +678,49 @@ TEST(EspDriver_Test_Group, Read_TCP_Message_Test)
 
 }
 
+TEST(EspDriver_Test_Group, Wait_TCP_Message_Timeout_Test)
+{
 
+	Status response_state = IDLE;
 
+	char received_message[50];
+	while(1)
+	{
+		response_state = Wait_TCP_Message(received_message, 1000);
+		if(response_state != IDLE)
+			break;
+	}
+
+	LONGS_EQUAL(TIMEOUT_ERROR,response_state);
+
+}
+
+TEST(EspDriver_Test_Group, Wait_TCP_Message_Test)
+{
+	char response[30] = "+IPD,13:PUMP_MOTOR=ON";		// an example data that ESP received from server
+
+	Status response_state = IDLE;
+
+	char received_message[50];
+
+	while(1)
+	{
+		response_state = Wait_TCP_Message(received_message, 1000);
+
+		if(response_state != IDLE)
+			break;
+
+		for(int i=0;i<(int)strlen(response);i++)
+		{
+			mock().expectOneCall("UART_Receive_Fake").andReturnValue((uint8_t)response[i]);
+			ESP_UART_ReceiveHandler();
+		}
+	}
+
+	LONGS_EQUAL(STATUS_OK,response_state);
+	STRCMP_EQUAL("PUMP_MOTOR=ON",received_message);
+
+}
 
 
 
