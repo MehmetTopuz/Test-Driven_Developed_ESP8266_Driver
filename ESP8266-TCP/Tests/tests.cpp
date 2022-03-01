@@ -657,3 +657,31 @@ TEST(EspDriver_Test_Group, Send_TCP_Message_Test)
 	LONGS_EQUAL(STATUS_OK,response);
 
 }
+
+TEST(EspDriver_Test_Group, Read_TCP_Message_Test)
+{
+	char response[30] = "+IPD,11:Hello World";		// an example data that ESP received from server
+
+	Status response_state = IDLE;
+	char received_message[50];
+
+	for(int i=0;i<(int)strlen(response);i++)
+	{
+		mock().expectOneCall("UART_Receive_Fake").andReturnValue((uint8_t)response[i]);
+		ESP_UART_ReceiveHandler();
+	}
+
+	response_state = Read_TCP_Message(received_message);
+
+	LONGS_EQUAL(STATUS_OK,response_state);
+	STRCMP_EQUAL("Hello World",received_message);
+
+}
+
+
+
+
+
+
+
+

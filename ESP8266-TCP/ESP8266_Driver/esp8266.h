@@ -86,6 +86,8 @@ Status Disconnect_TCP_Server(void);
 
 Status Send_TCP_Message(char* message);
 
+Status Read_TCP_Message(char* receivedMessage);
+
 #ifdef __cplusplus
 }
 #endif

@@ -11,6 +11,7 @@
 #include "esp8266.h"
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
 
 static Esp_Init_Typedef ESP8266;
 
@@ -246,7 +247,7 @@ Status Send_TCP_Message(char* message)
 
 	char cipSendBuffer[50];
 
-	sprintf(cipSendBuffer,"%s%d\r\n",AT_CIPSEND,length);
+	sprintf(cipSendBuffer,"%s%ld\r\n",AT_CIPSEND,length);
 
 	char *command_buffer[2];
 
@@ -263,4 +264,45 @@ Status Send_TCP_Message(char* message)
 	return response_state;
 
 }
+
+Status Read_TCP_Message(char* receivedMessage)
+{
+	Status response_state = IDLE;
+
+	char *substring = strstr((char*)rx_buffer->buffer,"+IPD,");
+
+	char messageLengthString[3];
+
+	uint32_t messageLength=0,index=0;
+
+
+	if(substring != NULL)
+	{
+		for(uint8_t i=0;i<3;i++)
+		{
+			if(*(substring+5+i) == ':')
+				break;
+			messageLengthString[i] = *(substring+5+i);
+			index += 1;
+
+		}
+
+		messageLength = atoi(messageLengthString);
+
+		for(uint32_t i=0;i<=messageLength+1;i++)
+		{
+			receivedMessage[i] = *(substring+6+index+i);
+		}
+
+		return STATUS_OK;
+
+
+	}
+	else
+		return STATUS_ERROR;
+
+	return response_state;
+}
+
+
 
