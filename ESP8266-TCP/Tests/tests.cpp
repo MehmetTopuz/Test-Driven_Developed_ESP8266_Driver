@@ -185,7 +185,7 @@ TEST(EspDriver_Test_Group, Esp_Init_Test)
 {
 
 	transmit = UART_Transmit_Fake; // or you can pass UART_Transmit_Fake as a parameter to the function instead of transmit.
-	int result = ESP_Init(transmit,
+	int32_t result = ESP_Init(transmit,
 						  UART_Receive_Fake,
 						  getTick_Fake,
 						  100);
@@ -438,9 +438,9 @@ TEST(EspDriver_Test_Group, Disconnect_Wifi_Test)
 TEST(EspDriver_Test_Group, Command_Process_Test)
 {
 	char *response_arr[3] =
-	{ "OK\r\n",									// station mode response
-	  "OK\r\n",								// check wifi connection response
-	  "OK\r\n"								// connect wifi command response
+	{ (char*)"OK\r\n",									// station mode response
+	  (char*)"OK\r\n",								// check wifi connection response
+	  (char*)"OK\r\n"								// connect wifi command response
 	};
 
 	char *fake_command_buffer[3] =
@@ -674,6 +674,7 @@ TEST(EspDriver_Test_Group, Read_TCP_Message_Test)
 	response_state = Read_TCP_Message(received_message);
 
 	LONGS_EQUAL(STATUS_OK,response_state);
+
 	STRCMP_EQUAL("Hello World",received_message);
 
 }
@@ -697,7 +698,7 @@ TEST(EspDriver_Test_Group, Wait_TCP_Message_Timeout_Test)
 
 TEST(EspDriver_Test_Group, Wait_TCP_Message_Test)
 {
-	char response[30] = "+IPD,13:PUMP_MOTOR=ON";		// an example data that ESP received from server
+	char response[30] = "+IPD,13:PUMP_MOTOR=ON";		// an example string data that ESP received from server
 
 	Status response_state = IDLE;
 

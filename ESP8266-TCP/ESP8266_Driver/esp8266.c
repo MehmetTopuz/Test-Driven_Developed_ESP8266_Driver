@@ -1,23 +1,40 @@
 /**
  * @file 	esp8266.c
  * @author  Mehmet Topuz
- * @brief   Source file of the AT commands based ESP8266 driver.
+ * @brief   Source file of the basic ESP8266 driver. This driver uses AT commands to communicate with the ESP.
+ * 			This driver does not support all features of ESP8266 for now. You can use this driver
+ * 			to connect to TCP server and read or send messages. Also this driver uses ring buffer to handle
+ * 			UART receive operations.
  *
  *  Website : <a href="https://mehmettopuz.net/">mehmettopuz.net</a>
  *  Created on: Jan 18, 2022
  *
  */
 
+/* Includes ------------------------------------------------------------------*/
 #include "esp8266.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
 
+
+/* Private Variables ------------------------------------------------------------------*/
 static Esp_Init_Typedef ESP8266;
 
+/* Functions ------------------------------------------------------------------*/
 
-
-int ESP_Init(void 		(*UART_Transmit)(uint8_t*),
+/**
+ * @brief 	Initializing the ESP.
+ * @param 	UART_Transmit parameter is a function pointer that is used to transmit
+ * 			unsigned 8-bit UART data array.
+ * @param 	UART_Receive parameter is a function pointer that is used to receive
+ * 			unsigned 8-bit UART data.
+ * @param 	getTick parameter is a function pointer that is used to calculate timeout.
+ * @param 	UART_Buffer_Size parameter is used by ring buffer to allocate buffer.
+ * @retval	1 : There is no error. Initializing is successful.
+ * 			-1: There is an error caused by function pointers or memory allocation.
+ */
+int32_t ESP_Init(void 		(*UART_Transmit)(uint8_t*),
 			 uint8_t 	(*UART_Receive)(void),
 			 uint32_t 	(*getTick)(void),
 			 uint32_t	UART_Buffer_Size)
@@ -32,7 +49,10 @@ int ESP_Init(void 		(*UART_Transmit)(uint8_t*),
 
 		rx_buffer = ringBuffer_init(UART_Buffer_Size);
 
-		return 1;
+		if(rx_buffer != NULL)
+			return 1;
+		else
+			return -1;
 	}
 	else
 	{
@@ -40,13 +60,23 @@ int ESP_Init(void 		(*UART_Transmit)(uint8_t*),
 	}
 }
 
-
+/**
+ * @brief 	AT command send function. This function uses UART_Transmit function that is passed
+ * 			as a function pointer in the ESP_Init function to send AT commands over UART.
+ * @param 	cmd is a string containing the AT command.
+ * @retval	None.
+ */
 void Send_AT_Command(char *cmd)
 {
 
 	ESP8266.UART_Transmit((uint8_t*)cmd);
 }
-
+/**
+ * @brief 	This function is used to pass the UART receive data to the ring buffer. User should use
+ * 			this function in the  UART ISR.
+ * @param 	None.
+ * @retval	None.
+ */
 void ESP_UART_ReceiveHandler(void)
 {
 	uint8_t rx_data=0;
@@ -55,7 +85,12 @@ void ESP_UART_ReceiveHandler(void)
 	ringBuffer_push(rx_buffer, rx_data);
 }
 
-
+/**
+ * @brief 	Read the specified message from the ring buffer.
+ * @param 	response is a string is checked if it is in the ring buffer.
+ * @retval	1: There is a string passed as a parameter in the ring buffer.
+ * 			0: There is no string passed as a parameter in the ring buffer.
+ */
 uint32_t Read_Response(char * response)
 {
 	return ringBuffer_lookFor(rx_buffer, (uint8_t*)response);

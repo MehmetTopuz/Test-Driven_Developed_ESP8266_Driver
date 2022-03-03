@@ -61,15 +61,42 @@ typedef enum
 
 /* Function Prototypes --------------------------------------------------------*/
 
-int ESP_Init(void (*UART_Transmit)(uint8_t*),
+/**
+ * @brief 	Initializing the ESP.
+ * @param 	UART_Transmit parameter is a function pointer that is used to transmit
+ * 			unsigned 8-bit UART data array.
+ * @param 	UART_Receive parameter is a function pointer that is used to receive
+ * 			unsigned 8-bit UART data.
+ * @param 	getTick parameter is a function pointer that is used to calculate timeout.
+ * @param 	UART_Buffer_Size parameter is used by ring buffer to allocate buffer.
+ * @retval	1 : There is no error. Initializing is successful.
+ * 			-1: There is an error caused by function pointers or memory allocation.
+ */
+int32_t ESP_Init(void (*UART_Transmit)(uint8_t*),
 			 uint8_t (*UART_Receive)(void),
 			 uint32_t (*getTick)(void),
 			 uint32_t UART_Buffer_Size);
-
+/**
+ * @brief 	AT command send function. This function uses UART_Transmit function that is passed
+ * 			as a function pointer in the ESP_Init function to send AT commands over UART.
+ * @param 	cmd is a string containing the AT command.
+ * @retval	None.
+ */
 void Send_AT_Command(char *cmd);
-
+/**
+ * @brief 	This function is used to pass the UART receive data to the ring buffer. User should use
+ * 			this function in the  UART ISR.
+ * @param 	None.
+ * @retval	None.
+ */
 void ESP_UART_ReceiveHandler(void);
 
+/**
+ * @brief 	Read the specified message from the ring buffer.
+ * @param 	response is a string is checked if it is in the ring buffer.
+ * @retval	1: There is a string passed as a parameter in the ring buffer.
+ * 			0: There is no string passed as a parameter in the ring buffer.
+ */
 uint32_t Read_Response(char * response);
 
 Status Wait_Response(char * response, uint32_t timeout);
