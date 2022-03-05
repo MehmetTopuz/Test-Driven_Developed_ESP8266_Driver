@@ -4,5 +4,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node0 [label="ITM_Type",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structITM__Type.html",tooltip="Structure type to access the Instrumentation Trace Macrocell Register (ITM)."];
+  Node0 [label="IPSR_Type",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$unionIPSR__Type.html",tooltip="Union type to access the Interrupt Program Status Register (IPSR)."];
 }

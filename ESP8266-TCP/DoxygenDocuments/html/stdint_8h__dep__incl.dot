@@ -58,8 +58,13 @@ digraph "C:/Users/Topuz/STM32CubeIDE/workspace_1.6.0/ESP8266-TCP-IP/ESP8266-TCP/
   Node1 -> Node20 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node20 [label="C:/Users/Topuz/STM32Cube\lIDE/workspace_1.6.0/ESP8266\l-TCP-IP/ESP8266-TCP/RingBuffer\l/ring_buffer.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$ring__buffer_8h.html",tooltip="Header file of the Ring Buffer module."];
   Node20 -> Node21 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node21 [label="C:/Users/Topuz/STM32Cube\lIDE/workspace_1.6.0/ESP8266\l-TCP-IP/ESP8266-TCP/RingBuffer\l/ring_buffer.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$ring__buffer_8c.html",tooltip="Source file of the Ring Buffer module."];
-  Node20 -> Node22 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node22 [label="C:/Users/Topuz/STM32Cube\lIDE/workspace_1.6.0/ESP8266\l-TCP-IP/ESP8266-TCP/Tests\l/tests.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$tests_8cpp.html",tooltip=" "];
+  Node21 [label="C:/Users/Topuz/STM32Cube\lIDE/workspace_1.6.0/ESP8266\l-TCP-IP/ESP8266-TCP/ESP8266\l_Driver/esp8266.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$esp8266_8h.html",tooltip="Header file of the AT commands based ESP8266 driver."];
+  Node21 -> Node22 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node22 [label="C:/Users/Topuz/STM32Cube\lIDE/workspace_1.6.0/ESP8266\l-TCP-IP/ESP8266-TCP/ESP8266\l_Driver/esp8266.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$esp8266_8c.html",tooltip="Source file of the basic ESP8266 driver. This driver uses AT commands to communicate with the ESP...."];
+  Node21 -> Node23 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node23 [label="C:/Users/Topuz/STM32Cube\lIDE/workspace_1.6.0/ESP8266\l-TCP-IP/ESP8266-TCP/Tests\l/tests.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$tests_8cpp.html",tooltip="Source file of the test functions."];
+  Node20 -> Node24 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node24 [label="C:/Users/Topuz/STM32Cube\lIDE/workspace_1.6.0/ESP8266\l-TCP-IP/ESP8266-TCP/RingBuffer\l/ring_buffer.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$ring__buffer_8c.html",tooltip="Source file of the Ring Buffer module."];
+  Node20 -> Node23 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node1 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
 }

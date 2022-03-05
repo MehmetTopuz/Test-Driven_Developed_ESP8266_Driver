@@ -7,5 +7,6 @@ var searchData=
   ['i2c3_5fer_5firqn_4',['I2C3_ER_IRQn',['../group__Peripheral__interrupt__number__definition.html#gga7e1129cd8a196f4284d41db3e82ad5c8a6e954232d164a6942ebc7a6bd6f7736e',1,'stm32g474xx.h']]],
   ['i2c3_5fev_5firqn_5',['I2C3_EV_IRQn',['../group__Peripheral__interrupt__number__definition.html#gga7e1129cd8a196f4284d41db3e82ad5c8a8326db2d570cb865ffa1d49fa29d562a',1,'stm32g474xx.h']]],
   ['i2c4_5fer_5firqn_6',['I2C4_ER_IRQn',['../group__Peripheral__interrupt__number__definition.html#gga7e1129cd8a196f4284d41db3e82ad5c8a6c79340696571c920cc8b1c8edc92f4a',1,'stm32g474xx.h']]],
-  ['i2c4_5fev_5firqn_7',['I2C4_EV_IRQn',['../group__Peripheral__interrupt__number__definition.html#gga7e1129cd8a196f4284d41db3e82ad5c8ad201bfb31bf1026b0e560a371ac46219',1,'stm32g474xx.h']]]
+  ['i2c4_5fev_5firqn_7',['I2C4_EV_IRQn',['../group__Peripheral__interrupt__number__definition.html#gga7e1129cd8a196f4284d41db3e82ad5c8ad201bfb31bf1026b0e560a371ac46219',1,'stm32g474xx.h']]],
+  ['idle_8',['IDLE',['../esp8266_8h.html#a67a0db04d321a74b7e7fcfd3f1a3f70bafd6a0e4343048b10646dd2976cc5ad18',1,'esp8266.h']]]
 ];

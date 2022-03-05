@@ -4,5 +4,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node0 [label="ScopedMutexLock",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classScopedMutexLock.html",tooltip=" "];
+  Node0 [label="SCnSCB_Type",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structSCnSCB__Type.html",tooltip="Structure type to access the System Control and ID Register not in the SCB."];
 }

@@ -32,12 +32,12 @@ static Esp_Init_Typedef ESP8266;
  * @param 	getTick parameter is a function pointer that is used to calculate timeout.
  * @param 	UART_Buffer_Size parameter is used by ring buffer to allocate buffer.
  * @retval	1 : There is no error. Initializing is successful.
- * 			-1: There is an error caused by function pointers or memory allocation.
+ * @retval -1 : There is an error caused by function pointers or memory allocation.
  */
 int32_t ESP_Init(void 		(*UART_Transmit)(uint8_t*),
-			 uint8_t 	(*UART_Receive)(void),
-			 uint32_t 	(*getTick)(void),
-			 uint32_t	UART_Buffer_Size)
+			 	 uint8_t 	(*UART_Receive)(void),
+				 uint32_t 	(*getTick)(void),
+				 uint32_t	UART_Buffer_Size)
 {
 	if(UART_Transmit != NULL		&&
 	   UART_Receive	!= NULL			&&
@@ -73,30 +73,34 @@ void Send_AT_Command(char *cmd)
 }
 /**
  * @brief 	This function is used to pass the UART receive data to the ring buffer. User should use
- * 			this function in the  UART ISR.
+ * 			this function in the UART ISR.
  * @param 	None.
  * @retval	None.
  */
 void ESP_UART_ReceiveHandler(void)
 {
-	uint8_t rx_data=0;
-
-	rx_data = ESP8266.UART_Receive();
-	ringBuffer_push(rx_buffer, rx_data);
+	ringBuffer_push(rx_buffer, ESP8266.UART_Receive());
 }
 
 /**
  * @brief 	Read the specified message from the ring buffer.
  * @param 	response is a string is checked if it is in the ring buffer.
  * @retval	1: There is a string passed as a parameter in the ring buffer.
- * 			0: There is no string passed as a parameter in the ring buffer.
+ * @retval	0: There is no string passed as a parameter in the ring buffer.
  */
 uint32_t Read_Response(char * response)
 {
 	return ringBuffer_lookFor(rx_buffer, (uint8_t*)response);
 }
 
-
+/**
+ * @brief 	Wait the specified message.
+ * @param 	response is a string is checked if it is in the ring buffer.
+ * @param 	timeout is an unsigned 32-bit integer that represents timeout in milliseconds.
+ * @retval	FOUND			:There is a string passed as a parameter in the ring buffer.
+ * @retval	TIMEOUT_ERROR	:It returns when timeout occurs.
+ * @retval	IDLE			:If there is not a string in the buffer and timeout does not occur yet, it returns IDLE.
+ */
 Status Wait_Response(char* response, uint32_t timeout)
 {
 
@@ -128,6 +132,15 @@ Status Wait_Response(char* response, uint32_t timeout)
 
 }
 
+/**
+ * @brief 	This function handles AT commands to connect the wifi.
+ * @param 	ssid is a string that represents the name of your wifi network.
+ * @param 	password is a string that represents the password of your wifi network.
+ * @retval	STATUS_OK		:Wifi connection is successful.
+ * @retval	STATUS_ERROR	:There is an error about connection.
+ * @retval	TIMEOUT_ERROR	:It returns TIMEOUT_ERROR when timeout occurs. Default timeout is 5000 ms.
+ * @retval	IDLE			:If there is not a string in the buffer and timeout does not occur yet, it returns IDLE.
+ */
 Status Connect_Wifi(char* ssid, char* password)
 {
 	char *command_buffer[3] =
@@ -155,6 +168,14 @@ Status Connect_Wifi(char* ssid, char* password)
 	return response_state;
 }
 
+/**
+ * @brief 	This function handles AT commands to disconnect the wifi.
+ * @param 	None.
+ * @retval	STATUS_OK		:Disconnect operation is successful.
+ * @retval	STATUS_ERROR	:There is an error about disconnect operation.
+ * @retval	TIMEOUT_ERROR	:It returns TIMEOUT_ERROR when timeout occurs. Default timeout is 5000 ms.
+ * @retval	IDLE			:If there is not a string in the buffer and timeout does not occur yet, it returns IDLE.
+ */
 Status Disconnect_Wifi(void)
 {
 	char *command_buffer[1] = { AT_CWQAP };
@@ -168,6 +189,16 @@ Status Disconnect_Wifi(void)
 
 }
 
+/**
+ * @brief 	This function handles AT commands and waits the messages expected from the ESP8266.
+ * @param 	commandArray is a two dimensional string array containing AT commands.
+ * @param 	responseArray is a two dimensional string array containing response messages expected from the ESP8266.
+ * @param 	numberOfCommands parameter represents the number of commands passed as a parameter in the commandArray.
+ * @retval	STATUS_OK		:It returns when ESP send the OK message.
+ * @retval	STATUS_ERROR	:It returns when ESP send the ERROR message or number of commands is equal zero.
+ * @retval	TIMEOUT_ERROR	:It returns TIMEOUT_ERROR when timeout occurs. Default timeout is 5000 ms.
+ * @retval	IDLE			:If there is not a string in the buffer and timeout does not occur yet, it returns IDLE.
+ */
 Status Command_Process(char **commandArray, char **responseArray, uint8_t numberOfCommands)
 {
 	static uint8_t commandFlag  = 1, currentCommand = 0;
@@ -185,8 +216,6 @@ Status Command_Process(char **commandArray, char **responseArray, uint8_t number
 			Send_AT_Command(commandArray[currentCommand]);
 			commandFlag = 0;
 		}
-//		else
-//		{
 			response = Wait_Response(responseArray[currentCommand], 5000);
 
 			if(Read_Response("ERROR"))
@@ -224,12 +253,20 @@ Status Command_Process(char **commandArray, char **responseArray, uint8_t number
 				currentCommand = 0;
 				return response;
 			}
-//		}
 	}
 
 
 }
 
+/**
+ * @brief 	This function handles AT commands to connect TCP server.
+ * @param 	ip is a string containing IP address of the server.
+ * @param 	port is a string containing port number of the server.
+ * @retval	STATUS_OK		:TCP/IP connection is successful.
+ * @retval	STATUS_ERROR	:There is an error about connection.
+ * @retval	TIMEOUT_ERROR	:It returns TIMEOUT_ERROR when timeout occurs. Default timeout is 5000 ms.
+ * @retval	IDLE			:If there is not a string in the buffer and timeout does not occur yet, it returns IDLE.
+ */
 Status Connect_TCP_Server(char* ip, char* port)
 {
 	Status response_state = IDLE;
@@ -259,6 +296,14 @@ Status Connect_TCP_Server(char* ip, char* port)
 	return response_state;
 }
 
+/**
+ * @brief 	This function handles AT commands to disconnect TCP server.
+ * @param 	None
+ * @retval	STATUS_OK		:TCP/IP disconnection is successful.
+ * @retval	STATUS_ERROR	:There is an error about disconnection.
+ * @retval	TIMEOUT_ERROR	:It returns TIMEOUT_ERROR when timeout occurs. Default timeout is 5000 ms.
+ * @retval	IDLE			:If there is not a string in the buffer and timeout does not occur yet, it returns IDLE.
+ */
 Status Disconnect_TCP_Server(void)
 {
 	Status response_state = IDLE;
@@ -272,6 +317,14 @@ Status Disconnect_TCP_Server(void)
 
 }
 
+/**
+ * @brief 	This function handles AT commands to send messages over TCP/IP.
+ * @param 	message is a string wanted to sent over TCP/IP.
+ * @retval	STATUS_OK		:The message has been sent successfully.
+ * @retval	STATUS_ERROR	:There is an error about sending message.
+ * @retval	TIMEOUT_ERROR	:It returns TIMEOUT_ERROR when timeout occurs. Default timeout is 5000 ms.
+ * @retval	IDLE			:If there is not a string in the buffer and timeout does not occur yet, it returns IDLE.
+ */
 Status Send_TCP_Message(char* message)
 {
 	Status response_state = STATUS_ERROR;
@@ -300,9 +353,14 @@ Status Send_TCP_Message(char* message)
 
 }
 
+/**
+ * @brief 	This function reads message if there is a message in the buffer received from the TCP/IP server.
+ * @param 	receviedMessage : If a message is received, it is assigned to receivedMessage.
+ * @retval	STATUS_OK		:The message has been read successfully.
+ * @retval	STATUS_ERROR	:There is no TCP message in the buffer.
+ */
 Status Read_TCP_Message(char* receivedMessage)
 {
-	Status response_state = IDLE;
 
 	char *substring = strstr((char*)rx_buffer->buffer,"+IPD,");
 
@@ -340,9 +398,18 @@ Status Read_TCP_Message(char* receivedMessage)
 	}
 
 
-	return response_state;
+
 }
 
+/**
+ * @brief 	This function waits for a message during the timeout.
+ * @param 	receviedMessage :If a message is received, it is assigned to receivedMessage.
+ * @param 	timeout is an unsigned 32-bit integer that represents timeout in milliseconds.
+ * @retval	STATUS_OK		:The message has been read successfully before timeout does not occur.
+ * @retval	STATUS_ERROR	:There is no TCP message in the buffer.
+ * @retval	TIMEOUT_ERROR	:It returns TIMEOUT_ERROR when timeout occurs.
+ * @retval	IDLE			:If there is not a string in the buffer and timeout does not occur yet, it returns IDLE
+ */
 Status Wait_TCP_Message(char* receivedMessage, uint32_t timeout)
 {
 	static uint8_t firstCall = 1;

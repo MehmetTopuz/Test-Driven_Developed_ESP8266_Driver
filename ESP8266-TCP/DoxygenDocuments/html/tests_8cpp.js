@@ -1,5 +1,26 @@
 var tests_8cpp =
 [
+    [ "getTick_Fake", "tests_8cpp.html#aca8fdb24cb46a0d39b8da9a7c3f7acf7", null ],
+    [ "TEST", "tests_8cpp.html#a8795470a7403d854fc3daf2f0da9507e", null ],
+    [ "TEST", "tests_8cpp.html#a8f225ca55dc3cdb8ba5f18246cf12fec", null ],
+    [ "TEST", "tests_8cpp.html#a6517483a82fd3d30077e992d167b9894", null ],
+    [ "TEST", "tests_8cpp.html#af307af6036c174fabd3becaa2da011be", null ],
+    [ "TEST", "tests_8cpp.html#a9d93f88da7c94c33b7a3e1cd5c967c98", null ],
+    [ "TEST", "tests_8cpp.html#abb9e30254607ac246393506e86d55e5d", null ],
+    [ "TEST", "tests_8cpp.html#a6ee6f9cf08a99443722154d02a685f6e", null ],
+    [ "TEST", "tests_8cpp.html#a1a747b701fd2ddb10d8eca76baf2a67e", null ],
+    [ "TEST", "tests_8cpp.html#a700ce765b2c3cca77ef3c54106c912d7", null ],
+    [ "TEST", "tests_8cpp.html#a815bdb1dfa6d0062486342c952bde6c9", null ],
+    [ "TEST", "tests_8cpp.html#afbe867ad46a41156a4fe37bd09c760f3", null ],
+    [ "TEST", "tests_8cpp.html#ac7b237df08fae4fd53ba6027ed6d655a", null ],
+    [ "TEST", "tests_8cpp.html#aae2c722f7fabb93a23a60da97b2f0c4d", null ],
+    [ "TEST", "tests_8cpp.html#a2f68281b26befeb1ca8eb81cf17ff059", null ],
+    [ "TEST", "tests_8cpp.html#a395fd7ef412a7efc0417e29bdadb0f43", null ],
+    [ "TEST", "tests_8cpp.html#ad854737d399331d5f881c59852352bc7", null ],
+    [ "TEST", "tests_8cpp.html#ae03d728ce8e3ff77aef1d264984e611e", null ],
+    [ "TEST", "tests_8cpp.html#a90a25902b3bc87728ab0fdad8e9e6fe3", null ],
+    [ "TEST", "tests_8cpp.html#ad90187643e532fe6b8cc0930f6e80006", null ],
+    [ "TEST", "tests_8cpp.html#a394cf68c7d6c1f8a83795516124383cc", null ],
     [ "TEST", "tests_8cpp.html#ac1872f2563af3286841cc414d4063bf3", null ],
     [ "TEST", "tests_8cpp.html#aab6b90e101f9a9d987018e98f6b058fc", null ],
     [ "TEST", "tests_8cpp.html#a4d8f33a956446fcccc604274400ca016", null ],
@@ -9,5 +30,10 @@ var tests_8cpp =
     [ "TEST", "tests_8cpp.html#adf7cc31b41cac417a506688829de31bc", null ],
     [ "TEST", "tests_8cpp.html#a69433d5d79fbc95f9bf518b27aa76240", null ],
     [ "TEST", "tests_8cpp.html#a6197b7185394db37182709d8f4a568a6", null ],
-    [ "TEST_GROUP", "tests_8cpp.html#a23d69c84c1aaccdea85a797c48987851", null ]
+    [ "TEST_GROUP", "tests_8cpp.html#a5f923491de9039ffd43a1b587dd5dd15", null ],
+    [ "TEST_GROUP", "tests_8cpp.html#a23d69c84c1aaccdea85a797c48987851", null ],
+    [ "UART_Receive_Fake", "tests_8cpp.html#acf76c5b0edb3199a18922c1070e3ff03", null ],
+    [ "UART_Transmit_Fake", "tests_8cpp.html#a0c40f7ce2719c3896664064a66a1e1ba", null ],
+    [ "time", "tests_8cpp.html#ae73654f333e4363463ad8c594eca1905", null ],
+    [ "transmit", "tests_8cpp.html#ad1364f6ff41979d983b53d63abd0b0d5", null ]
 ];

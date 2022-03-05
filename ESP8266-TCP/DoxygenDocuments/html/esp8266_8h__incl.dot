@@ -1,0 +1,12 @@
+digraph "C:/Users/Topuz/STM32CubeIDE/workspace_1.6.0/ESP8266-TCP-IP/ESP8266-TCP/ESP8266_Driver/esp8266.h"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="C:/Users/Topuz/STM32Cube\lIDE/workspace_1.6.0/ESP8266\l-TCP-IP/ESP8266-TCP/ESP8266\l_Driver/esp8266.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Header file of the AT commands based ESP8266 driver."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="ring_buffer.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$ring__buffer_8h.html",tooltip="Header file of the Ring Buffer module."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="stdint.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$stdint_8h.html",tooltip=" "];
+  Node3 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

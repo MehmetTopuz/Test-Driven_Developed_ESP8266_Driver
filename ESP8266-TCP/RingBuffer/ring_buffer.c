@@ -28,7 +28,7 @@ RingBuffer* ringBuffer_init(uint32_t size)
 	rBuf = (RingBuffer*)malloc(1*sizeof(RingBuffer));
 	if(rBuf == NULL)
 	{
-		// Error Checks
+		// Error
 		return 0;
 	}
 
@@ -39,7 +39,7 @@ RingBuffer* ringBuffer_init(uint32_t size)
 	rBuf->buffer = (uint8_t*)calloc((size_t)size,sizeof(uint8_t));
 	if(rBuf->buffer == NULL)
 		{
-			// Error Checks
+			// Error
 			return 0;
 		}
 
@@ -136,7 +136,7 @@ void ringBuffer_pushArray(RingBuffer* ringBuffer, uint8_t* data)
  * @param 	RingBuffer typedef structure.
  * @param	data is an unsigned 8-bit array to be searched in the buffer.
  * @retval	1: data is available in the buffer.
- * 			0: data is not available in the buffer.
+ * @retval	0: data is not available in the buffer.
  */
 uint32_t ringBuffer_lookFor(RingBuffer* ringBuffer, uint8_t* data)
 {

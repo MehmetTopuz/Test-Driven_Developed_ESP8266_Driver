@@ -4,5 +4,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node0 [label="MemoryAccountant",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classMemoryAccountant.html",tooltip=" "];
+  Node0 [label="LPTIM_TypeDef",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structLPTIM__TypeDef.html",tooltip="LPTIMER."];
 }

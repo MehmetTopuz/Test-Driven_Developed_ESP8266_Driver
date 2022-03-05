@@ -4,5 +4,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node0 [label="FMC_Bank1_TypeDef",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structFMC__Bank1__TypeDef.html",tooltip="Flexible Memory Controller."];
+  Node0 [label="FMAC_TypeDef",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structFMAC__TypeDef.html",tooltip="FMAC."];
 }

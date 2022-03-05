@@ -42,6 +42,7 @@ var annotated_dup =
     [ "DoublesEqualFailure", "classDoublesEqualFailure.html", "classDoublesEqualFailure" ],
     [ "DWT_Type", "structDWT__Type.html", "structDWT__Type" ],
     [ "EqualsFailure", "classEqualsFailure.html", "classEqualsFailure" ],
+    [ "Esp_Init_Typedef", "structEsp__Init__Typedef.html", "structEsp__Init__Typedef" ],
     [ "ExecFunction", "classExecFunction.html", "classExecFunction" ],
     [ "ExecFunctionTest", "classExecFunctionTest.html", "classExecFunctionTest" ],
     [ "ExecFunctionTestShell", "classExecFunctionTestShell.html", "classExecFunctionTestShell" ],

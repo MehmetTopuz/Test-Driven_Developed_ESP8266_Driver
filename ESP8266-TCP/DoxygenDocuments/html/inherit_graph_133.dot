@@ -4,5 +4,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node0 [label="TIM_ClearInputConfigTypeDef",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structTIM__ClearInputConfigTypeDef.html",tooltip="TIM Clear Input Configuration Handle Structure definition."];
+  Node0 [label="TIM_BreakDeadTimeConfigTypeDef",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structTIM__BreakDeadTimeConfigTypeDef.html",tooltip="TIM Break input(s) and Dead time configuration Structure definition."];
 }

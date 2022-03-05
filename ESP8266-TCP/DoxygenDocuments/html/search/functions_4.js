@@ -25,7 +25,9 @@ var searchData=
   ['disableallocationtypechecking_22',['disableAllocationTypeChecking',['../classMemoryLeakDetector.html#ab4e155b49bbd2601ad7900e147b0e9e4',1,'MemoryLeakDetector']]],
   ['disableinexact_23',['disableInexact',['../classIEEE754ExceptionsPlugin.html#a57f5c27b617ff41947bdf9c0fbc50c04',1,'IEEE754ExceptionsPlugin']]],
   ['discardcurrentlymatchingexpectations_24',['discardCurrentlyMatchingExpectations',['../classMockCheckedActualCall.html#a1def7b809cdb47dbe71f96b5eb5f5d7c',1,'MockCheckedActualCall']]],
-  ['doublereturnvalue_25',['doubleReturnValue',['../classMockSupport.html#a2a85df2de4e0daf48aa2fe573d7de31e',1,'MockSupport']]],
-  ['doubles_5fequal_26',['doubles_equal',['../Utest_8h.html#a895b194c86edb6bd4ba9d0c4d1e9f11a',1,'Utest.h']]],
-  ['doublesequalfailure_27',['DoublesEqualFailure',['../classDoublesEqualFailure.html#ab886a81cb87793cd01701e94f407a31e',1,'DoublesEqualFailure']]]
+  ['disconnect_5ftcp_5fserver_25',['Disconnect_TCP_Server',['../esp8266_8c.html#ad97672526ad11bc5060d6c588f750a43',1,'Disconnect_TCP_Server(void):&#160;esp8266.c'],['../esp8266_8h.html#ad97672526ad11bc5060d6c588f750a43',1,'Disconnect_TCP_Server(void):&#160;esp8266.c']]],
+  ['disconnect_5fwifi_26',['Disconnect_Wifi',['../esp8266_8c.html#ab2579deb2efa08ed403c4b40a06f8090',1,'Disconnect_Wifi(void):&#160;esp8266.c'],['../esp8266_8h.html#ab2579deb2efa08ed403c4b40a06f8090',1,'Disconnect_Wifi(void):&#160;esp8266.c']]],
+  ['doublereturnvalue_27',['doubleReturnValue',['../classMockSupport.html#a2a85df2de4e0daf48aa2fe573d7de31e',1,'MockSupport']]],
+  ['doubles_5fequal_28',['doubles_equal',['../Utest_8h.html#a895b194c86edb6bd4ba9d0c4d1e9f11a',1,'Utest.h']]],
+  ['doublesequalfailure_29',['DoublesEqualFailure',['../classDoublesEqualFailure.html#ab886a81cb87793cd01701e94f407a31e',1,'DoublesEqualFailure']]]
 ];

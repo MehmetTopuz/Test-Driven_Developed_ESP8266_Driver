@@ -4,5 +4,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node0 [label="MockFailureReporter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classMockFailureReporter.html",tooltip=" "];
+  Node0 [label="MockExpectedCallsList\l::MockExpectedCallsListNode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classMockExpectedCallsList_1_1MockExpectedCallsListNode.html",tooltip=" "];
 }

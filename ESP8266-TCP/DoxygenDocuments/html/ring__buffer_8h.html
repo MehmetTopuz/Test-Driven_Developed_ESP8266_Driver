@@ -9,10 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -52,23 +48,6 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('ring__buffer_8h.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -83,6 +62,11 @@ $(document).ready(function(){initNavTree('ring__buffer_8h.html',''); initResizab
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_bc84256498dc5614be2bf6f96d0ea448.html">STM32CubeIDE</a></li><li class="navelem"><a class="el" href="dir_d68f96515942b0cbb122a2ff87c20a0f.html">workspace_1.6.0</a></li><li class="navelem"><a class="el" href="dir_6413aba084afffb78dfe253537bd0154.html">ESP8266-TCP-IP</a></li><li class="navelem"><a class="el" href="dir_d6aca0299a5d43c1e78297d4936c59f3.html">ESP8266-TCP</a></li><li class="navelem"><a class="el" href="dir_76289216892c11fc746b92eb19e7d766.html">RingBuffer</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
@@ -94,16 +78,6 @@ $(document).ready(function(){initNavTree('ring__buffer_8h.html',''); initResizab
 <p>Header file of the Ring Buffer module.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;<a class="el" href="stdint_8h_source.html">stdint.h</a>&gt;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Include dependency graph for ring_buffer.h:</div>
-<div class="dyncontent">
-<div class="center"><img src="ring__buffer_8h__incl.png" border="0" usemap="#aC_1_2Users_2Topuz_2STM32CubeIDE_2workspace__1_86_80_2ESP8266-TCP-IP_2ESP8266-TCP_2RingBuffer_2ring__buffer_8h" alt=""/></div>
-</div>
-</div><div class="textblock"><div class="dynheader">
-This graph shows which files directly or indirectly include this file:</div>
-<div class="dyncontent">
-<div class="center"><img src="ring__buffer_8h__dep__incl.png" border="0" usemap="#aC_1_2Users_2Topuz_2STM32CubeIDE_2workspace__1_86_80_2ESP8266-TCP-IP_2ESP8266-TCP_2RingBuffer_2ring__buffer_8hdep" alt=""/></div>
-</div>
 </div>
 <p><a href="ring__buffer_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -177,12 +151,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ring__buffer_8c_source.html#l00156">156</a> of file <a class="el" href="ring__buffer_8c_source.html">ring_buffer.c</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="ring__buffer_8h_a5a68a5a11cacadf1d7002d32bab4f61f_icgraph.png" border="0" usemap="#aring__buffer_8h_a5a68a5a11cacadf1d7002d32bab4f61f_icgraph" alt=""/></div>
-</div>
+<p class="definition">Definition at line <a class="el" href="ring__buffer_8c_source.html#l00157">157</a> of file <a class="el" href="ring__buffer_8c_source.html">ring_buffer.c</a>.</p>
 
 </div>
 </div>
@@ -217,11 +186,6 @@ Here is the caller graph for this function:</div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="ring__buffer_8c_source.html#l00054">54</a> of file <a class="el" href="ring__buffer_8c_source.html">ring_buffer.c</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="ring__buffer_8h_a616df4e0ac037f773e072ef514795cbb_icgraph.png" border="0" usemap="#aring__buffer_8h_a616df4e0ac037f773e072ef514795cbb_icgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -256,11 +220,6 @@ Here is the caller graph for this function:</div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="ring__buffer_8c_source.html#l00116">116</a> of file <a class="el" href="ring__buffer_8c_source.html">ring_buffer.c</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="ring__buffer_8h_ac51239e5fb9265802477417817fbf614_icgraph.png" border="0" usemap="#aring__buffer_8h_ac51239e5fb9265802477417817fbf614_icgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -295,11 +254,6 @@ Here is the caller graph for this function:</div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="ring__buffer_8c_source.html#l00024">24</a> of file <a class="el" href="ring__buffer_8c_source.html">ring_buffer.c</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="ring__buffer_8h_abb5cf81d33607fe6b1308df1ea02b942_icgraph.png" border="0" usemap="#aring__buffer_8h_abb5cf81d33607fe6b1308df1ea02b942_icgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -339,17 +293,13 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">1</td><td>data is available in the buffer. 0: data is not available in the buffer. </td></tr>
+    <tr><td class="paramname">1</td><td>data is available in the buffer. </td></tr>
+    <tr><td class="paramname">0</td><td>data is not available in the buffer. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ring__buffer_8c_source.html#l00140">140</a> of file <a class="el" href="ring__buffer_8c_source.html">ring_buffer.c</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="ring__buffer_8h_ad584e76089ed7066f0b7a45221f19fc4_icgraph.png" border="0" usemap="#aring__buffer_8h_ad584e76089ed7066f0b7a45221f19fc4_icgraph" alt=""/></div>
-</div>
+<p class="definition">Definition at line <a class="el" href="ring__buffer_8c_source.html#l00141">141</a> of file <a class="el" href="ring__buffer_8c_source.html">ring_buffer.c</a>.</p>
 
 </div>
 </div>
@@ -384,11 +334,6 @@ Here is the caller graph for this function:</div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="ring__buffer_8c_source.html#l00091">91</a> of file <a class="el" href="ring__buffer_8c_source.html">ring_buffer.c</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="ring__buffer_8h_a2c645e79ce05b8c0fc3802f29f68c389_icgraph.png" border="0" usemap="#aring__buffer_8h_a2c645e79ce05b8c0fc3802f29f68c389_icgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -434,11 +379,6 @@ Here is the caller graph for this function:</div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="ring__buffer_8c_source.html#l00072">72</a> of file <a class="el" href="ring__buffer_8c_source.html">ring_buffer.c</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="ring__buffer_8h_ae864267e4a1ec716e7c3df27a24061e6_icgraph.png" border="0" usemap="#aring__buffer_8h_ae864267e4a1ec716e7c3df27a24061e6_icgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -483,28 +423,14 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ring__buffer_8c_source.html#l00127">127</a> of file <a class="el" href="ring__buffer_8c_source.html">ring_buffer.c</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="ring__buffer_8h_a05908f7356a76d5c5d4c44708a856ca5_cgraph.png" border="0" usemap="#aring__buffer_8h_a05908f7356a76d5c5d4c44708a856ca5_cgraph" alt=""/></div>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="ring__buffer_8h_a05908f7356a76d5c5d4c44708a856ca5_icgraph.png" border="0" usemap="#aring__buffer_8h_a05908f7356a76d5c5d4c44708a856ca5_icgraph" alt=""/></div>
-</div>
+<p class="definition">Definition at line <a class="el" href="ring__buffer_8c_source.html#l00128">128</a> of file <a class="el" href="ring__buffer_8c_source.html">ring_buffer.c</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="dir_bc84256498dc5614be2bf6f96d0ea448.html">STM32CubeIDE</a></li><li class="navelem"><a class="el" href="dir_d68f96515942b0cbb122a2ff87c20a0f.html">workspace_1.6.0</a></li><li class="navelem"><a class="el" href="dir_6413aba084afffb78dfe253537bd0154.html">ESP8266-TCP-IP</a></li><li class="navelem"><a class="el" href="dir_d6aca0299a5d43c1e78297d4936c59f3.html">ESP8266-TCP</a></li><li class="navelem"><a class="el" href="dir_76289216892c11fc746b92eb19e7d766.html">RingBuffer</a></li><li class="navelem"><a class="el" href="ring__buffer_8h.html">ring_buffer.h</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3
+</small></address>
 </body>
 </html>

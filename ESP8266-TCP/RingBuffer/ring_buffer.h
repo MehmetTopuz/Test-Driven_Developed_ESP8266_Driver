@@ -81,7 +81,7 @@ void 		ringBuffer_flush(RingBuffer* ringBuffer);
  * @param 	RingBuffer typedef structure.
  * @param	data is an unsigned 8-bit array to be searched in the buffer.
  * @retval	1: data is available in the buffer.
- * 			0: data is not available in the buffer.
+ * @retval	0: data is not available in the buffer.
  */
 uint32_t 	ringBuffer_lookFor(RingBuffer* ringBuffer, uint8_t* data);
 

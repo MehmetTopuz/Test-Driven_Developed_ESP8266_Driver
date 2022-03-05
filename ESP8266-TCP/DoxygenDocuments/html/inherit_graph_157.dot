@@ -4,5 +4,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node0 [label="WWDG_TypeDef",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structWWDG__TypeDef.html",tooltip="Window WATCHDOG."];
+  Node0 [label="VREFBUF_TypeDef",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structVREFBUF__TypeDef.html",tooltip="VREFBUF."];
 }

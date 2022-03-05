@@ -9,10 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -53,22 +49,6 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('globals_r.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -1389,6 +1369,8 @@ $(document).ready(function(){initNavTree('globals_r.html',''); initResizable(); 
 <li>RCC_USBPLLCLK_DIV3&#160;:&#160;<a class="el" href="group__HAL__RCC__Aliased.html#ga895e6eac56d6689996989b9417c9ad62">stm32_hal_legacy.h</a></li>
 <li>READ_BIT&#160;:&#160;<a class="el" href="group__Exported__macros.html#ga822bb1bb9710d5f2fa6396b84e583c33">stm32g4xx.h</a></li>
 <li>READ_REG&#160;:&#160;<a class="el" href="group__Exported__macros.html#gae7f188a4d26c9e713a48414783421071">stm32g4xx.h</a></li>
+<li>Read_Response()&#160;:&#160;<a class="el" href="esp8266_8c.html#a38e4927f2a0f897c44d993be83e96aba">esp8266.c</a>, <a class="el" href="esp8266_8h.html#a38e4927f2a0f897c44d993be83e96aba">esp8266.h</a></li>
+<li>Read_TCP_Message()&#160;:&#160;<a class="el" href="esp8266_8c.html#a2bbfbb7c39910013ebaf38d3212235fa">esp8266.c</a>, <a class="el" href="esp8266_8h.html#a2bbfbb7c39910013ebaf38d3212235fa">esp8266.h</a></li>
 <li>realloc&#160;:&#160;<a class="el" href="MemoryLeakDetectorMallocMacros_8h.html#a40bca1270eac14ea5da81c924c02c3b7">MemoryLeakDetectorMallocMacros.h</a></li>
 <li>REGULAR_CHANNELS&#160;:&#160;<a class="el" href="group__HAL__ADC__Aliased__Defines.html#ga9480bc25f45fc189111dba13103c404e">stm32_hal_legacy.h</a></li>
 <li>REGULAR_GROUP&#160;:&#160;<a class="el" href="group__HAL__ADC__Aliased__Defines.html#ga37bac62f24a8600f62d0d35683a0a4de">stm32_hal_legacy.h</a></li>
@@ -1402,8 +1384,8 @@ $(document).ready(function(){initNavTree('globals_r.html',''); initResizable(); 
 <li>ringBuffer_pop()&#160;:&#160;<a class="el" href="ring__buffer_8c.html#a2c645e79ce05b8c0fc3802f29f68c389">ring_buffer.c</a>, <a class="el" href="ring__buffer_8h.html#a2c645e79ce05b8c0fc3802f29f68c389">ring_buffer.h</a></li>
 <li>ringBuffer_push()&#160;:&#160;<a class="el" href="ring__buffer_8c.html#ae864267e4a1ec716e7c3df27a24061e6">ring_buffer.c</a>, <a class="el" href="ring__buffer_8h.html#ae864267e4a1ec716e7c3df27a24061e6">ring_buffer.h</a></li>
 <li>ringBuffer_pushArray()&#160;:&#160;<a class="el" href="ring__buffer_8c.html#a05908f7356a76d5c5d4c44708a856ca5">ring_buffer.c</a>, <a class="el" href="ring__buffer_8h.html#a05908f7356a76d5c5d4c44708a856ca5">ring_buffer.h</a></li>
-<li>RMVF_BITNUMBER&#160;:&#160;<a class="el" href="group__HAL__RCC__Aliased.html#gad4cc72917b15affc54b4d28e6529634c">stm32_hal_legacy.h</a></li>
 <li>RMVF_BitNumber&#160;:&#160;<a class="el" href="group__HAL__RCC__Aliased.html#ga3a0580593374569f2663f1432812f8fe">stm32_hal_legacy.h</a></li>
+<li>RMVF_BITNUMBER&#160;:&#160;<a class="el" href="group__HAL__RCC__Aliased.html#gad4cc72917b15affc54b4d28e6529634c">stm32_hal_legacy.h</a></li>
 <li>RNG&#160;:&#160;<a class="el" href="group__Peripheral__declaration.html#ga5b0885b8b55bbc13691092b704d9309f">stm32g474xx.h</a></li>
 <li>RNG_BASE&#160;:&#160;<a class="el" href="group__Peripheral__memory__map.html#gab92662976cfe62457141e5b4f83d541c">stm32g474xx.h</a></li>
 <li>RNG_CR_CED&#160;:&#160;<a class="el" href="group__Peripheral__Registers__Bits__Definition.html#ga939fb7e756abc6c84d5f296a80a58716">stm32g474xx.h</a></li>
@@ -1980,14 +1962,12 @@ $(document).ready(function(){initNavTree('globals_r.html',''); initResizable(); 
 <li>RTCEN_BitNumber&#160;:&#160;<a class="el" href="group__HAL__RCC__Aliased.html#ga9302c551752124766afc4cee65436405">stm32_hal_legacy.h</a></li>
 <li>RTCRST_BITNUMBER&#160;:&#160;<a class="el" href="group__HAL__RCC__Aliased.html#ga0cfaa60ebd031d12bff625ca896f1fd5">stm32_hal_legacy.h</a></li>
 <li>RUN_ALL_TESTS&#160;:&#160;<a class="el" href="UtestMacros_8h.html#a0ad2a3458caeaa61b4b52bc746d6fb94">UtestMacros.h</a></li>
+<li>rx_buffer&#160;:&#160;<a class="el" href="esp8266_8h.html#aab99823bd58f435a0a5000c805652f4f">esp8266.h</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3
+</small></address>
 </body>
 </html>

@@ -4,5 +4,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node0 [label="IWDG_TypeDef",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structIWDG__TypeDef.html",tooltip="Independent WATCHDOG."];
+  Node0 [label="ITM_Type",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structITM__Type.html",tooltip="Structure type to access the Instrumentation Trace Macrocell Register (ITM)."];
 }

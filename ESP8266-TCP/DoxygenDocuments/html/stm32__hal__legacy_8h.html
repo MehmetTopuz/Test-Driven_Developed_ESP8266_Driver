@@ -9,10 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -52,23 +48,6 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('stm32__hal__legacy_8h.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -83,6 +62,11 @@ $(document).ready(function(){initNavTree('stm32__hal__legacy_8h.html',''); initR
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_bc84256498dc5614be2bf6f96d0ea448.html">STM32CubeIDE</a></li><li class="navelem"><a class="el" href="dir_d68f96515942b0cbb122a2ff87c20a0f.html">workspace_1.6.0</a></li><li class="navelem"><a class="el" href="dir_6413aba084afffb78dfe253537bd0154.html">ESP8266-TCP-IP</a></li><li class="navelem"><a class="el" href="dir_d6aca0299a5d43c1e78297d4936c59f3.html">ESP8266-TCP</a></li><li class="navelem"><a class="el" href="dir_e5981f6b789dd380d6bf43224d7e4f8c.html">Drivers</a></li><li class="navelem"><a class="el" href="dir_ad37fc4c4fd3712f036424b5b2d5d70e.html">STM32G4xx_HAL_Driver</a></li><li class="navelem"><a class="el" href="dir_9a5ac1a567704fa93e01b73a55b8f032.html">Inc</a></li><li class="navelem"><a class="el" href="dir_51db6bbd9bdad20675607e2d4f706d2d.html">Legacy</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#define-members">Macros</a>  </div>
@@ -92,12 +76,7 @@ $(document).ready(function(){initNavTree('stm32__hal__legacy_8h.html',''); initR
 
 <p>This file contains aliases definition for the STM32Cube HAL constants macros and functions maintained for legacy purpose.  
 <a href="#details">More...</a></p>
-<div class="textblock"><div class="dynheader">
-This graph shows which files directly or indirectly include this file:</div>
-<div class="dyncontent">
-<div class="center"><img src="stm32__hal__legacy_8h__dep__incl.png" border="0" usemap="#aC_1_2Users_2Topuz_2STM32CubeIDE_2workspace__1_86_80_2ESP8266-TCP-IP_2ESP8266-TCP_2Drivers_2STM32G4xx__HAL__Driver_2Inc_2Legacy_2stm32__hal__legacy_8hdep" alt=""/></div>
-</div>
-</div>
+
 <p><a href="stm32__hal__legacy_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
@@ -994,15 +973,15 @@ Macros</h2></td></tr>
 <tr class="separator:gaa98e266d20386f08f1e7d07924ae7fd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga858c30b0c902a609fbf5e9de54c873fc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__HAL__ETH__Aliased__Defines.html#ga858c30b0c902a609fbf5e9de54c873fc">ETH_MAC_TRANSMISSION_PAUSE</a>&#160;&#160;&#160;0x00080000U  /* MAC transmitter in pause */</td></tr>
 <tr class="separator:ga858c30b0c902a609fbf5e9de54c873fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3b6682322869b2f8ff8a34239418b229"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__HAL__ETH__Aliased__Defines.html#ga3b6682322869b2f8ff8a34239418b229">ETH_MAC_TRANSMITFRAMECONTROLLER_IDLE</a>&#160;&#160;&#160;0x00000000U  /* MAC transmit frame controller: Idle */</td></tr>
+<tr class="memitem:ga3b6682322869b2f8ff8a34239418b229"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__HAL__ETH__Aliased__Defines.html#ga3b6682322869b2f8ff8a34239418b229">ETH_MAC_TRANSMITFRAMECONTROLLER_IDLE</a>&#160;&#160;&#160;0x00000000U  /* MAC <a class="el" href="tests_8cpp.html#ad1364f6ff41979d983b53d63abd0b0d5">transmit</a> frame controller: Idle */</td></tr>
 <tr class="separator:ga3b6682322869b2f8ff8a34239418b229"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga51af5af4f0244add557e29f1c1085c76"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__HAL__ETH__Aliased__Defines.html#ga51af5af4f0244add557e29f1c1085c76">ETH_MAC_TRANSMITFRAMECONTROLLER_WAITING</a>&#160;&#160;&#160;0x00020000U  /* MAC transmit frame controller: Waiting for Status of previous frame or IFG/backoff period to be over */</td></tr>
+<tr class="memitem:ga51af5af4f0244add557e29f1c1085c76"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__HAL__ETH__Aliased__Defines.html#ga51af5af4f0244add557e29f1c1085c76">ETH_MAC_TRANSMITFRAMECONTROLLER_WAITING</a>&#160;&#160;&#160;0x00020000U  /* MAC <a class="el" href="tests_8cpp.html#ad1364f6ff41979d983b53d63abd0b0d5">transmit</a> frame controller: Waiting for <a class="el" href="esp8266_8h.html#a67a0db04d321a74b7e7fcfd3f1a3f70b">Status</a> of previous frame or IFG/backoff period to be over */</td></tr>
 <tr class="separator:ga51af5af4f0244add557e29f1c1085c76"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga30f5421c685cc87345a62034f03e9ede"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__HAL__ETH__Aliased__Defines.html#ga30f5421c685cc87345a62034f03e9ede">ETH_MAC_TRANSMITFRAMECONTROLLER_GENRATING_PCF</a>&#160;&#160;&#160;0x00040000U  /* MAC transmit frame controller: Generating and transmitting a Pause control frame (in full duplex mode) */</td></tr>
+<tr class="memitem:ga30f5421c685cc87345a62034f03e9ede"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__HAL__ETH__Aliased__Defines.html#ga30f5421c685cc87345a62034f03e9ede">ETH_MAC_TRANSMITFRAMECONTROLLER_GENRATING_PCF</a>&#160;&#160;&#160;0x00040000U  /* MAC <a class="el" href="tests_8cpp.html#ad1364f6ff41979d983b53d63abd0b0d5">transmit</a> frame controller: Generating and transmitting a Pause control frame (in full duplex mode) */</td></tr>
 <tr class="separator:ga30f5421c685cc87345a62034f03e9ede"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga813acc11409391a70e9c8f4e2c769cf1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__HAL__ETH__Aliased__Defines.html#ga813acc11409391a70e9c8f4e2c769cf1">ETH_MAC_TRANSMITFRAMECONTROLLER_TRANSFERRING</a>&#160;&#160;&#160;0x00060000U  /* MAC transmit frame controller: Transferring input frame for transmission */</td></tr>
+<tr class="memitem:ga813acc11409391a70e9c8f4e2c769cf1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__HAL__ETH__Aliased__Defines.html#ga813acc11409391a70e9c8f4e2c769cf1">ETH_MAC_TRANSMITFRAMECONTROLLER_TRANSFERRING</a>&#160;&#160;&#160;0x00060000U  /* MAC <a class="el" href="tests_8cpp.html#ad1364f6ff41979d983b53d63abd0b0d5">transmit</a> frame controller: Transferring input frame for transmission */</td></tr>
 <tr class="separator:ga813acc11409391a70e9c8f4e2c769cf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga569a78f6147f1068ddeed3897776b6f3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__HAL__ETH__Aliased__Defines.html#ga569a78f6147f1068ddeed3897776b6f3">ETH_MAC_MII_TRANSMIT_ACTIVE</a>&#160;&#160;&#160;0x00010000U  /* MAC MII transmit engine active */</td></tr>
+<tr class="memitem:ga569a78f6147f1068ddeed3897776b6f3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__HAL__ETH__Aliased__Defines.html#ga569a78f6147f1068ddeed3897776b6f3">ETH_MAC_MII_TRANSMIT_ACTIVE</a>&#160;&#160;&#160;0x00010000U  /* MAC MII <a class="el" href="tests_8cpp.html#ad1364f6ff41979d983b53d63abd0b0d5">transmit</a> engine active */</td></tr>
 <tr class="separator:ga569a78f6147f1068ddeed3897776b6f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab0663cbb0510f2d3bdc9fdaea103725e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__HAL__ETH__Aliased__Defines.html#gab0663cbb0510f2d3bdc9fdaea103725e">ETH_MAC_RXFIFO_EMPTY</a>&#160;&#160;&#160;0x00000000U  /* Rx FIFO fill level: empty */</td></tr>
 <tr class="separator:gab0663cbb0510f2d3bdc9fdaea103725e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1012,11 +991,11 @@ Macros</h2></td></tr>
 <tr class="separator:ga10d4ac5728fe85efe0ec19699e4c90f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa7b77138ec3256a713a8aa74ea94f0c1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__HAL__ETH__Aliased__Defines.html#gaa7b77138ec3256a713a8aa74ea94f0c1">ETH_MAC_RXFIFO_FULL</a>&#160;&#160;&#160;0x00000300U  /* Rx FIFO fill level: full */</td></tr>
 <tr class="separator:gaa7b77138ec3256a713a8aa74ea94f0c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0be388dadd31f6a12f2ee9b4ee6c31bb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__HAL__ETH__Aliased__Defines.html#ga0be388dadd31f6a12f2ee9b4ee6c31bb">ETH_MAC_READCONTROLLER_IDLE</a>&#160;&#160;&#160;0x00000000U  /* Rx FIFO read controller IDLE state */</td></tr>
+<tr class="memitem:ga0be388dadd31f6a12f2ee9b4ee6c31bb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__HAL__ETH__Aliased__Defines.html#ga0be388dadd31f6a12f2ee9b4ee6c31bb">ETH_MAC_READCONTROLLER_IDLE</a>&#160;&#160;&#160;0x00000000U  /* Rx FIFO read controller <a class="el" href="esp8266_8h.html#a67a0db04d321a74b7e7fcfd3f1a3f70bafd6a0e4343048b10646dd2976cc5ad18">IDLE</a> state */</td></tr>
 <tr class="separator:ga0be388dadd31f6a12f2ee9b4ee6c31bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga056b776e92442c623c3d848314e6c8f0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__HAL__ETH__Aliased__Defines.html#ga056b776e92442c623c3d848314e6c8f0">ETH_MAC_READCONTROLLER_READING_DATA</a>&#160;&#160;&#160;0x00000020U  /* Rx FIFO read controller Reading frame data */</td></tr>
 <tr class="separator:ga056b776e92442c623c3d848314e6c8f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga441228e7ee2416d37f22f5081d739e2c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__HAL__ETH__Aliased__Defines.html#ga441228e7ee2416d37f22f5081d739e2c">ETH_MAC_READCONTROLLER_READING_STATUS</a>&#160;&#160;&#160;0x00000040U  /* Rx FIFO read controller Reading frame status (or time-stamp) */</td></tr>
+<tr class="memitem:ga441228e7ee2416d37f22f5081d739e2c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__HAL__ETH__Aliased__Defines.html#ga441228e7ee2416d37f22f5081d739e2c">ETH_MAC_READCONTROLLER_READING_STATUS</a>&#160;&#160;&#160;0x00000040U  /* Rx FIFO read controller Reading frame status (or <a class="el" href="tests_8cpp.html#ae73654f333e4363463ad8c594eca1905">time</a>-stamp) */</td></tr>
 <tr class="separator:ga441228e7ee2416d37f22f5081d739e2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7a4fe56723328085b9b80adbfb528a5d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__HAL__ETH__Aliased__Defines.html#ga7a4fe56723328085b9b80adbfb528a5d">ETH_MAC_READCONTROLLER_FLUSHING</a>&#160;&#160;&#160;0x00000060U  /* Rx FIFO read controller Flushing the frame data and status */</td></tr>
 <tr class="separator:ga7a4fe56723328085b9b80adbfb528a5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -3920,13 +3899,9 @@ Macros</h2></td></tr>
 
 <p class="definition">Definition in file <a class="el" href="stm32__hal__legacy_8h_source.html">stm32_hal_legacy.h</a>.</p>
 </div></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="dir_bc84256498dc5614be2bf6f96d0ea448.html">STM32CubeIDE</a></li><li class="navelem"><a class="el" href="dir_d68f96515942b0cbb122a2ff87c20a0f.html">workspace_1.6.0</a></li><li class="navelem"><a class="el" href="dir_6413aba084afffb78dfe253537bd0154.html">ESP8266-TCP-IP</a></li><li class="navelem"><a class="el" href="dir_d6aca0299a5d43c1e78297d4936c59f3.html">ESP8266-TCP</a></li><li class="navelem"><a class="el" href="dir_e5981f6b789dd380d6bf43224d7e4f8c.html">Drivers</a></li><li class="navelem"><a class="el" href="dir_ad37fc4c4fd3712f036424b5b2d5d70e.html">STM32G4xx_HAL_Driver</a></li><li class="navelem"><a class="el" href="dir_9a5ac1a567704fa93e01b73a55b8f032.html">Inc</a></li><li class="navelem"><a class="el" href="dir_51db6bbd9bdad20675607e2d4f706d2d.html">Legacy</a></li><li class="navelem"><a class="el" href="stm32__hal__legacy_8h.html">stm32_hal_legacy.h</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3
+</small></address>
 </body>
 </html>

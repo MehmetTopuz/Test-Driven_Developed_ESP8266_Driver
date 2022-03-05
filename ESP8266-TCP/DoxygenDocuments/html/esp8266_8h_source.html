@@ -9,10 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -52,23 +48,6 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('esp8266_8h_source.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -83,42 +62,128 @@ $(document).ready(function(){initNavTree('esp8266_8h_source.html',''); initResiz
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_bc84256498dc5614be2bf6f96d0ea448.html">STM32CubeIDE</a></li><li class="navelem"><a class="el" href="dir_d68f96515942b0cbb122a2ff87c20a0f.html">workspace_1.6.0</a></li><li class="navelem"><a class="el" href="dir_6413aba084afffb78dfe253537bd0154.html">ESP8266-TCP-IP</a></li><li class="navelem"><a class="el" href="dir_d6aca0299a5d43c1e78297d4936c59f3.html">ESP8266-TCP</a></li><li class="navelem"><a class="el" href="dir_98f227cb0ffcb3c08632274f7c31a478.html">ESP8266_Driver</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle"><div class="title">esp8266.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="esp8266_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * esp8266.h</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> *  Created on: Jan 18, 2022</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> *      Author: topuz</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#ifndef ESP8266_H_</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#define ESP8266_H_</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>{</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#endif</span></div>
+<a href="esp8266_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifndef ESP8266_H_</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#define ESP8266_H_</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>}</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#endif </span><span class="comment">/* ESP8266_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">/* C++ Detection Block ------------------------------------------------------------------*/</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>{</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">/* Includes ------------------------------------------------------------------*/</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &quot;<a class="code" href="ring__buffer_8h.html">ring_buffer.h</a>&quot;</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">/* AT commands definitions ------------------------------------------------------------------*/</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="esp8266_8h.html#aee703318d3b3351e6d5e9eac4c85e913">   27</a></span><span class="preprocessor">#define AT_CWMODE_STATION           &quot;AT+CWMODE=1\r\n&quot;</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="esp8266_8h.html#aef2e6f558fe58ec2e6cf1c37e25dda73">   28</a></span><span class="preprocessor">#define AT_CWQAP                    &quot;AT+CWQAP\r\n&quot;</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="esp8266_8h.html#aa0f6eb46a7d893e332730529f67a0a4e">   29</a></span><span class="preprocessor">#define AT_CWJAP                    &quot;AT+CWJAP=&quot;</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="esp8266_8h.html#a9eb4025bb86e032cf1e86929a6d2300e">   31</a></span><span class="preprocessor">#define AT_CIPCLOSE                 &quot;AT+CIPCLOSE\r\n&quot;</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="esp8266_8h.html#a6db33ac2a73feffacfedfb1ce9bcc291">   32</a></span><span class="preprocessor">#define AT_CIPMUX_SINGLE            &quot;AT+CIPMUX=0\r\n&quot;</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="esp8266_8h.html#afb91b9b70c2e6684086e24c679880581">   33</a></span><span class="preprocessor">#define AT_CIPSTART_TCP             &quot;AT+CIPSTART=\&quot;TCP\&quot;,&quot;</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="esp8266_8h.html#a3d58238d590f199c27285688686aa0d4">   34</a></span><span class="preprocessor">#define AT_CIPSEND                  &quot;AT+CIPSEND=&quot;</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="esp8266_8h.html#a5e2c1b6fab2ff852463dd0cb400fde85">   37</a></span><span class="preprocessor">#define AT_RESPONSE_OK              &quot;OK&quot;</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="esp8266_8h.html#a962f11efc157b5f36c6a6563e6c841ae">   38</a></span><span class="preprocessor">#define AT_RESPONSE_ERROR           &quot;ERROR&quot;</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="esp8266_8h.html#a544e6e1867a030014c172d53eb6ad509">   39</a></span><span class="preprocessor">#define AT_RESPONSE_SEND_OK         &quot;SEND OK&quot;</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="esp8266_8h.html#a5b1679d6e2411cba947512c3cbf28244">   40</a></span><span class="preprocessor">#define AT_RESPONSE_GREATER_THAN    &quot;&gt;&quot;</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="esp8266_8h.html#aab99823bd58f435a0a5000c805652f4f">   43</a></span><a class="code hl_struct" href="structRingBuffer.html">RingBuffer</a>* <a class="code hl_variable" href="esp8266_8h.html#aab99823bd58f435a0a5000c805652f4f">rx_buffer</a>;          <span class="comment">// uart ring buffer structure</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="structEsp__Init__Typedef.html">   48</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>{</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="structEsp__Init__Typedef.html#a7dd313ef0ca074d563923cdcd5948312">   50</a></span>    void        (*UART_Transmit)(<a class="code hl_typedef" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*);         </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="structEsp__Init__Typedef.html#a99d08cac00b3e7f0309c7104a6307c4a">   51</a></span>    <a class="code hl_typedef" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>     (*UART_Receive)(void);              </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="structEsp__Init__Typedef.html#a287fa56e7d11b3aad79ecc3e55923568">   52</a></span>    uint32_t    (*getTick)(void);                   </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>}<a class="code hl_struct" href="structEsp__Init__Typedef.html">Esp_Init_Typedef</a>;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="esp8266_8h.html#a67a0db04d321a74b7e7fcfd3f1a3f70b">   57</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>{</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="esp8266_8h.html#a67a0db04d321a74b7e7fcfd3f1a3f70ba3fe5ffe68b10eb48b4a8b17eefe60154">   59</a></span>    <a class="code hl_enumvalue" href="esp8266_8h.html#a67a0db04d321a74b7e7fcfd3f1a3f70ba3fe5ffe68b10eb48b4a8b17eefe60154">FOUND</a> = 0,</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="esp8266_8h.html#a67a0db04d321a74b7e7fcfd3f1a3f70ba8290a6de41407ec3fe42ebb8dfa01499">   60</a></span>    <a class="code hl_enumvalue" href="esp8266_8h.html#a67a0db04d321a74b7e7fcfd3f1a3f70ba8290a6de41407ec3fe42ebb8dfa01499">TIMEOUT_ERROR</a>,</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="esp8266_8h.html#a67a0db04d321a74b7e7fcfd3f1a3f70ba7e4a42e3b6dd63708c64cf3db6f69566">   61</a></span>    <a class="code hl_enumvalue" href="esp8266_8h.html#a67a0db04d321a74b7e7fcfd3f1a3f70ba7e4a42e3b6dd63708c64cf3db6f69566">STATUS_OK</a>,</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="esp8266_8h.html#a67a0db04d321a74b7e7fcfd3f1a3f70ba5bde228d9506a863d51ffbc868ff67f7">   62</a></span>    <a class="code hl_enumvalue" href="esp8266_8h.html#a67a0db04d321a74b7e7fcfd3f1a3f70ba5bde228d9506a863d51ffbc868ff67f7">STATUS_ERROR</a>,</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="esp8266_8h.html#a67a0db04d321a74b7e7fcfd3f1a3f70bafd6a0e4343048b10646dd2976cc5ad18">   63</a></span>    <a class="code hl_enumvalue" href="esp8266_8h.html#a67a0db04d321a74b7e7fcfd3f1a3f70bafd6a0e4343048b10646dd2976cc5ad18">IDLE</a>,</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>}<a class="code hl_enumeration" href="esp8266_8h.html#a67a0db04d321a74b7e7fcfd3f1a3f70b">Status</a>;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">/* Function Prototypes --------------------------------------------------------*/</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>int32_t <a class="code hl_function" href="esp8266_8h.html#aa6f92ae03ddfc89a613f17b507bbacce">ESP_Init</a>(<span class="keywordtype">void</span> (*UART_Transmit)(<a class="code hl_typedef" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*),</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>             <a class="code hl_typedef" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> (*UART_Receive)(<span class="keywordtype">void</span>),</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>             uint32_t (*getTick)(<span class="keywordtype">void</span>),</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>             uint32_t UART_Buffer_Size);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="keywordtype">void</span> <a class="code hl_function" href="esp8266_8h.html#aa60813d3a65743ce3d8bd71760121bf5">Send_AT_Command</a>(<span class="keywordtype">char</span> *cmd);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="keywordtype">void</span> <a class="code hl_function" href="esp8266_8h.html#a792ca4c0ed1089a8def223a7a37c986e">ESP_UART_ReceiveHandler</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>uint32_t <a class="code hl_function" href="esp8266_8h.html#a38e4927f2a0f897c44d993be83e96aba">Read_Response</a>(<span class="keywordtype">char</span> * response);</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><a class="code hl_enumeration" href="esp8266_8h.html#a67a0db04d321a74b7e7fcfd3f1a3f70b">Status</a> <a class="code hl_function" href="esp8266_8h.html#a1c690cd3883ffc79b729c4d46760cd64">Wait_Response</a>(<span class="keywordtype">char</span> * response, uint32_t timeout);</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><a class="code hl_enumeration" href="esp8266_8h.html#a67a0db04d321a74b7e7fcfd3f1a3f70b">Status</a> <a class="code hl_function" href="esp8266_8h.html#a0dc42539f669956367c0fb2b7ea6f46b">Connect_Wifi</a>(<span class="keywordtype">char</span>* ssid, <span class="keywordtype">char</span>* password);</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><a class="code hl_enumeration" href="esp8266_8h.html#a67a0db04d321a74b7e7fcfd3f1a3f70b">Status</a> <a class="code hl_function" href="esp8266_8h.html#ab2579deb2efa08ed403c4b40a06f8090">Disconnect_Wifi</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span><a class="code hl_enumeration" href="esp8266_8h.html#a67a0db04d321a74b7e7fcfd3f1a3f70b">Status</a> <a class="code hl_function" href="esp8266_8h.html#a4d865414cc80220c97d3056c9fad2516">Command_Process</a>(<span class="keywordtype">char</span> **commandArray, <span class="keywordtype">char</span> **responseArray, <a class="code hl_typedef" href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> numberOfCommands);</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span><a class="code hl_enumeration" href="esp8266_8h.html#a67a0db04d321a74b7e7fcfd3f1a3f70b">Status</a> <a class="code hl_function" href="esp8266_8h.html#ad810f4d87d439daecfddf19de67410b1">Connect_TCP_Server</a>(<span class="keywordtype">char</span>* ip, <span class="keywordtype">char</span>* port);</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span><a class="code hl_enumeration" href="esp8266_8h.html#a67a0db04d321a74b7e7fcfd3f1a3f70b">Status</a> <a class="code hl_function" href="esp8266_8h.html#ad97672526ad11bc5060d6c588f750a43">Disconnect_TCP_Server</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span><a class="code hl_enumeration" href="esp8266_8h.html#a67a0db04d321a74b7e7fcfd3f1a3f70b">Status</a> <a class="code hl_function" href="esp8266_8h.html#ab1f83ced07fa2a3a6ea6a84c51efb900">Send_TCP_Message</a>(<span class="keywordtype">char</span>* message);</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span> </div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span><a class="code hl_enumeration" href="esp8266_8h.html#a67a0db04d321a74b7e7fcfd3f1a3f70b">Status</a> <a class="code hl_function" href="esp8266_8h.html#a2bbfbb7c39910013ebaf38d3212235fa">Read_TCP_Message</a>(<span class="keywordtype">char</span>* receivedMessage);</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span> </div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span><a class="code hl_enumeration" href="esp8266_8h.html#a67a0db04d321a74b7e7fcfd3f1a3f70b">Status</a> <a class="code hl_function" href="esp8266_8h.html#a28eb50508c0dfaf024ae0fd3f4f372ab">Wait_TCP_Message</a>(<span class="keywordtype">char</span>* receivedMessage, uint32_t timeout);</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span> </div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>}</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span> </div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span><span class="preprocessor">#endif </span><span class="comment">/* ESP8266_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="aesp8266_8h_html_a0dc42539f669956367c0fb2b7ea6f46b"><div class="ttname"><a href="esp8266_8h.html#a0dc42539f669956367c0fb2b7ea6f46b">Connect_Wifi</a></div><div class="ttdeci">Status Connect_Wifi(char *ssid, char *password)</div><div class="ttdoc">This function handles AT commands to connect the wifi.</div><div class="ttdef"><b>Definition:</b> <a href="esp8266_8c_source.html#l00147">esp8266.c:147</a></div></div>
+<div class="ttc" id="aesp8266_8h_html_a1c690cd3883ffc79b729c4d46760cd64"><div class="ttname"><a href="esp8266_8h.html#a1c690cd3883ffc79b729c4d46760cd64">Wait_Response</a></div><div class="ttdeci">Status Wait_Response(char *response, uint32_t timeout)</div><div class="ttdoc">Wait the specified message.</div><div class="ttdef"><b>Definition:</b> <a href="esp8266_8c_source.html#l00107">esp8266.c:107</a></div></div>
+<div class="ttc" id="aesp8266_8h_html_a28eb50508c0dfaf024ae0fd3f4f372ab"><div class="ttname"><a href="esp8266_8h.html#a28eb50508c0dfaf024ae0fd3f4f372ab">Wait_TCP_Message</a></div><div class="ttdeci">Status Wait_TCP_Message(char *receivedMessage, uint32_t timeout)</div><div class="ttdoc">This function waits for a message during the timeout.</div><div class="ttdef"><b>Definition:</b> <a href="esp8266_8c_source.html#l00416">esp8266.c:416</a></div></div>
+<div class="ttc" id="aesp8266_8h_html_a2bbfbb7c39910013ebaf38d3212235fa"><div class="ttname"><a href="esp8266_8h.html#a2bbfbb7c39910013ebaf38d3212235fa">Read_TCP_Message</a></div><div class="ttdeci">Status Read_TCP_Message(char *receivedMessage)</div><div class="ttdoc">This function reads message if there is a message in the buffer received from the TCP/IP server.</div><div class="ttdef"><b>Definition:</b> <a href="esp8266_8c_source.html#l00365">esp8266.c:365</a></div></div>
+<div class="ttc" id="aesp8266_8h_html_a38e4927f2a0f897c44d993be83e96aba"><div class="ttname"><a href="esp8266_8h.html#a38e4927f2a0f897c44d993be83e96aba">Read_Response</a></div><div class="ttdeci">uint32_t Read_Response(char *response)</div><div class="ttdoc">Read the specified message from the ring buffer.</div><div class="ttdef"><b>Definition:</b> <a href="esp8266_8c_source.html#l00094">esp8266.c:94</a></div></div>
+<div class="ttc" id="aesp8266_8h_html_a4d865414cc80220c97d3056c9fad2516"><div class="ttname"><a href="esp8266_8h.html#a4d865414cc80220c97d3056c9fad2516">Command_Process</a></div><div class="ttdeci">Status Command_Process(char **commandArray, char **responseArray, uint8_t numberOfCommands)</div><div class="ttdoc">This function handles AT commands and waits the messages expected from the ESP8266.</div><div class="ttdef"><b>Definition:</b> <a href="esp8266_8c_source.html#l00205">esp8266.c:205</a></div></div>
+<div class="ttc" id="aesp8266_8h_html_a67a0db04d321a74b7e7fcfd3f1a3f70b"><div class="ttname"><a href="esp8266_8h.html#a67a0db04d321a74b7e7fcfd3f1a3f70b">Status</a></div><div class="ttdeci">Status</div><div class="ttdef"><b>Definition:</b> <a href="esp8266_8h_source.html#l00057">esp8266.h:58</a></div></div>
+<div class="ttc" id="aesp8266_8h_html_a67a0db04d321a74b7e7fcfd3f1a3f70ba3fe5ffe68b10eb48b4a8b17eefe60154"><div class="ttname"><a href="esp8266_8h.html#a67a0db04d321a74b7e7fcfd3f1a3f70ba3fe5ffe68b10eb48b4a8b17eefe60154">FOUND</a></div><div class="ttdeci">@ FOUND</div><div class="ttdef"><b>Definition:</b> <a href="esp8266_8h_source.html#l00059">esp8266.h:59</a></div></div>
+<div class="ttc" id="aesp8266_8h_html_a67a0db04d321a74b7e7fcfd3f1a3f70ba5bde228d9506a863d51ffbc868ff67f7"><div class="ttname"><a href="esp8266_8h.html#a67a0db04d321a74b7e7fcfd3f1a3f70ba5bde228d9506a863d51ffbc868ff67f7">STATUS_ERROR</a></div><div class="ttdeci">@ STATUS_ERROR</div><div class="ttdef"><b>Definition:</b> <a href="esp8266_8h_source.html#l00062">esp8266.h:62</a></div></div>
+<div class="ttc" id="aesp8266_8h_html_a67a0db04d321a74b7e7fcfd3f1a3f70ba7e4a42e3b6dd63708c64cf3db6f69566"><div class="ttname"><a href="esp8266_8h.html#a67a0db04d321a74b7e7fcfd3f1a3f70ba7e4a42e3b6dd63708c64cf3db6f69566">STATUS_OK</a></div><div class="ttdeci">@ STATUS_OK</div><div class="ttdef"><b>Definition:</b> <a href="esp8266_8h_source.html#l00061">esp8266.h:61</a></div></div>
+<div class="ttc" id="aesp8266_8h_html_a67a0db04d321a74b7e7fcfd3f1a3f70ba8290a6de41407ec3fe42ebb8dfa01499"><div class="ttname"><a href="esp8266_8h.html#a67a0db04d321a74b7e7fcfd3f1a3f70ba8290a6de41407ec3fe42ebb8dfa01499">TIMEOUT_ERROR</a></div><div class="ttdeci">@ TIMEOUT_ERROR</div><div class="ttdef"><b>Definition:</b> <a href="esp8266_8h_source.html#l00060">esp8266.h:60</a></div></div>
+<div class="ttc" id="aesp8266_8h_html_a67a0db04d321a74b7e7fcfd3f1a3f70bafd6a0e4343048b10646dd2976cc5ad18"><div class="ttname"><a href="esp8266_8h.html#a67a0db04d321a74b7e7fcfd3f1a3f70bafd6a0e4343048b10646dd2976cc5ad18">IDLE</a></div><div class="ttdeci">@ IDLE</div><div class="ttdef"><b>Definition:</b> <a href="esp8266_8h_source.html#l00063">esp8266.h:63</a></div></div>
+<div class="ttc" id="aesp8266_8h_html_a792ca4c0ed1089a8def223a7a37c986e"><div class="ttname"><a href="esp8266_8h.html#a792ca4c0ed1089a8def223a7a37c986e">ESP_UART_ReceiveHandler</a></div><div class="ttdeci">void ESP_UART_ReceiveHandler(void)</div><div class="ttdoc">This function is used to pass the UART receive data to the ring buffer.</div><div class="ttdef"><b>Definition:</b> <a href="esp8266_8c_source.html#l00080">esp8266.c:80</a></div></div>
+<div class="ttc" id="aesp8266_8h_html_aa60813d3a65743ce3d8bd71760121bf5"><div class="ttname"><a href="esp8266_8h.html#aa60813d3a65743ce3d8bd71760121bf5">Send_AT_Command</a></div><div class="ttdeci">void Send_AT_Command(char *cmd)</div><div class="ttdoc">AT command send function.</div><div class="ttdef"><b>Definition:</b> <a href="esp8266_8c_source.html#l00069">esp8266.c:69</a></div></div>
+<div class="ttc" id="aesp8266_8h_html_aa6f92ae03ddfc89a613f17b507bbacce"><div class="ttname"><a href="esp8266_8h.html#aa6f92ae03ddfc89a613f17b507bbacce">ESP_Init</a></div><div class="ttdeci">int32_t ESP_Init(void(*UART_Transmit)(uint8_t *), uint8_t(*UART_Receive)(void), uint32_t(*getTick)(void), uint32_t UART_Buffer_Size)</div><div class="ttdoc">Initializing the ESP.</div><div class="ttdef"><b>Definition:</b> <a href="esp8266_8c_source.html#l00037">esp8266.c:37</a></div></div>
+<div class="ttc" id="aesp8266_8h_html_aab99823bd58f435a0a5000c805652f4f"><div class="ttname"><a href="esp8266_8h.html#aab99823bd58f435a0a5000c805652f4f">rx_buffer</a></div><div class="ttdeci">RingBuffer * rx_buffer</div><div class="ttdef"><b>Definition:</b> <a href="esp8266_8h_source.html#l00043">esp8266.h:43</a></div></div>
+<div class="ttc" id="aesp8266_8h_html_ab1f83ced07fa2a3a6ea6a84c51efb900"><div class="ttname"><a href="esp8266_8h.html#ab1f83ced07fa2a3a6ea6a84c51efb900">Send_TCP_Message</a></div><div class="ttdeci">Status Send_TCP_Message(char *message)</div><div class="ttdoc">This function handles AT commands to send messages over TCP/IP.</div><div class="ttdef"><b>Definition:</b> <a href="esp8266_8c_source.html#l00331">esp8266.c:331</a></div></div>
+<div class="ttc" id="aesp8266_8h_html_ab2579deb2efa08ed403c4b40a06f8090"><div class="ttname"><a href="esp8266_8h.html#ab2579deb2efa08ed403c4b40a06f8090">Disconnect_Wifi</a></div><div class="ttdeci">Status Disconnect_Wifi(void)</div><div class="ttdoc">This function handles AT commands to disconnect the wifi.</div><div class="ttdef"><b>Definition:</b> <a href="esp8266_8c_source.html#l00182">esp8266.c:182</a></div></div>
+<div class="ttc" id="aesp8266_8h_html_ad810f4d87d439daecfddf19de67410b1"><div class="ttname"><a href="esp8266_8h.html#ad810f4d87d439daecfddf19de67410b1">Connect_TCP_Server</a></div><div class="ttdeci">Status Connect_TCP_Server(char *ip, char *port)</div><div class="ttdoc">This function handles AT commands to connect TCP server.</div><div class="ttdef"><b>Definition:</b> <a href="esp8266_8c_source.html#l00273">esp8266.c:273</a></div></div>
+<div class="ttc" id="aesp8266_8h_html_ad97672526ad11bc5060d6c588f750a43"><div class="ttname"><a href="esp8266_8h.html#ad97672526ad11bc5060d6c588f750a43">Disconnect_TCP_Server</a></div><div class="ttdeci">Status Disconnect_TCP_Server(void)</div><div class="ttdoc">This function handles AT commands to disconnect TCP server.</div><div class="ttdef"><b>Definition:</b> <a href="esp8266_8c_source.html#l00310">esp8266.c:310</a></div></div>
+<div class="ttc" id="aring__buffer_8h_html"><div class="ttname"><a href="ring__buffer_8h.html">ring_buffer.h</a></div><div class="ttdoc">Header file of the Ring Buffer module.</div></div>
+<div class="ttc" id="astdint_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="stdint_8h_source.html#l00034">stdint.h:34</a></div></div>
+<div class="ttc" id="astructEsp__Init__Typedef_html"><div class="ttname"><a href="structEsp__Init__Typedef.html">Esp_Init_Typedef</a></div><div class="ttdoc">ESP initialize structure definition.</div><div class="ttdef"><b>Definition:</b> <a href="esp8266_8h_source.html#l00048">esp8266.h:49</a></div></div>
+<div class="ttc" id="astructRingBuffer_html"><div class="ttname"><a href="structRingBuffer.html">RingBuffer</a></div><div class="ttdoc">Ring Buffer structure definition.</div><div class="ttdef"><b>Definition:</b> <a href="ring__buffer_8h_source.html#l00026">ring_buffer.h:27</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="dir_bc84256498dc5614be2bf6f96d0ea448.html">STM32CubeIDE</a></li><li class="navelem"><a class="el" href="dir_d68f96515942b0cbb122a2ff87c20a0f.html">workspace_1.6.0</a></li><li class="navelem"><a class="el" href="dir_6413aba084afffb78dfe253537bd0154.html">ESP8266-TCP-IP</a></li><li class="navelem"><a class="el" href="dir_d6aca0299a5d43c1e78297d4936c59f3.html">ESP8266-TCP</a></li><li class="navelem"><a class="el" href="dir_98f227cb0ffcb3c08632274f7c31a478.html">ESP8266_Driver</a></li><li class="navelem"><a class="el" href="esp8266_8h.html">esp8266.h</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3
+</small></address>
 </body>
 </html>

@@ -4,17 +4,15 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node0 [label="TestPlugin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classTestPlugin.html",tooltip=" "];
+  Node0 [label="TestOutput",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classTestOutput.html",tooltip=" "];
   Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node1 [label="IEEE754ExceptionsPlugin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classIEEE754ExceptionsPlugin.html",tooltip=" "];
+  Node1 [label="CompositeTestOutput",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCompositeTestOutput.html",tooltip=" "];
   Node0 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="MemoryLeakWarningPlugin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classMemoryLeakWarningPlugin.html",tooltip=" "];
-  Node0 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node3 [label="MemoryReporterPlugin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classMemoryReporterPlugin.html",tooltip=" "];
+  Node2 [label="ConsoleTestOutput",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classConsoleTestOutput.html",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="TeamCityTestOutput",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classTeamCityTestOutput.html",tooltip=" "];
   Node0 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node4 [label="MockSupportPlugin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classMockSupportPlugin.html",tooltip=" "];
+  Node4 [label="JUnitTestOutput",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classJUnitTestOutput.html",tooltip=" "];
   Node0 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node5 [label="NullTestPlugin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classNullTestPlugin.html",tooltip=" "];
-  Node0 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node6 [label="SetPointerPlugin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSetPointerPlugin.html",tooltip=" "];
+  Node5 [label="StringBufferTestOutput",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classStringBufferTestOutput.html",tooltip=" "];
 }

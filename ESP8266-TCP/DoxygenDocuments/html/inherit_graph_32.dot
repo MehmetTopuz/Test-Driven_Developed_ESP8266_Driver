@@ -4,5 +4,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node0 [label="FDCAN_Config_TypeDef",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structFDCAN__Config__TypeDef.html",tooltip="FD Controller Area Network Configuration."];
+  Node0 [label="EXTI_TypeDef",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structEXTI__TypeDef.html",tooltip="External Interrupt/Event Controller."];
 }

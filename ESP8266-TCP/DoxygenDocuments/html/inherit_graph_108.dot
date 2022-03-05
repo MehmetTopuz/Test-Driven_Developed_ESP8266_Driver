@@ -4,5 +4,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node0 [label="SimpleString",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSimpleString.html",tooltip=" "];
+  Node0 [label="SimpleMutex",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSimpleMutex.html",tooltip=" "];
 }

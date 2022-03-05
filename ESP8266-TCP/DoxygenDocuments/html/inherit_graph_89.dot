@@ -4,5 +4,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node0 [label="PWR_TypeDef",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structPWR__TypeDef.html",tooltip="Power Control."];
+  Node0 [label="PWR_PVMTypeDef",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structPWR__PVMTypeDef.html",tooltip="PWR PVM configuration structure definition."];
 }

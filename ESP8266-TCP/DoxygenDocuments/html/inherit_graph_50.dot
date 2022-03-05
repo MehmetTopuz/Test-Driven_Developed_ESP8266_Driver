@@ -4,5 +4,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node0 [label="GTestConvertor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classGTestConvertor.html",tooltip=" "];
+  Node0 [label="GPIO_TypeDef",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structGPIO__TypeDef.html",tooltip="General Purpose I/O."];
 }

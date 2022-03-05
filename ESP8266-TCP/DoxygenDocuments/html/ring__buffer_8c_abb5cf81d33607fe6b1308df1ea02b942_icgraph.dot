@@ -6,5 +6,11 @@ digraph "ringBuffer_init"
   rankdir="RL";
   Node1 [label="ringBuffer_init",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Initialize the ring buffer."];
   Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="TEST_GROUP",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$tests_8cpp.html#a23d69c84c1aaccdea85a797c48987851",tooltip=" "];
+  Node2 [label="ESP_Init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$esp8266_8c.html#aa6f92ae03ddfc89a613f17b507bbacce",tooltip="Initializing the ESP."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="TEST",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$tests_8cpp.html#afbe867ad46a41156a4fe37bd09c760f3",tooltip=" "];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="TEST_GROUP",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$tests_8cpp.html#a5f923491de9039ffd43a1b587dd5dd15",tooltip=" "];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="TEST_GROUP",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$tests_8cpp.html#a23d69c84c1aaccdea85a797c48987851",tooltip=" "];
 }

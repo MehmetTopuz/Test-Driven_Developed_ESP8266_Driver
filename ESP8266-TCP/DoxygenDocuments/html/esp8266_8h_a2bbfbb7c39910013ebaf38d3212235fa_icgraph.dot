@@ -1,0 +1,14 @@
+digraph "Read_TCP_Message"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="Read_TCP_Message",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="This function reads message if there is a message in the buffer received from the TCP/IP server."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="TEST",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$tests_8cpp.html#aae2c722f7fabb93a23a60da97b2f0c4d",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Wait_TCP_Message",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$esp8266_8c.html#a28eb50508c0dfaf024ae0fd3f4f372ab",tooltip="This function waits for a message during the timeout."];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="TEST",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$tests_8cpp.html#a394cf68c7d6c1f8a83795516124383cc",tooltip=" "];
+}

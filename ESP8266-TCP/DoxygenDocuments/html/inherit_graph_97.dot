@@ -4,5 +4,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node0 [label="RCC_TypeDef",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structRCC__TypeDef.html",tooltip="Reset and Clock Control."];
+  Node0 [label="RCC_PLLInitTypeDef",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structRCC__PLLInitTypeDef.html",tooltip="RCC PLL configuration structure definition."];
 }

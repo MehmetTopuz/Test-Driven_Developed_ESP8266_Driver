@@ -3800,8 +3800,8 @@ var searchData=
   ['hsi48state_3797',['HSI48State',['../structRCC__OscInitTypeDef.html#a8055a66f494074422f14b2b7def4cd2f',1,'RCC_OscInitTypeDef']]],
   ['hsi_5fvalue_3798',['HSI_VALUE',['../stm32g4xx__hal__conf_8h.html#aaa8c76e274d0f6dd2cefb5d0b17fbc37',1,'HSI_VALUE():&#160;stm32g4xx_hal_conf.h'],['../group__STM32G4xx__System__Private__Includes.html#gaaa8c76e274d0f6dd2cefb5d0b17fbc37',1,'HSI_VALUE():&#160;system_stm32g4xx.c']]],
   ['hsicalibrationvalue_3799',['HSICalibrationValue',['../structRCC__OscInitTypeDef.html#a9b2e48e452d0c334f2b9473216064560',1,'RCC_OscInitTypeDef']]],
-  ['hsion_5fbitnumber_3800',['HSION_BITNUMBER',['../group__HAL__RCC__Aliased.html#ga79f147c8b2f8fe05574f861483be5aa4',1,'stm32_hal_legacy.h']]],
-  ['hsion_5fbitnumber_3801',['HSION_BitNumber',['../group__HAL__RCC__Aliased.html#ga3d3085e491cbef815d223afbe5bf1930',1,'stm32_hal_legacy.h']]],
+  ['hsion_5fbitnumber_3800',['HSION_BitNumber',['../group__HAL__RCC__Aliased.html#ga3d3085e491cbef815d223afbe5bf1930',1,'stm32_hal_legacy.h']]],
+  ['hsion_5fbitnumber_3801',['HSION_BITNUMBER',['../group__HAL__RCC__Aliased.html#ga79f147c8b2f8fe05574f861483be5aa4',1,'stm32_hal_legacy.h']]],
   ['hsistate_3802',['HSIState',['../structRCC__OscInitTypeDef.html#a39b62cae65fe7a251000354e5bba8cb6',1,'RCC_OscInitTypeDef']]],
   ['huart1_3803',['huart1',['../main_8c.html#a2cf715bef37f7e8ef385a30974a5f0d5',1,'huart1():&#160;main.c'],['../stm32g4xx__it_8c.html#a2cf715bef37f7e8ef385a30974a5f0d5',1,'huart1():&#160;main.c'],['../main_8cpp.html#a2cf715bef37f7e8ef385a30974a5f0d5',1,'huart1():&#160;main.cpp']]],
   ['hwflowctl_3804',['HwFlowCtl',['../structUART__InitTypeDef.html#adbf4734130666b94201c6658464c1622',1,'UART_InitTypeDef']]]

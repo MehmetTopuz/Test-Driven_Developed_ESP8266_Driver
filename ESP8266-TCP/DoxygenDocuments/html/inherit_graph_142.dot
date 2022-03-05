@@ -4,5 +4,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node0 [label="TIM_SlaveConfigTypeDef",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structTIM__SlaveConfigTypeDef.html",tooltip="TIM Slave configuration Structure definition."];
+  Node0 [label="TIM_OnePulse_InitTypeDef",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structTIM__OnePulse__InitTypeDef.html",tooltip="TIM One Pulse Mode Configuration Structure definition."];
 }

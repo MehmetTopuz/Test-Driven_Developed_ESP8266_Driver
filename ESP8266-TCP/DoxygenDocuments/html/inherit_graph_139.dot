@@ -4,5 +4,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node0 [label="TIM_MasterConfigTypeDef",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structTIM__MasterConfigTypeDef.html",tooltip="TIM Master configuration Structure definition."];
+  Node0 [label="TIM_IC_InitTypeDef",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structTIM__IC__InitTypeDef.html",tooltip="TIM Input Capture Configuration Structure definition."];
 }

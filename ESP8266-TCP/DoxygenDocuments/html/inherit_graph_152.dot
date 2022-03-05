@@ -4,5 +4,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node0 [label="USB_TypeDef",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structUSB__TypeDef.html",tooltip="Universal Serial Bus Full Speed Device."];
+  Node0 [label="USART_TypeDef",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structUSART__TypeDef.html",tooltip="Universal Synchronous Asynchronous Receiver Transmitter."];
 }

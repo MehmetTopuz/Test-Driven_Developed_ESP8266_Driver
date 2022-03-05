@@ -4,7 +4,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node0 [label="MockNamedValue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classMockNamedValue.html",tooltip=" "];
-  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node1 [label="MockCheckedExpectedCall\l::MockExpectedFunctionParameter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classMockCheckedExpectedCall_1_1MockExpectedFunctionParameter.html",tooltip=" "];
+  Node0 [label="MockFailureReporter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classMockFailureReporter.html",tooltip=" "];
 }

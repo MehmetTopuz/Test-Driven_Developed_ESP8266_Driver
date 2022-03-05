@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['verbositylevel_0',['VerbosityLevel',['../classTestOutput.html#ac766d7d7ad6c0fa45095710bdbb4976c',1,'TestOutput']]]
+  ['uart_5fclocksourcetypedef_0',['UART_ClockSourceTypeDef',['../group__UART__Exported__Types.html#gad957348fe227e5cb75b70be026c5ae81',1,'stm32g4xx_hal_uart.h']]]
 ];

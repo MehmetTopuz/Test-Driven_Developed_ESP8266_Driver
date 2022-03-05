@@ -1,8 +1,11 @@
 /**
- * tests.cpp
+ * @file 	tests.cpp
+ * @author  Mehmet Topuz
+ * @brief   Source file of the test functions.
  *
+ *  Website : <a href="https://mehmettopuz.net/">mehmettopuz.net</a>
  *  Created on: Jan 18, 2022
- *      Author: topuz
+ *
  */
 
 
@@ -13,6 +16,7 @@
 #include <stdio.h>
 #include <string.h>
 
+/* Test functions of the ring buffer-----------------------------------------------------------------------*/
 TEST_GROUP(RingBuffer_Test_Group)
 {
 
@@ -103,7 +107,7 @@ TEST(RingBuffer_Test_Group, BufferFlushTest)
 	LONGS_EQUAL(0,testBuf->buffer[testBuf->size - 1]);
 	LONGS_EQUAL(0,testBuf->buffer[testBuf->size/2]);    // check random value  (buffer[25]);
 
-//	for(uint32_t i = 0;i < testBuf->size;i++)  // check all elements of the buffer
+//	for(uint32_t i = 0;i < testBuf->size;i++)  // check all the elements of the buffer
 //	{
 //		LONGS_EQUAL(0,testBuf->buffer[i]);
 //	}
@@ -132,11 +136,13 @@ TEST(RingBuffer_Test_Group, CapacityTest)
 
 }
 
+/* Mpck functions-----------------------------------------------------------------------*/
 
 void UART_Transmit_Fake(uint8_t* data)
 {
-//	mock().actualCall("UART_Transmit_Fake").withParameter("data", data);
+
 	mock().actualCall("UART_Transmit_Fake").withStringParameter("data", (char*)data);
+
 }
 uint8_t UART_Receive_Fake(void)
 {
@@ -157,17 +163,18 @@ uint32_t getTick_Fake(void)
 
 void (*transmit)(uint8_t*);
 
+
+/* Test functions of the ring buffer-----------------------------------------------------------------------*/
+
 TEST_GROUP(EspDriver_Test_Group)
 {
-
-
 
 	void setup()
 	{
 		ESP_Init(UART_Transmit_Fake,
 				  UART_Receive_Fake,
 				  getTick_Fake,
-				  100);
+				  100);					// buffer size
 
 	}
 
@@ -184,7 +191,7 @@ TEST_GROUP(EspDriver_Test_Group)
 TEST(EspDriver_Test_Group, Esp_Init_Test)
 {
 
-	transmit = UART_Transmit_Fake; // or you can pass UART_Transmit_Fake as a parameter to the function instead of transmit.
+	transmit = UART_Transmit_Fake; 			// or you can pass UART_Transmit_Fake as a parameter to the function instead of transmit.
 	int32_t result = ESP_Init(transmit,
 						  UART_Receive_Fake,
 						  getTick_Fake,
@@ -201,35 +208,34 @@ TEST(EspDriver_Test_Group, Esp_Init_Test)
 
 TEST(EspDriver_Test_Group, Send_AT_Command_Test)
 {
-	mock().expectOneCall("UART_Transmit_Fake").withStringParameter("data", "Test");
+	mock().expectOneCall("UART_Transmit_Fake").withStringParameter("data", "Test");  // UART_Transmit_Fake function waits "Test" string.
 	mock().expectOneCall("UART_Transmit_Fake").withStringParameter("data", "AT\r\n");
 
 	Send_AT_Command((char*)"Test");
 	Send_AT_Command((char*)"AT\r\n");
 
-
-
+	// There is no assertion macro here because the function returns nothing.
+	// Mocking library checks if the function has been called.
 }
 
 TEST(EspDriver_Test_Group, UART_Receive_Handler_Test)
 {
 
-	mock().expectOneCall("UART_Receive_Fake").andReturnValue((uint8_t)'O');
-	ESP_UART_ReceiveHandler();
-	mock().expectOneCall("UART_Receive_Fake").andReturnValue((uint8_t)'K');
-	ESP_UART_ReceiveHandler();
-	mock().expectOneCall("UART_Receive_Fake").andReturnValue((uint8_t)'\r');
-	ESP_UART_ReceiveHandler();
-	mock().expectOneCall("UART_Receive_Fake").andReturnValue((uint8_t)'\n');
-	ESP_UART_ReceiveHandler();
+	const char response[] = "OK\r\n";
 
-	STRCMP_EQUAL("OK\r\n",(char*)rx_buffer->buffer);	// check the rx ring buffer.
+	for(int32_t i=0;i<(int32_t)strlen(response);i++)
+	{
+		mock().expectOneCall("UART_Receive_Fake").andReturnValue((uint8_t)response[i]);
+		ESP_UART_ReceiveHandler();
+	}
+
+	STRCMP_EQUAL("OK\r\n",(char*)rx_buffer->buffer);	// check the ring buffer.
 
 }
 
 TEST(EspDriver_Test_Group, Read_Response_Test)
 {
-	char response[10] = "OK\r\n";
+	const char response[] = "OK\r\n";
 
 	for(int i=0;i<(int)strlen(response);i++)
 	{
@@ -248,7 +254,7 @@ TEST(EspDriver_Test_Group, Wait_Response_Timeout_Test)
 {
 	Status response_state = IDLE;
 
-	while(1)
+	while(1)	// wait the message until timeout occurs.
 	{
 		response_state = Wait_Response((char*)"OK", 1000);
 		if(response_state != IDLE)
@@ -265,7 +271,7 @@ TEST(EspDriver_Test_Group, Wait_Response_Test)
 
 	Status response_state = IDLE;
 
-	char response[10] = "OK\r\n";
+	const char response[] = "OK\r\n";
 
 	while(1)
 	{
@@ -307,13 +313,13 @@ TEST(EspDriver_Test_Group, Connect_Wifi_Timeout_Test)
 
 TEST(EspDriver_Test_Group, Connect_Wifi_Error_Test)
 {
-	char response_arr[3][50] =
+	const char response_arr[3][50] =
 	{ "OK\r\n",									// station mode response (AT+CWMODE=1)
-	  "OK\r\n",									// check disconnect response (AT+CWQAP)
+	  "OK\r\n",									//  disconnect command response (AT+CWQAP)
 	  "ERROR\r\n"								// connect wifi command response (AT+CWJAP="SSID","password")
 	};
 
-	char fake_tx_buffer[3][50] =
+	const char fake_tx_buffer[3][50] =
 	{
 		"AT+CWMODE=1\r\n",
 		"AT+CWQAP\r\n",
@@ -351,13 +357,13 @@ TEST(EspDriver_Test_Group, Connect_Wifi_Error_Test)
 
 TEST(EspDriver_Test_Group, Connect_Wifi_Test)
 {
-	char response_arr[3][50] =
-	{ "OK\r\n",									// station mode response
-	  "OK\r\n",								// check wifi connection response
-	  "OK\r\n"								// connect wifi command response
+	const char response_arr[3][50] =
+	{ "OK\r\n",
+	  "OK\r\n",
+	  "OK\r\n"
 	};
 
-	char fake_tx_buffer[3][50] =
+	const char fake_tx_buffer[3][50] =
 	{
 		"AT+CWMODE=1\r\n",
 		"AT+CWQAP\r\n",
@@ -438,15 +444,15 @@ TEST(EspDriver_Test_Group, Disconnect_Wifi_Test)
 TEST(EspDriver_Test_Group, Command_Process_Test)
 {
 	char *response_arr[3] =
-	{ (char*)"OK\r\n",									// station mode response
-	  (char*)"OK\r\n",								// check wifi connection response
-	  (char*)"OK\r\n"								// connect wifi command response
+	{ (char*)AT_RESPONSE_OK,									// station mode response
+	  (char*)AT_RESPONSE_OK,								// check wifi connection response
+	  (char*)AT_RESPONSE_OK								// connect wifi command response
 	};
 
 	char *fake_command_buffer[3] =
 	{
-		(char*)"AT+CWMODE=1\r\n",
-		(char*)"AT+CWQAP\r\n",
+		(char*)AT_CWMODE_STATION,
+		(char*)AT_CWQAP,
 		(char*)"AT+CWJAP=\"SSID\",\"1234\"\r\n"
 	};
 
@@ -482,15 +488,15 @@ TEST(EspDriver_Test_Group, Command_Process_Test)
 TEST(EspDriver_Test_Group, Connect_TCP_Test)
 {
 	char response_arr[3][50] =
-	{ "OK\r\n",
-	  "OK\r\n",
-	  "OK\r\n"
+	{ 	AT_RESPONSE_OK,
+		AT_RESPONSE_OK,
+		AT_RESPONSE_OK
 	};
 
 	char *fake_command_buffer[3] =
 	{
-		(char*)"AT+CIPCLOSE\r\n",
-		(char*)"AT+CIPMUX=0\r\n",
+		(char*)AT_CIPCLOSE,
+		(char*)AT_CIPMUX_SINGLE,
 		(char*)"AT+CIPSTART=\"TCP\",\"192.168.1.1\",80\r\n"
 	};
 
@@ -529,8 +535,8 @@ TEST(EspDriver_Test_Group, Connect_TCP_Timeout_Test)
 
 	char *fake_command_buffer[3] =
 	{
-		(char*)"AT+CIPCLOSE\r\n",
-		(char*)"AT+CIPMUX=0\r\n",
+		(char*)AT_CIPCLOSE,
+		(char*)AT_CIPMUX_SINGLE,
 		(char*)"AT+CIPSTART=\"TCP\",\"192.168.1.1\",80\r\n"
 	};
 
@@ -554,15 +560,15 @@ TEST(EspDriver_Test_Group, Connect_TCP_Timeout_Test)
 TEST(EspDriver_Test_Group, Connect_TCP_Error_Test)
 {
 	char response_arr[3][50] =
-	{ "OK\r\n",
-	  "OK\r\n",
-	  "ERROR\r\n"
+	{ AT_RESPONSE_OK,
+	  AT_RESPONSE_OK,
+	  AT_RESPONSE_ERROR
 	};
 
 	char *fake_command_buffer[3] =
 	{
-		(char*)"AT+CIPCLOSE\r\n",
-		(char*)"AT+CIPMUX=0\r\n",
+		(char*)AT_CIPCLOSE,
+		(char*)AT_CIPMUX_SINGLE,
 		(char*)"AT+CIPSTART=\"TCP\",\"192.168.1.1\",80\r\n"
 	};
 
@@ -627,11 +633,11 @@ TEST(EspDriver_Test_Group, Send_TCP_Message_Test)
 	int i = 0;
 
 	char response_arr[2][50] =
-	{ ">\r\n",
-	  "SEND OK\r\n",
+	{ AT_RESPONSE_GREATER_THAN,
+	  AT_RESPONSE_SEND_OK,
 	};
 
-	mock().expectOneCall("UART_Transmit_Fake").withStringParameter("data", "AT+CIPSEND=11\r\n"); // AT+CIPSEMD=11
+	mock().expectOneCall("UART_Transmit_Fake").withStringParameter("data", "AT+CIPSEND=11\r\n");
 	mock().expectOneCall("UART_Transmit_Fake").withStringParameter("data", "Hello World");
 	while(1)
 	{
@@ -663,6 +669,7 @@ TEST(EspDriver_Test_Group, Read_TCP_Message_Test)
 	char response[30] = "+IPD,11:Hello World";		// an example data that ESP received from server
 
 	Status response_state = IDLE;
+
 	char received_message[50];
 
 	for(int i=0;i<(int)strlen(response);i++)

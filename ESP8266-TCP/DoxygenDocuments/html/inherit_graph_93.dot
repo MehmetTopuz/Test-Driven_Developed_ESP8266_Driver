@@ -4,5 +4,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node0 [label="RCC_CRSSynchroInfoTypeDef",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structRCC__CRSSynchroInfoTypeDef.html",tooltip="RCC_CRS Synchronization structure definition."];
+  Node0 [label="RCC_CRSInitTypeDef",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structRCC__CRSInitTypeDef.html",tooltip="RCC_CRS Init structure definition."];
 }

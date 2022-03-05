@@ -28,6 +28,7 @@ var hierarchy =
     [ "DMAMUX_RequestGen_TypeDef", "structDMAMUX__RequestGen__TypeDef.html", null ],
     [ "DMAMUX_RequestGenStatus_TypeDef", "structDMAMUX__RequestGenStatus__TypeDef.html", null ],
     [ "DWT_Type", "structDWT__Type.html", null ],
+    [ "Esp_Init_Typedef", "structEsp__Init__Typedef.html", null ],
     [ "ExecFunction", "classExecFunction.html", [
       [ "ExecFunctionWithoutParameters", "classExecFunctionWithoutParameters.html", null ]
     ] ],

@@ -4,5 +4,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node0 [label="HAL_DMA_MuxSyncConfigTypeDef",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structHAL__DMA__MuxSyncConfigTypeDef.html",tooltip="HAL DMA Synchro definition."];
+  Node0 [label="HAL_DMA_MuxRequestGenerator\lConfigTypeDef",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structHAL__DMA__MuxRequestGeneratorConfigTypeDef.html",tooltip="HAL DMAMUX request generator parameters structure definition."];
 }

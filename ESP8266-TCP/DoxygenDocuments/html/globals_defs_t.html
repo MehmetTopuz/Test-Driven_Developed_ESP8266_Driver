@@ -9,10 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -53,22 +49,6 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('globals_defs_t.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -1069,44 +1049,44 @@ $(document).ready(function(){initNavTree('globals_defs_t.html',''); initResizabl
 <li>TIM_DMA_UPDATE&#160;:&#160;<a class="el" href="group__TIM__DMA__sources.html#ga45816ad15a4f533027eb202ac0b9aaf5">stm32g4xx_hal_tim.h</a></li>
 <li>TIM_DMABASE_AF1&#160;:&#160;<a class="el" href="group__TIM__DMA__Base__address.html#ga203f5cb753b686ef4ae0e58a26086175">stm32g4xx_hal_tim.h</a></li>
 <li>TIM_DMABASE_AF2&#160;:&#160;<a class="el" href="group__TIM__DMA__Base__address.html#gac7a1dc358937809c88370309e1ba27a4">stm32g4xx_hal_tim.h</a></li>
-<li>TIM_DMABASE_ARR&#160;:&#160;<a class="el" href="group__TIM__DMA__Base__address.html#ga3e08cd689d59f76dd5ca958a0ffdfb3d">stm32g4xx_hal_tim.h</a></li>
 <li>TIM_DMABase_ARR&#160;:&#160;<a class="el" href="group__HAL__TIM__Aliased__Defines.html#gaab8a66f70e59b5916b4bba344746d652">stm32_hal_legacy.h</a></li>
+<li>TIM_DMABASE_ARR&#160;:&#160;<a class="el" href="group__TIM__DMA__Base__address.html#ga3e08cd689d59f76dd5ca958a0ffdfb3d">stm32g4xx_hal_tim.h</a></li>
 <li>TIM_DMABase_BDTR&#160;:&#160;<a class="el" href="group__HAL__TIM__Aliased__Defines.html#gaaff22bbf3091c47783c1c68b648c8605">stm32_hal_legacy.h</a></li>
 <li>TIM_DMABASE_BDTR&#160;:&#160;<a class="el" href="group__TIM__DMA__Base__address.html#ga767eab033d485d32de80b46f70be3341">stm32g4xx_hal_tim.h</a></li>
 <li>TIM_DMABASE_CCER&#160;:&#160;<a class="el" href="group__TIM__DMA__Base__address.html#ga64cb24a6d9d96d950be64586923c7447">stm32g4xx_hal_tim.h</a></li>
 <li>TIM_DMABase_CCER&#160;:&#160;<a class="el" href="group__HAL__TIM__Aliased__Defines.html#ga6935639db5738662520e8d0eb7116dd6">stm32_hal_legacy.h</a></li>
-<li>TIM_DMABASE_CCMR1&#160;:&#160;<a class="el" href="group__TIM__DMA__Base__address.html#gac94d74bf77d5ce139c7fa6e0b8c2da44">stm32g4xx_hal_tim.h</a></li>
 <li>TIM_DMABase_CCMR1&#160;:&#160;<a class="el" href="group__HAL__TIM__Aliased__Defines.html#gaab384496cff3e54d8179fc0db727c7ee">stm32_hal_legacy.h</a></li>
-<li>TIM_DMABASE_CCMR2&#160;:&#160;<a class="el" href="group__TIM__DMA__Base__address.html#ga94f3dcf13674f397fee0ef816ad973cf">stm32g4xx_hal_tim.h</a></li>
+<li>TIM_DMABASE_CCMR1&#160;:&#160;<a class="el" href="group__TIM__DMA__Base__address.html#gac94d74bf77d5ce139c7fa6e0b8c2da44">stm32g4xx_hal_tim.h</a></li>
 <li>TIM_DMABase_CCMR2&#160;:&#160;<a class="el" href="group__HAL__TIM__Aliased__Defines.html#ga4989f74592ab359f30bd7c4a4a457571">stm32_hal_legacy.h</a></li>
+<li>TIM_DMABASE_CCMR2&#160;:&#160;<a class="el" href="group__TIM__DMA__Base__address.html#ga94f3dcf13674f397fee0ef816ad973cf">stm32g4xx_hal_tim.h</a></li>
 <li>TIM_DMABASE_CCMR3&#160;:&#160;<a class="el" href="group__TIM__DMA__Base__address.html#ga48a6df471e6a42271b3c6ef7072204ea">stm32g4xx_hal_tim.h</a></li>
 <li>TIM_DMABase_CCMR3&#160;:&#160;<a class="el" href="group__HAL__TIM__Aliased__Defines.html#gaeea36845ff52e436a46a294d0d01a193">stm32_hal_legacy.h</a></li>
-<li>TIM_DMABase_CCR1&#160;:&#160;<a class="el" href="group__HAL__TIM__Aliased__Defines.html#ga235a47fa47fd19594a111e6e48c0d5a2">stm32_hal_legacy.h</a></li>
 <li>TIM_DMABASE_CCR1&#160;:&#160;<a class="el" href="group__TIM__DMA__Base__address.html#ga2d1bc7e5ae83b91caa352276d15142dc">stm32g4xx_hal_tim.h</a></li>
-<li>TIM_DMABase_CCR2&#160;:&#160;<a class="el" href="group__HAL__TIM__Aliased__Defines.html#ga0e2150dcd3afe31ecb793aa471b3b972">stm32_hal_legacy.h</a></li>
+<li>TIM_DMABase_CCR1&#160;:&#160;<a class="el" href="group__HAL__TIM__Aliased__Defines.html#ga235a47fa47fd19594a111e6e48c0d5a2">stm32_hal_legacy.h</a></li>
 <li>TIM_DMABASE_CCR2&#160;:&#160;<a class="el" href="group__TIM__DMA__Base__address.html#ga0c73e7e1fa212ab14a43ca49e9d8850e">stm32g4xx_hal_tim.h</a></li>
+<li>TIM_DMABase_CCR2&#160;:&#160;<a class="el" href="group__HAL__TIM__Aliased__Defines.html#ga0e2150dcd3afe31ecb793aa471b3b972">stm32_hal_legacy.h</a></li>
 <li>TIM_DMABase_CCR3&#160;:&#160;<a class="el" href="group__HAL__TIM__Aliased__Defines.html#ga590c90085bd2b206b941dff2731fed74">stm32_hal_legacy.h</a></li>
 <li>TIM_DMABASE_CCR3&#160;:&#160;<a class="el" href="group__TIM__DMA__Base__address.html#gae3c259f405c78e31411c19195eac48bc">stm32g4xx_hal_tim.h</a></li>
-<li>TIM_DMABase_CCR4&#160;:&#160;<a class="el" href="group__HAL__TIM__Aliased__Defines.html#ga5e84a16e7d8ea369a3a55bb6fe1f2171">stm32_hal_legacy.h</a></li>
 <li>TIM_DMABASE_CCR4&#160;:&#160;<a class="el" href="group__TIM__DMA__Base__address.html#gaea24fd3f528163da065cbdce3c68ef23">stm32g4xx_hal_tim.h</a></li>
-<li>TIM_DMABASE_CCR5&#160;:&#160;<a class="el" href="group__TIM__DMA__Base__address.html#ga219e3fff69fa9b9d564fa4d604072be8">stm32g4xx_hal_tim.h</a></li>
+<li>TIM_DMABase_CCR4&#160;:&#160;<a class="el" href="group__HAL__TIM__Aliased__Defines.html#ga5e84a16e7d8ea369a3a55bb6fe1f2171">stm32_hal_legacy.h</a></li>
 <li>TIM_DMABase_CCR5&#160;:&#160;<a class="el" href="group__HAL__TIM__Aliased__Defines.html#ga8e5e6af97873ab26e62274624f31adae">stm32_hal_legacy.h</a></li>
+<li>TIM_DMABASE_CCR5&#160;:&#160;<a class="el" href="group__TIM__DMA__Base__address.html#ga219e3fff69fa9b9d564fa4d604072be8">stm32g4xx_hal_tim.h</a></li>
 <li>TIM_DMABase_CCR6&#160;:&#160;<a class="el" href="group__HAL__TIM__Aliased__Defines.html#ga9ab65ba1f7609de8bd7bf20319e60232">stm32_hal_legacy.h</a></li>
 <li>TIM_DMABASE_CCR6&#160;:&#160;<a class="el" href="group__TIM__DMA__Base__address.html#ga8cf977b2548574072f45cfd7eca6b5c5">stm32g4xx_hal_tim.h</a></li>
-<li>TIM_DMABASE_CNT&#160;:&#160;<a class="el" href="group__TIM__DMA__Base__address.html#gae711483dbf4f0eafb2505b8f823c4724">stm32g4xx_hal_tim.h</a></li>
 <li>TIM_DMABase_CNT&#160;:&#160;<a class="el" href="group__HAL__TIM__Aliased__Defines.html#gacab604257d144cf3a59b360cbc958ec9">stm32_hal_legacy.h</a></li>
-<li>TIM_DMABase_CR1&#160;:&#160;<a class="el" href="group__HAL__TIM__Aliased__Defines.html#ga73bca5b14da2d5026fa3877d0db53740">stm32_hal_legacy.h</a></li>
+<li>TIM_DMABASE_CNT&#160;:&#160;<a class="el" href="group__TIM__DMA__Base__address.html#gae711483dbf4f0eafb2505b8f823c4724">stm32g4xx_hal_tim.h</a></li>
 <li>TIM_DMABASE_CR1&#160;:&#160;<a class="el" href="group__TIM__DMA__Base__address.html#ga97bbe74e5ae8680c020a6b0f760d8909">stm32g4xx_hal_tim.h</a></li>
+<li>TIM_DMABase_CR1&#160;:&#160;<a class="el" href="group__HAL__TIM__Aliased__Defines.html#ga73bca5b14da2d5026fa3877d0db53740">stm32_hal_legacy.h</a></li>
 <li>TIM_DMABASE_CR2&#160;:&#160;<a class="el" href="group__TIM__DMA__Base__address.html#ga53d60ce92015bb60d608e60c45b1fdda">stm32g4xx_hal_tim.h</a></li>
 <li>TIM_DMABase_CR2&#160;:&#160;<a class="el" href="group__HAL__TIM__Aliased__Defines.html#ga50e894f0d2cecc1ff3a3578098c3246e">stm32_hal_legacy.h</a></li>
 <li>TIM_DMABase_DCR&#160;:&#160;<a class="el" href="group__HAL__TIM__Aliased__Defines.html#ga59e2206e4e03b9d55c9fb5a24e29b01c">stm32_hal_legacy.h</a></li>
-<li>TIM_DMABase_DIER&#160;:&#160;<a class="el" href="group__HAL__TIM__Aliased__Defines.html#gaeddacbbc2adf9705feac250f077d8c93">stm32_hal_legacy.h</a></li>
 <li>TIM_DMABASE_DIER&#160;:&#160;<a class="el" href="group__TIM__DMA__Base__address.html#ga137d2e3858ae68333646fea6e04503da">stm32g4xx_hal_tim.h</a></li>
+<li>TIM_DMABase_DIER&#160;:&#160;<a class="el" href="group__HAL__TIM__Aliased__Defines.html#gaeddacbbc2adf9705feac250f077d8c93">stm32_hal_legacy.h</a></li>
 <li>TIM_DMABase_DMAR&#160;:&#160;<a class="el" href="group__HAL__TIM__Aliased__Defines.html#gaf2b823d37e722f9f856c654fa35eff26">stm32_hal_legacy.h</a></li>
 <li>TIM_DMABASE_DTR2&#160;:&#160;<a class="el" href="group__TIM__DMA__Base__address.html#ga5441d764ca5ffe580e7b3262e3c27339">stm32g4xx_hal_tim.h</a></li>
 <li>TIM_DMABASE_ECR&#160;:&#160;<a class="el" href="group__TIM__DMA__Base__address.html#ga367cfc54b4b11d95451f69ae1391f31b">stm32g4xx_hal_tim.h</a></li>
-<li>TIM_DMABase_EGR&#160;:&#160;<a class="el" href="group__HAL__TIM__Aliased__Defines.html#gab5e6f6c3fea100896d13ce317a6ccd8e">stm32_hal_legacy.h</a></li>
 <li>TIM_DMABASE_EGR&#160;:&#160;<a class="el" href="group__TIM__DMA__Base__address.html#gaff6d230aafb918047d62e877d21b3bdc">stm32g4xx_hal_tim.h</a></li>
+<li>TIM_DMABase_EGR&#160;:&#160;<a class="el" href="group__HAL__TIM__Aliased__Defines.html#gab5e6f6c3fea100896d13ce317a6ccd8e">stm32_hal_legacy.h</a></li>
 <li>TIM_DMABase_OR&#160;:&#160;<a class="el" href="group__HAL__TIM__Aliased__Defines.html#gad6a75d19df73bae091a0e649fba7339c">stm32_hal_legacy.h</a></li>
 <li>TIM_DMABASE_OR&#160;:&#160;<a class="el" href="group__TIM__DMA__Base__address.html#ga4b50ac8b63d27e309695ba36643bc1d0">stm32g4xx_hal_tim.h</a></li>
 <li>TIM_DMABase_OR1&#160;:&#160;<a class="el" href="group__HAL__TIM__Aliased__Defines.html#ga6868a38c42996b41d072025ce428c645">stm32_hal_legacy.h</a></li>
@@ -1114,10 +1094,10 @@ $(document).ready(function(){initNavTree('globals_defs_t.html',''); initResizabl
 <li>TIM_DMABase_OR3&#160;:&#160;<a class="el" href="group__HAL__TIM__Aliased__Defines.html#gae675fedf9cf67bd86a36f17d37f99106">stm32_hal_legacy.h</a></li>
 <li>TIM_DMABase_PSC&#160;:&#160;<a class="el" href="group__HAL__TIM__Aliased__Defines.html#gab8dd06970f235fe9f6997e0975237388">stm32_hal_legacy.h</a></li>
 <li>TIM_DMABASE_PSC&#160;:&#160;<a class="el" href="group__TIM__DMA__Base__address.html#gae23315a3ef1af7dccfbbfada90355bd8">stm32g4xx_hal_tim.h</a></li>
-<li>TIM_DMABASE_RCR&#160;:&#160;<a class="el" href="group__TIM__DMA__Base__address.html#gac26cff34f1d207798b946c01a40f5d89">stm32g4xx_hal_tim.h</a></li>
 <li>TIM_DMABase_RCR&#160;:&#160;<a class="el" href="group__HAL__TIM__Aliased__Defines.html#ga97f9edceee5c99b32aaa2c6daf849b7d">stm32_hal_legacy.h</a></li>
-<li>TIM_DMABASE_SMCR&#160;:&#160;<a class="el" href="group__TIM__DMA__Base__address.html#ga184ad86a4c6d48263f57d3e7106675c4">stm32g4xx_hal_tim.h</a></li>
+<li>TIM_DMABASE_RCR&#160;:&#160;<a class="el" href="group__TIM__DMA__Base__address.html#gac26cff34f1d207798b946c01a40f5d89">stm32g4xx_hal_tim.h</a></li>
 <li>TIM_DMABase_SMCR&#160;:&#160;<a class="el" href="group__HAL__TIM__Aliased__Defines.html#ga748e24ac0675caa55869d6ba506448df">stm32_hal_legacy.h</a></li>
+<li>TIM_DMABASE_SMCR&#160;:&#160;<a class="el" href="group__TIM__DMA__Base__address.html#ga184ad86a4c6d48263f57d3e7106675c4">stm32g4xx_hal_tim.h</a></li>
 <li>TIM_DMABASE_SR&#160;:&#160;<a class="el" href="group__TIM__DMA__Base__address.html#gaf0da2213e3e7b6aaaa9b738ec85abc02">stm32g4xx_hal_tim.h</a></li>
 <li>TIM_DMABase_SR&#160;:&#160;<a class="el" href="group__HAL__TIM__Aliased__Defines.html#ga5cda07a11a76bbb24a7d5bb680814d31">stm32_hal_legacy.h</a></li>
 <li>TIM_DMABASE_TISEL&#160;:&#160;<a class="el" href="group__TIM__DMA__Base__address.html#ga74f6dd79db47fef4f9f8cb71f43454c5">stm32g4xx_hal_tim.h</a></li>
@@ -1125,8 +1105,8 @@ $(document).ready(function(){initNavTree('globals_defs_t.html',''); initResizabl
 <li>TIM_DMABurstLength_10Transfers&#160;:&#160;<a class="el" href="group__HAL__TIM__Aliased__Defines.html#ga2fc09f2148cf6ebddc8e67116212259c">stm32_hal_legacy.h</a></li>
 <li>TIM_DMABURSTLENGTH_11TRANSFERS&#160;:&#160;<a class="el" href="group__TIM__DMA__Burst__Length.html#ga79ab58b6a3b30c54c0758b381df22cb0">stm32g4xx_hal_tim.h</a></li>
 <li>TIM_DMABurstLength_11Transfers&#160;:&#160;<a class="el" href="group__HAL__TIM__Aliased__Defines.html#ga0ca63a3caeaf1e85bd54961891949de7">stm32_hal_legacy.h</a></li>
-<li>TIM_DMABURSTLENGTH_12TRANSFERS&#160;:&#160;<a class="el" href="group__TIM__DMA__Burst__Length.html#gaf52962b501b3a76d89df6274ed425947">stm32g4xx_hal_tim.h</a></li>
 <li>TIM_DMABurstLength_12Transfers&#160;:&#160;<a class="el" href="group__HAL__TIM__Aliased__Defines.html#ga9160d52913bbd7ad1e663ff943d01852">stm32_hal_legacy.h</a></li>
+<li>TIM_DMABURSTLENGTH_12TRANSFERS&#160;:&#160;<a class="el" href="group__TIM__DMA__Burst__Length.html#gaf52962b501b3a76d89df6274ed425947">stm32g4xx_hal_tim.h</a></li>
 <li>TIM_DMABURSTLENGTH_13TRANSFERS&#160;:&#160;<a class="el" href="group__TIM__DMA__Burst__Length.html#ga06a81eba628bea6495d86ebcc6021da0">stm32g4xx_hal_tim.h</a></li>
 <li>TIM_DMABurstLength_13Transfers&#160;:&#160;<a class="el" href="group__HAL__TIM__Aliased__Defines.html#ga11485e9eee8a6a7edc1df868755eab85">stm32_hal_legacy.h</a></li>
 <li>TIM_DMABURSTLENGTH_14TRANSFERS&#160;:&#160;<a class="el" href="group__TIM__DMA__Burst__Length.html#ga5f430b76c0aeded0a8d8be779f26ae52">stm32g4xx_hal_tim.h</a></li>
@@ -1149,22 +1129,22 @@ $(document).ready(function(){initNavTree('globals_defs_t.html',''); initResizabl
 <li>TIM_DMABURSTLENGTH_24TRANSFERS&#160;:&#160;<a class="el" href="group__TIM__DMA__Burst__Length.html#gad6ea76a478f2c0f5dc8687a128fa3a3c">stm32g4xx_hal_tim.h</a></li>
 <li>TIM_DMABURSTLENGTH_25TRANSFERS&#160;:&#160;<a class="el" href="group__TIM__DMA__Burst__Length.html#ga050a666ae0984b3490dc7ce92e654f91">stm32g4xx_hal_tim.h</a></li>
 <li>TIM_DMABURSTLENGTH_26TRANSFERS&#160;:&#160;<a class="el" href="group__TIM__DMA__Burst__Length.html#ga232646c85f2d71c1993ed8a295997707">stm32g4xx_hal_tim.h</a></li>
-<li>TIM_DMABurstLength_2Transfers&#160;:&#160;<a class="el" href="group__HAL__TIM__Aliased__Defines.html#ga829504c3e8c90a9445f6a223bc3034f8">stm32_hal_legacy.h</a></li>
 <li>TIM_DMABURSTLENGTH_2TRANSFERS&#160;:&#160;<a class="el" href="group__TIM__DMA__Burst__Length.html#gab114592091a00e0a6b9ae464485bd7bb">stm32g4xx_hal_tim.h</a></li>
-<li>TIM_DMABurstLength_3Transfers&#160;:&#160;<a class="el" href="group__HAL__TIM__Aliased__Defines.html#ga3a99863a0925e0cc9a11b91aade66f11">stm32_hal_legacy.h</a></li>
+<li>TIM_DMABurstLength_2Transfers&#160;:&#160;<a class="el" href="group__HAL__TIM__Aliased__Defines.html#ga829504c3e8c90a9445f6a223bc3034f8">stm32_hal_legacy.h</a></li>
 <li>TIM_DMABURSTLENGTH_3TRANSFERS&#160;:&#160;<a class="el" href="group__TIM__DMA__Burst__Length.html#gad91c14f0930803593ecdbd98002fea0a">stm32g4xx_hal_tim.h</a></li>
-<li>TIM_DMABurstLength_4Transfers&#160;:&#160;<a class="el" href="group__HAL__TIM__Aliased__Defines.html#ga84bfeb309593a1ac580e233bf7514b36">stm32_hal_legacy.h</a></li>
+<li>TIM_DMABurstLength_3Transfers&#160;:&#160;<a class="el" href="group__HAL__TIM__Aliased__Defines.html#ga3a99863a0925e0cc9a11b91aade66f11">stm32_hal_legacy.h</a></li>
 <li>TIM_DMABURSTLENGTH_4TRANSFERS&#160;:&#160;<a class="el" href="group__TIM__DMA__Burst__Length.html#ga9ada9605ae6ff6e4ada9701263bef812">stm32g4xx_hal_tim.h</a></li>
-<li>TIM_DMABurstLength_5Transfers&#160;:&#160;<a class="el" href="group__HAL__TIM__Aliased__Defines.html#ga44f8aa51fbe8887a5f3c37a0e776902c">stm32_hal_legacy.h</a></li>
+<li>TIM_DMABurstLength_4Transfers&#160;:&#160;<a class="el" href="group__HAL__TIM__Aliased__Defines.html#ga84bfeb309593a1ac580e233bf7514b36">stm32_hal_legacy.h</a></li>
 <li>TIM_DMABURSTLENGTH_5TRANSFERS&#160;:&#160;<a class="el" href="group__TIM__DMA__Burst__Length.html#ga740a6446c0a517cc3e235fddee45fef5">stm32g4xx_hal_tim.h</a></li>
-<li>TIM_DMABurstLength_6Transfers&#160;:&#160;<a class="el" href="group__HAL__TIM__Aliased__Defines.html#ga8be40a21654eea72e9c1bf9922675b22">stm32_hal_legacy.h</a></li>
+<li>TIM_DMABurstLength_5Transfers&#160;:&#160;<a class="el" href="group__HAL__TIM__Aliased__Defines.html#ga44f8aa51fbe8887a5f3c37a0e776902c">stm32_hal_legacy.h</a></li>
 <li>TIM_DMABURSTLENGTH_6TRANSFERS&#160;:&#160;<a class="el" href="group__TIM__DMA__Burst__Length.html#ga905c206d2a028e3fb92bcab8f9f7c869">stm32g4xx_hal_tim.h</a></li>
+<li>TIM_DMABurstLength_6Transfers&#160;:&#160;<a class="el" href="group__HAL__TIM__Aliased__Defines.html#ga8be40a21654eea72e9c1bf9922675b22">stm32_hal_legacy.h</a></li>
 <li>TIM_DMABurstLength_7Transfers&#160;:&#160;<a class="el" href="group__HAL__TIM__Aliased__Defines.html#gaf2ae83bd73b0e92b73e5ebfc11f9bfad">stm32_hal_legacy.h</a></li>
 <li>TIM_DMABURSTLENGTH_7TRANSFERS&#160;:&#160;<a class="el" href="group__TIM__DMA__Burst__Length.html#gae75055ac13b73baf9326f1d6157853a7">stm32g4xx_hal_tim.h</a></li>
-<li>TIM_DMABurstLength_8Transfers&#160;:&#160;<a class="el" href="group__HAL__TIM__Aliased__Defines.html#ga8a760d7114425596736b0ecdbe5fdea6">stm32_hal_legacy.h</a></li>
 <li>TIM_DMABURSTLENGTH_8TRANSFERS&#160;:&#160;<a class="el" href="group__TIM__DMA__Burst__Length.html#gac6b24f5b7d9e1968b4bfcaeb24e718fc">stm32g4xx_hal_tim.h</a></li>
-<li>TIM_DMABurstLength_9Transfers&#160;:&#160;<a class="el" href="group__HAL__TIM__Aliased__Defines.html#ga98b208205c133557a9d67a0921559a66">stm32_hal_legacy.h</a></li>
+<li>TIM_DMABurstLength_8Transfers&#160;:&#160;<a class="el" href="group__HAL__TIM__Aliased__Defines.html#ga8a760d7114425596736b0ecdbe5fdea6">stm32_hal_legacy.h</a></li>
 <li>TIM_DMABURSTLENGTH_9TRANSFERS&#160;:&#160;<a class="el" href="group__TIM__DMA__Burst__Length.html#ga73fff75a3f0247c61a84a42e8cb83572">stm32g4xx_hal_tim.h</a></li>
+<li>TIM_DMABurstLength_9Transfers&#160;:&#160;<a class="el" href="group__HAL__TIM__Aliased__Defines.html#ga98b208205c133557a9d67a0921559a66">stm32_hal_legacy.h</a></li>
 <li>TIM_DMAR_DMAB&#160;:&#160;<a class="el" href="group__Peripheral__Registers__Bits__Definition.html#ga1afa2fc02bcd75c15122c4eb87d6cf83">stm32g474xx.h</a></li>
 <li>TIM_DMAR_DMAB_Msk&#160;:&#160;<a class="el" href="group__Peripheral__Registers__Bits__Definition.html#gaa5d6d71391fa416ce5c1aa65e459d92a">stm32g474xx.h</a></li>
 <li>TIM_DMAR_DMAB_Pos&#160;:&#160;<a class="el" href="group__Peripheral__Registers__Bits__Definition.html#ga404a796ef83390218d4aed467f779ca0">stm32g474xx.h</a></li>
@@ -1277,22 +1257,22 @@ $(document).ready(function(){initNavTree('globals_defs_t.html',''); initResizabl
 <li>TIM_ETRPRESCALER_DIV2&#160;:&#160;<a class="el" href="group__TIM__ETR__Prescaler.html#gaf7fe49f67bdb6b33b9b41953fee75680">stm32g4xx_hal_tim.h</a></li>
 <li>TIM_ETRPRESCALER_DIV4&#160;:&#160;<a class="el" href="group__TIM__ETR__Prescaler.html#gaa09da30c3cd28f1fe6b6f3f599a5212c">stm32g4xx_hal_tim.h</a></li>
 <li>TIM_ETRPRESCALER_DIV8&#160;:&#160;<a class="el" href="group__TIM__ETR__Prescaler.html#ga834e38200874cced108379b17a24d0b7">stm32g4xx_hal_tim.h</a></li>
-<li>TIM_EventSource_Break&#160;:&#160;<a class="el" href="group__HAL__TIM__Aliased__Defines.html#gad6f9b5366d93c73ff005273c50c9f00a">stm32_hal_legacy.h</a></li>
 <li>TIM_EVENTSOURCE_BREAK&#160;:&#160;<a class="el" href="group__TIM__Event__Source.html#ga83d16368fe3172a98c41d7c414780a64">stm32g4xx_hal_tim.h</a></li>
-<li>TIM_EventSource_Break2&#160;:&#160;<a class="el" href="group__HAL__TIM__Aliased__Defines.html#ga18fcfb87d3361c3118e7251d5a99b92a">stm32_hal_legacy.h</a></li>
+<li>TIM_EventSource_Break&#160;:&#160;<a class="el" href="group__HAL__TIM__Aliased__Defines.html#gad6f9b5366d93c73ff005273c50c9f00a">stm32_hal_legacy.h</a></li>
 <li>TIM_EVENTSOURCE_BREAK2&#160;:&#160;<a class="el" href="group__TIM__Event__Source.html#ga1fc597b9937cc1cbc09b0e4450ad55fc">stm32g4xx_hal_tim.h</a></li>
+<li>TIM_EventSource_Break2&#160;:&#160;<a class="el" href="group__HAL__TIM__Aliased__Defines.html#ga18fcfb87d3361c3118e7251d5a99b92a">stm32_hal_legacy.h</a></li>
 <li>TIM_EVENTSOURCE_CC1&#160;:&#160;<a class="el" href="group__TIM__Event__Source.html#ga529eadf26cd17108dd95b9707a3d0f55">stm32g4xx_hal_tim.h</a></li>
 <li>TIM_EventSource_CC1&#160;:&#160;<a class="el" href="group__HAL__TIM__Aliased__Defines.html#gaa634c46d4ac521ad16e25be97b487e8a">stm32_hal_legacy.h</a></li>
 <li>TIM_EVENTSOURCE_CC2&#160;:&#160;<a class="el" href="group__TIM__Event__Source.html#ga12e3a98c601f4f288354ac2538050e6b">stm32g4xx_hal_tim.h</a></li>
 <li>TIM_EventSource_CC2&#160;:&#160;<a class="el" href="group__HAL__TIM__Aliased__Defines.html#ga5e2082a09552acc9c7e9577f104ba15a">stm32_hal_legacy.h</a></li>
-<li>TIM_EventSource_CC3&#160;:&#160;<a class="el" href="group__HAL__TIM__Aliased__Defines.html#gafeb8538e3b00d938e061e5051f83836b">stm32_hal_legacy.h</a></li>
 <li>TIM_EVENTSOURCE_CC3&#160;:&#160;<a class="el" href="group__TIM__Event__Source.html#ga1c2faf942ab525b44299ddd0a6d848e4">stm32g4xx_hal_tim.h</a></li>
-<li>TIM_EventSource_CC4&#160;:&#160;<a class="el" href="group__HAL__TIM__Aliased__Defines.html#gab60e3190e6c09d2d067f2c689d614979">stm32_hal_legacy.h</a></li>
+<li>TIM_EventSource_CC3&#160;:&#160;<a class="el" href="group__HAL__TIM__Aliased__Defines.html#gafeb8538e3b00d938e061e5051f83836b">stm32_hal_legacy.h</a></li>
 <li>TIM_EVENTSOURCE_CC4&#160;:&#160;<a class="el" href="group__TIM__Event__Source.html#ga157e43c99e6a1c0097b184cc842b5dfb">stm32g4xx_hal_tim.h</a></li>
-<li>TIM_EventSource_COM&#160;:&#160;<a class="el" href="group__HAL__TIM__Aliased__Defines.html#ga4c06981037fae91786f966aa9b4b3435">stm32_hal_legacy.h</a></li>
+<li>TIM_EventSource_CC4&#160;:&#160;<a class="el" href="group__HAL__TIM__Aliased__Defines.html#gab60e3190e6c09d2d067f2c689d614979">stm32_hal_legacy.h</a></li>
 <li>TIM_EVENTSOURCE_COM&#160;:&#160;<a class="el" href="group__TIM__Event__Source.html#ga5724ce4aaf842a2166edaaff1531c1d1">stm32g4xx_hal_tim.h</a></li>
-<li>TIM_EventSource_Trigger&#160;:&#160;<a class="el" href="group__HAL__TIM__Aliased__Defines.html#ga24835bf5eac25eed90069208dce22564">stm32_hal_legacy.h</a></li>
+<li>TIM_EventSource_COM&#160;:&#160;<a class="el" href="group__HAL__TIM__Aliased__Defines.html#ga4c06981037fae91786f966aa9b4b3435">stm32_hal_legacy.h</a></li>
 <li>TIM_EVENTSOURCE_TRIGGER&#160;:&#160;<a class="el" href="group__TIM__Event__Source.html#ga85573ed76442490db67e4b759fe6d901">stm32g4xx_hal_tim.h</a></li>
+<li>TIM_EventSource_Trigger&#160;:&#160;<a class="el" href="group__HAL__TIM__Aliased__Defines.html#ga24835bf5eac25eed90069208dce22564">stm32_hal_legacy.h</a></li>
 <li>TIM_EVENTSOURCE_UPDATE&#160;:&#160;<a class="el" href="group__TIM__Event__Source.html#ga6b9d1352735d2ddbafcaa31ae05cd1ee">stm32g4xx_hal_tim.h</a></li>
 <li>TIM_EventSource_Update&#160;:&#160;<a class="el" href="group__HAL__TIM__Aliased__Defines.html#ga5bff72fbe94b1ae5a710e402c9868b23">stm32_hal_legacy.h</a></li>
 <li>TIM_FLAG_BREAK&#160;:&#160;<a class="el" href="group__TIM__Flag__definition.html#ga01aedbe0676064a4d47dee474ddb863d">stm32g4xx_hal_tim.h</a></li>
@@ -1869,12 +1849,9 @@ $(document).ready(function(){initNavTree('globals_defs_t.html',''); initResizabl
 <li>TZ_MODULEID_T&#160;:&#160;<a class="el" href="tz__context_8h.html#a78775dae56f0c9698cdab6e1ca74503f">tz_context.h</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3
+</small></address>
 </body>
 </html>
