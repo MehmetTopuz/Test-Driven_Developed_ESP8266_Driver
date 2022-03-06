@@ -22,7 +22,8 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include <string.h>
+#include "esp8266.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -59,6 +60,38 @@ static void MX_USART1_UART_Init(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 
+
+void UART_SendMessage(uint8_t* messageArray)
+{
+
+	while(*messageArray)
+	{
+		USART1->TDR = *messageArray++;
+		while(!(USART1->ISR & (1<<6)));		// wait for transmit register(TC) to set.
+	}
+
+//	HAL_UART_Transmit(&huart1, messageArray, strlen((char*)messageArray), HAL_MAX_DELAY);
+}
+uint8_t UART_ReceiveByte(void)
+{
+
+
+	return USART1->RDR;
+
+//	uint8_t buffer[10];
+//
+//	HAL_UART_Receive(&huart1, &buffer, 1, HAL_MAX_DELAY);
+//
+//	return buffer[0];
+}
+
+void USART1_IRQHandler(void)
+{
+	  if(!(USART2->ISR & (1<<5)))			// rx interrupt
+	  {
+		 ESP_UART_ReceiveHandler(); 		// ESP receive handler function.
+	  }
+}
 /* USER CODE END 0 */
 
 /**
@@ -97,8 +130,51 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+  USART1->CR1 |= (1<<5); // rx interrupt enable
+
+  ESP_Init(UART_SendMessage, UART_ReceiveByte, HAL_GetTick, 255);  // initializing
+
+  while(Connect_Wifi("İZZETPASA", "misafir3434") == IDLE);
+
+  while(Connect_TCP_Server("192.168.88.183", "255") == IDLE);
+
+  while(Send_TCP_Message("Test message") == IDLE);
+
+  char receivedCommand[50];
   while (1)
   {
+	  if(Read_TCP_Message(receivedCommand) == STATUS_OK)
+	  {
+		  while(Send_TCP_Message(receivedCommand) == IDLE);
+		  if(strcmp(receivedCommand,"MOTOR_ON") == 0)
+		  {
+			  while(Send_TCP_Message("MOTOR_ON command has been detected.\n") == IDLE);
+
+			  	  	  	  	  	  // do something else
+		  }
+		  else if(strcmp(receivedCommand,"MOTOR_OFF") == 0)
+		  {
+			  while(Send_TCP_Message("MOTOR_OFF command has been detected.\n") == IDLE);
+			  	  	  	  	  	  	  	  // do something else
+		  }
+		  else if(strcmp(receivedCommand,"LED_ON") == 0)
+		  {
+			  HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, 1);
+		  }
+		  else if(strcmp(receivedCommand,"LED_OFF") == 0)
+		  {
+			  HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, 0);
+		  }
+		  else
+		  {
+			  while(Send_TCP_Message("Invalid command!\n") == IDLE);
+		  }
+		  memset(receivedCommand,0,50);		// clear the received command buffer
+	  }
+
+	  HAL_Delay(100);
+
+
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

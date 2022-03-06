@@ -1,0 +1,13 @@
+esp8266.c:37:9:ESP_Init	24	static
+esp8266.c:69:6:Send_AT_Command	16	static
+esp8266.c:80:6:ESP_UART_ReceiveHandler	16	static
+esp8266.c:91:10:Read_Response	16	static
+esp8266.c:104:8:Wait_Response	16	static
+esp8266.c:144:8:Connect_Wifi	104	static
+esp8266.c:179:8:Disconnect_Wifi	24	static
+esp8266.c:202:8:Command_Process	32	static
+esp8266.c:271:8:Connect_TCP_Server	144	static
+esp8266.c:306:8:Disconnect_TCP_Server	24	static
+esp8266.c:327:8:Send_TCP_Message	96	static
+esp8266.c:361:8:Read_TCP_Message	40	static
+esp8266.c:412:8:Wait_TCP_Message	16	static

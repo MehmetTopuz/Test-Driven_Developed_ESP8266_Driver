@@ -335,7 +335,7 @@ TEST(EspDriver_Test_Group, Connect_Wifi_Error_Test)
 	while(1)
 	{
 		response = Connect_Wifi((char*)"SSID", (char*)"1234");
-		if(response == STATUS_ERROR || response == STATUS_OK || response == TIMEOUT_ERROR)
+		if(response != IDLE)
 		{
 			break;
 		}
@@ -379,7 +379,7 @@ TEST(EspDriver_Test_Group, Connect_Wifi_Test)
 	while(1)
 	{
 		response = Connect_Wifi((char*)"SSID", (char*)"1234");
-		if(response == STATUS_ERROR || response == STATUS_OK || response == TIMEOUT_ERROR)
+		if(response != IDLE)
 		{
 			break;
 		}
@@ -465,7 +465,7 @@ TEST(EspDriver_Test_Group, Command_Process_Test)
 	while(1)
 	{
 		response = Command_Process(fake_command_buffer, response_arr, 3);
-		if(response == STATUS_ERROR || response == STATUS_OK || response == TIMEOUT_ERROR)
+		if(response != IDLE)
 		{
 			break;
 		}
@@ -487,20 +487,19 @@ TEST(EspDriver_Test_Group, Command_Process_Test)
 
 TEST(EspDriver_Test_Group, Connect_TCP_Test)
 {
-	char response_arr[3][50] =
-	{ 	AT_RESPONSE_OK,
+	char response_arr[2][50] =
+	{
 		AT_RESPONSE_OK,
 		AT_RESPONSE_OK
 	};
 
-	char *fake_command_buffer[3] =
+	char *fake_command_buffer[2] =
 	{
-		(char*)AT_CIPCLOSE,
 		(char*)AT_CIPMUX_SINGLE,
 		(char*)"AT+CIPSTART=\"TCP\",\"192.168.1.1\",80\r\n"
 	};
 
-	for(int i=0;i<3;i++)
+	for(int i=0;i<2;i++)
 	{
 		mock().expectOneCall("UART_Transmit_Fake").withStringParameter("data", fake_command_buffer[i]);
 	}
@@ -510,7 +509,7 @@ TEST(EspDriver_Test_Group, Connect_TCP_Test)
 	while(1)
 	{
 		response = Connect_TCP_Server((char*)"192.168.1.1",(char*)"80");
-		if(response == STATUS_ERROR || response == STATUS_OK || response == TIMEOUT_ERROR)
+		if(response != IDLE)
 		{
 			break;
 		}
@@ -533,9 +532,9 @@ TEST(EspDriver_Test_Group, Connect_TCP_Test)
 TEST(EspDriver_Test_Group, Connect_TCP_Timeout_Test)
 {
 
-	char *fake_command_buffer[3] =
+	char *fake_command_buffer[2] =
 	{
-		(char*)AT_CIPCLOSE,
+
 		(char*)AT_CIPMUX_SINGLE,
 		(char*)"AT+CIPSTART=\"TCP\",\"192.168.1.1\",80\r\n"
 	};
@@ -547,7 +546,7 @@ TEST(EspDriver_Test_Group, Connect_TCP_Timeout_Test)
 	while(1)
 	{
 		response = Connect_TCP_Server((char*)"192.168.1.1",(char*)"80");
-		if(response == STATUS_ERROR || response == STATUS_OK || response == TIMEOUT_ERROR)
+		if(response != IDLE)
 		{
 			break;
 		}
@@ -559,20 +558,19 @@ TEST(EspDriver_Test_Group, Connect_TCP_Timeout_Test)
 
 TEST(EspDriver_Test_Group, Connect_TCP_Error_Test)
 {
-	char response_arr[3][50] =
-	{ AT_RESPONSE_OK,
+	char response_arr[2][50] =
+	{
 	  AT_RESPONSE_OK,
 	  AT_RESPONSE_ERROR
 	};
 
-	char *fake_command_buffer[3] =
+	char *fake_command_buffer[2] =
 	{
-		(char*)AT_CIPCLOSE,
 		(char*)AT_CIPMUX_SINGLE,
 		(char*)"AT+CIPSTART=\"TCP\",\"192.168.1.1\",80\r\n"
 	};
 
-	for(int i=0;i<3;i++)
+	for(int i=0;i<2;i++)
 	{
 		mock().expectOneCall("UART_Transmit_Fake").withStringParameter("data", fake_command_buffer[i]);
 	}
@@ -582,7 +580,7 @@ TEST(EspDriver_Test_Group, Connect_TCP_Error_Test)
 	while(1)
 	{
 		response = Connect_TCP_Server((char*)"192.168.1.1",(char*)"80");
-		if(response == STATUS_ERROR || response == STATUS_OK || response == TIMEOUT_ERROR)
+		if(response != IDLE)
 		{
 			break;
 		}
@@ -643,7 +641,7 @@ TEST(EspDriver_Test_Group, Send_TCP_Message_Test)
 	{
 		response = Send_TCP_Message((char*)"Hello World");
 
-		if(response == STATUS_ERROR || response == STATUS_OK || response == TIMEOUT_ERROR)
+		if(response != IDLE)
 		{
 			break;
 		}
@@ -670,7 +668,7 @@ TEST(EspDriver_Test_Group, Read_TCP_Message_Test)
 
 	Status response_state = IDLE;
 
-	char received_message[50];
+	char received_message[50] ={0};
 
 	for(int i=0;i<(int)strlen(response);i++)
 	{
@@ -691,7 +689,7 @@ TEST(EspDriver_Test_Group, Wait_TCP_Message_Timeout_Test)
 
 	Status response_state = IDLE;
 
-	char received_message[50];
+	char received_message[50] ={0};
 	while(1)
 	{
 		response_state = Wait_TCP_Message(received_message, 1000);
@@ -709,7 +707,7 @@ TEST(EspDriver_Test_Group, Wait_TCP_Message_Test)
 
 	Status response_state = IDLE;
 
-	char received_message[50];
+	char received_message[50] ={0};
 
 	while(1)
 	{

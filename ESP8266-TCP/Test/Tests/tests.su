@@ -98,63 +98,63 @@ tests.cpp:444:1:virtual void TEST_EspDriver_Test_Group_Command_Process_Test_Test
 tests.cpp:488:1:TEST_EspDriver_Test_Group_Connect_TCP_Test_Test::TEST_EspDriver_Test_Group_Connect_TCP_Test_Test()	16	static
 tests.cpp:488:1:virtual Utest* TEST_EspDriver_Test_Group_Connect_TCP_Test_TestShell::createTest()	24	static
 tests.cpp:488:1:TEST_EspDriver_Test_Group_Connect_TCP_Test_TestShell::TEST_EspDriver_Test_Group_Connect_TCP_Test_TestShell()	16	static
-tests.cpp:488:1:virtual void TEST_EspDriver_Test_Group_Connect_TCP_Test_Test::testBody()	272	static
-tests.cpp:533:1:TEST_EspDriver_Test_Group_Connect_TCP_Timeout_Test_Test::TEST_EspDriver_Test_Group_Connect_TCP_Timeout_Test_Test()	16	static
-tests.cpp:533:1:virtual Utest* TEST_EspDriver_Test_Group_Connect_TCP_Timeout_Test_TestShell::createTest()	24	static
-tests.cpp:533:1:TEST_EspDriver_Test_Group_Connect_TCP_Timeout_Test_TestShell::TEST_EspDriver_Test_Group_Connect_TCP_Timeout_Test_TestShell()	16	static
-tests.cpp:533:1:virtual void TEST_EspDriver_Test_Group_Connect_TCP_Timeout_Test_Test::testBody()	88	static
-tests.cpp:560:1:TEST_EspDriver_Test_Group_Connect_TCP_Error_Test_Test::TEST_EspDriver_Test_Group_Connect_TCP_Error_Test_Test()	16	static
-tests.cpp:560:1:virtual Utest* TEST_EspDriver_Test_Group_Connect_TCP_Error_Test_TestShell::createTest()	24	static
-tests.cpp:560:1:TEST_EspDriver_Test_Group_Connect_TCP_Error_Test_TestShell::TEST_EspDriver_Test_Group_Connect_TCP_Error_Test_TestShell()	16	static
-tests.cpp:560:1:virtual void TEST_EspDriver_Test_Group_Connect_TCP_Error_Test_Test::testBody()	272	static
-tests.cpp:605:1:TEST_EspDriver_Test_Group_Disconnect_TCP_Test_Test::TEST_EspDriver_Test_Group_Disconnect_TCP_Test_Test()	16	static
-tests.cpp:605:1:virtual Utest* TEST_EspDriver_Test_Group_Disconnect_TCP_Test_TestShell::createTest()	24	static
-tests.cpp:605:1:TEST_EspDriver_Test_Group_Disconnect_TCP_Test_TestShell::TEST_EspDriver_Test_Group_Disconnect_TCP_Test_TestShell()	16	static
-tests.cpp:605:1:virtual void TEST_EspDriver_Test_Group_Disconnect_TCP_Test_Test::testBody()	96	static
-tests.cpp:630:1:TEST_EspDriver_Test_Group_Send_TCP_Message_Test_Test::TEST_EspDriver_Test_Group_Send_TCP_Message_Test_Test()	16	static
-tests.cpp:630:1:virtual Utest* TEST_EspDriver_Test_Group_Send_TCP_Message_Test_TestShell::createTest()	24	static
-tests.cpp:630:1:TEST_EspDriver_Test_Group_Send_TCP_Message_Test_TestShell::TEST_EspDriver_Test_Group_Send_TCP_Message_Test_TestShell()	16	static
-tests.cpp:630:1:virtual void TEST_EspDriver_Test_Group_Send_TCP_Message_Test_Test::testBody()	224	static
-tests.cpp:667:1:TEST_EspDriver_Test_Group_Read_TCP_Message_Test_Test::TEST_EspDriver_Test_Group_Read_TCP_Message_Test_Test()	16	static
-tests.cpp:667:1:virtual Utest* TEST_EspDriver_Test_Group_Read_TCP_Message_Test_TestShell::createTest()	24	static
-tests.cpp:667:1:TEST_EspDriver_Test_Group_Read_TCP_Message_Test_TestShell::TEST_EspDriver_Test_Group_Read_TCP_Message_Test_TestShell()	16	static
-tests.cpp:667:1:virtual void TEST_EspDriver_Test_Group_Read_TCP_Message_Test_Test::testBody()	160	static
-tests.cpp:689:1:TEST_EspDriver_Test_Group_Wait_TCP_Message_Timeout_Test_Test::TEST_EspDriver_Test_Group_Wait_TCP_Message_Timeout_Test_Test()	16	static
-tests.cpp:689:1:virtual Utest* TEST_EspDriver_Test_Group_Wait_TCP_Message_Timeout_Test_TestShell::createTest()	24	static
-tests.cpp:689:1:TEST_EspDriver_Test_Group_Wait_TCP_Message_Timeout_Test_TestShell::TEST_EspDriver_Test_Group_Wait_TCP_Message_Timeout_Test_TestShell()	16	static
-tests.cpp:689:1:virtual void TEST_EspDriver_Test_Group_Wait_TCP_Message_Timeout_Test_Test::testBody()	104	static
-tests.cpp:706:1:TEST_EspDriver_Test_Group_Wait_TCP_Message_Test_Test::TEST_EspDriver_Test_Group_Wait_TCP_Message_Test_Test()	16	static
-tests.cpp:706:1:virtual Utest* TEST_EspDriver_Test_Group_Wait_TCP_Message_Test_TestShell::createTest()	24	static
-tests.cpp:706:1:TEST_EspDriver_Test_Group_Wait_TCP_Message_Test_TestShell::TEST_EspDriver_Test_Group_Wait_TCP_Message_Test_TestShell()	16	static
-tests.cpp:706:1:virtual void TEST_EspDriver_Test_Group_Wait_TCP_Message_Test_Test::testBody()	160	static
-tests.cpp:706:1:TEST_EspDriver_Test_Group_Wait_TCP_Message_Test_TestShell::~TEST_EspDriver_Test_Group_Wait_TCP_Message_Test_TestShell()	16	static
-tests.cpp:706:1:virtual TEST_EspDriver_Test_Group_Wait_TCP_Message_Test_TestShell::~TEST_EspDriver_Test_Group_Wait_TCP_Message_Test_TestShell()	16	static
-tests.cpp:706:1:TEST_EspDriver_Test_Group_Wait_TCP_Message_Test_Test::~TEST_EspDriver_Test_Group_Wait_TCP_Message_Test_Test()	16	static
-tests.cpp:706:1:virtual TEST_EspDriver_Test_Group_Wait_TCP_Message_Test_Test::~TEST_EspDriver_Test_Group_Wait_TCP_Message_Test_Test()	16	static
-tests.cpp:689:1:TEST_EspDriver_Test_Group_Wait_TCP_Message_Timeout_Test_TestShell::~TEST_EspDriver_Test_Group_Wait_TCP_Message_Timeout_Test_TestShell()	16	static
-tests.cpp:689:1:virtual TEST_EspDriver_Test_Group_Wait_TCP_Message_Timeout_Test_TestShell::~TEST_EspDriver_Test_Group_Wait_TCP_Message_Timeout_Test_TestShell()	16	static
-tests.cpp:689:1:TEST_EspDriver_Test_Group_Wait_TCP_Message_Timeout_Test_Test::~TEST_EspDriver_Test_Group_Wait_TCP_Message_Timeout_Test_Test()	16	static
-tests.cpp:689:1:virtual TEST_EspDriver_Test_Group_Wait_TCP_Message_Timeout_Test_Test::~TEST_EspDriver_Test_Group_Wait_TCP_Message_Timeout_Test_Test()	16	static
-tests.cpp:667:1:TEST_EspDriver_Test_Group_Read_TCP_Message_Test_TestShell::~TEST_EspDriver_Test_Group_Read_TCP_Message_Test_TestShell()	16	static
-tests.cpp:667:1:virtual TEST_EspDriver_Test_Group_Read_TCP_Message_Test_TestShell::~TEST_EspDriver_Test_Group_Read_TCP_Message_Test_TestShell()	16	static
-tests.cpp:667:1:TEST_EspDriver_Test_Group_Read_TCP_Message_Test_Test::~TEST_EspDriver_Test_Group_Read_TCP_Message_Test_Test()	16	static
-tests.cpp:667:1:virtual TEST_EspDriver_Test_Group_Read_TCP_Message_Test_Test::~TEST_EspDriver_Test_Group_Read_TCP_Message_Test_Test()	16	static
-tests.cpp:630:1:TEST_EspDriver_Test_Group_Send_TCP_Message_Test_TestShell::~TEST_EspDriver_Test_Group_Send_TCP_Message_Test_TestShell()	16	static
-tests.cpp:630:1:virtual TEST_EspDriver_Test_Group_Send_TCP_Message_Test_TestShell::~TEST_EspDriver_Test_Group_Send_TCP_Message_Test_TestShell()	16	static
-tests.cpp:630:1:TEST_EspDriver_Test_Group_Send_TCP_Message_Test_Test::~TEST_EspDriver_Test_Group_Send_TCP_Message_Test_Test()	16	static
-tests.cpp:630:1:virtual TEST_EspDriver_Test_Group_Send_TCP_Message_Test_Test::~TEST_EspDriver_Test_Group_Send_TCP_Message_Test_Test()	16	static
-tests.cpp:605:1:TEST_EspDriver_Test_Group_Disconnect_TCP_Test_TestShell::~TEST_EspDriver_Test_Group_Disconnect_TCP_Test_TestShell()	16	static
-tests.cpp:605:1:virtual TEST_EspDriver_Test_Group_Disconnect_TCP_Test_TestShell::~TEST_EspDriver_Test_Group_Disconnect_TCP_Test_TestShell()	16	static
-tests.cpp:605:1:TEST_EspDriver_Test_Group_Disconnect_TCP_Test_Test::~TEST_EspDriver_Test_Group_Disconnect_TCP_Test_Test()	16	static
-tests.cpp:605:1:virtual TEST_EspDriver_Test_Group_Disconnect_TCP_Test_Test::~TEST_EspDriver_Test_Group_Disconnect_TCP_Test_Test()	16	static
-tests.cpp:560:1:TEST_EspDriver_Test_Group_Connect_TCP_Error_Test_TestShell::~TEST_EspDriver_Test_Group_Connect_TCP_Error_Test_TestShell()	16	static
-tests.cpp:560:1:virtual TEST_EspDriver_Test_Group_Connect_TCP_Error_Test_TestShell::~TEST_EspDriver_Test_Group_Connect_TCP_Error_Test_TestShell()	16	static
-tests.cpp:560:1:TEST_EspDriver_Test_Group_Connect_TCP_Error_Test_Test::~TEST_EspDriver_Test_Group_Connect_TCP_Error_Test_Test()	16	static
-tests.cpp:560:1:virtual TEST_EspDriver_Test_Group_Connect_TCP_Error_Test_Test::~TEST_EspDriver_Test_Group_Connect_TCP_Error_Test_Test()	16	static
-tests.cpp:533:1:TEST_EspDriver_Test_Group_Connect_TCP_Timeout_Test_TestShell::~TEST_EspDriver_Test_Group_Connect_TCP_Timeout_Test_TestShell()	16	static
-tests.cpp:533:1:virtual TEST_EspDriver_Test_Group_Connect_TCP_Timeout_Test_TestShell::~TEST_EspDriver_Test_Group_Connect_TCP_Timeout_Test_TestShell()	16	static
-tests.cpp:533:1:TEST_EspDriver_Test_Group_Connect_TCP_Timeout_Test_Test::~TEST_EspDriver_Test_Group_Connect_TCP_Timeout_Test_Test()	16	static
-tests.cpp:533:1:virtual TEST_EspDriver_Test_Group_Connect_TCP_Timeout_Test_Test::~TEST_EspDriver_Test_Group_Connect_TCP_Timeout_Test_Test()	16	static
+tests.cpp:488:1:virtual void TEST_EspDriver_Test_Group_Connect_TCP_Test_Test::testBody()	216	static
+tests.cpp:532:1:TEST_EspDriver_Test_Group_Connect_TCP_Timeout_Test_Test::TEST_EspDriver_Test_Group_Connect_TCP_Timeout_Test_Test()	16	static
+tests.cpp:532:1:virtual Utest* TEST_EspDriver_Test_Group_Connect_TCP_Timeout_Test_TestShell::createTest()	24	static
+tests.cpp:532:1:TEST_EspDriver_Test_Group_Connect_TCP_Timeout_Test_TestShell::TEST_EspDriver_Test_Group_Connect_TCP_Timeout_Test_TestShell()	16	static
+tests.cpp:532:1:virtual void TEST_EspDriver_Test_Group_Connect_TCP_Timeout_Test_Test::testBody()	88	static
+tests.cpp:559:1:TEST_EspDriver_Test_Group_Connect_TCP_Error_Test_Test::TEST_EspDriver_Test_Group_Connect_TCP_Error_Test_Test()	16	static
+tests.cpp:559:1:virtual Utest* TEST_EspDriver_Test_Group_Connect_TCP_Error_Test_TestShell::createTest()	24	static
+tests.cpp:559:1:TEST_EspDriver_Test_Group_Connect_TCP_Error_Test_TestShell::TEST_EspDriver_Test_Group_Connect_TCP_Error_Test_TestShell()	16	static
+tests.cpp:559:1:virtual void TEST_EspDriver_Test_Group_Connect_TCP_Error_Test_Test::testBody()	216	static
+tests.cpp:603:1:TEST_EspDriver_Test_Group_Disconnect_TCP_Test_Test::TEST_EspDriver_Test_Group_Disconnect_TCP_Test_Test()	16	static
+tests.cpp:603:1:virtual Utest* TEST_EspDriver_Test_Group_Disconnect_TCP_Test_TestShell::createTest()	24	static
+tests.cpp:603:1:TEST_EspDriver_Test_Group_Disconnect_TCP_Test_TestShell::TEST_EspDriver_Test_Group_Disconnect_TCP_Test_TestShell()	16	static
+tests.cpp:603:1:virtual void TEST_EspDriver_Test_Group_Disconnect_TCP_Test_Test::testBody()	96	static
+tests.cpp:628:1:TEST_EspDriver_Test_Group_Send_TCP_Message_Test_Test::TEST_EspDriver_Test_Group_Send_TCP_Message_Test_Test()	16	static
+tests.cpp:628:1:virtual Utest* TEST_EspDriver_Test_Group_Send_TCP_Message_Test_TestShell::createTest()	24	static
+tests.cpp:628:1:TEST_EspDriver_Test_Group_Send_TCP_Message_Test_TestShell::TEST_EspDriver_Test_Group_Send_TCP_Message_Test_TestShell()	16	static
+tests.cpp:628:1:virtual void TEST_EspDriver_Test_Group_Send_TCP_Message_Test_Test::testBody()	224	static
+tests.cpp:665:1:TEST_EspDriver_Test_Group_Read_TCP_Message_Test_Test::TEST_EspDriver_Test_Group_Read_TCP_Message_Test_Test()	16	static
+tests.cpp:665:1:virtual Utest* TEST_EspDriver_Test_Group_Read_TCP_Message_Test_TestShell::createTest()	24	static
+tests.cpp:665:1:TEST_EspDriver_Test_Group_Read_TCP_Message_Test_TestShell::TEST_EspDriver_Test_Group_Read_TCP_Message_Test_TestShell()	16	static
+tests.cpp:665:1:virtual void TEST_EspDriver_Test_Group_Read_TCP_Message_Test_Test::testBody()	160	static
+tests.cpp:687:1:TEST_EspDriver_Test_Group_Wait_TCP_Message_Timeout_Test_Test::TEST_EspDriver_Test_Group_Wait_TCP_Message_Timeout_Test_Test()	16	static
+tests.cpp:687:1:virtual Utest* TEST_EspDriver_Test_Group_Wait_TCP_Message_Timeout_Test_TestShell::createTest()	24	static
+tests.cpp:687:1:TEST_EspDriver_Test_Group_Wait_TCP_Message_Timeout_Test_TestShell::TEST_EspDriver_Test_Group_Wait_TCP_Message_Timeout_Test_TestShell()	16	static
+tests.cpp:687:1:virtual void TEST_EspDriver_Test_Group_Wait_TCP_Message_Timeout_Test_Test::testBody()	104	static
+tests.cpp:704:1:TEST_EspDriver_Test_Group_Wait_TCP_Message_Test_Test::TEST_EspDriver_Test_Group_Wait_TCP_Message_Test_Test()	16	static
+tests.cpp:704:1:virtual Utest* TEST_EspDriver_Test_Group_Wait_TCP_Message_Test_TestShell::createTest()	24	static
+tests.cpp:704:1:TEST_EspDriver_Test_Group_Wait_TCP_Message_Test_TestShell::TEST_EspDriver_Test_Group_Wait_TCP_Message_Test_TestShell()	16	static
+tests.cpp:704:1:virtual void TEST_EspDriver_Test_Group_Wait_TCP_Message_Test_Test::testBody()	160	static
+tests.cpp:704:1:TEST_EspDriver_Test_Group_Wait_TCP_Message_Test_TestShell::~TEST_EspDriver_Test_Group_Wait_TCP_Message_Test_TestShell()	16	static
+tests.cpp:704:1:virtual TEST_EspDriver_Test_Group_Wait_TCP_Message_Test_TestShell::~TEST_EspDriver_Test_Group_Wait_TCP_Message_Test_TestShell()	16	static
+tests.cpp:704:1:TEST_EspDriver_Test_Group_Wait_TCP_Message_Test_Test::~TEST_EspDriver_Test_Group_Wait_TCP_Message_Test_Test()	16	static
+tests.cpp:704:1:virtual TEST_EspDriver_Test_Group_Wait_TCP_Message_Test_Test::~TEST_EspDriver_Test_Group_Wait_TCP_Message_Test_Test()	16	static
+tests.cpp:687:1:TEST_EspDriver_Test_Group_Wait_TCP_Message_Timeout_Test_TestShell::~TEST_EspDriver_Test_Group_Wait_TCP_Message_Timeout_Test_TestShell()	16	static
+tests.cpp:687:1:virtual TEST_EspDriver_Test_Group_Wait_TCP_Message_Timeout_Test_TestShell::~TEST_EspDriver_Test_Group_Wait_TCP_Message_Timeout_Test_TestShell()	16	static
+tests.cpp:687:1:TEST_EspDriver_Test_Group_Wait_TCP_Message_Timeout_Test_Test::~TEST_EspDriver_Test_Group_Wait_TCP_Message_Timeout_Test_Test()	16	static
+tests.cpp:687:1:virtual TEST_EspDriver_Test_Group_Wait_TCP_Message_Timeout_Test_Test::~TEST_EspDriver_Test_Group_Wait_TCP_Message_Timeout_Test_Test()	16	static
+tests.cpp:665:1:TEST_EspDriver_Test_Group_Read_TCP_Message_Test_TestShell::~TEST_EspDriver_Test_Group_Read_TCP_Message_Test_TestShell()	16	static
+tests.cpp:665:1:virtual TEST_EspDriver_Test_Group_Read_TCP_Message_Test_TestShell::~TEST_EspDriver_Test_Group_Read_TCP_Message_Test_TestShell()	16	static
+tests.cpp:665:1:TEST_EspDriver_Test_Group_Read_TCP_Message_Test_Test::~TEST_EspDriver_Test_Group_Read_TCP_Message_Test_Test()	16	static
+tests.cpp:665:1:virtual TEST_EspDriver_Test_Group_Read_TCP_Message_Test_Test::~TEST_EspDriver_Test_Group_Read_TCP_Message_Test_Test()	16	static
+tests.cpp:628:1:TEST_EspDriver_Test_Group_Send_TCP_Message_Test_TestShell::~TEST_EspDriver_Test_Group_Send_TCP_Message_Test_TestShell()	16	static
+tests.cpp:628:1:virtual TEST_EspDriver_Test_Group_Send_TCP_Message_Test_TestShell::~TEST_EspDriver_Test_Group_Send_TCP_Message_Test_TestShell()	16	static
+tests.cpp:628:1:TEST_EspDriver_Test_Group_Send_TCP_Message_Test_Test::~TEST_EspDriver_Test_Group_Send_TCP_Message_Test_Test()	16	static
+tests.cpp:628:1:virtual TEST_EspDriver_Test_Group_Send_TCP_Message_Test_Test::~TEST_EspDriver_Test_Group_Send_TCP_Message_Test_Test()	16	static
+tests.cpp:603:1:TEST_EspDriver_Test_Group_Disconnect_TCP_Test_TestShell::~TEST_EspDriver_Test_Group_Disconnect_TCP_Test_TestShell()	16	static
+tests.cpp:603:1:virtual TEST_EspDriver_Test_Group_Disconnect_TCP_Test_TestShell::~TEST_EspDriver_Test_Group_Disconnect_TCP_Test_TestShell()	16	static
+tests.cpp:603:1:TEST_EspDriver_Test_Group_Disconnect_TCP_Test_Test::~TEST_EspDriver_Test_Group_Disconnect_TCP_Test_Test()	16	static
+tests.cpp:603:1:virtual TEST_EspDriver_Test_Group_Disconnect_TCP_Test_Test::~TEST_EspDriver_Test_Group_Disconnect_TCP_Test_Test()	16	static
+tests.cpp:559:1:TEST_EspDriver_Test_Group_Connect_TCP_Error_Test_TestShell::~TEST_EspDriver_Test_Group_Connect_TCP_Error_Test_TestShell()	16	static
+tests.cpp:559:1:virtual TEST_EspDriver_Test_Group_Connect_TCP_Error_Test_TestShell::~TEST_EspDriver_Test_Group_Connect_TCP_Error_Test_TestShell()	16	static
+tests.cpp:559:1:TEST_EspDriver_Test_Group_Connect_TCP_Error_Test_Test::~TEST_EspDriver_Test_Group_Connect_TCP_Error_Test_Test()	16	static
+tests.cpp:559:1:virtual TEST_EspDriver_Test_Group_Connect_TCP_Error_Test_Test::~TEST_EspDriver_Test_Group_Connect_TCP_Error_Test_Test()	16	static
+tests.cpp:532:1:TEST_EspDriver_Test_Group_Connect_TCP_Timeout_Test_TestShell::~TEST_EspDriver_Test_Group_Connect_TCP_Timeout_Test_TestShell()	16	static
+tests.cpp:532:1:virtual TEST_EspDriver_Test_Group_Connect_TCP_Timeout_Test_TestShell::~TEST_EspDriver_Test_Group_Connect_TCP_Timeout_Test_TestShell()	16	static
+tests.cpp:532:1:TEST_EspDriver_Test_Group_Connect_TCP_Timeout_Test_Test::~TEST_EspDriver_Test_Group_Connect_TCP_Timeout_Test_Test()	16	static
+tests.cpp:532:1:virtual TEST_EspDriver_Test_Group_Connect_TCP_Timeout_Test_Test::~TEST_EspDriver_Test_Group_Connect_TCP_Timeout_Test_Test()	16	static
 tests.cpp:488:1:TEST_EspDriver_Test_Group_Connect_TCP_Test_TestShell::~TEST_EspDriver_Test_Group_Connect_TCP_Test_TestShell()	16	static
 tests.cpp:488:1:virtual TEST_EspDriver_Test_Group_Connect_TCP_Test_TestShell::~TEST_EspDriver_Test_Group_Connect_TCP_Test_TestShell()	16	static
 tests.cpp:488:1:TEST_EspDriver_Test_Group_Connect_TCP_Test_Test::~TEST_EspDriver_Test_Group_Connect_TCP_Test_Test()	16	static
@@ -243,6 +243,6 @@ tests.cpp:40:1:TEST_RingBuffer_Test_Group_InitTest_TestShell::~TEST_RingBuffer_T
 tests.cpp:40:1:virtual TEST_RingBuffer_Test_Group_InitTest_TestShell::~TEST_RingBuffer_Test_Group_InitTest_TestShell()	16	static
 tests.cpp:40:1:TEST_RingBuffer_Test_Group_InitTest_Test::~TEST_RingBuffer_Test_Group_InitTest_Test()	16	static
 tests.cpp:40:1:virtual TEST_RingBuffer_Test_Group_InitTest_Test::~TEST_RingBuffer_Test_Group_InitTest_Test()	16	static
-tests.cpp:731:1:void __static_initialization_and_destruction_0(int, int)	24	static
-tests.cpp:731:1:cpp)	8	static
-tests.cpp:731:1:cpp)	8	static
+tests.cpp:729:1:void __static_initialization_and_destruction_0(int, int)	24	static
+tests.cpp:729:1:cpp)	8	static
+tests.cpp:729:1:cpp)	8	static

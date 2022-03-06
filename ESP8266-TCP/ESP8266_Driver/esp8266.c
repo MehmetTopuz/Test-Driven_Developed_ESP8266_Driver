@@ -216,7 +216,7 @@ Status Command_Process(char **commandArray, char **responseArray, uint8_t number
 			Send_AT_Command(commandArray[currentCommand]);
 			commandFlag = 0;
 		}
-			response = Wait_Response(responseArray[currentCommand], 5000);
+			response = Wait_Response(responseArray[currentCommand], TIMEOUT);
 
 			if(Read_Response("ERROR"))
 			{
@@ -243,7 +243,7 @@ Status Command_Process(char **commandArray, char **responseArray, uint8_t number
 					commandFlag = 1;
 					currentCommand += 1;
 					ringBuffer_flush(rx_buffer);
-					return response;
+					return IDLE;
 				}
 
 			}
@@ -251,6 +251,7 @@ Status Command_Process(char **commandArray, char **responseArray, uint8_t number
 			{
 				commandFlag = 1;
 				currentCommand = 0;
+				ringBuffer_flush(rx_buffer);
 				return response;
 			}
 	}
@@ -271,16 +272,14 @@ Status Connect_TCP_Server(char* ip, char* port)
 {
 	Status response_state = IDLE;
 
-	char *command_buffer[3] =
+	char *command_buffer[2] =
 	{
-		AT_CIPCLOSE,
 		AT_CIPMUX_SINGLE,
 		""
 	};
 
-	char *response_buffer[3] =
+	char *response_buffer[2] =
 	{
-		AT_RESPONSE_OK,
 		AT_RESPONSE_OK,
 		AT_RESPONSE_OK
 	};
@@ -289,9 +288,9 @@ Status Connect_TCP_Server(char* ip, char* port)
 
 	sprintf(wifi_buffer,"%s\"%s\",%s\r\n",AT_CIPSTART_TCP,ip,port);
 
-	command_buffer[2] = wifi_buffer;
+	command_buffer[1] = wifi_buffer;
 
-	response_state = Command_Process(command_buffer, response_buffer, 3);
+	response_state = Command_Process(command_buffer, response_buffer, 2);
 
 	return response_state;
 }
@@ -382,7 +381,7 @@ Status Read_TCP_Message(char* receivedMessage)
 
 		messageLength = atoi(messageLengthString);
 
-		for(uint32_t i=0;i<=messageLength+1;i++)
+		for(uint32_t i=0;i<=messageLength-1;i++)
 		{
 			receivedMessage[i] = *(substring+6+index+i);
 		}

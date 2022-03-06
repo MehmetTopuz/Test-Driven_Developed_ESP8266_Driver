@@ -25,7 +25,9 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h \
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h \
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h \
- ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h
+ ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h \
+ C:/Users/topuz/STM32CubeIDE/workspace_1.6.0/ESP8266-TCP-IP/ESP8266-TCP/ESP8266_Driver/esp8266.h \
+ C:/Users/Topuz/STM32CubeIDE/workspace_1.6.0/ESP8266-TCP-IP/ESP8266-TCP/RingBuffer/ring_buffer.h
 
 ../Core/Inc/main.h:
 
@@ -82,3 +84,7 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h:
 
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h:
+
+C:/Users/topuz/STM32CubeIDE/workspace_1.6.0/ESP8266-TCP-IP/ESP8266-TCP/ESP8266_Driver/esp8266.h:
+
+C:/Users/Topuz/STM32CubeIDE/workspace_1.6.0/ESP8266-TCP-IP/ESP8266-TCP/RingBuffer/ring_buffer.h:

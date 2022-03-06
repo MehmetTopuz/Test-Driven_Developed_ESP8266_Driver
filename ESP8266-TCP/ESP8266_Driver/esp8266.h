@@ -39,6 +39,7 @@ extern "C"
 #define AT_RESPONSE_SEND_OK			"SEND OK"
 #define AT_RESPONSE_GREATER_THAN	">"
 
+#define TIMEOUT						10000UL	// millisecond
 
 RingBuffer* rx_buffer;			// uart ring buffer structure
 
