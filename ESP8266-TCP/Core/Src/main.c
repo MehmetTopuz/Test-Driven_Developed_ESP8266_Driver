@@ -69,7 +69,7 @@ void UART_SendMessage(uint8_t* messageArray)
 		USART1->TDR = *messageArray++;
 		while(!(USART1->ISR & (1<<6)));		// wait for transmit register(TC) to set.
 	}
-
+/* with HAL drivers-----------------------*/
 //	HAL_UART_Transmit(&huart1, messageArray, strlen((char*)messageArray), HAL_MAX_DELAY);
 }
 uint8_t UART_ReceiveByte(void)
@@ -77,7 +77,7 @@ uint8_t UART_ReceiveByte(void)
 
 
 	return USART1->RDR;
-
+/* with HAL drivers-----------------------*/
 //	uint8_t buffer[10];
 //
 //	HAL_UART_Receive(&huart1, &buffer, 1, HAL_MAX_DELAY);
@@ -130,11 +130,27 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+  while(!HAL_GPIO_ReadPin(B1_GPIO_Port, B1_Pin));		// Start button
+
   USART1->CR1 |= (1<<5); // rx interrupt enable
 
-  ESP_Init(UART_SendMessage, UART_ReceiveByte, HAL_GetTick, 255);  // initializing
+  ESP_Init(UART_SendMessage,	// UART transmit function
+		  UART_ReceiveByte,		// UART receive function
+		  HAL_GetTick,			// get tick function
+		  255					// UART ring buffer size
+		  );
 
-  while(Connect_Wifi("İZZETPASA", "misafir3434") == IDLE);
+  while(1)
+  {
+	  Status connectionStatus = Connect_Wifi("İZZETPASA", "misafir3434");
+
+	  if(connectionStatus == STATUS_OK)
+		  break;
+	  else if(connectionStatus == STATUS_ERROR || connectionStatus == TIMEOUT_ERROR)
+	  {
+		  Error_Handler();
+	  }
+  }
 
   while(Connect_TCP_Server("192.168.88.183", "255") == IDLE);
 
@@ -145,7 +161,7 @@ int main(void)
   {
 	  if(Read_TCP_Message(receivedCommand) == STATUS_OK)
 	  {
-		  while(Send_TCP_Message(receivedCommand) == IDLE);
+
 		  if(strcmp(receivedCommand,"MOTOR_ON") == 0)
 		  {
 			  while(Send_TCP_Message("MOTOR_ON command has been detected.\n") == IDLE);

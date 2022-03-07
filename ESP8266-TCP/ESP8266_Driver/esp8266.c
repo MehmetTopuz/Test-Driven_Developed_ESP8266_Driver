@@ -381,7 +381,7 @@ Status Read_TCP_Message(char* receivedMessage)
 
 		messageLength = atoi(messageLengthString);
 
-		for(uint32_t i=0;i<=messageLength-1;i++)
+		for(uint32_t i=0;i<messageLength;i++)
 		{
 			receivedMessage[i] = *(substring+6+index+i);
 		}

@@ -237,8 +237,8 @@ var searchData=
   ['lsestate_234',['LSEState',['../structRCC__OscInitTypeDef.html#a7c1294e9407e69e80fe034caf35fe7ea',1,'RCC_OscInitTypeDef']]],
   ['lsi_20config_235',['LSI Config',['../group__RCC__LSI__Config.html',1,'']]],
   ['lsi_5fvalue_236',['LSI_VALUE',['../stm32g4xx__hal__conf_8h.html#a4872023e65449c0506aac3ea6bec99e9',1,'stm32g4xx_hal_conf.h']]],
-  ['lsion_5fbitnumber_237',['LSION_BITNUMBER',['../group__HAL__RCC__Aliased.html#ga240275048c246bf22b5fce8ff4f7b33d',1,'stm32_hal_legacy.h']]],
-  ['lsion_5fbitnumber_238',['LSION_BitNumber',['../group__HAL__RCC__Aliased.html#ga3f9dbe50769ce2a63ae12520433b9b40',1,'stm32_hal_legacy.h']]],
+  ['lsion_5fbitnumber_237',['LSION_BitNumber',['../group__HAL__RCC__Aliased.html#ga3f9dbe50769ce2a63ae12520433b9b40',1,'stm32_hal_legacy.h']]],
+  ['lsion_5fbitnumber_238',['LSION_BITNUMBER',['../group__HAL__RCC__Aliased.html#ga240275048c246bf22b5fce8ff4f7b33d',1,'stm32_hal_legacy.h']]],
   ['lsistate_239',['LSIState',['../structRCC__OscInitTypeDef.html#a955de90db8882fde02c4fb59c7c000f0',1,'RCC_OscInitTypeDef']]],
   ['lsr_240',['LSR',['../group__CMSIS__core__DebugFunctions.html#ga4281befcc19ee69afdd50801cb1c9bcf',1,'DWT_Type::LSR()'],['../group__CMSIS__core__DebugFunctions.html#ga3861c67933a24dd6632288c4ed0b80c8',1,'ITM_Type::LSR()'],['../group__CMSIS__Core__SysTickFunctions.html#gaf5373794b1c024b28a2a59a9eab6498e',1,'TPI_Type::LSR()']]],
   ['lsucnt_241',['LSUCNT',['../group__CMSIS__core__DebugFunctions.html#gacc05d89bdb1b4fe2fa499920ec02d0b1',1,'DWT_Type']]]
